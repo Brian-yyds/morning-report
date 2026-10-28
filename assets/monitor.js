@@ -230,76 +230,52 @@
     }));
   }
 
-  function tokenCard(tok, featuredLabel) {
-    if (!tok) return null;
-    const href = gmgnUrl(tok.chain, tok.address);
-    const logo = safeHttp(tok.logo);
-    const title = [];
-    if (tok.chain) title.push(el('span', { className: 'badge chain', text: tok.chain }));
-    if (logo) title.push(el('img', { className: 'token-logo', src: logo, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
-    const name = tok.symbol || tok.name || '—';
-    title.push(href
-      ? el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: name })
-      : el('span', { text: name }));
-    if (featuredLabel) title.push(el('span', { className: 'badge tag', text: featuredLabel }));
-    const holders = tok.holder_count != null ? fmtVol(tok.holder_count, 1) : null;
-    return el('div', { className: `gmgn-card${featuredLabel ? ' featured' : ''}` }, [
-      el('div', { className: 'title' }, title),
-      el('div', { className: 'stats' }, [
-        el('div', {}, [el('strong', { text: fmtVol(tok.volume, 2) }), '成交额']),
-        el('div', {}, [el('strong', { text: fmtVol(tok.market_cap, 2) }), '市值']),
-        el('div', {}, [el('strong', { text: fmtVol(tok.smart_degen_count, 0) }), 'Smart']),
-        el('div', {}, [el('strong', { text: holders || fmtVol(tok.renowned_count, 0) }), holders ? '持有人' : 'KOL']),
-      ]),
-    ]);
-  }
-
-  function renderGmgn(data) {
+  /** 已报警代币排行：上游已取消热搜/成交第一，主列表用 gmgn_alerts */
+  function renderGmgnAlerts(data) {
     const g = data?.gmgn || {};
     $('gmgn-meta').textContent = (g.chains || []).length ? (g.chains || []).join(' / ') : '—';
-    const box = $('gmgn-leaders');
-    const cards = [];
-    const hot = tokenCard(g.hot, '热搜');
-    const vol = tokenCard(g.volume_leader, '放量');
-    if (hot) cards.push(hot);
-    if (vol && g.volume_leader?.address !== g.hot?.address) cards.push(vol);
-    for (const t of (g.hot_leaders || []).slice(0, 5)) {
-      if (t?.address && t.address !== g.hot?.address && t.address !== g.volume_leader?.address) {
-        const c = tokenCard(t);
-        if (c) cards.push(c);
-      }
-    }
-    box.replaceChildren(...(cards.length ? cards : [emptyBox('暂无热搜/放量')]));
-  }
-
-  function renderGmgnAlerts(data) {
-    const list = [...(data?.gmgn_alerts || [])].sort((a, b) => (b.triggered || 0) - (a.triggered || 0));
+    const list = [...(data?.gmgn_alerts || [])].sort((a, b) => {
+      const ta = Math.max(Number(a.last_seen) || 0, Number(a.triggered) || 0);
+      const tb = Math.max(Number(b.last_seen) || 0, Number(b.triggered) || 0);
+      return tb - ta;
+    });
     $('gmgn-alert-count').textContent = `${list.length} 条`;
     const box = $('gmgn-alert-list');
     if (!list.length) {
-      box.replaceChildren(emptyBox('暂无 GMGN 警报'));
+      box.replaceChildren(emptyBox('暂无已报警代币'));
       return;
     }
-    box.replaceChildren(...list.map((ev) => {
+    box.replaceChildren(...list.map((ev, i) => {
       const tok = ev.token || {};
       const href = gmgnUrl(ev.chain || tok.chain, ev.address || tok.address);
       const logo = safeHttp(tok.logo);
-      const titleChildren = [];
-      if (ev.chain) titleChildren.push(el('span', { className: 'badge chain', text: ev.chain }));
-      if (logo) titleChildren.push(el('img', { className: 'token-logo', src: logo, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
+      const titleChildren = [
+        el('span', { className: 'idx-mini', text: String(i + 1).padStart(2, '0') }),
+      ];
+      if (ev.chain || tok.chain) {
+        titleChildren.push(el('span', { className: 'badge chain', text: ev.chain || tok.chain }));
+      }
+      if (logo) {
+        titleChildren.push(el('img', {
+          className: 'token-logo', src: logo, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer',
+        }));
+      }
       const name = tok.symbol || tok.name || (ev.address || '').slice(0, 8) || '—';
       titleChildren.push(href
         ? el('a', { className: 'sym', href, target: '_blank', rel: 'noopener noreferrer', text: name })
         : el('span', { className: 'sym', text: name }));
-      return el('div', { className: 'alert-row' }, [
-        el('div', { className: 'when', text: fmtTime(ev.triggered, true) }),
+      const metaBits = [ev.rule || ''];
+      if (tok.holder_count != null) metaBits.push(`持有人 ${fmtVol(tok.holder_count, 1)}`);
+      if (tok.smart_degen_count != null) metaBits.push(`Smart ${fmtVol(tok.smart_degen_count, 0)}`);
+      return el('div', { className: 'alert-row gmgn-rank-row' }, [
+        el('div', { className: 'when', text: fmtTime(ev.triggered || ev.last_seen, true) }),
         el('div', { className: 'main' }, [
-          el('div', {}, titleChildren),
-          el('div', { className: 'meta', text: ev.rule || '' }),
+          el('div', { className: 'title-line' }, titleChildren),
+          el('div', { className: 'meta', text: metaBits.filter(Boolean).join(' · ') }),
         ]),
         el('div', { className: 'alert-side' }, [
           el('div', { text: tok.volume != null ? fmtVol(tok.volume, 1) : '—' }),
-          el('div', { className: 'meta', text: tok.market_cap != null ? fmtVol(tok.market_cap, 1) : '' }),
+          el('div', { className: 'meta', text: tok.market_cap != null ? `市值 ${fmtVol(tok.market_cap, 1)}` : '' }),
         ]),
       ]);
     }));
@@ -410,7 +386,6 @@
     renderStale(data);
     renderFocus(data);
     renderSpikes(data);
-    renderGmgn(data);
     renderGmgnAlerts(data);
     renderRankings(data);
     renderVolume(data);
@@ -440,7 +415,6 @@
         $('last-updated').textContent = '—';
         $('focus-cards')?.replaceChildren(emptyBox('暂无数据'));
         $('spike-list')?.replaceChildren(emptyBox('暂无数据'));
-        $('gmgn-leaders')?.replaceChildren(emptyBox('暂无数据'));
         $('gmgn-alert-list')?.replaceChildren(emptyBox('暂无数据'));
         $('rank-oi')?.replaceChildren(emptyBox('暂无数据'));
         $('rank-up')?.replaceChildren(emptyBox('暂无数据'));

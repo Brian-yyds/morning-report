@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="币安合约急涨急跌、GMGN 热度与成交额监测台。">
+  <meta name="description" content="币安合约急涨急跌、已报警代币与成交额监测台。">
   <title>市场监控 · 每日早报</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/monitor.css">
@@ -18,7 +18,7 @@
         <span class="brand-mark" aria-hidden="true">市</span>
         <div>
           <h1>市场监控</h1>
-          <p>币安合约 · GMGN · 成交额</p>
+          <p>币安合约 · 已报警代币 · 成交额</p>
         </div>
       </div>
       <nav class="page-nav" aria-label="站点导航">
@@ -64,18 +64,11 @@
       </div>
       <div class="panel alert-panel primary-panel gmgn-panel">
         <div class="section-head">
-          <h2>GMGN 监控</h2>
-          <span class="muted" id="gmgn-meta">—</span>
+          <h2>已报警代币</h2>
+          <span class="muted" id="gmgn-alert-count">0</span>
         </div>
-        <div class="gmgn-body">
-          <div class="gmgn-subhead">热搜 / 放量</div>
-          <div id="gmgn-leaders" class="gmgn-leaders"></div>
-          <div class="gmgn-subhead row-between">
-            <span>GMGN 警报</span>
-            <span class="muted" id="gmgn-alert-count">0</span>
-          </div>
-          <div id="gmgn-alert-list" class="alert-list gmgn-alert-list"></div>
-        </div>
+        <p class="gmgn-chains muted" id="gmgn-meta">—</p>
+        <div id="gmgn-alert-list" class="alert-list gmgn-alert-list"></div>
       </div>
     </section>
 
