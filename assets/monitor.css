@@ -141,7 +141,10 @@
   max-height: min(52vh, 560px); overflow: auto;
   scrollbar-width: thin;
 }
-.spike-list, .gmgn-alert-list { max-height: min(52vh, 560px); }
+.spike-list { max-height: min(52vh, 560px); }
+.gmgn-alert-list { max-height: min(28vh, 320px); }
+.gmgn-alert-list-secondary { max-height: min(22vh, 240px); }
+.gmgn-subhead.row-between { display:flex; justify-content:space-between; align-items:center; }
 
 .alert-row {
   display: grid;

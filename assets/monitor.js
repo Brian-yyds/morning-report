@@ -1,6 +1,6 @@
 (() => {
   const DATA_URL = './monitor/latest.json';
-  const ASSET_V = '20261029c';
+  const ASSET_V = '20261029d';
   const REFRESH_MS = 60000;
   const STALE_SEC = 1800;
   const THEME_KEY = 'morning-report-theme';
@@ -234,8 +234,8 @@
     }));
   }
 
-  /** 十日报警榜：来自采集端 gmgn.watch_ranking.rows（近1小时成交额排序） */
-  function renderGmgnAlerts(data) {
+  /** 十日报警榜：gmgn.watch_ranking.rows */
+  function renderWatchRanking(data) {
     const g = data?.gmgn || {};
     const wr = g.watch_ranking || {};
     const meta = $('gmgn-meta');
@@ -244,16 +244,15 @@
       if (wr.window_days != null) bits.push(`${wr.window_days}日窗口`);
       if (wr.volume_window) bits.push(`成交额 ${wr.volume_window}`);
       if ((g.chains || []).length) bits.push((g.chains || []).join('/'));
-      else if (!bits.length) bits.push('—');
-      meta.textContent = bits.join(' · ');
+      meta.textContent = bits.join(' · ') || '—';
     }
     const list = [...(wr.rows || [])];
-    const countEl = $('gmgn-alert-count');
+    const countEl = $('watch-rank-count');
     if (countEl) {
       const total = wr.total != null ? wr.total : list.length;
       countEl.textContent = list.length ? `Top ${list.length}${total > list.length ? ` / ${total}` : ''}` : '0';
     }
-    const box = $('gmgn-alert-list');
+    const box = $('watch-rank-list');
     if (!box) return;
     if (!list.length) {
       box.replaceChildren(emptyBox('暂无十日报警榜数据'));
@@ -269,11 +268,7 @@
         el('span', { className: 'idx-mini', text: String(i + 1).padStart(2, '0') }),
       ];
       if (chain) titleChildren.push(el('span', { className: 'badge chain', text: chain }));
-      if (logo) {
-        titleChildren.push(el('img', {
-          className: 'token-logo', src: logo, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer',
-        }));
-      }
+      if (logo) titleChildren.push(el('img', { className: 'token-logo', src: logo, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
       const name = tok.symbol || tok.name || (address || '').slice(0, 8) || '—';
       titleChildren.push(href
         ? el('a', { className: 'sym', href, target: '_blank', rel: 'noopener noreferrer', text: name })
@@ -291,6 +286,46 @@
         el('div', { className: 'alert-side' }, [
           el('div', { text: row.volume_1h != null ? fmtVol(row.volume_1h, 1) : '—' }),
           el('div', { className: 'meta', text: '近1h成交额' }),
+        ]),
+      ]);
+    }));
+  }
+
+  /** 原 GMGN 警报事件列表 */
+  function renderGmgnAlerts(data) {
+    const list = [...(data?.gmgn_alerts || [])].sort((a, b) => {
+      const ta = Math.max(Number(a.last_seen) || 0, Number(a.triggered) || 0);
+      const tb = Math.max(Number(b.last_seen) || 0, Number(b.triggered) || 0);
+      return tb - ta;
+    });
+    const countEl = $('gmgn-alert-count');
+    if (countEl) countEl.textContent = `${list.length} 条`;
+    const box = $('gmgn-alert-list');
+    if (!box) return;
+    if (!list.length) {
+      box.replaceChildren(emptyBox('暂无 GMGN 警报'));
+      return;
+    }
+    box.replaceChildren(...list.map((ev) => {
+      const tok = ev.token || {};
+      const href = gmgnUrl(ev.chain || tok.chain, ev.address || tok.address);
+      const logo = safeHttp(tok.logo);
+      const titleChildren = [];
+      if (ev.chain || tok.chain) titleChildren.push(el('span', { className: 'badge chain', text: ev.chain || tok.chain }));
+      if (logo) titleChildren.push(el('img', { className: 'token-logo', src: logo, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
+      const name = tok.symbol || tok.name || (ev.address || '').slice(0, 8) || '—';
+      titleChildren.push(href
+        ? el('a', { className: 'sym', href, target: '_blank', rel: 'noopener noreferrer', text: name })
+        : el('span', { className: 'sym', text: name }));
+      return el('div', { className: 'alert-row' }, [
+        el('div', { className: 'when', text: fmtTime(ev.triggered || ev.last_seen, true) }),
+        el('div', { className: 'main' }, [
+          el('div', { className: 'title-line' }, titleChildren),
+          el('div', { className: 'meta', text: ev.rule || '' }),
+        ]),
+        el('div', { className: 'alert-side' }, [
+          el('div', { text: tok.volume != null ? fmtVol(tok.volume, 1) : '—' }),
+          el('div', { className: 'meta', text: tok.market_cap != null ? `市值 ${fmtVol(tok.market_cap, 1)}` : '' }),
         ]),
       ]);
     }));
@@ -401,6 +436,7 @@
     renderStale(data);
     renderFocus(data);
     renderSpikes(data);
+    renderWatchRanking(data);
     renderGmgnAlerts(data);
     renderRankings(data);
     renderVolume(data);
