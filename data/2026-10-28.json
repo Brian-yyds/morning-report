@@ -1,0 +1,1264 @@
+{
+  "date": "2026-10-28",
+  "sample": false,
+  "sources": {
+    "ai": "real",
+    "crypto": "real",
+    "stocks": "real"
+  },
+  "sections": {
+    "ai": {
+      "section": "ai",
+      "date": "2026-10-28",
+      "generated_at": "2026-10-28T07:40:50+00:00",
+      "sample": false,
+      "items": [
+        {
+          "rank": 1,
+          "author_name": "Nightmare SwagKirb",
+          "author_handle": "Swag_K1RBY",
+          "author_url": "https://x.com/Swag_K1RBY",
+          "tweet_url": "https://x.com/Swag_K1RBY/status/2115076055992348917",
+          "text_zh": "引用 Kotaku 报道标题《微软和 Epic Games 突然都认同“AI 就是盗窃”》，配视频调侃两家大厂的态度转变。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 717226,
+            "likes": 85491,
+            "retweets": 8767,
+            "replies": 123,
+            "quotes": 51
+          },
+          "posted_at": "2026-10-27T13:40:02+00:00"
+        },
+        {
+          "rank": 2,
+          "author_name": "MaceAhWindu",
+          "author_handle": "MaceAhWindu",
+          "author_url": "https://x.com/MaceAhWindu",
+          "tweet_url": "https://x.com/MaceAhWindu/status/2115110297367126299",
+          "text_zh": "反驳“生成式 AI 已经来了，不如接受”的说法：几十年来没有生成式 AI 也做出了很多很酷的东西。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 479798,
+            "likes": 67738,
+            "retweets": 10770,
+            "replies": 122,
+            "quotes": 68
+          },
+          "posted_at": "2026-10-27T15:56:06+00:00"
+        },
+        {
+          "rank": 3,
+          "author_name": "yara 🔆🍥",
+          "author_handle": "realAlita",
+          "author_url": "https://x.com/realAlita",
+          "tweet_url": "https://x.com/realAlita/status/2115044679276265812",
+          "text_zh": "用对话段子调侃“要一个真正的网站，不要 Claude 生成的霓虹风 AI 垃圾”，回答却是“用几十段 StackOverflow 代码拼成的手工网站”。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 683103,
+            "likes": 56549,
+            "retweets": 4747,
+            "replies": 143,
+            "quotes": 117
+          },
+          "posted_at": "2026-10-27T11:35:21+00:00"
+        },
+        {
+          "rank": 4,
+          "author_name": "DiscussingFilm",
+          "author_handle": "DiscussingFilm",
+          "author_url": "https://x.com/DiscussingFilm",
+          "tweet_url": "https://x.com/DiscussingFilm/status/2115151829080453612",
+          "text_zh": "LAIKA 动画工作室负责人 Travis Knight 表示公司永远不会在电影中使用生成式 AI：“AI 是盗窃，没有人性也没有灵魂。”",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 612002,
+            "likes": 47797,
+            "retweets": 6224,
+            "replies": 185,
+            "quotes": 234
+          },
+          "posted_at": "2026-10-27T18:41:08+00:00"
+        },
+        {
+          "rank": 5,
+          "author_name": "internet hall of fame",
+          "author_handle": "InternetH0F",
+          "author_url": "https://x.com/InternetH0F",
+          "tweet_url": "https://x.com/InternetH0F/status/2115020683323302365",
+          "text_zh": "援引路透社称“中国 AI 泡沫已经破裂”，配图表。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 2135637,
+            "likes": 35840,
+            "retweets": 1154,
+            "replies": 236,
+            "quotes": 293
+          },
+          "posted_at": "2026-10-27T10:00:00+00:00"
+        },
+        {
+          "rank": 6,
+          "author_name": "Dexerto",
+          "author_handle": "Dexerto",
+          "author_url": "https://x.com/Dexerto",
+          "tweet_url": "https://x.com/Dexerto/status/2115126363740889318",
+          "text_zh": "《任天堂明星大乱斗》制作人樱井政博认为 AI 生成的游戏只是照搬现有游戏的点子和系统，比不上人类创作者的原创性。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 695281,
+            "likes": 33509,
+            "retweets": 4064,
+            "replies": 559,
+            "quotes": 368
+          },
+          "posted_at": "2026-10-27T16:59:56+00:00"
+        },
+        {
+          "rank": 7,
+          "author_name": "james and the giant pigeon",
+          "author_handle": "twinkpummeler",
+          "author_url": "https://x.com/twinkpummeler",
+          "tweet_url": "https://x.com/twinkpummeler/status/2115147320408891516",
+          "text_zh": "正文仅“ChatGPT 又害死了一个人”并配截图（图片内容未读取）；同日有 OpenAI 因 ChatGPT 致命癫痫医疗建议被起诉的报道。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 3273010,
+            "likes": 32140,
+            "retweets": 2752,
+            "replies": 210,
+            "quotes": 428
+          },
+          "posted_at": "2026-10-27T18:23:13+00:00"
+        },
+        {
+          "rank": 8,
+          "author_name": "ry-ry (spam/priv)",
+          "author_handle": "1fatunicorn1",
+          "author_url": "https://x.com/1fatunicorn1",
+          "tweet_url": "https://x.com/1fatunicorn1/status/2115232778459754974",
+          "text_zh": "表情包吐槽“跟成年人解释 AI 为什么不好，每次都是这种感觉”。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 122980,
+            "likes": 30694,
+            "retweets": 3492,
+            "replies": 32,
+            "quotes": 42
+          },
+          "posted_at": "2026-10-28T00:02:48+00:00"
+        },
+        {
+          "rank": 9,
+          "author_name": "Dexerto",
+          "author_handle": "Dexerto",
+          "author_url": "https://x.com/Dexerto",
+          "tweet_url": "https://x.com/Dexerto/status/2115194346202865951",
+          "text_zh": "中国首部全 AI 生成长片《三星堆：未来启示录》票房扑街，而被称为“比 AI 还烂”的低成本电影《牛来》却赚了数百万。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 433044,
+            "likes": 20095,
+            "retweets": 855,
+            "replies": 129,
+            "quotes": 105
+          },
+          "posted_at": "2026-10-27T21:30:05+00:00"
+        },
+        {
+          "rank": 10,
+          "author_name": "Google DeepMind",
+          "author_handle": "GoogleDeepMind",
+          "author_url": "https://x.com/GoogleDeepMind",
+          "tweet_url": "https://x.com/GoogleDeepMind/status/2115114028338962672",
+          "text_zh": "Google DeepMind 发布 Genie 4 世界模型：可实时探索动态环境，场景有声音，人物会动、会反应、会说话。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 2353790,
+            "likes": 19071,
+            "retweets": 2083,
+            "replies": 767,
+            "quotes": 1547
+          },
+          "posted_at": "2026-10-27T16:10:55+00:00"
+        },
+        {
+          "rank": 11,
+          "author_name": "𝙤𝙡𝙞𝙫𝙚𝙧★",
+          "author_handle": "olivvrszn",
+          "author_url": "https://x.com/olivvrszn",
+          "tweet_url": "https://x.com/olivvrszn/status/2115021217237213679",
+          "text_zh": "反驳“你写的读起来像 AI”：是 AI 学了在 Tumblr、AO3、Wattpad 上长大的写手的文风。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 116877,
+            "likes": 18486,
+            "retweets": 2761,
+            "replies": 25,
+            "quotes": 54
+          },
+          "posted_at": "2026-10-27T10:02:08+00:00"
+        },
+        {
+          "rank": 12,
+          "author_name": "Charly Wargnier ♨️",
+          "author_handle": "DataChaz",
+          "author_url": "https://x.com/DataChaz",
+          "tweet_url": "https://x.com/DataChaz/status/2114994934801727732",
+          "text_zh": "分享一段视频，称是“今年见过的最佳 AI 用法”（视频内容未读取）。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 985823,
+            "likes": 15641,
+            "retweets": 2363,
+            "replies": 265,
+            "quotes": 218
+          },
+          "posted_at": "2026-10-27T08:17:41+00:00"
+        },
+        {
+          "rank": 13,
+          "author_name": "Keion",
+          "author_handle": "KeionJ05",
+          "author_url": "https://x.com/KeionJ05",
+          "tweet_url": "https://x.com/KeionJ05/status/2115084073735721419",
+          "text_zh": "调侃“任天堂去起诉 Claude、戳破 AI 泡沫吧”，背景是同期有推文称 Claude 破解了 Switch 相关加密。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 51498,
+            "likes": 10302,
+            "retweets": 987,
+            "replies": 32,
+            "quotes": 6
+          },
+          "posted_at": "2026-10-27T14:11:54+00:00"
+        },
+        {
+          "rank": 14,
+          "author_name": "Felix Rieseberg",
+          "author_handle": "felixrieseberg",
+          "author_url": "https://x.com/felixrieseberg",
+          "tweet_url": "https://x.com/felixrieseberg/status/2115200995546566910",
+          "text_zh": "Anthropic 工程经理称编程面试已死，本月已从其团队招聘流程中移除，并认为这对初级工程师是机会。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 851444,
+            "likes": 8153,
+            "retweets": 716,
+            "replies": 314,
+            "quotes": 307
+          },
+          "posted_at": "2026-10-27T21:56:30+00:00"
+        },
+        {
+          "rank": 15,
+          "author_name": "Anthropic",
+          "author_handle": "AnthropicAI",
+          "author_url": "https://x.com/AnthropicAI",
+          "tweet_url": "https://x.com/AnthropicAI/status/2115178675050307942",
+          "text_zh": "Anthropic 称已与 6 家新药研发机构深度合作并开始自研药物，博客分享了 Claude 支持药物研发各环节的早期成果。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 1672040,
+            "likes": 7762,
+            "retweets": 783,
+            "replies": 496,
+            "quotes": 448
+          },
+          "posted_at": "2026-10-27T20:27:48+00:00"
+        },
+        {
+          "rank": 16,
+          "author_name": "Ebi",
+          "author_handle": "EbiThinks",
+          "author_url": "https://x.com/EbiThinks",
+          "tweet_url": "https://x.com/EbiThinks/status/2115068401752420390",
+          "text_zh": "段子“他没有 Claude 是怎么做出 ChatGPT 的？”，调侃 AI 编程依赖。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 237705,
+            "likes": 7491,
+            "retweets": 249,
+            "replies": 245,
+            "quotes": 25
+          },
+          "posted_at": "2026-10-27T13:09:37+00:00"
+        },
+        {
+          "rank": 17,
+          "author_name": "Polymarket",
+          "author_handle": "Polymarket",
+          "author_url": "https://x.com/Polymarket",
+          "tweet_url": "https://x.com/Polymarket/status/2115117569711771957",
+          "text_zh": "UC Berkeley 数学教授认为 AI 普及后批改作业对错已“没有意义”，改为交了就给分。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 417071,
+            "likes": 6987,
+            "retweets": 500,
+            "replies": 312,
+            "quotes": 181
+          },
+          "posted_at": "2026-10-27T16:25:00+00:00"
+        },
+        {
+          "rank": 18,
+          "author_name": "Andy L",
+          "author_handle": "AndyL5cc",
+          "author_url": "https://x.com/AndyL5cc",
+          "tweet_url": "https://x.com/AndyL5cc/status/2115133828650213693",
+          "text_zh": "转述一位工程师的工作流：一人指挥 50 多个 AI Agent（1 个总管、3 个项目经理、40 多个执行者），完成 20 个工程师的工作量。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 440467,
+            "likes": 5327,
+            "retweets": 843,
+            "replies": 288,
+            "quotes": 60
+          },
+          "posted_at": "2026-10-27T17:29:36+00:00"
+        },
+        {
+          "rank": 19,
+          "author_name": "ChatGPT",
+          "author_handle": "ChatGPT",
+          "author_url": "https://x.com/ChatGPT",
+          "tweet_url": "https://x.com/ChatGPT/status/2115139248458191070",
+          "text_zh": "ChatGPT 上线 iCloud 邮件和日历插件，可找邮件、汇总收件箱、查看日程、修改日历事件，网页、桌面和 iOS 全套餐可用。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 1281065,
+            "likes": 5046,
+            "retweets": 334,
+            "replies": 348,
+            "quotes": 223
+          },
+          "posted_at": "2026-10-27T17:51:08+00:00"
+        },
+        {
+          "rank": 20,
+          "author_name": "Polymarket",
+          "author_handle": "Polymarket",
+          "author_url": "https://x.com/Polymarket",
+          "tweet_url": "https://x.com/Polymarket/status/2115219994783211839",
+          "text_zh": "比尔·盖茨预测将有大量人拒绝 AI，选择“像阿米什人那样生活”。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 384176,
+            "likes": 4583,
+            "retweets": 365,
+            "replies": 515,
+            "quotes": 286
+          },
+          "posted_at": "2026-10-27T23:12:00+00:00"
+        }
+      ]
+    },
+    "crypto": {
+      "section": "crypto",
+      "date": "2026-10-28",
+      "generated_at": "2026-10-28T07:40:41+00:00",
+      "sample": false,
+      "items": [
+        {
+          "rank": 1,
+          "author_name": "Murphy",
+          "author_handle": "Murphychen888",
+          "author_url": "https://x.com/Murphychen888",
+          "tweet_url": "https://x.com/Murphychen888/status/2115260324307947644",
+          "text_zh": "链上分析师引用自己此前的推文，喊话卖方“要卖赶紧卖，卖完可以滚了”，情绪上判断抛压接近出清",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 18240,
+            "likes": 126,
+            "retweets": 4,
+            "replies": 37,
+            "quotes": 2
+          },
+          "posted_at": "2026-10-28T01:52:15+00:00"
+        },
+        {
+          "rank": 2,
+          "author_name": "Ai 姨",
+          "author_handle": "ai_9684xtpa",
+          "author_url": "https://x.com/ai_9684xtpa",
+          "tweet_url": "https://x.com/ai_9684xtpa/status/2115254151546609922",
+          "text_zh": "孙宇晨囤 PEPE 消息后，休眠一年的 PEPE 巨鲸转移 1.45 万亿枚，剩余筹码仍浮盈约 510 万美元",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "PEPE"
+          ],
+          "metrics": {
+            "views": 17198,
+            "likes": 70,
+            "retweets": 6,
+            "replies": 11,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T01:27:43+00:00"
+        },
+        {
+          "rank": 3,
+          "author_name": "Ai 姨",
+          "author_handle": "ai_9684xtpa",
+          "author_url": "https://x.com/ai_9684xtpa",
+          "tweet_url": "https://x.com/ai_9684xtpa/status/2115082096582750410",
+          "text_zh": "巨鲸以 25 倍杠杆开 9,700 枚 ETH 空单（约 2,246 万美元），开仓价 2,311.92 美元，附止盈止损位",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "ETH"
+          ],
+          "metrics": {
+            "views": 17667,
+            "likes": 47,
+            "retweets": 0,
+            "replies": 19,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-27T14:04:02+00:00"
+        },
+        {
+          "rank": 4,
+          "author_name": "Rocky",
+          "author_handle": "Rocky_Bitcoin",
+          "author_url": "https://x.com/Rocky_Bitcoin",
+          "tweet_url": "https://x.com/Rocky_Bitcoin/status/2115083163043258680",
+          "text_zh": "认为这波 6 万到 8 万多的反弹围绕 RWA，并反思美债、黄金、股票代币化项目同质化",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 17945,
+            "likes": 18,
+            "retweets": 0,
+            "replies": 5,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-27T14:08:17+00:00"
+        },
+        {
+          "rank": 5,
+          "author_name": "冷静冷静再冷静",
+          "author_handle": "hexiecs",
+          "author_url": "https://x.com/hexiecs",
+          "tweet_url": "https://x.com/hexiecs/status/2115226554246861311",
+          "text_zh": "解读发币平台 GANG 的 V3 更新：支持税币、可指定分红或税收地址，为项目方发币扫清障碍",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 15922,
+            "likes": 56,
+            "retweets": 6,
+            "replies": 18,
+            "quotes": 2
+          },
+          "posted_at": "2026-10-27T23:38:04+00:00"
+        },
+        {
+          "rank": 6,
+          "author_name": "Lao Bai",
+          "author_handle": "Wuhuoqiu",
+          "author_url": "https://x.com/Wuhuoqiu",
+          "tweet_url": "https://x.com/Wuhuoqiu/status/2115066923050553503",
+          "text_zh": "认为 Robinhood Chain 基础设施可能进入下一阶段，用两家外部预言机定价的 DEX 对比讲解 PMM 机制",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 10161,
+            "likes": 71,
+            "retweets": 16,
+            "replies": 20,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-27T13:03:45+00:00"
+        },
+        {
+          "rank": 7,
+          "author_name": "Ai 姨",
+          "author_handle": "ai_9684xtpa",
+          "author_url": "https://x.com/ai_9684xtpa",
+          "tweet_url": "https://x.com/ai_9684xtpa/status/2115078312980848737",
+          "text_zh": "四年分批建仓 ETH 的大户向币安充值 3,084 枚 ETH（约 717 万美元），疑似清仓，预计获利 92.8 万美元",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "ETH"
+          ],
+          "metrics": {
+            "views": 11106,
+            "likes": 19,
+            "retweets": 2,
+            "replies": 7,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-27T13:49:00+00:00"
+        },
+        {
+          "rank": 8,
+          "author_name": "Ai 姨",
+          "author_handle": "ai_9684xtpa",
+          "author_url": "https://x.com/ai_9684xtpa",
+          "tweet_url": "https://x.com/ai_9684xtpa/status/2115258362174792072",
+          "text_zh": "“侃爷”关联地址再提 4,000 枚 ETH 存入 Aave，借出 600 万 USDT 继续加杠杆做多，均价 2,503.86 美元",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "ETH",
+            "USDT"
+          ],
+          "metrics": {
+            "views": 10562,
+            "likes": 26,
+            "retweets": 3,
+            "replies": 20,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-28T01:44:27+00:00"
+        },
+        {
+          "rank": 9,
+          "author_name": "Ai 姨",
+          "author_handle": "ai_9684xtpa",
+          "author_url": "https://x.com/ai_9684xtpa",
+          "tweet_url": "https://x.com/ai_9684xtpa/status/2115270679717388388",
+          "text_zh": "与以太坊基金会有资金关联的远古巨鲸把 7,594 枚 ETH 充进 Kraken，成本不高于 11 美元，链上已清仓",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "ETH"
+          ],
+          "metrics": {
+            "views": 9006,
+            "likes": 21,
+            "retweets": 0,
+            "replies": 15,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-28T02:33:24+00:00"
+        },
+        {
+          "rank": 10,
+          "author_name": "余烬",
+          "author_handle": "EmberCN",
+          "author_url": "https://x.com/EmberCN",
+          "tweet_url": "https://x.com/EmberCN/status/2115265794074726723",
+          "text_zh": "现在很少有巨鲸敢借贷加杠杆做多 ETH，分析近期最大一例：循环贷买入 21,895 枚 ETH，清算价约 1,660 美元",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "ETH"
+          ],
+          "metrics": {
+            "views": 8459,
+            "likes": 27,
+            "retweets": 1,
+            "replies": 27,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-28T02:13:59+00:00"
+        },
+        {
+          "rank": 11,
+          "author_name": "Paul Xue | BTC 链上数据研究",
+          "author_handle": "paulxue1979",
+          "author_url": "https://x.com/paulxue1979",
+          "tweet_url": "https://x.com/paulxue1979/status/2115295169574769150",
+          "text_zh": "发起讨论：下一轮牛市 BTC 和 ETH 谁涨得更多，“数字黄金”与“智能合约之王”二选一",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "BTC",
+            "ETH"
+          ],
+          "metrics": {
+            "views": 8773,
+            "likes": 14,
+            "retweets": 1,
+            "replies": 21,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-28T04:10:43+00:00"
+        },
+        {
+          "rank": 12,
+          "author_name": "余烬",
+          "author_handle": "EmberCN",
+          "author_url": "https://x.com/EmberCN",
+          "tweet_url": "https://x.com/EmberCN/status/2115256866284654837",
+          "text_zh": "以 0.311 美元 ICO 认购 20 万枚 ETH 的远古巨鲸完成清仓，6.2 万美元变成 2.736 亿美元",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "ETH"
+          ],
+          "metrics": {
+            "views": 7547,
+            "likes": 22,
+            "retweets": 0,
+            "replies": 12,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T01:38:31+00:00"
+        },
+        {
+          "rank": 13,
+          "author_name": "陈桂林",
+          "author_handle": "Guilin_Chen_",
+          "author_url": "https://x.com/Guilin_Chen_",
+          "tweet_url": "https://x.com/Guilin_Chen_/status/2115257398311149930",
+          "text_zh": "称调整浪本质是磨人心态，自曝 2320 美元的以太多单开始动摇，并列出对当前币圈逻辑的判断",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "ETH"
+          ],
+          "metrics": {
+            "views": 7291,
+            "likes": 29,
+            "retweets": 1,
+            "replies": 12,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T01:40:37+00:00"
+        },
+        {
+          "rank": 14,
+          "author_name": "余烬",
+          "author_handle": "EmberCN",
+          "author_url": "https://x.com/EmberCN",
+          "tweet_url": "https://x.com/EmberCN/status/2115251024541958414",
+          "text_zh": "11 年前 ICO 了 10 万枚 ETH 的鲸鱼把 5,000 枚 ETH（约 1,159 万美元）全部转进交易所，仍剩 4.5 万枚",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "ETH"
+          ],
+          "metrics": {
+            "views": 6744,
+            "likes": 16,
+            "retweets": 0,
+            "replies": 19,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T01:15:18+00:00"
+        },
+        {
+          "rank": 15,
+          "author_name": "猫哥1314",
+          "author_handle": "yonghao131419",
+          "author_url": "https://x.com/yonghao131419",
+          "tweet_url": "https://x.com/yonghao131419/status/2115263216888766804",
+          "text_zh": "FOMC 前提出“美联储不加息不一定是利好”，结合美国经济数据讨论美股、黄金、比特币的风险",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "BTC"
+          ],
+          "metrics": {
+            "views": 6125,
+            "likes": 16,
+            "retweets": 1,
+            "replies": 13,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T02:03:45+00:00"
+        },
+        {
+          "rank": 16,
+          "author_name": "比特肥 || Bitfatty (🍀,🍀)",
+          "author_handle": "Bitfatty",
+          "author_url": "https://x.com/Bitfatty",
+          "tweet_url": "https://x.com/Bitfatty/status/2115306988804718973",
+          "text_zh": "吐槽“赌狗哪有不疯的”，称很多喊得凶的分析师其实没钱没仓位",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 6082,
+            "likes": 8,
+            "retweets": 0,
+            "replies": 1,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T04:57:41+00:00"
+        },
+        {
+          "rank": 17,
+          "author_name": "CryptoBLACK🌙◼️",
+          "author_handle": "CryptoBLACK0511",
+          "author_url": "https://x.com/CryptoBLACK0511",
+          "tweet_url": "https://x.com/CryptoBLACK0511/status/2115266202666999851",
+          "text_zh": "孙宇晨 10 天内约 5,125 万美元买入 11.85 万亿枚 PEPE（占总量 2.82%），成最大个人持有者，梳理建仓路径",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "PEPE"
+          ],
+          "metrics": {
+            "views": 5380,
+            "likes": 3,
+            "retweets": 0,
+            "replies": 3,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T02:15:37+00:00"
+        },
+        {
+          "rank": 18,
+          "author_name": "CryptoBLACK🌙◼️",
+          "author_handle": "CryptoBLACK0511",
+          "author_url": "https://x.com/CryptoBLACK0511",
+          "tweet_url": "https://x.com/CryptoBLACK0511/status/2115266510377852966",
+          "text_zh": "Robinhood 财报中预测市场收入首超加密交易收入，叠加 FOMC 与周五约 110 亿美元期权交割，提示控制杠杆",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "BTC",
+            "ETH"
+          ],
+          "metrics": {
+            "views": 5170,
+            "likes": 4,
+            "retweets": 0,
+            "replies": 2,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T02:16:50+00:00"
+        },
+        {
+          "rank": 19,
+          "author_name": "潜水观察员🇨🇳",
+          "author_handle": "connectfarm1",
+          "author_url": "https://x.com/connectfarm1",
+          "tweet_url": "https://x.com/connectfarm1/status/2115321643493175723",
+          "text_zh": "认为币圈最大优点是万众创新，新趋势由社区发起再被 VC 挖掘出圈（如铭文带出 BTC 生态），展望币圈 AI",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "BTC"
+          ],
+          "metrics": {
+            "views": 3946,
+            "likes": 22,
+            "retweets": 2,
+            "replies": 12,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-28T05:55:55+00:00"
+        },
+        {
+          "rank": 20,
+          "author_name": "BITWU.ETH 🔆",
+          "author_handle": "Bitwux",
+          "author_url": "https://x.com/Bitwux",
+          "tweet_url": "https://x.com/Bitwux/status/2115274604176666985",
+          "text_zh": "视频讲解 bitcoin:native，以及资产、私钥和硬件钱包之间的关系",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "BTC"
+          ],
+          "metrics": {
+            "views": 4306,
+            "likes": 13,
+            "retweets": 1,
+            "replies": 4,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T02:49:00+00:00"
+        }
+      ]
+    },
+    "stocks": {
+      "section": "stocks",
+      "date": "2026-10-28",
+      "generated_at": "2026-10-28T07:40:55+00:00",
+      "sample": false,
+      "items": [
+        {
+          "rank": 1,
+          "author_name": "Le Shrub🌳",
+          "author_handle": "agnostoxxx",
+          "author_url": "https://x.com/agnostoxxx",
+          "tweet_url": "https://x.com/agnostoxxx/status/2115059147070726458",
+          "text_zh": "用一张梗图总结 Anthropic 的上市文件（S-1）。正文只有一句话，主要内容在图片里，图片未查看。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [
+            "Anthropic(美股)"
+          ],
+          "metrics": {
+            "views": 201871,
+            "likes": 4611,
+            "retweets": 451,
+            "replies": 73,
+            "quotes": 45
+          },
+          "posted_at": "2026-10-27T12:32:51+00:00"
+        },
+        {
+          "rank": 2,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115088111654797531",
+          "text_zh": "美国家庭持有约42%的美股，为1990年代末以来最高，较2020年升7个百分点；ETF持股占比升至10%创新高，共同基金从23%降至15%，对冲基金仅占1%。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "美股整体(美股)"
+          ],
+          "metrics": {
+            "views": 177065,
+            "likes": 1178,
+            "retweets": 143,
+            "replies": 166,
+            "quotes": 39
+          },
+          "posted_at": "2026-10-27T14:27:56+00:00"
+        },
+        {
+          "rank": 3,
+          "author_name": "Bull Theory",
+          "author_handle": "BullTheoryio",
+          "author_url": "https://x.com/BullTheoryio",
+          "tweet_url": "https://x.com/BullTheoryio/status/2115082516784914753",
+          "text_zh": "Meta股价14天跌20%，市值蒸发4000亿美元进入熊市区间；原因包括2026年资本开支预计1350–1450亿美元、自由现金流转负、负债升至809亿美元、营业利润率从40%降至20%、大规模增发。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "META(美股)"
+          ],
+          "metrics": {
+            "views": 107628,
+            "likes": 972,
+            "retweets": 131,
+            "replies": 80,
+            "quotes": 14
+          },
+          "posted_at": "2026-10-27T14:05:42+00:00"
+        },
+        {
+          "rank": 4,
+          "author_name": "amit",
+          "author_handle": "amitisinvesting",
+          "author_url": "https://x.com/amitisinvesting",
+          "tweet_url": "https://x.com/amitisinvesting/status/2115148164055654700",
+          "text_zh": "观点长文：Meta和谷歌缺现金，只能靠增发支撑AI投入，股价因此被压制；但增发获5倍超额认购、估值处于历史低位，长期看是买入机会。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "META(美股)",
+            "GOOGL(美股)",
+            "NVDA(美股)",
+            "AMD(美股)",
+            "AMZN(美股)",
+            "MSFT(美股)"
+          ],
+          "metrics": {
+            "views": 176858,
+            "likes": 1088,
+            "retweets": 39,
+            "replies": 102,
+            "quotes": 6
+          },
+          "posted_at": "2026-10-27T18:26:34+00:00"
+        },
+        {
+          "rank": 5,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115165670136496363",
+          "text_zh": "10月以来，不含AI股的标普500跑赢标普500指数6.4个百分点，有望创单月最大差距纪录；作者认为资金正从AI股获利了结。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "标普500(美股)"
+          ],
+          "metrics": {
+            "views": 153714,
+            "likes": 819,
+            "retweets": 68,
+            "replies": 123,
+            "quotes": 18
+          },
+          "posted_at": "2026-10-27T19:36:08+00:00"
+        },
+        {
+          "rank": 6,
+          "author_name": "*Walter Bloomberg",
+          "author_handle": "DeItaone",
+          "author_url": "https://x.com/DeItaone",
+          "tweet_url": "https://x.com/DeItaone/status/2115236965318578581",
+          "text_zh": "据The Information报道，OpenAI计划采购谷歌的AI芯片，交易规模未披露。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 139400,
+            "likes": 669,
+            "retweets": 57,
+            "replies": 103,
+            "quotes": 26
+          },
+          "posted_at": "2026-10-28T00:19:26+00:00"
+        },
+        {
+          "rank": 7,
+          "author_name": "GURGAVIN",
+          "author_handle": "gurgavin",
+          "author_url": "https://x.com/gurgavin",
+          "tweet_url": "https://x.com/gurgavin/status/2115232951206129722",
+          "text_zh": "OpenAI计划采购谷歌AI芯片，以减少对Nvidia的依赖（据The Information）。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "GOOGL(美股)",
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 66526,
+            "likes": 711,
+            "retweets": 33,
+            "replies": 43,
+            "quotes": 3
+          },
+          "posted_at": "2026-10-28T00:03:29+00:00"
+        },
+        {
+          "rank": 8,
+          "author_name": "unusual_whales",
+          "author_handle": "unusual_whales",
+          "author_url": "https://x.com/unusual_whales",
+          "tweet_url": "https://x.com/unusual_whales/status/2115174082325131385",
+          "text_zh": "Robinhood营收14.2亿美元、EPS 0.51美元，均略低于预期；Visa营收121亿美元、EPS 3.48美元，小幅超预期。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "HOOD(美股)",
+            "V(美股)"
+          ],
+          "metrics": {
+            "views": 187385,
+            "likes": 502,
+            "retweets": 25,
+            "replies": 77,
+            "quotes": 15
+          },
+          "posted_at": "2026-10-27T20:09:33+00:00"
+        },
+        {
+          "rank": 9,
+          "author_name": "GURGAVIN",
+          "author_handle": "gurgavin",
+          "author_url": "https://x.com/gurgavin",
+          "tweet_url": "https://x.com/gurgavin/status/2115159570574139609",
+          "text_zh": "谷歌旗下Waymo在圣地亚哥、纳什维尔、奥兰多扩大无人驾驶服务范围。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 94058,
+            "likes": 659,
+            "retweets": 20,
+            "replies": 60,
+            "quotes": 9
+          },
+          "posted_at": "2026-10-27T19:11:54+00:00"
+        },
+        {
+          "rank": 10,
+          "author_name": "Shay Boloor",
+          "author_handle": "StockSavvyShay",
+          "author_url": "https://x.com/StockSavvyShay",
+          "tweet_url": "https://x.com/StockSavvyShay/status/2115045754561826990",
+          "text_zh": "Nvidia认购Meta增发30亿美元；增发规模扩大至250亿美元、定价$625，Meta总融资额达创纪录的980亿美元。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "NVDA(美股)",
+            "META(美股)"
+          ],
+          "metrics": {
+            "views": 58606,
+            "likes": 658,
+            "retweets": 45,
+            "replies": 34,
+            "quotes": 5
+          },
+          "posted_at": "2026-10-27T11:39:38+00:00"
+        },
+        {
+          "rank": 11,
+          "author_name": "TrendSpider",
+          "author_handle": "TrendSpider",
+          "author_url": "https://x.com/TrendSpider",
+          "tweet_url": "https://x.com/TrendSpider/status/2115137534107713667",
+          "text_zh": "一句“特斯拉来了”配技术图，暗示股价将突破。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 50052,
+            "likes": 620,
+            "retweets": 31,
+            "replies": 31,
+            "quotes": 2
+          },
+          "posted_at": "2026-10-27T17:44:20+00:00"
+        },
+        {
+          "rank": 12,
+          "author_name": "Shay Boloor",
+          "author_handle": "StockSavvyShay",
+          "author_url": "https://x.com/StockSavvyShay",
+          "tweet_url": "https://x.com/StockSavvyShay/status/2115154721866695051",
+          "text_zh": "FCC批准亚马逊收购Globalstar，亚马逊可借此进入卫星直连手机市场；作者认为加上SpaceX、AST SpaceMobile争夺频谱，这一赛道比的是谁掌控直连手机频段。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "AMZN(美股)",
+            "AAPL(美股)",
+            "SPCX(美股)",
+            "ASTS(美股)"
+          ],
+          "metrics": {
+            "views": 53761,
+            "likes": 472,
+            "retweets": 42,
+            "replies": 38,
+            "quotes": 7
+          },
+          "posted_at": "2026-10-27T18:52:38+00:00"
+        },
+        {
+          "rank": 13,
+          "author_name": "TrendSpider",
+          "author_handle": "TrendSpider",
+          "author_url": "https://x.com/TrendSpider",
+          "tweet_url": "https://x.com/TrendSpider/status/2115173947427967421",
+          "text_zh": "希捷EPS和营收均超预期，并上调业绩指引、股息提高3%，股价却下跌7.38%。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "STX(美股)"
+          ],
+          "metrics": {
+            "views": 91839,
+            "likes": 351,
+            "retweets": 40,
+            "replies": 37,
+            "quotes": 10
+          },
+          "posted_at": "2026-10-27T20:09:01+00:00"
+        },
+        {
+          "rank": 14,
+          "author_name": "zerohedge",
+          "author_handle": "zerohedge",
+          "author_url": "https://x.com/zerohedge",
+          "tweet_url": "https://x.com/zerohedge/status/2115279522438258743",
+          "text_zh": "同一天Broadcom签大单、Anthropic递交S-1、Meta启动约950亿美元融资、SpaceX与Apollo敲定400亿美元Nvidia芯片租赁，单日AI相关融资约2000亿美元。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "AVGO(美股)",
+            "META(美股)",
+            "NVDA(美股)",
+            "Anthropic(美股)",
+            "SpaceX(美股)"
+          ],
+          "metrics": {
+            "views": 72521,
+            "likes": 321,
+            "retweets": 56,
+            "replies": 40,
+            "quotes": 8
+          },
+          "posted_at": "2026-10-28T03:08:32+00:00"
+        },
+        {
+          "rank": 15,
+          "author_name": "Evan",
+          "author_handle": "StockMKTNewz",
+          "author_url": "https://x.com/StockMKTNewz",
+          "tweet_url": "https://x.com/StockMKTNewz/status/2115037177901932798",
+          "text_zh": "SoFi营收14亿美元（预期12.5亿），调整后EPS 0.18美元（预期0.16），财报后股价初步上涨6%。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "SOFI(美股)"
+          ],
+          "metrics": {
+            "views": 54268,
+            "likes": 382,
+            "retweets": 39,
+            "replies": 36,
+            "quotes": 10
+          },
+          "posted_at": "2026-10-27T11:05:33+00:00"
+        },
+        {
+          "rank": 16,
+          "author_name": "Heisenberg",
+          "author_handle": "Mr_Derivatives",
+          "author_url": "https://x.com/Mr_Derivatives",
+          "tweet_url": "https://x.com/Mr_Derivatives/status/2115159607865934043",
+          "text_zh": "谷歌终于反弹，作者表示“总算能松口气”。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 43127,
+            "likes": 422,
+            "retweets": 15,
+            "replies": 62,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-27T19:12:02+00:00"
+        },
+        {
+          "rank": 17,
+          "author_name": "NoLimit",
+          "author_handle": "NoLimitGains",
+          "author_url": "https://x.com/NoLimitGains",
+          "tweet_url": "https://x.com/NoLimitGains/status/2115049616785969618",
+          "text_zh": "Applied Digital内部人士自2023年5月以来首次买入自家股票：总裁买入30万股（566万美元），CEO买入55,803股（101万美元）；股价处于一年低点。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "APLD(美股)"
+          ],
+          "metrics": {
+            "views": 152501,
+            "likes": 297,
+            "retweets": 21,
+            "replies": 25,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-27T11:54:59+00:00"
+        },
+        {
+          "rank": 18,
+          "author_name": "Kalshi Finance",
+          "author_handle": "Kalshi_Finance",
+          "author_url": "https://x.com/Kalshi_Finance",
+          "tweet_url": "https://x.com/Kalshi_Finance/status/2115063398471733658",
+          "text_zh": "快讯：Meta大额增发定价$625/股，Nvidia出资30亿美元。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "META(美股)",
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 37420,
+            "likes": 419,
+            "retweets": 20,
+            "replies": 13,
+            "quotes": 6
+          },
+          "posted_at": "2026-10-27T12:49:44+00:00"
+        },
+        {
+          "rank": 19,
+          "author_name": "Barchart",
+          "author_handle": "Barchart",
+          "author_url": "https://x.com/Barchart",
+          "tweet_url": "https://x.com/Barchart/status/2115302656575254964",
+          "text_zh": "Jim Cramer刚警告投资者远离AI股，AI股便冲向历史新高，调侃“反向Cramer”。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [
+            "AI板块(美股)"
+          ],
+          "metrics": {
+            "views": 33230,
+            "likes": 333,
+            "retweets": 29,
+            "replies": 27,
+            "quotes": 15
+          },
+          "posted_at": "2026-10-28T04:40:28+00:00"
+        },
+        {
+          "rank": 20,
+          "author_name": "Heisenberg",
+          "author_handle": "Mr_Derivatives",
+          "author_url": "https://x.com/Mr_Derivatives",
+          "tweet_url": "https://x.com/Mr_Derivatives/status/2115239472006898009",
+          "text_zh": "Robinhood过去9次财报中有8次财报后收跌；作者称若明天仍收不红，它是最不适合财报日短线做多的股票之一。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "HOOD(美股)"
+          ],
+          "metrics": {
+            "views": 44419,
+            "likes": 388,
+            "retweets": 9,
+            "replies": 46,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-28T00:29:24+00:00"
+        }
+      ]
+    }
+  }
+}

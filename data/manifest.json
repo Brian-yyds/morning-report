@@ -1,0 +1,24 @@
+{
+  "source": "real",
+  "sources": {
+    "ai": "real",
+    "crypto": "real",
+    "stocks": "real"
+  },
+  "dates": [
+    {
+      "date": "2026-10-28",
+      "sections": [
+        "ai",
+        "crypto",
+        "stocks"
+      ],
+      "sources": {
+        "ai": "real",
+        "crypto": "real",
+        "stocks": "real"
+      },
+      "sample": false
+    }
+  ]
+}
