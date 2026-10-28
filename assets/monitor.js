@@ -4,9 +4,11 @@
   const STALE_SEC = 1800;
   const THEME_KEY = 'morning-report-theme';
   const TZ = 'Asia/Shanghai';
+  /* Rank cards show ~3 rows via CSS; render more so user can scroll. */
+  const RANK_RENDER = 12;
 
   const $ = (id) => document.getElementById(id);
-  let state = { data: null, rank: 'up', timer: null, fetchError: false };
+  let state = { data: null, timer: null, fetchError: false };
 
   function applyTheme(mode) {
     const root = document.documentElement;
@@ -17,24 +19,39 @@
     if (sel) sel.value = mode || 'system';
   }
 
-  function fmtNum(n, digits = 2) {
+  /** Prices / small numbers: plain digits, no Chinese units. */
+  function fmtPrice(n) {
     if (n == null || Number.isNaN(Number(n))) return '—';
     const v = Number(n);
     const abs = Math.abs(v);
     const sign = v < 0 ? '-' : '';
-    if (abs >= 1e8) return sign + (abs / 1e8).toFixed(2) + '亿';
-    if (abs >= 1e4) return sign + (abs / 1e4).toFixed(abs >= 1e6 ? 1 : 2) + '万';
-    if (abs >= 1000) return sign + abs.toLocaleString('zh-CN', { maximumFractionDigits: 2 });
-    if (abs >= 1) return sign + abs.toFixed(digits);
+    if (abs >= 1000) {
+      return sign + abs.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+    if (abs >= 1) return sign + abs.toFixed(2);
     if (abs >= 0.01) return sign + abs.toFixed(4);
+    if (abs === 0) return '0';
+    return sign + abs.toPrecision(3);
+  }
+
+  /** Large volumes / caps: K / M / B only — never 万/亿. */
+  function fmtVol(n, digits = 2) {
+    if (n == null || Number.isNaN(Number(n))) return '—';
+    const v = Number(n);
+    const abs = Math.abs(v);
+    const sign = v < 0 ? '-' : '';
+    if (abs >= 1e9) return sign + (abs / 1e9).toFixed(digits) + 'B';
+    if (abs >= 1e6) return sign + (abs / 1e6).toFixed(digits) + 'M';
+    if (abs >= 1e3) return sign + (abs / 1e3).toFixed(abs >= 1e4 ? 1 : digits) + 'K';
+    if (abs >= 1) return sign + abs.toFixed(Math.min(digits, 2));
+    if (abs === 0) return '0';
     return sign + abs.toPrecision(3);
   }
 
   function fmtPct(n) {
     if (n == null || Number.isNaN(Number(n))) return '—';
     const v = Number(n);
-    const s = (v > 0 ? '+' : '') + v.toFixed(2) + '%';
-    return s;
+    return (v > 0 ? '+' : '') + v.toFixed(2) + '%';
   }
 
   function pctClass(n) {
@@ -93,6 +110,11 @@
     return `https://gmgn.ai/${encodeURIComponent(chain)}/token/${encodeURIComponent(address)}`;
   }
 
+  function shortSym(symbol) {
+    if (!symbol) return '—';
+    return String(symbol).replace(/USDT$/i, '');
+  }
+
   function el(tag, attrs = {}, children = []) {
     const node = document.createElement(tag);
     for (const [k, v] of Object.entries(attrs)) {
@@ -126,10 +148,9 @@
     for (const [label, info] of items) {
       const ok = !!(info && info.ok);
       const age = info?.age_seconds;
-      let cls = ok ? 'ok' : 'bad';
       let tip = ok ? '正常' : '异常/过旧';
       if (age != null) tip += ` · ${Math.round(age)}s 前`;
-      box.appendChild(el('span', { className: `health-chip ${cls}`, title: tip }, [
+      box.appendChild(el('span', { className: `health-chip ${ok ? 'ok' : 'bad'}`, title: tip }, [
         el('span', { className: 'dot', 'aria-hidden': 'true' }),
         `${label}${ok ? '' : ' ⚠'}`,
       ]));
@@ -164,13 +185,16 @@
       const chg = item.change ?? item.change24h;
       const href = binanceUrl(item.symbol);
       const title = href
-        ? el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: item.symbol || '—' })
-        : el('span', { text: item.symbol || '—' });
+        ? el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: shortSym(item.symbol) })
+        : el('span', { className: 'sym', text: shortSym(item.symbol) });
       return el('div', { className: 'focus-card' }, [
         title,
-        el('div', { className: 'focus-price', text: fmtNum(item.price) }),
+        el('div', { className: 'focus-price', text: fmtPrice(item.price) }),
         el('div', { className: `focus-chg ${pctClass(chg)}`, text: fmtPct(chg) }),
-        el('div', { className: 'focus-sub', text: item.change24h != null ? `24h ${fmtPct(item.change24h)}` : (item.fresh === false ? '价格采样偏旧' : '窗口涨跌') }),
+        el('div', {
+          className: 'focus-sub',
+          text: item.change24h != null ? `24h ${fmtPct(item.change24h)}` : (item.fresh === false ? '采样偏旧' : '窗口涨跌'),
+        }),
       ]);
     }));
   }
@@ -187,8 +211,8 @@
       const up = String(ev.direction || '').includes('涨');
       const href = binanceUrl(ev.symbol);
       const sym = href
-        ? el('a', { className: 'sym', href, target: '_blank', rel: 'noopener noreferrer', text: ev.symbol || '—' })
-        : el('span', { className: 'sym', text: ev.symbol || '—' });
+        ? el('a', { className: 'sym', href, target: '_blank', rel: 'noopener noreferrer', text: shortSym(ev.symbol) })
+        : el('span', { className: 'sym', text: shortSym(ev.symbol) });
       return el('div', { className: 'alert-row' }, [
         el('div', { className: 'when', text: fmtTime(ev.time) }),
         el('div', { className: 'main' }, [
@@ -200,10 +224,52 @@
         ]),
         el('div', { className: `alert-side ${pctClass(ev.change)}` }, [
           el('div', { text: fmtPct(ev.change) }),
-          el('div', { className: 'meta', style: 'font-weight:500', text: fmtNum(ev.price) }),
+          el('div', { className: 'meta', text: fmtPrice(ev.price) }),
         ]),
       ]);
     }));
+  }
+
+  function tokenCard(tok, featuredLabel) {
+    if (!tok) return null;
+    const href = gmgnUrl(tok.chain, tok.address);
+    const logo = safeHttp(tok.logo);
+    const title = [];
+    if (tok.chain) title.push(el('span', { className: 'badge chain', text: tok.chain }));
+    if (logo) title.push(el('img', { className: 'token-logo', src: logo, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
+    const name = tok.symbol || tok.name || '—';
+    title.push(href
+      ? el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: name })
+      : el('span', { text: name }));
+    if (featuredLabel) title.push(el('span', { className: 'badge tag', text: featuredLabel }));
+    const holders = tok.holder_count != null ? fmtVol(tok.holder_count, 1) : null;
+    return el('div', { className: `gmgn-card${featuredLabel ? ' featured' : ''}` }, [
+      el('div', { className: 'title' }, title),
+      el('div', { className: 'stats' }, [
+        el('div', {}, [el('strong', { text: fmtVol(tok.volume, 2) }), '成交额']),
+        el('div', {}, [el('strong', { text: fmtVol(tok.market_cap, 2) }), '市值']),
+        el('div', {}, [el('strong', { text: fmtVol(tok.smart_degen_count, 0) }), 'Smart']),
+        el('div', {}, [el('strong', { text: holders || fmtVol(tok.renowned_count, 0) }), holders ? '持有人' : 'KOL']),
+      ]),
+    ]);
+  }
+
+  function renderGmgn(data) {
+    const g = data?.gmgn || {};
+    $('gmgn-meta').textContent = (g.chains || []).length ? (g.chains || []).join(' / ') : '—';
+    const box = $('gmgn-leaders');
+    const cards = [];
+    const hot = tokenCard(g.hot, '热搜');
+    const vol = tokenCard(g.volume_leader, '放量');
+    if (hot) cards.push(hot);
+    if (vol && g.volume_leader?.address !== g.hot?.address) cards.push(vol);
+    for (const t of (g.hot_leaders || []).slice(0, 5)) {
+      if (t?.address && t.address !== g.hot?.address && t.address !== g.volume_leader?.address) {
+        const c = tokenCard(t);
+        if (c) cards.push(c);
+      }
+    }
+    box.replaceChildren(...(cards.length ? cards : [emptyBox('暂无热搜/放量')]));
   }
 
   function renderGmgnAlerts(data) {
@@ -232,117 +298,109 @@
           el('div', { className: 'meta', text: ev.rule || '' }),
         ]),
         el('div', { className: 'alert-side' }, [
-          el('div', { text: tok.volume != null ? `量 ${fmtNum(tok.volume, 1)}` : '—' }),
-          el('div', { className: 'meta', style: 'font-weight:500', text: tok.market_cap != null ? `市值 ${fmtNum(tok.market_cap, 1)}` : '' }),
+          el('div', { text: tok.volume != null ? fmtVol(tok.volume, 1) : '—' }),
+          el('div', { className: 'meta', text: tok.market_cap != null ? fmtVol(tok.market_cap, 1) : '' }),
         ]),
+      ]);
+    }));
+  }
+
+  function renderRankList(targetId, rows, opts = {}) {
+    const box = $(targetId);
+    if (!rows.length) {
+      box.replaceChildren(emptyBox('暂无'));
+      return;
+    }
+    const slice = rows.slice(0, RANK_RENDER);
+    box.replaceChildren(...slice.map((r, i) => {
+      const href = binanceUrl(r.symbol);
+      const chg = opts.chgKey ? r[opts.chgKey] : r.change;
+      const sym = href
+        ? el('a', { className: 'sym', href, target: '_blank', rel: 'noopener noreferrer', text: shortSym(r.symbol) })
+        : el('span', { className: 'sym', text: shortSym(r.symbol) });
+      const label = opts.tag ? el('span', { className: 'tag-mini', text: opts.tag(r, i) }) : null;
+      const symWrap = label ? el('span', { style: 'display:flex;align-items:center;min-width:0' }, [sym, label]) : sym;
+      return el('div', { className: 'rank-row' }, [
+        el('span', { className: 'idx', text: String(i + 1).padStart(2, '0') }),
+        symWrap,
+        el('span', { className: `chg ${pctClass(chg)}`, text: fmtPct(chg) }),
+        el('span', { className: 'vol', text: fmtVol(r.quote24h != null ? r.quote24h : r.price, 1) }),
       ]);
     }));
   }
 
   function renderRankings(data) {
-    const key = state.rank;
-    const rows = data?.rankings?.[key] || [];
-    const box = $('rank-table');
-    if (!rows.length) {
-      box.replaceChildren(emptyBox('暂无排行数据'));
-      return;
-    }
-    const table = el('table');
-    const thead = el('thead', {}, [
-      el('tr', {}, ['#', '合约', '价格', '窗口%', '24h%', 'OI%', '成交额24h'].map((t) => el('th', { text: t }))),
-    ]);
-    const tbody = el('tbody');
-    rows.forEach((r, i) => {
-      const href = binanceUrl(r.symbol);
-      const sym = href
-        ? el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: r.symbol || '—' })
-        : el('span', { text: r.symbol || '—' });
-      tbody.appendChild(el('tr', {}, [
-        el('td', { text: String(i + 1).padStart(2, '0') }),
-        el('td', {}, [sym]),
-        el('td', { text: fmtNum(r.price) }),
-        el('td', { className: pctClass(r.change), text: fmtPct(r.change) }),
-        el('td', { className: pctClass(r.change24h), text: fmtPct(r.change24h) }),
-        el('td', { className: pctClass(r.oi_change), text: fmtPct(r.oi_change) }),
-        el('td', { text: fmtNum(r.quote24h, 1) }),
-      ]));
+    const up = data?.rankings?.up || [];
+    const down = data?.rankings?.down || [];
+    const oiUp = data?.rankings?.oi_up || [];
+    const oiDown = data?.rankings?.oi_down || [];
+    /* OI 异动：增在前，减在后，带小标签 */
+    const oiMerged = [
+      ...oiUp.slice(0, 6).map((r) => ({ ...r, _oiTag: '增' })),
+      ...oiDown.slice(0, 6).map((r) => ({ ...r, _oiTag: '减' })),
+    ];
+    renderRankList('rank-oi', oiMerged, {
+      chgKey: 'oi_change',
+      tag: (r) => r._oiTag,
     });
-    table.append(thead, tbody);
-    box.replaceChildren(table);
+    renderRankList('rank-up', up, { chgKey: 'change' });
+    renderRankList('rank-down', down, { chgKey: 'change' });
   }
 
-  function tokenCard(tok, featuredLabel) {
-    if (!tok) return null;
-    const href = gmgnUrl(tok.chain, tok.address);
-    const logo = safeHttp(tok.logo);
-    const title = [];
-    if (tok.chain) title.push(el('span', { className: 'badge chain', text: tok.chain }));
-    if (logo) title.push(el('img', { className: 'token-logo', src: logo, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
-    const name = tok.symbol || tok.name || '—';
-    title.push(href
-      ? el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: name })
-      : el('span', { text: name }));
-    if (featuredLabel) title.push(el('span', { className: 'badge', text: featuredLabel, style: 'background:var(--hot-bg);color:var(--hot-text)' }));
-    return el('div', { className: `gmgn-card${featuredLabel ? ' featured' : ''}` }, [
-      el('div', { className: 'title' }, title),
-      el('div', { className: 'stats' }, [
-        el('div', {}, [el('strong', { text: fmtNum(tok.volume, 1) }), '成交额']),
-        el('div', {}, [el('strong', { text: fmtNum(tok.market_cap, 1) }), '市值']),
-        el('div', {}, [el('strong', { text: fmtNum(tok.smart_degen_count, 0) }), 'Smart']),
-        el('div', {}, [el('strong', { text: fmtNum(tok.renowned_count, 0) }), 'KOL']),
-      ]),
-    ]);
-  }
-
-  function renderGmgn(data) {
-    const g = data?.gmgn || {};
-    const box = $('gmgn-leaders');
-    $('gmgn-meta').textContent = (g.chains || []).length ? `链：${(g.chains || []).join(' / ')}` : '—';
-    const cards = [];
-    const hot = tokenCard(g.hot, '热门');
-    const vol = tokenCard(g.volume_leader, '放量');
-    if (hot) cards.push(hot);
-    if (vol && g.volume_leader?.address !== g.hot?.address) cards.push(vol);
-    for (const t of g.hot_leaders || []) {
-      if (t?.address && t.address !== g.hot?.address && t.address !== g.volume_leader?.address) {
-        const c = tokenCard(t);
-        if (c) cards.push(c);
-      }
-    }
-    box.replaceChildren(...(cards.length ? cards : [emptyBox('暂无 GMGN 热度')]));
+  function pickLatestDay(days) {
+    if (!days?.length) return null;
+    /* Prefer last entry (usually newest / today). */
+    return days[days.length - 1];
   }
 
   function renderVolume(data) {
-    const days = data?.market_volume?.days || [];
-    $('volume-meta').textContent = days.length
-      ? `${days.length} 天 · ${data.market_volume.symbol_count || '—'} 标的`
-      : '—';
-    const box = $('volume-days');
-    if (!days.length) {
+    const mv = data?.market_volume || {};
+    const days = mv.days || [];
+    const day = pickLatestDay(days);
+    const box = $('volume-box');
+    if (!day) {
+      $('volume-meta').textContent = '—';
       box.replaceChildren(emptyBox('暂无成交额数据'));
       return;
     }
-    const maxQ = Math.max(...days.map((d) => Number(d.quote) || 0), 1);
-    box.replaceChildren(...[...days].reverse().map((d) => {
-      const chips = (d.top10 || []).slice(0, 10).map((t) => {
-        const href = binanceUrl(t.symbol);
-        const label = `${t.symbol?.replace(/USDT$/, '') || '?'} ${fmtNum(t.quote, 1)}`;
-        return href
-          ? el('a', { href, target: '_blank', rel: 'noopener noreferrer' }, [el('span', {}, [label])])
-          : el('span', { text: label });
-      });
-      const bar = el('div', {
-        style: `height:4px;border-radius:2px;background:var(--accent);opacity:.55;width:${Math.max(4, (Number(d.quote) / maxQ) * 100)}%;margin-bottom:8px`,
-      });
-      return el('div', { className: 'volume-day' }, [
-        el('div', { className: 'vd-head' }, [
-          el('span', { text: d.date || '—' }),
-          el('strong', { text: fmtNum(d.quote, 1) }),
+    $('volume-meta').textContent = [
+      day.date || '',
+      mv.symbol_count != null ? `${mv.symbol_count} 标的` : '',
+      days.length > 1 ? `${days.length} 日样本` : '',
+    ].filter(Boolean).join(' · ');
+
+    const top10 = (day.top10 || []).slice(0, 10);
+    const maxQ = Math.max(...top10.map((t) => Number(t.quote) || 0), 1);
+
+    const totalBlock = el('div', { className: 'volume-total' }, [
+      el('div', {}, [
+        el('div', { className: 'label', text: '当日总额' }),
+        el('div', { className: 'sub', text: day.top10_quote != null ? `Top10 ${fmtVol(day.top10_quote, 2)}` : '' }),
+      ]),
+      el('div', { className: 'value', text: fmtVol(day.quote, 2) }),
+    ]);
+
+    const bars = el('div', { className: 'volume-top' }, top10.length ? top10.map((t) => {
+      const href = binanceUrl(t.symbol);
+      const pct = Math.max(4, ((Number(t.quote) || 0) / maxQ) * 100);
+      const sym = href
+        ? el('a', { className: 'sym', href, target: '_blank', rel: 'noopener noreferrer', text: shortSym(t.symbol) })
+        : el('span', { className: 'sym', text: shortSym(t.symbol) });
+      return el('div', { className: 'vol-bar-row' }, [
+        sym,
+        el('div', { className: 'vol-bar-track' }, [
+          el('div', { className: 'vol-bar-fill', style: `width:${pct}%` }),
         ]),
-        bar,
-        el('div', { className: 'volume-chips' }, chips),
+        el('span', { className: 'amt', text: fmtVol(t.quote, 2) }),
       ]);
-    }));
+    }) : [emptyBox('暂无 Top10')]);
+
+    /* Top10 above, total below — as user asked */
+    box.replaceChildren(
+      el('div', { className: 'gmgn-subhead', text: '当日 Top10' }),
+      bars,
+      totalBlock,
+    );
   }
 
   function renderAll(data) {
@@ -352,9 +410,9 @@
     renderStale(data);
     renderFocus(data);
     renderSpikes(data);
+    renderGmgn(data);
     renderGmgnAlerts(data);
     renderRankings(data);
-    renderGmgn(data);
     renderVolume(data);
     const note = $('refresh-note');
     if (state.fetchError) {
@@ -380,12 +438,14 @@
         renderAll(state.data);
       } else {
         $('last-updated').textContent = '—';
-        $('focus-cards').replaceChildren(emptyBox('暂无数据'));
-        $('spike-list').replaceChildren(emptyBox('暂无数据'));
-        $('gmgn-alert-list').replaceChildren(emptyBox('暂无数据'));
-        $('rank-table').replaceChildren(emptyBox('暂无数据'));
-        $('gmgn-leaders').replaceChildren(emptyBox('暂无数据'));
-        $('volume-days').replaceChildren(emptyBox('暂无数据'));
+        $('focus-cards')?.replaceChildren(emptyBox('暂无数据'));
+        $('spike-list')?.replaceChildren(emptyBox('暂无数据'));
+        $('gmgn-leaders')?.replaceChildren(emptyBox('暂无数据'));
+        $('gmgn-alert-list')?.replaceChildren(emptyBox('暂无数据'));
+        $('rank-oi')?.replaceChildren(emptyBox('暂无数据'));
+        $('rank-up')?.replaceChildren(emptyBox('暂无数据'));
+        $('rank-down')?.replaceChildren(emptyBox('暂无数据'));
+        $('volume-box')?.replaceChildren(emptyBox('暂无数据'));
         const note = $('refresh-note');
         note.hidden = false;
         note.textContent = isManual ? '加载失败' : '暂无数据或加载失败';
@@ -401,17 +461,6 @@
     }, REFRESH_MS);
   }
 
-  function initRankTabs() {
-    const tabs = $('rank-tabs');
-    tabs?.addEventListener('click', (e) => {
-      const btn = e.target.closest('button[data-rank]');
-      if (!btn) return;
-      state.rank = btn.dataset.rank;
-      tabs.querySelectorAll('button').forEach((b) => b.setAttribute('aria-selected', String(b === btn)));
-      if (state.data) renderRankings(state.data);
-    });
-  }
-
   function init() {
     applyTheme(localStorage.getItem(THEME_KEY) || 'system');
     $('theme-select')?.addEventListener('change', (e) => applyTheme(e.target.value));
@@ -419,7 +468,6 @@
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'visible') load();
     });
-    initRankTabs();
     load(true);
     schedule();
   }

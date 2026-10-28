@@ -45,43 +45,70 @@
 
   <main class="monitor-main" id="monitor-main" tabindex="-1">
     <div id="stale-banner" class="stale-banner" role="status" hidden></div>
+
     <section class="focus-strip" aria-labelledby="focus-heading">
-      <div class="section-head"><h2 id="focus-heading">自选聚焦</h2><span class="muted" id="focus-meta">—</span></div>
+      <div class="section-head tight">
+        <h2 id="focus-heading">自选聚焦</h2>
+        <span class="muted" id="focus-meta">—</span>
+      </div>
       <div id="focus-cards" class="focus-cards"></div>
     </section>
 
-    <section class="alerts-grid" aria-label="警报">
-      <div class="panel alert-panel">
-        <div class="section-head"><h2>急涨急跌</h2><span class="muted" id="spike-count">0</span></div>
-        <div id="spike-list" class="alert-list"></div>
+    <section class="primary-grid" aria-label="核心警报">
+      <div class="panel alert-panel primary-panel">
+        <div class="section-head">
+          <h2>15分钟急涨急跌</h2>
+          <span class="muted" id="spike-count">0</span>
+        </div>
+        <div id="spike-list" class="alert-list spike-list"></div>
       </div>
-      <div class="panel alert-panel">
-        <div class="section-head"><h2>GMGN 警报</h2><span class="muted" id="gmgn-alert-count">0</span></div>
-        <div id="gmgn-alert-list" class="alert-list"></div>
-      </div>
-    </section>
-
-    <section class="panel rankings-panel" aria-labelledby="rank-heading">
-      <div class="section-head">
-        <h2 id="rank-heading">市场排行</h2>
-        <div class="segmented" id="rank-tabs" role="tablist" aria-label="排行类型">
-          <button type="button" role="tab" data-rank="up" aria-selected="true">涨幅</button>
-          <button type="button" role="tab" data-rank="down" aria-selected="false">跌幅</button>
-          <button type="button" role="tab" data-rank="oi_up" aria-selected="false">OI 增</button>
-          <button type="button" role="tab" data-rank="oi_down" aria-selected="false">OI 减</button>
+      <div class="panel alert-panel primary-panel gmgn-panel">
+        <div class="section-head">
+          <h2>GMGN 监控</h2>
+          <span class="muted" id="gmgn-meta">—</span>
+        </div>
+        <div class="gmgn-body">
+          <div class="gmgn-subhead">热搜 / 放量</div>
+          <div id="gmgn-leaders" class="gmgn-leaders"></div>
+          <div class="gmgn-subhead row-between">
+            <span>GMGN 警报</span>
+            <span class="muted" id="gmgn-alert-count">0</span>
+          </div>
+          <div id="gmgn-alert-list" class="alert-list gmgn-alert-list"></div>
         </div>
       </div>
-      <div id="rank-table" class="rank-table" role="tabpanel"></div>
     </section>
 
-    <section class="panel" aria-labelledby="gmgn-heading">
-      <div class="section-head"><h2 id="gmgn-heading">GMGN 热度</h2><span class="muted" id="gmgn-meta">—</span></div>
-      <div id="gmgn-leaders" class="gmgn-grid"></div>
+    <section class="rank-grid" aria-label="排行榜">
+      <div class="panel rank-card">
+        <div class="section-head tight">
+          <h2>OI 异动</h2>
+          <span class="muted">Top</span>
+        </div>
+        <div id="rank-oi" class="rank-scroll"></div>
+      </div>
+      <div class="panel rank-card">
+        <div class="section-head tight">
+          <h2>上涨榜</h2>
+          <span class="muted">Top</span>
+        </div>
+        <div id="rank-up" class="rank-scroll"></div>
+      </div>
+      <div class="panel rank-card">
+        <div class="section-head tight">
+          <h2>下跌榜</h2>
+          <span class="muted">Top</span>
+        </div>
+        <div id="rank-down" class="rank-scroll"></div>
+      </div>
     </section>
 
-    <section class="panel" aria-labelledby="volume-heading">
-      <div class="section-head"><h2 id="volume-heading">成交额概览</h2><span class="muted" id="volume-meta">—</span></div>
-      <div id="volume-days" class="volume-days"></div>
+    <section class="panel volume-panel" aria-labelledby="volume-heading">
+      <div class="section-head">
+        <h2 id="volume-heading">成交额</h2>
+        <span class="muted" id="volume-meta">—</span>
+      </div>
+      <div id="volume-box" class="volume-box"></div>
     </section>
   </main>
 
