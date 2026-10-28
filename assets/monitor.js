@@ -1,6 +1,6 @@
 (() => {
   const DATA_URL = './monitor/latest.json';
-  const ASSET_V = '20261029a';
+  const ASSET_V = '20261029b';
   const REFRESH_MS = 60000;
   const STALE_SEC = 1800;
   const THEME_KEY = 'morning-report-theme';
@@ -183,7 +183,7 @@
       return;
     }
     box.replaceChildren(...list.map((item) => {
-      /* 主涨跌优先用窗口 change，没有再用 change24h；禁止用「采样偏旧」顶替涨跌幅 */
+      /* 主涨跌优先用窗口 change，没有再用 change24h；禁止用过期提示顶替涨跌幅 */
       const chg = item.change != null ? item.change : item.change24h;
       const cardClass = `focus-card${chg == null ? '' : (Number(chg) >= 0 ? ' is-up' : ' is-down')}`;
       const href = binanceUrl(item.symbol);
