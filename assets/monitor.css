@@ -1,13 +1,22 @@
 /* Market monitor — dense VI, glanceable hierarchy */
 
+.monitor-page {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
 .monitor-page .topbar {
   --topbar-height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .monitor-page .footer {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .monitor-tools { flex-wrap: wrap; gap: 10px 16px; }
 .health-strip { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
@@ -22,12 +31,12 @@
 .refresh-note { font-size: 11px; }
 
 .monitor-main {
-  padding: 8px 10px 24px;
+  padding: 6px 8px 20px;
   display: grid;
   gap: 8px;
   width: 100%;
-  max-width: none;
-  margin: 0;
+  max-width: none !important;
+  margin: 0 !important;
   box-sizing: border-box;
 }
 

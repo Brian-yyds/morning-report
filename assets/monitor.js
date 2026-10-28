@@ -1,5 +1,6 @@
 (() => {
   const DATA_URL = './monitor/latest.json';
+  const ASSET_V = '20261029a';
   const REFRESH_MS = 60000;
   const STALE_SEC = 1800;
   const THEME_KEY = 'morning-report-theme';
@@ -236,14 +237,17 @@
   /** 已报警代币排行：上游已取消热搜/成交第一，主列表用 gmgn_alerts */
   function renderGmgnAlerts(data) {
     const g = data?.gmgn || {};
-    $('gmgn-meta').textContent = (g.chains || []).length ? (g.chains || []).join(' / ') : '—';
+    const meta = $('gmgn-meta');
+    if (meta) meta.textContent = (g.chains || []).length ? (g.chains || []).join(' / ') : '—';
     const list = [...(data?.gmgn_alerts || [])].sort((a, b) => {
       const ta = Math.max(Number(a.last_seen) || 0, Number(a.triggered) || 0);
       const tb = Math.max(Number(b.last_seen) || 0, Number(b.triggered) || 0);
       return tb - ta;
     });
-    $('gmgn-alert-count').textContent = `${list.length} 条`;
+    const countEl = $('gmgn-alert-count');
+    if (countEl) countEl.textContent = `${list.length} 条`;
     const box = $('gmgn-alert-list');
+    if (!box) return;
     if (!list.length) {
       box.replaceChildren(emptyBox('暂无已报警代币'));
       return;
