@@ -1,6 +1,6 @@
 (() => {
   const DATA_URL = './monitor/latest.json';
-  const ASSET_V = '20261029b';
+  const ASSET_V = '20261029c';
   const REFRESH_MS = 60000;
   const STALE_SEC = 1800;
   const THEME_KEY = 'morning-report-theme';
@@ -234,55 +234,63 @@
     }));
   }
 
-  /** 已报警代币排行：上游已取消热搜/成交第一，主列表用 gmgn_alerts */
+  /** 十日报警榜：来自采集端 gmgn.watch_ranking.rows（近1小时成交额排序） */
   function renderGmgnAlerts(data) {
     const g = data?.gmgn || {};
+    const wr = g.watch_ranking || {};
     const meta = $('gmgn-meta');
-    if (meta) meta.textContent = (g.chains || []).length ? (g.chains || []).join(' / ') : '—';
-    const list = [...(data?.gmgn_alerts || [])].sort((a, b) => {
-      const ta = Math.max(Number(a.last_seen) || 0, Number(a.triggered) || 0);
-      const tb = Math.max(Number(b.last_seen) || 0, Number(b.triggered) || 0);
-      return tb - ta;
-    });
+    if (meta) {
+      const bits = [];
+      if (wr.window_days != null) bits.push(`${wr.window_days}日窗口`);
+      if (wr.volume_window) bits.push(`成交额 ${wr.volume_window}`);
+      if ((g.chains || []).length) bits.push((g.chains || []).join('/'));
+      else if (!bits.length) bits.push('—');
+      meta.textContent = bits.join(' · ');
+    }
+    const list = [...(wr.rows || [])];
     const countEl = $('gmgn-alert-count');
-    if (countEl) countEl.textContent = `${list.length} 条`;
+    if (countEl) {
+      const total = wr.total != null ? wr.total : list.length;
+      countEl.textContent = list.length ? `Top ${list.length}${total > list.length ? ` / ${total}` : ''}` : '0';
+    }
     const box = $('gmgn-alert-list');
     if (!box) return;
     if (!list.length) {
-      box.replaceChildren(emptyBox('暂无已报警代币'));
+      box.replaceChildren(emptyBox('暂无十日报警榜数据'));
       return;
     }
-    box.replaceChildren(...list.map((ev, i) => {
-      const tok = ev.token || {};
-      const href = gmgnUrl(ev.chain || tok.chain, ev.address || tok.address);
+    box.replaceChildren(...list.map((row, i) => {
+      const tok = row.token || {};
+      const chain = row.chain || tok.chain;
+      const address = row.address || tok.address;
+      const href = gmgnUrl(chain, address);
       const logo = safeHttp(tok.logo);
       const titleChildren = [
         el('span', { className: 'idx-mini', text: String(i + 1).padStart(2, '0') }),
       ];
-      if (ev.chain || tok.chain) {
-        titleChildren.push(el('span', { className: 'badge chain', text: ev.chain || tok.chain }));
-      }
+      if (chain) titleChildren.push(el('span', { className: 'badge chain', text: chain }));
       if (logo) {
         titleChildren.push(el('img', {
           className: 'token-logo', src: logo, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer',
         }));
       }
-      const name = tok.symbol || tok.name || (ev.address || '').slice(0, 8) || '—';
+      const name = tok.symbol || tok.name || (address || '').slice(0, 8) || '—';
       titleChildren.push(href
         ? el('a', { className: 'sym', href, target: '_blank', rel: 'noopener noreferrer', text: name })
         : el('span', { className: 'sym', text: name }));
-      const metaBits = [ev.rule || ''];
-      if (tok.holder_count != null) metaBits.push(`持有人 ${fmtVol(tok.holder_count, 1)}`);
-      if (tok.smart_degen_count != null) metaBits.push(`Smart ${fmtVol(tok.smart_degen_count, 0)}`);
+      const metaBits = [];
+      if (row.first_alert != null) metaBits.push(`首次 ${fmtTime(row.first_alert, true)}`);
+      if (row.expires_at != null) metaBits.push(`到期 ${fmtTime(row.expires_at, true)}`);
+      if (tok.market_cap != null) metaBits.push(`市值 ${fmtVol(tok.market_cap, 1)}`);
       return el('div', { className: 'alert-row gmgn-rank-row' }, [
-        el('div', { className: 'when', text: fmtTime(ev.triggered || ev.last_seen, true) }),
+        el('div', { className: 'when', text: `#${i + 1}` }),
         el('div', { className: 'main' }, [
           el('div', { className: 'title-line' }, titleChildren),
-          el('div', { className: 'meta', text: metaBits.filter(Boolean).join(' · ') }),
+          el('div', { className: 'meta', text: metaBits.join(' · ') }),
         ]),
         el('div', { className: 'alert-side' }, [
-          el('div', { text: tok.volume != null ? fmtVol(tok.volume, 1) : '—' }),
-          el('div', { className: 'meta', text: tok.market_cap != null ? `市值 ${fmtVol(tok.market_cap, 1)}` : '' }),
+          el('div', { text: row.volume_1h != null ? fmtVol(row.volume_1h, 1) : '—' }),
+          el('div', { className: 'meta', text: '近1h成交额' }),
         ]),
       ]);
     }));
