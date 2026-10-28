@@ -177,7 +177,7 @@
 }
 .rank-card { padding: 10px 12px; }
 .rank-scroll {
-  max-height: 132px; /* ~3 rows */
+  max-height: 108px; /* ~3 rows */
   overflow-y: auto;
   scrollbar-width: thin;
 }
@@ -254,7 +254,7 @@
 @media (max-width: 980px) {
   .primary-grid { grid-template-columns: 1fr; }
   .rank-grid { grid-template-columns: 1fr; }
-  .rank-scroll { max-height: 148px; }
+  .rank-scroll { max-height: 120px; }
   .monitor-main { padding: 12px 14px 32px; }
   .health-strip { margin-left: 0; width: 100%; }
   .focus-price { font-size: 18px; }
