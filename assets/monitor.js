@@ -182,19 +182,22 @@
       return;
     }
     box.replaceChildren(...list.map((item) => {
-      const chg = item.change ?? item.change24h;
+      /* 主涨跌优先用窗口 change，没有再用 change24h；禁止用「采样偏旧」顶替涨跌幅 */
+      const chg = item.change != null ? item.change : item.change24h;
+      const cardClass = `focus-card${chg == null ? '' : (Number(chg) >= 0 ? ' is-up' : ' is-down')}`;
       const href = binanceUrl(item.symbol);
       const title = href
         ? el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: shortSym(item.symbol) })
         : el('span', { className: 'sym', text: shortSym(item.symbol) });
-      return el('div', { className: 'focus-card' }, [
+      let sub = '';
+      if (item.change != null && item.change24h != null) sub = `24h ${fmtPct(item.change24h)}`;
+      else if (item.change != null) sub = '窗口涨跌';
+      else if (item.change24h != null) sub = '24h';
+      return el('div', { className: cardClass }, [
         title,
         el('div', { className: 'focus-price', text: fmtPrice(item.price) }),
         el('div', { className: `focus-chg ${pctClass(chg)}`, text: fmtPct(chg) }),
-        el('div', {
-          className: 'focus-sub',
-          text: item.change24h != null ? `24h ${fmtPct(item.change24h)}` : (item.fresh === false ? '采样偏旧' : '窗口涨跌'),
-        }),
+        el('div', { className: 'focus-sub', text: sub }),
       ]);
     }));
   }

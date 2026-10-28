@@ -1,6 +1,14 @@
 /* Market monitor — dense VI, glanceable hierarchy */
 
-.monitor-page .topbar { --topbar-height: auto; }
+.monitor-page .topbar {
+  --topbar-height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.monitor-page .footer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .monitor-tools { flex-wrap: wrap; gap: 10px 16px; }
 .health-strip { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
 .health-chip {
@@ -14,9 +22,9 @@
 .refresh-note { font-size: 11px; }
 
 .monitor-main {
-  padding: 12px 16px 32px;
+  padding: 8px 10px 24px;
   display: grid;
-  gap: 10px;
+  gap: 8px;
   width: 100%;
   max-width: none;
   margin: 0;
@@ -72,10 +80,11 @@
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
+  width: 100%;
 }
 .focus-card {
   position: relative;
-  padding: 9px 11px 10px;
+  padding: 12px 14px 12px;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--surface-alt);
@@ -94,15 +103,15 @@
 }
 .focus-card a:hover { color: var(--accent); }
 .focus-price {
-  margin-top: 5px;
-  font-size: 22px;
-  font-weight: 780;
+  margin-top: 6px;
+  font-size: clamp(22px, 2.2vw, 34px);
+  font-weight: 800;
   letter-spacing: -.6px;
   font-variant-numeric: tabular-nums;
   line-height: 1.1;
 }
 .focus-chg {
-  margin-top: 4px; font-size: 12px; font-weight: 750;
+  margin-top: 6px; font-size: clamp(14px, 1.2vw, 18px); font-weight: 780;
   font-variant-numeric: tabular-nums;
 }
 .focus-sub { margin-top: 2px; font-size: 10px; color: var(--muted); }
@@ -114,16 +123,16 @@
 .primary-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 8px;
   align-items: stretch;
+  width: 100%;
 }
 .alert-list {
   display: flex; flex-direction: column; gap: 5px;
-  max-height: 360px; overflow: auto;
+  max-height: min(52vh, 560px); overflow: auto;
   scrollbar-width: thin;
 }
-.spike-list { max-height: 420px; }
-.gmgn-alert-list { max-height: 420px; }
+.spike-list, .gmgn-alert-list { max-height: min(52vh, 560px); }
 
 .alert-row {
   display: grid;
@@ -184,6 +193,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
+  width: 100%;
 }
 .rank-card { padding: 9px 10px; }
 .rank-scroll {
@@ -273,10 +283,10 @@
   .primary-grid { grid-template-columns: 1fr; }
   .rank-grid { grid-template-columns: 1fr; }
   .rank-scroll { max-height: 108px; }
-  .monitor-main { padding: 10px 12px 28px; }
+  .monitor-main { padding: 8px 8px 24px; }
   .health-strip { margin-left: 0; width: 100%; }
-  .focus-price { font-size: 18px; }
-  .spike-list, .gmgn-alert-list { max-height: 280px; }
+  .focus-price { font-size: 20px; }
+  .spike-list, .gmgn-alert-list { max-height: 320px; }
 }
 @media (max-width: 520px) {
   .focus-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
