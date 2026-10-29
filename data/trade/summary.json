@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-10-30T00:04:12+08:00",
+  "active_plan_count": 5,
+  "closed_sample_count": 0,
+  "closed_all_count": 0,
+  "winrate": null,
+  "winrate_pct": null,
+  "cumulative_sim_pnl_usd": 0,
+  "avg_realized_rr": null,
+  "notional_usd_per_trade": 1000.0,
+  "trial": {
+    "start": "2026-10-29",
+    "end": "2026-11-01",
+    "cumulative_pnl_usd": 0
+  },
+  "last_price": {
+    "btc": 81692,
+    "eth": 2366,
+    "asof": "2026-10-30T00:03:00+08:00",
+    "structure_anchor": "2026-10-29T23:29:00+08:00",
+    "note": "23:45曾扫至81900后回落；现仍在81640-81820内"
+  }
+}

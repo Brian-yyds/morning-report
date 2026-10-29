@@ -1,0 +1,22 @@
+{
+  "updated_at": "2026-10-30T00:04:12+08:00",
+  "notional_usd_per_trade": 1000.0,
+  "trades": [],
+  "aggregates": {
+    "closed_count": 0,
+    "decided_count": 0,
+    "win_count": 0,
+    "loss_count": 0,
+    "invalid_or_cancel_count": 0,
+    "winrate": null,
+    "winrate_pct": null,
+    "avg_realized_rr": null,
+    "realized_pnl_usd": 0,
+    "notional_usd_per_trade": 1000.0
+  },
+  "trial": {
+    "start": "2026-10-29",
+    "end": "2026-11-01",
+    "cumulative_pnl_usd": 0
+  }
+}
