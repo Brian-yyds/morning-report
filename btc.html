@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="BTC 大盘结构分析：K 线、流动性位与走势总结。">
+  <title>BTC 分析 · 每日早报</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/btc.css">
+  <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js" defer></script>
+  <script src="assets/btc.js" defer></script>
+</head>
+<body class="btc-page" id="top">
+  <a class="skip-link" href="#btc-main">跳至 BTC 分析</a>
+  <header class="topbar" id="topbar">
+    <div class="topbar-heading">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">B</span>
+        <div>
+          <h1>BTC 分析 <span>· 大盘结构</span></h1>
+          <p>日线 / 4h / 1h · 静态标注</p>
+        </div>
+      </div>
+      <nav class="page-nav" aria-label="站点导航">
+        <a href="index.html" class="page-nav-link">信息监测台</a>
+        <a href="btc.html" class="page-nav-link is-active" aria-current="page">BTC 分析</a>
+      </nav>
+      <div class="appearance-controls">
+        <label class="theme-control"><span class="sr-only">页面主题</span>
+          <select id="theme-select" aria-label="页面主题">
+            <option value="system">跟随系统</option>
+            <option value="light">浅色</option>
+            <option value="dark">深色</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="topbar-tools btc-tools">
+      <label class="btc-date-label"><span class="sr-only">分析日期</span>
+        <select id="btc-date-select" aria-label="选择分析日期"></select>
+      </label>
+      <p class="updated"><span class="status-dot" aria-hidden="true"></span>更新于 <time id="btc-updated">—</time><span class="timezone">北京时间</span></p>
+      <p class="btc-price" id="btc-price" aria-label="现价">—</p>
+      <p class="btc-eth-rel muted" id="btc-eth-rel" title="ETH 相对强弱">—</p>
+    </div>
+  </header>
+
+  <main class="btc-main" id="btc-main" tabindex="-1">
+    <p id="btc-notice" class="notice" role="status" hidden></p>
+
+    <section class="btc-chart-panel" aria-labelledby="chart-heading">
+      <div class="btc-chart-head">
+        <h2 id="chart-heading">BTCUSDT K 线</h2>
+        <div class="segmented tf-control" role="group" aria-label="周期">
+          <button type="button" data-tf="1d" aria-pressed="true">日线</button>
+          <button type="button" data-tf="4h" aria-pressed="false">4h</button>
+          <button type="button" data-tf="1h" aria-pressed="false">1h</button>
+        </div>
+      </div>
+      <div id="btc-chart" class="btc-chart" role="img" aria-label="BTC K 线图"></div>
+      <ul class="btc-legend" aria-label="标注图例">
+        <li><span class="swatch" style="background:#ef4444"></span>流动性高 / 等高</li>
+        <li><span class="swatch" style="background:#22c55e"></span>流动性低 / 等低</li>
+        <li><span class="swatch" style="background:#a78bfa"></span>订单块</li>
+        <li><span class="swatch" style="background:#f59e0b"></span>扫点</li>
+        <li><span class="swatch" style="background:#94a3b8"></span>备注</li>
+      </ul>
+      <p class="muted btc-klines-meta" id="btc-klines-meta"></p>
+    </section>
+
+    <section class="btc-sections" id="btc-sections" aria-label="分析段落"></section>
+
+    <section class="btc-summary-panel" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">当前走势总结</h2>
+      <p id="btc-summary" class="btc-summary">等待数据…</p>
+    </section>
+
+    <section class="btc-limitations" id="btc-limitations" aria-labelledby="limits-heading" hidden>
+      <h3 id="limits-heading" class="muted">局限与说明</h3>
+      <ul id="btc-limits-list" class="muted"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>数据：币安公开 K 线本地缓存 + 静态分析 JSON。标注为结构推断，非投资建议。</p>
+    <a href="#top">回到顶部 ↑</a>
+  </footer>
+</body>
+</html>

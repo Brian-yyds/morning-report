@@ -1,0 +1,113 @@
+.btc-page .topbar { --btc-topbar: auto; }
+.btc-tools { flex-wrap: wrap; gap: 12px 18px; }
+.btc-date-label select { font-weight: 650; min-width: 132px; }
+.btc-price {
+  margin: 0; font-size: 14px; font-weight: 700; letter-spacing: -.2px;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.btc-eth-rel {
+  margin: 0; font-size: 12px; max-width: min(520px, 100%);
+  line-height: 1.45; overflow-wrap: anywhere;
+}
+.btc-main {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 18px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.btc-chart-panel,
+.btc-sections .btc-section,
+.btc-summary-panel,
+.btc-limitations {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px 16px;
+}
+.btc-chart-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.btc-chart-head h2 { font-size: 15px; font-weight: 700; }
+.tf-control button { min-width: 48px; }
+.btc-chart {
+  width: 100%;
+  height: 480px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface-alt);
+  overflow: hidden;
+}
+.btc-legend {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.btc-legend .swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin-right: 5px;
+  vertical-align: -1px;
+}
+.btc-klines-meta { margin: 8px 0 0; font-size: 11px; }
+.btc-sections { display: flex; flex-direction: column; gap: 10px; }
+.btc-section h3 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--accent);
+}
+.btc-section p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text);
+}
+.btc-summary-panel h2 {
+  font-size: 15px;
+  font-weight: 750;
+  margin-bottom: 8px;
+}
+.btc-summary {
+  font-size: 13.5px;
+  line-height: 1.6;
+  font-weight: 550;
+}
+.btc-limitations h3 {
+  font-size: 12px;
+  font-weight: 650;
+  margin-bottom: 6px;
+}
+.btc-limitations ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.btc-page .notice {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--warning-bg);
+  color: var(--warning-text);
+  border: 1px solid var(--warning-line);
+  font-size: 12px;
+}
+@media (max-width: 720px) {
+  .btc-main { padding: 12px 10px 28px; }
+  .btc-chart { height: 420px; }
+  .btc-tools { gap: 8px 12px; }
+  .btc-eth-rel { max-width: 100%; }
+}
