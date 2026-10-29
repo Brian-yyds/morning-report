@@ -323,3 +323,9 @@ body[data-density="comfortable"] .post-bottom { margin-top: 10px; }
   .page-nav { width:100%; }
   .page-nav-link { flex:1; text-align:center; }
 }
+/* 推特热点：欧美圈 / 华语圈分组 */
+.region-group + .region-group { margin-top: 6px; }
+.region-heading { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; gap: 8px; margin: 0; padding: 7px 14px; font-size: 12px; font-weight: 700; color: var(--accent); background: var(--surface-alt); border-bottom: 1px solid var(--line); }
+.region-count { color: var(--muted); font-size: 10px; font-weight: 500; }
+.region-empty { padding: 10px 14px; font-size: 11px; }
+@media (max-width: 767px) { .region-heading { position: static; } }

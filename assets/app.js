@@ -9,6 +9,8 @@
     {id: 'stocks', title: '股票热点', short: '股票', symbol: '股', description: '美股 · 公司 · 市场观点'}
   ];
   const categories = {'干货': 'practical', '热点事件': 'news', '观点': 'opinion', '话题': 'discussion'};
+  // crypto / stocks 新数据：欧美圈 + 华语圈各 20 条（region: west | zh）。
+  const regions = {west: '欧美圈', zh: '华语圈'};
   const sorts = {rank: '排名', views: '浏览', likes: '点赞', engagement: '互动', latest: '最新'};
   const metricNames = [['views', '浏览'], ['likes', '赞'], ['retweets', '转'], ['replies', '评'], ['quotes', '引']];
   const storageKey = 'morning-report:dashboard:v1';
@@ -270,8 +272,10 @@
   }
   function post(item) {
     const article = element('article', 'post');
-    const rank = element('span', `rank${item.rank <= 3 ? ' leading' : ''}`, String(item.rank).padStart(2, '0'));
-    rank.setAttribute('aria-label', `第 ${item.rank} 名`);
+    const regional = regions[item.region] && item.region_rank >= 1;
+    const shown = regional ? item.region_rank : item.rank;
+    const rank = element('span', `rank${shown <= 3 ? ' leading' : ''}`, String(shown).padStart(2, '0'));
+    rank.setAttribute('aria-label', regional ? `${regions[item.region]}第 ${shown} 名（总第 ${item.rank} 名）` : `第 ${item.rank} 名`);
     article.append(rank);
     const header = element('div', 'post-header');
     const author = element('div', 'author');
@@ -328,6 +332,22 @@
       return difference || a.rank - b.rank;
     };
   }
+  function regionGroups(items, visible) {
+    const keys = [...Object.keys(regions), 'other'];
+    const keyOf = item => regions[item.region] ? item.region : 'other';
+    return keys.flatMap(key => {
+      const total = items.filter(item => keyOf(item) === key).length;
+      if (!total) return [];
+      const members = visible.filter(item => keyOf(item) === key);
+      const group = element('div', `region-group region-${key}`);
+      const heading = element('h3', 'region-heading');
+      heading.append(element('span', '', regions[key] || '其他'), element('span', 'region-count', members.length === total ? `${total}` : `${members.length}/${total}`));
+      group.append(heading);
+      if (members.length) group.append(...members.map(post));
+      else group.append(element('p', 'region-empty muted', '该圈暂无匹配'));
+      return [group];
+    });
+  }
   function renderLists(onlySection) {
     const terms = state.query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
     let total = 0;
@@ -340,7 +360,8 @@
       nodes.tabCount.textContent = String(visible.length);
       tabNodes[id].setAttribute('aria-label', `${title}，已筛选 ${visible.length}/${items.length}${nodes.sample.hidden ? '' : '，样例数据'}`);
       if (onlySection && onlySection !== id) return;
-      nodes.list.replaceChildren(...visible.map(post));
+      const grouped = items.some(item => regions[item.region]);
+      nodes.list.replaceChildren(...(grouped && visible.length ? regionGroups(items, visible) : visible.map(post)));
       nodes.list.scrollTop = 0;
       if (!visible.length) {
         const empty = element('div', 'empty');

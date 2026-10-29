@@ -63,6 +63,7 @@
         ${plan.status_detail ? `<p class="plan-detail muted">${esc(plan.status_detail)}</p>` : ''}
         <dl class="plan-levels"><div><dt>入场</dt><dd>${esc(price(plan.entry))}</dd></div><div><dt>止损</dt><dd>${esc(price(plan.sl))}</dd></div><div><dt>主止盈</dt><dd>${esc(price(plan.tp_main))}</dd></div><div><dt>盈亏比</dt><dd>${esc(plan.rr_display)}</dd></div></dl>
         <p class="plan-targets muted">止盈梯度：${targets || '—'}</p>
+        <dl class="plan-times"><div><dt>定稿</dt><dd>${esc(time(plan.finalized_at))}</dd></div><div><dt>开单</dt><dd>${esc(time(plan.opened_at))}</dd></div><div><dt>结束</dt><dd>${esc(time(plan.closed_at))}</dd></div></dl>
         <dl class="plan-rules"><div><dt>触发</dt><dd>${esc(plan.trigger)}</dd></div><div><dt>失效</dt><dd>${esc(plan.invalidation)}</dd></div></dl>
         ${plan.mutex ? `<details class="plan-mutex muted"><summary>互斥条件</summary><p>${esc(plan.mutex)}</p></details>` : ''}
       </article>`;
@@ -70,10 +71,10 @@
     $('history-summary').innerHTML = `已结束 ${num(aggregates.closed_count, 0)} 笔 · 胜率样本 ${num(aggregates.decided_count, 0)} 笔 · 盈利 ${num(aggregates.win_count, 0)} / 亏损 ${num(aggregates.loss_count, 0)} 笔 · 失效或取消 ${num(aggregates.invalid_or_cancel_count, 0)} 笔 · 胜率 ${winrate(aggregates)} · 平均已实现 RR ${num(aggregates.avg_realized_rr)} · 已实现盈亏 ${pnl(aggregates.realized_pnl_usd)} USD`;
     const results = { win: '盈利', loss: '亏损', invalid: '失效', cancelled: '取消' };
     const reasons = { tp_main: '主止盈', tp_partial: '部分止盈', sl: '止损', invalidation: '失效', mutex_cancel: '互斥取消', manual: '手动' };
-    $('trade-history').innerHTML = history.trades.length ? `<div class="trade-table-wrap" tabindex="0" role="region" aria-label="已结束模拟单，可横向滚动"><table class="trade-table"><thead><tr>${['编号', '交易对', '方向', '结果', '结束原因', '已实现 RR', '盈亏 USD', '结束时间（北京时间）'].map((label) => `<th scope="col">${label}</th>`).join('')}</tr></thead><tbody>${history.trades.map((trade) => `<tr>
+    $('trade-history').innerHTML = history.trades.length ? `<div class="trade-table-wrap" tabindex="0" role="region" aria-label="已结束模拟单，可横向滚动"><table class="trade-table"><thead><tr>${['编号', '交易对', '方向', '结果', '结束原因', '已实现 RR', '盈亏 USD', '定稿时间', '开单时间', '结束时间（北京时间）'].map((label) => `<th scope="col">${label}</th>`).join('')}</tr></thead><tbody>${history.trades.map((trade) => `<tr>
       <td>${esc(trade.id)}</td><td>${esc(trade.symbol)}</td><td>${sideBadge(trade.side)}</td>
       <td><span class="trade-badge ${trade.result === 'win' ? 'holding' : trade.result === 'loss' ? 'loss' : 'neutral'}">${esc(results[trade.result] || trade.result)}</span></td>
-      <td>${esc(reasons[trade.exit_reason] || trade.exit_reason)}</td><td>${num(trade.realized_rr)}</td><td>${pnl(trade.pnl_usd)}</td><td>${esc(time(trade.closed_at))}</td>
+      <td>${esc(reasons[trade.exit_reason] || trade.exit_reason)}</td><td>${num(trade.realized_rr)}</td><td>${pnl(trade.pnl_usd)}</td><td>${esc(time(trade.finalized_at))}</td><td>${esc(time(trade.opened_at))}</td><td>${esc(time(trade.closed_at))}</td>
     </tr>`).join('')}</tbody></table></div>` : '<p class="trade-empty">试跑期内暂无已结束模拟单</p>';
   }
   async function fetchJson(name) {

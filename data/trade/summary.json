@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T00:04:12+08:00",
+  "updated_at": "2026-10-30T00:36:28+08:00",
   "active_plan_count": 5,
   "closed_sample_count": 0,
   "closed_all_count": 0,
@@ -14,10 +14,12 @@
     "cumulative_pnl_usd": 0
   },
   "last_price": {
-    "btc": 81692,
-    "eth": 2366,
-    "asof": "2026-10-30T00:03:00+08:00",
-    "structure_anchor": "2026-10-29T23:29:00+08:00",
-    "note": "23:45曾扫至81900后回落；现仍在81640-81820内"
+    "btc": 81270.25,
+    "eth": 2353.71,
+    "asof": "2026-10-30T00:36:28+08:00",
+    "structure_anchor": "2026-10-30T00:09:00+08:00",
+    "handoff": "/workspace/market-analysis/reports/latest_handoff.json",
+    "note": "币安现货复核；4h/1h 00:00 K进行中；近端供给争夺后回落",
+    "source": "binance_spot"
   }
 }

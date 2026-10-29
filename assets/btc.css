@@ -55,3 +55,7 @@
   .trade-plans { grid-template-columns: 1fr; }
   .plan-levels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+.plan-times { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 0 0 10px; font-size: 11px; }
+.plan-times dt { color: var(--muted); }
+.plan-times dd { margin: 2px 0 0; overflow-wrap: anywhere; }
+@media (max-width: 700px) { .plan-times { grid-template-columns: 1fr; } }

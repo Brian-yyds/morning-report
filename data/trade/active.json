@@ -1,13 +1,15 @@
 {
-  "updated_at": "2026-10-30T00:04:12+08:00",
-  "source_ledger_updated_at": "2026-10-30T00:04:00+08:00",
+  "updated_at": "2026-10-30T00:36:28+08:00",
+  "source_ledger_updated_at": "2026-10-30T00:36:28+08:00",
   "plan_pool_version": "20261029-v4-定稿+补丁",
   "last_price": {
-    "btc": 81692,
-    "eth": 2366,
-    "asof": "2026-10-30T00:03:00+08:00",
-    "structure_anchor": "2026-10-29T23:29:00+08:00",
-    "note": "23:45曾扫至81900后回落；现仍在81640-81820内"
+    "btc": 81270.25,
+    "eth": 2353.71,
+    "asof": "2026-10-30T00:36:28+08:00",
+    "structure_anchor": "2026-10-30T00:09:00+08:00",
+    "handoff": "/workspace/market-analysis/reports/latest_handoff.json",
+    "note": "币安现货复核；4h/1h 00:00 K进行中；近端供给争夺后回落",
+    "source": "binance_spot"
   },
   "notional_usd_per_trade": 1000.0,
   "count": 5,
@@ -41,13 +43,16 @@
       "tp_main": 80000,
       "rr": 5.41,
       "rr_display": "1:5.41",
-      "status": "进区待确认（仍属未触发）",
-      "status_detail": "00:03≈81692仍在区内；23:45曾扫81900后回落，有上扫回落迹象，但尚未记1h拒绝确认触发；也未失效",
+      "status": "回落出区·仍未触发",
+      "status_detail": "现价≈81270已回落至入场区81640–81820下方；00:00 1h未收盘，缺「进区+已收盘1h拒绝」确认，禁止追空；4h未收稳81823上，互斥失效未成立",
       "mutex": "若D1突破先确认则A2取消；若A2拒绝路径先触发则D1不启用（两侧对称）",
       "trigger": "必须1h拒绝确认；禁止提前追空",
       "invalidation": "4h收盘站稳81823上并延续",
       "winrate_note": "待样本",
-      "updated_at": "2026-10-30T00:04:00+08:00"
+      "finalized_at": "2026-10-29T23:56:00+08:00",
+      "opened_at": null,
+      "closed_at": null,
+      "updated_at": "2026-10-30T00:36:28+08:00"
     },
     {
       "id": "20261029-B2p",
@@ -75,12 +80,15 @@
       "rr": 5.09,
       "rr_display": "1:5.09",
       "status": "定稿·条件挂起/未触发",
-      "status_detail": null,
+      "status_detail": "BTC≈81270 远离入场79400–79550；日线未收在79220下，失效未成立",
       "mutex": null,
       "trigger": "回踩入区1h承接；现价不追",
       "invalidation": "日线收在79220下",
       "winrate_note": "待样本",
-      "updated_at": "2026-10-30T00:03:00+08:00"
+      "finalized_at": "2026-10-29T23:54:00+08:00",
+      "opened_at": null,
+      "closed_at": null,
+      "updated_at": "2026-10-30T00:36:28+08:00"
     },
     {
       "id": "20261029-C2",
@@ -108,12 +116,15 @@
       "rr": 3.93,
       "rr_display": "1:3.93",
       "status": "定稿·条件挂起/未触发",
-      "status_detail": null,
+      "status_detail": "ETH≈2354 仍低于入场2385–2391，挂起；未放量站稳2391上",
       "mutex": "E1先确认则C2取消；C2先触发则E1不启用",
       "trigger": "供给拒绝",
       "invalidation": "放量站稳2391上",
       "winrate_note": "待样本",
-      "updated_at": "2026-10-30T00:03:00+08:00"
+      "finalized_at": "2026-10-29T23:54:00+08:00",
+      "opened_at": null,
+      "closed_at": null,
+      "updated_at": "2026-10-30T00:36:28+08:00"
     },
     {
       "id": "20261029-D1p",
@@ -136,13 +147,16 @@
       "tp_main": 83500,
       "rr": 3.44,
       "rr_display": "1:3.44",
-      "status": "定稿·待突破激活（现价仍在供给区内未确认突破）",
-      "status_detail": "不因影线摸到81900而激活；须突破确认；默认等回踩81850-81900",
+      "status": "定稿·待突破激活（不上沿追）",
+      "status_detail": "上探高≈81971后回落；上一根已收4h收81777未站稳81823；当前4h进行中现价≈81270；不上沿追，影线/未收盘不算激活",
       "mutex": "A2拒绝则D1不启用；D1突破先确认则A2取消",
       "trigger": "仅突破确认后启用",
       "invalidation": "跌破止损区，或收盘失守81450且反抽结构坏掉",
       "winrate_note": "待样本",
-      "updated_at": "2026-10-30T00:04:00+08:00"
+      "finalized_at": "2026-10-29T23:56:00+08:00",
+      "opened_at": null,
+      "closed_at": null,
+      "updated_at": "2026-10-30T00:36:28+08:00"
     },
     {
       "id": "20261029-E1p",
@@ -170,12 +184,15 @@
       "rr": 3.37,
       "rr_display": "1:3.37",
       "status": "定稿·条件挂起/未触发",
-      "status_detail": null,
+      "status_detail": "ETH≈2354 远离入场2285–2295；日线未收破2282",
       "mutex": "与C2二选一按触发",
       "trigger": "回踩需求承接；与BTC同向更佳",
       "invalidation": "日线收破2282",
       "winrate_note": "待样本",
-      "updated_at": "2026-10-30T00:03:00+08:00"
+      "finalized_at": "2026-10-29T23:54:00+08:00",
+      "opened_at": null,
+      "closed_at": null,
+      "updated_at": "2026-10-30T00:36:28+08:00"
     }
   ]
 }
