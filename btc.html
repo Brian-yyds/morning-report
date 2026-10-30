@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="交易计划模拟看板：当前计划、已结束模拟单与试跑统计。">
-  <title>交易计划 · 模拟看板</title>
+  <meta name="description" content="旧试跑已停，等待律动快讯新方案">
+  <title>交易计划（已停）</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/btc.css">
   <script src="assets/btc.js" defer></script>
@@ -16,11 +16,11 @@
     <div class="topbar-heading">
       <div class="brand">
         <span class="brand-mark" aria-hidden="true">计</span>
-        <div><h1>交易计划 <span>· 模拟看板</span></h1><p>条件触发 · 模拟执行 · 已实现统计</p></div>
+        <div><h1>交易计划（已停）</h1><p>旧试跑已停</p></div>
       </div>
       <nav class="page-nav" aria-label="站点导航">
         <a href="index.html" class="page-nav-link">信息监测台</a>
-        <a href="btc.html" class="page-nav-link is-active" aria-current="page">交易计划</a>
+        <a href="btc.html" class="page-nav-link is-active" aria-current="page">交易计划（已停）</a>
       </nav>
       <div class="appearance-controls">
         <label class="theme-control"><span class="sr-only">页面主题</span>
@@ -30,24 +30,14 @@
         </label>
       </div>
     </div>
-    <div id="trade-meta" class="trade-meta">更新时间：— · 现价：— · 名义本金：— · 试跑窗：—</div>
   </header>
-  <main class="trade-main" id="trade-main" tabindex="-1" aria-busy="true">
-    <p id="trade-notice" class="notice" role="status">正在加载交易计划…</p>
-    <noscript><p class="notice">请启用 JavaScript 以读取交易计划数据。</p></noscript>
-    <section aria-label="模拟统计" id="trade-kpis" class="trade-kpis"></section>
-    <section class="trade-section" aria-labelledby="plans-heading">
-      <div class="trade-heading"><h2 id="plans-heading">当前计划单</h2><span id="plans-count" class="muted">—</span></div>
-      <div id="trade-plans" class="trade-plans"></div>
-    </section>
-    <section class="trade-section" aria-labelledby="history-heading">
-      <div class="trade-heading"><h2 id="history-heading">历史已结束模拟单</h2></div>
-      <p id="history-summary" class="history-summary muted"></p>
-      <div id="trade-history"></div>
+  <main class="trade-main" id="trade-main" tabindex="-1">
+    <section class="trade-placeholder" aria-labelledby="placeholder-heading">
+      <h2 id="placeholder-heading">旧试跑已停，等待律动快讯新方案</h2>
+      <a href="index.html">返回信息监测台 →</a>
     </section>
   </main>
   <footer class="footer">
-    <p>模拟不下真单；数据由交易质检维护；胜率仅计 win+loss（盈利与亏损）。</p>
     <a href="#top">回到顶部 ↑</a>
   </footer>
 </body>
