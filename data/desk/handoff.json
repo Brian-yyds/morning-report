@@ -1,0 +1,214 @@
+{
+  "updated_at": "2026-10-31T01:30:31+0800",
+  "timezone": "Asia/Shanghai",
+  "counts": {
+    "total": 77,
+    "crypto": 30,
+    "tradifi": 30,
+    "hk_equity": 15,
+    "cn_equity": 2,
+    "top60": 60
+  },
+  "items": [
+    {
+      "symbol": "BTCUSDT",
+      "bucket": "crypto",
+      "price": 77316.4,
+      "day_range": [
+        76444.0,
+        78776.5
+      ],
+      "structure": {
+        "1d": "扩张震荡(HH+LL)",
+        "4h": "扩张震荡(HH+LL)",
+        "1h": "收缩震荡(LH+HL)"
+      },
+      "focus_zones": [
+        {
+          "kind": "order_block",
+          "side": "demand",
+          "zone": [
+            76444.0,
+            77535.2
+          ],
+          "dist_pct": 0.423
+        },
+        {
+          "kind": "order_block",
+          "side": "demand",
+          "zone": [
+            76584.2,
+            77342.8
+          ],
+          "dist_pct": 0.456
+        },
+        {
+          "kind": "liquidity",
+          "side": "low",
+          "level": 76600.0,
+          "dist_pct": 0.927,
+          "status": "1h近端摆动低"
+        },
+        {
+          "kind": "liquidity",
+          "side": "low",
+          "level": 76444.0,
+          "dist_pct": 1.128,
+          "status": "4h近端摆动低"
+        },
+        {
+          "kind": "liquidity",
+          "side": "low",
+          "level": 76444.0,
+          "dist_pct": 1.128,
+          "status": "日线低"
+        },
+        {
+          "kind": "order_block",
+          "side": "supply",
+          "zone": [
+            77889.9,
+            78776.5
+          ],
+          "dist_pct": 1.315
+        },
+        {
+          "kind": "order_block",
+          "side": "supply",
+          "zone": [
+            77868.4,
+            78986.8
+          ],
+          "dist_pct": 1.437
+        },
+        {
+          "kind": "liquidity",
+          "side": "high",
+          "level": 78776.5,
+          "dist_pct": 1.888,
+          "status": "1h近端摆动高"
+        }
+      ],
+      "summary": "BTCUSDT 现价≈77316.4；1d:扩张震荡(HH+LL)；4h:扩张震荡(HH+LL)；1h:收缩震荡(LH+HL)；RSI4h=33.9505；OI约6h -0.10%；taker=0.9121",
+      "rsi": {
+        "1d": {
+          "open_time": 1793318400000,
+          "open_time_shanghai": "2026-10-30 08:00:00 CST",
+          "close": "77283.30",
+          "rsi14": 34.2213
+        },
+        "4h": {
+          "open_time": 1793376000000,
+          "open_time_shanghai": "2026-10-31 00:00:00 CST",
+          "close": "77283.30",
+          "rsi14": 33.9505
+        },
+        "1h": {
+          "open_time": 1793376000000,
+          "open_time_shanghai": "2026-10-31 00:00:00 CST",
+          "close": "77316.40",
+          "rsi14": 37.7869
+        }
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "bucket": "crypto",
+      "price": 2227.8,
+      "day_range": [
+        2172.85,
+        2261.48
+      ],
+      "structure": {
+        "1d": "下行结构(LH+LL)",
+        "4h": "下行结构(LH+LL)",
+        "1h": "下行结构(LH+LL)"
+      },
+      "focus_zones": [
+        {
+          "kind": "order_block",
+          "side": "supply",
+          "zone": [
+            2196.26,
+            2256.5
+          ],
+          "dist_pct": 0.064
+        },
+        {
+          "kind": "liquidity",
+          "side": "low",
+          "level": 2206.36,
+          "dist_pct": 0.962,
+          "status": "1h近端摆动低"
+        },
+        {
+          "kind": "liquidity",
+          "side": "high",
+          "level": 2251.73,
+          "dist_pct": 1.074,
+          "status": "1h近端摆动高"
+        },
+        {
+          "kind": "order_block",
+          "side": "demand",
+          "zone": [
+            2181.22,
+            2218.96
+          ],
+          "dist_pct": 1.244
+        },
+        {
+          "kind": "order_block",
+          "side": "supply",
+          "zone": [
+            2246.73,
+            2273.37
+          ],
+          "dist_pct": 1.448
+        },
+        {
+          "kind": "liquidity",
+          "side": "high",
+          "level": 2261.48,
+          "dist_pct": 1.512,
+          "status": "日线高"
+        },
+        {
+          "kind": "liquidity",
+          "side": "low",
+          "level": 2172.85,
+          "dist_pct": 2.467,
+          "status": "4h近端摆动低"
+        },
+        {
+          "kind": "liquidity",
+          "side": "low",
+          "level": 2172.85,
+          "dist_pct": 2.467,
+          "status": "日线低"
+        }
+      ],
+      "summary": "ETHUSDT 现价≈2227.8；1d:下行结构(LH+LL)；4h:下行结构(LH+LL)；1h:下行结构(LH+LL)；RSI4h=32.9012；OI约6h +2.11%；taker=0.9279",
+      "rsi": {
+        "1d": {
+          "open_time": 1793318400000,
+          "open_time_shanghai": "2026-10-30 08:00:00 CST",
+          "close": "2228.16",
+          "rsi14": 29.0902
+        },
+        "4h": {
+          "open_time": 1793376000000,
+          "open_time_shanghai": "2026-10-31 00:00:00 CST",
+          "close": "2228.37",
+          "rsi14": 32.9012
+        },
+        "1h": {
+          "open_time": 1793376000000,
+          "open_time_shanghai": "2026-10-31 00:00:00 CST",
+          "close": "2227.80",
+          "rsi14": 40.9043
+        }
+      }
+    }
+  ]
+}

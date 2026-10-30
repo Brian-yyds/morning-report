@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="交易组汇总看板：机会、异动、行情与新闻只读静态 JSON，不轮询、不下单。">
+  <title>交易组 · 汇总看板</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/trade.css">
+  <script src="assets/trade.js" defer></script>
+</head>
+<body class="trade-desk" id="top" data-theme-hint="dark">
+  <a class="skip-link" href="#desk-main">跳至交易组看板</a>
+  <header class="topbar">
+    <div class="topbar-heading">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">组</span>
+        <div>
+          <h1>交易组 <span>· 汇总看板</span></h1>
+          <p>只读静态 JSON · 不下单</p>
+        </div>
+      </div>
+      <nav class="page-nav" aria-label="站点导航">
+        <a href="index.html" class="page-nav-link">信息监测台</a>
+        <a href="trade.html" class="page-nav-link is-active" aria-current="page">交易组</a>
+      </nav>
+      <div class="appearance-controls">
+        <label class="theme-control"><span class="sr-only">页面主题</span>
+          <select id="theme-select" aria-label="页面主题">
+            <option value="dark">深色</option>
+            <option value="system">跟随系统</option>
+            <option value="light">浅色</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="topbar-tools desk-tools">
+      <p class="updated"><span id="status-dot" class="status-dot" aria-hidden="true"></span>数据截至 <time id="desk-asof">—</time><span class="timezone">北京时间</span></p>
+      <span id="trigger-badge" class="trigger-badge" hidden>异动待处理</span>
+    </div>
+  </header>
+
+  <main class="desk-main" id="desk-main" tabindex="-1">
+    <section class="desk-howto" aria-labelledby="howto-heading">
+      <div class="panel-heading">
+        <h2 id="howto-heading">交易组每天干什么</h2>
+        <span>页头说明 · 只规划不下单</span>
+      </div>
+      <ol class="howto-list">
+        <li><strong>币安市场采集分析</strong>：服务器分钟刷新 watchlist≈77；写 K线/OI、movers、结构 handoff；异动门槛脚本写 trigger。</li>
+        <li><strong>新闻监控</strong>：常驻拉资讯 → news-pool；异动/机会只读。</li>
+        <li><strong>异动分析</strong>：事件触发不轮询。门槛：BTC 1h 振幅&gt;3%；加密成交前 10 的 1h 振幅&gt;10%；币股合约 1h&gt;10%；4h 涨榜&gt;100% / 跌榜&gt;50%。trigger → routine → anomaly_latest。</li>
+        <li><strong>机会分析</strong>：仅每日 09:00 / 18:00 Asia/Shanghai。必出 BTC 日线方向 + 4h 进场点与是否达到；挂钩新闻 + 推特热点；美股/A股综合；个股约≥10% 才深挖。</li>
+        <li><strong>交易总管</strong>：单线汇总报智哥；自己不下单。</li>
+      </ol>
+    </section>
+
+    <section class="desk-section" aria-labelledby="overview-heading">
+      <div class="panel-heading"><h2 id="overview-heading">总览</h2><span id="overview-meta" class="muted">—</span></div>
+      <div id="overview-cards" class="kpi-grid desk-kpi" aria-live="polite"></div>
+    </section>
+
+    <section class="desk-section" aria-labelledby="opp-heading">
+      <div class="panel-heading"><h2 id="opp-heading">机会报告</h2><span>opp_latest · 09:00 / 18:00</span></div>
+      <div id="opp-panel" class="desk-panel"></div>
+    </section>
+
+    <section class="desk-section" aria-labelledby="anomaly-heading">
+      <div class="panel-heading"><h2 id="anomaly-heading">异动报告</h2><span>anomaly + trigger</span></div>
+      <div id="anomaly-panel" class="desk-panel"></div>
+    </section>
+
+    <section class="desk-section" aria-labelledby="movers-heading">
+      <div class="panel-heading"><h2 id="movers-heading">行情 / Movers</h2><span>by_bucket 前若干条</span></div>
+      <div id="movers-panel" class="desk-panel"></div>
+    </section>
+
+    <section class="desk-section" aria-labelledby="news-heading">
+      <div class="panel-heading"><h2 id="news-heading">新闻池</h2><span>最近 20 条</span></div>
+      <div id="news-panel" class="desk-panel"></div>
+    </section>
+
+    <section class="desk-section" aria-labelledby="handoff-heading">
+      <div class="panel-heading"><h2 id="handoff-heading">结构摘要</h2><span>仅 BTC / ETH</span></div>
+      <div id="handoff-panel" class="desk-panel"></div>
+    </section>
+
+    <noscript><p class="empty">请启用 JavaScript 查看交易组看板。数据来自 data/desk/*.json。</p></noscript>
+  </main>
+
+  <footer class="footer">
+    <p>数据由服务器脚本定时写入；本页只读静态 JSON，不为刷数轮询，也不下单。</p>
+    <a href="#top">回到顶部 ↑</a>
+  </footer>
+</body>
+</html>

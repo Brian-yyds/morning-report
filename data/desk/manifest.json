@@ -1,0 +1,33 @@
+{
+  "built_at": "2026-10-31T01:48:49+08:00",
+  "asof": "2026-10-31 01:32 Asia/Shanghai",
+  "bias": "risk_off_tradifi_led",
+  "watchlist_counts": {
+    "crypto": 30,
+    "tradifi": 30,
+    "hk_equity": 15,
+    "cn_equity": 2,
+    "top60": 60,
+    "watchlist": 77
+  },
+  "trigger_pending": false,
+  "trigger_notify_status": "ok",
+  "available": {
+    "watchlist": true,
+    "movers": true,
+    "anomaly": true,
+    "trigger": true,
+    "opp": true,
+    "handoff": true,
+    "news": true
+  },
+  "files": {
+    "watchlist": "data/desk/watchlist.json",
+    "movers": "data/desk/movers.json",
+    "anomaly": "data/desk/anomaly.json",
+    "trigger": "data/desk/trigger.json",
+    "opp": "data/desk/opp.json",
+    "handoff": "data/desk/handoff.json",
+    "news": "data/desk/news.json"
+  }
+}

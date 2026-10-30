@@ -1,0 +1,143 @@
+{
+  "schema": "anomaly.v1",
+  "asof": "2026-10-31 01:21:48 Asia/Shanghai",
+  "trigger": "交易总管派活+新闻",
+  "market_bias": "risk_off_tradifi_led",
+  "summary": "美股/半导冲击在 TradFi 永续侧共振极强（SOXL约-27%、SOXS约+27%、INTC/INTW深跌且OI急升），加密主仓仍偏弱但幅度明显小于 SOX 杠杆端；SOL价跌OI升仍在。只观察不下单。",
+  "action": "observe_only",
+  "news": [
+    {
+      "text": "美股跌幅扩大，纳指约-3%，费城半导体约-8%",
+      "ts": "2026-10-31 00:54 Asia/Shanghai"
+    },
+    {
+      "text": "大盘此前已 risk_off",
+      "ts": null
+    }
+  ],
+  "items": [
+    {
+      "id": "anom-sox-soxl-resonance",
+      "severity": "high",
+      "symbol": "SOXLUSDT",
+      "bucket": "tradifi",
+      "types": [
+        "news_resonance",
+        "price_spike",
+        "oi_price_divergence"
+      ],
+      "metrics": {
+        "chg_24h_pct": -27.3,
+        "oi_chg_4h_pct": 14.8,
+        "funding_pct_8h": 0.038,
+        "peer_soxs_chg_24h_pct": 27.0,
+        "peer_soxs_oi_chg_4h_pct": -12.8
+      },
+      "read": "费城半导约-8%背景下，3倍做多半导 SOXL 约-27%、做空 SOXS 约+27%，方向镜像干净；SOXL 近4h OI约+15%而价格大跌，偏空头加仓/踩踏，与美股半导体冲击高度共振。",
+      "news_tie": "纳指约-3% / 费城半导约-8%"
+    },
+    {
+      "id": "anom-intc-intw-cascade",
+      "severity": "high",
+      "symbol": "INTCUSDT",
+      "bucket": "tradifi",
+      "types": [
+        "price_spike",
+        "oi_price_divergence"
+      ],
+      "metrics": {
+        "intc_chg_24h_pct": -29.6,
+        "intc_oi_chg_4h_pct": 22.3,
+        "intw_chg_24h_pct": -59.5,
+        "intw_oi_chg_4h_pct": 48.6
+      },
+      "read": "INTC约-30%、INTW约-60%，同时 OI 分别约+22%/+49%（4h），价跌仓增极端，半导链上的高波动合约踩踏特征；短线15m已有反抽噪声，仍属高风险异动。",
+      "news_tie": "费城半导急跌"
+    },
+    {
+      "id": "anom-nasdaq-beta",
+      "severity": "high",
+      "symbol": "QQQUSDT",
+      "bucket": "tradifi",
+      "types": [
+        "news_resonance"
+      ],
+      "metrics": {
+        "qqq_chg_24h_pct": -3.4,
+        "tqqq_chg_24h_pct": -10.5,
+        "amd_chg_24h_pct": -11.7,
+        "nvda_chg_24h_pct": -4.6,
+        "sndk_chg_24h_pct": -15.0,
+        "koru_chg_24h_pct": -16.5
+      },
+      "read": "QQQ约-3.4%贴近新闻纳指约-3%；TQQQ约-10.5%为杠杆放大。AMD约-12%、SNDK/KORU深跌，半导与韩股相关链同步承压，TradFi前30整体是本轮冲击主震区。",
+      "news_tie": "纳指约-3%"
+    },
+    {
+      "id": "anom-crypto-equity-bridge",
+      "severity": "medium",
+      "symbol": "COINUSDT",
+      "bucket": "tradifi",
+      "types": [
+        "news_resonance",
+        "oi_price_divergence"
+      ],
+      "metrics": {
+        "coin_chg_24h_pct": -13.7,
+        "coin_oi_chg_4h_pct": 13.6,
+        "mstr_chg_24h_pct": -9.3,
+        "mstr_oi_chg_4h_pct": 2.6
+      },
+      "read": "COIN约-14%且4h OI约+14%，MSTR约-9%，美股风险偏好回落向加密概念股/代理标的传导，是 TradFi→加密情绪桥，但不等同于链上主仓同幅下跌。",
+      "news_tie": "美股风险偏好回落"
+    },
+    {
+      "id": "anom-crypto-majors-weaker-than-sox",
+      "severity": "medium",
+      "symbol": "BTCUSDT",
+      "bucket": "crypto",
+      "types": [
+        "broad_market_weak",
+        "correlated_soft"
+      ],
+      "metrics": {
+        "btc_chg_24h_pct": -4.6,
+        "eth_chg_24h_pct": -4.4,
+        "sol_chg_24h_pct": -6.5,
+        "bnb_chg_24h_pct": -6.2,
+        "btc_oi_chg_4h_pct": -0.05,
+        "eth_oi_chg_4h_pct": 1.6,
+        "sol_oi_chg_4h_pct": 7.6
+      },
+      "read": "加密前30主仓延续 risk_off，但日跌幅集中约-4%~-7%，远小于 SOXL/半导杠杆端；近15m BTC/ETH 已近乎走平甚至微反弹，更像情绪跟随而非半导同级别踩踏。SOL 价跌+4h OI约+7.6%仍是加密侧最清晰的结构异动。",
+      "news_tie": "大盘 risk_off + 美股冲击"
+    },
+    {
+      "id": "anom-crypto-alts-lag-dump",
+      "severity": "medium",
+      "symbol": "ENAUSDT",
+      "bucket": "crypto",
+      "types": [
+        "loser_24h"
+      ],
+      "metrics": {
+        "ena_chg_24h_pct": -11.4,
+        "lit_chg_24h_pct": -13.1,
+        "pump_chg_24h_pct": -10.5,
+        "idol_chg_24h_pct": 103.8,
+        "idol_roi_15m_pct": -4.1
+      },
+      "read": "加密弱势山寨 LIT/ENA/PUMP 日跌超10%；IDOL 24h仍翻倍但15m约-4%回吐，属独立脉冲而非美股共振主线。",
+      "news_tie": ""
+    }
+  ],
+  "resonance_verdict": {
+    "tradifi_vs_news": "强共振（半导/纳指杠杆与成分股）",
+    "crypto_vs_news": "弱-中等跟随（主仓偏弱，幅度不及 SOX 杠杆；COIN/MSTR 为桥）",
+    "watch_next": [
+      "SOXL/SOXS 与 INTC 是否续踩踏或死猫跳",
+      "BTC/ETH 是否补跌贴近纳指节奏",
+      "SOL OI 续升是否伴随加速下跌"
+    ]
+  }
+}

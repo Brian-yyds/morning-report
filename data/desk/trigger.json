@@ -1,0 +1,11 @@
+{
+  "schema": "anomaly_trigger.v1",
+  "triggered": false,
+  "triggered_at": null,
+  "last_checked_at": "2026-10-31 01:47:17 CST",
+  "notify_status": "ok",
+  "cooldown_minutes": 30,
+  "reasons": [],
+  "symbols": [],
+  "events": []
+}

@@ -1,0 +1,12 @@
+{
+  "fetched_at_shanghai": "2026-10-31 01:48:20 CST",
+  "counts": {
+    "crypto": 30,
+    "tradifi": 30,
+    "hk_equity": 15,
+    "cn_equity": 2,
+    "top60": 60,
+    "watchlist": 77
+  },
+  "note": "watchlist = crypto30 + tradifi30 + all hk_equity + all cn_equity (deduped)"
+}
