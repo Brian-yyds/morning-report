@@ -1,0 +1,2219 @@
+{
+  "date": "2026-10-30",
+  "sample": false,
+  "sources": {
+    "ai": "real",
+    "crypto": "real",
+    "stocks": "real"
+  },
+  "sections": {
+    "ai": {
+      "section": "ai",
+      "date": "2026-10-30",
+      "generated_at": "2026-10-30T09:18:35+08:00",
+      "sample": false,
+      "items": [
+        {
+          "rank": 1,
+          "author_name": "Haseeb Qureshi ＞|＜",
+          "author_handle": "hosseeb",
+          "author_url": "https://x.com/hosseeb",
+          "tweet_url": "https://x.com/hosseeb/status/2115614339860423012",
+          "text_zh": "Haseeb：提醒一下，人类其实也没有「世界模型」",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 703245,
+            "likes": 6486,
+            "retweets": 110,
+            "replies": 140,
+            "quotes": 61
+          },
+          "posted_at": "2026-10-29T01:18:59+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 2,
+          "author_name": "Anthropic",
+          "author_handle": "AnthropicAI",
+          "author_url": "https://x.com/AnthropicAI",
+          "tweet_url": "https://x.com/AnthropicAI/status/2115871889549865429",
+          "text_zh": "Anthropic 训练 Claude 在对话中标记潜在滥用（自我评估）：回答后立即给出初步风险判断",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 450779,
+            "likes": 2435,
+            "retweets": 173,
+            "replies": 677,
+            "quotes": 226
+          },
+          "posted_at": "2026-10-29T18:22:24+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 3,
+          "author_name": "OpenAI",
+          "author_handle": "OpenAI",
+          "author_url": "https://x.com/OpenAI",
+          "tweet_url": "https://x.com/OpenAI/status/2115896329645723836",
+          "text_zh": "OpenAI 公开其扩展后的前沿模型监控系统，称 9 月曾借此发现一个模型的异常尝试",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 385618,
+            "likes": 2725,
+            "retweets": 198,
+            "replies": 408,
+            "quotes": 159
+          },
+          "posted_at": "2026-10-29T19:59:31+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 4,
+          "author_name": "Haseeb Qureshi ＞|＜",
+          "author_handle": "hosseeb",
+          "author_url": "https://x.com/hosseeb",
+          "tweet_url": "https://x.com/hosseeb/status/2115880968607408348",
+          "text_zh": "Haseeb 推荐长文《The Commanding Heights》：称其对 2026 年 AI 热潮中段的意义，就像《Situational Awareness》之于 2024",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 124137,
+            "likes": 783,
+            "retweets": 37,
+            "replies": 23,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T18:58:28+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 5,
+          "author_name": "宝玉",
+          "author_handle": "dotey",
+          "author_url": "https://x.com/dotey",
+          "tweet_url": "https://x.com/dotey/status/2115667965328977920",
+          "text_zh": "宝玉发布开源 baoyu-design v2，完整移植 Claude Design、Slides、Dashboard，可跑在任意 Agent 和模型上",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 94089,
+            "likes": 1155,
+            "retweets": 140,
+            "replies": 196,
+            "quotes": 51
+          },
+          "posted_at": "2026-10-29T04:52:04+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 6,
+          "author_name": "Chubby♨️",
+          "author_handle": "kimmonismus",
+          "author_url": "https://x.com/kimmonismus",
+          "tweet_url": "https://x.com/kimmonismus/status/2115626170897109454",
+          "text_zh": "谷歌还有一个比 Gemini Carbon 更强的未发布模型，而 Carbon 已登顶多个榜单",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 68300,
+            "likes": 2151,
+            "retweets": 73,
+            "replies": 98,
+            "quotes": 17
+          },
+          "posted_at": "2026-10-29T02:06:00+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 7,
+          "author_name": "Chubby♨️",
+          "author_handle": "kimmonismus",
+          "author_url": "https://x.com/kimmonismus",
+          "tweet_url": "https://x.com/kimmonismus/status/2115855506485190935",
+          "text_zh": "OpenAI 取消 Pro 200 原定的用量下调，Work 和 Codex 额度保持不变",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 80577,
+            "likes": 918,
+            "retweets": 14,
+            "replies": 77,
+            "quotes": 4
+          },
+          "posted_at": "2026-10-29T17:17:18+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 8,
+          "author_name": "Chubby♨️",
+          "author_handle": "kimmonismus",
+          "author_url": "https://x.com/kimmonismus",
+          "tweet_url": "https://x.com/kimmonismus/status/2115642277045706967",
+          "text_zh": "用户实测 OpenAI Dot：它主动监控邮件，发现作者记错会议日期并提醒，体验惊艳",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 72721,
+            "likes": 1092,
+            "retweets": 26,
+            "replies": 125,
+            "quotes": 17
+          },
+          "posted_at": "2026-10-29T03:10:00+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 9,
+          "author_name": "Artificial Analysis",
+          "author_handle": "ArtificialAnlys",
+          "author_url": "https://x.com/ArtificialAnlys",
+          "tweet_url": "https://x.com/ArtificialAnlys/status/2115820547103952925",
+          "text_zh": "Mistral Large 4 开放权重，成为中国以外最强的开源权重模型",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 64499,
+            "likes": 861,
+            "retweets": 63,
+            "replies": 83,
+            "quotes": 32
+          },
+          "posted_at": "2026-10-29T14:58:23+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 10,
+          "author_name": "Chubby♨️",
+          "author_handle": "kimmonismus",
+          "author_url": "https://x.com/kimmonismus",
+          "tweet_url": "https://x.com/kimmonismus/status/2115817180084224418",
+          "text_zh": "传闻 Fable 5.5 新检查点出现，IPO 前还会有 Opus 5.5，SVG 生成效果惊人",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 36069,
+            "likes": 635,
+            "retweets": 15,
+            "replies": 54,
+            "quotes": 3
+          },
+          "posted_at": "2026-10-29T14:45:00+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 11,
+          "author_name": "Ethan Mollick",
+          "author_handle": "emollick",
+          "author_url": "https://x.com/emollick",
+          "tweet_url": "https://x.com/emollick/status/2115875693120676157",
+          "text_zh": "Ethan Mollick：用 Opus 5.5 这类模型工作时，最好设置检查点，让模型阶段性汇报",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 37214,
+            "likes": 487,
+            "retweets": 24,
+            "replies": 127,
+            "quotes": 8
+          },
+          "posted_at": "2026-10-29T18:37:30+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 12,
+          "author_name": "宝玉",
+          "author_handle": "dotey",
+          "author_url": "https://x.com/dotey",
+          "tweet_url": "https://x.com/dotey/status/2115856411439575386",
+          "text_zh": "OpenAI 即日起把 ChatGPT Pro 各档和 Business Premium 用量上限翻倍，取消 Pro 200 降额",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 39023,
+            "likes": 96,
+            "retweets": 4,
+            "replies": 50,
+            "quotes": 8
+          },
+          "posted_at": "2026-10-29T17:20:53+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 13,
+          "author_name": "Chubby♨️",
+          "author_handle": "kimmonismus",
+          "author_url": "https://x.com/kimmonismus",
+          "tweet_url": "https://x.com/kimmonismus/status/2115891923160326343",
+          "text_zh": "认真看待 Sam Altman 所说「自我复制的数据中心」等设想已触手可及",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 30831,
+            "likes": 458,
+            "retweets": 21,
+            "replies": 60,
+            "quotes": 9
+          },
+          "posted_at": "2026-10-29T19:42:00+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 14,
+          "author_name": "Chubby♨️",
+          "author_handle": "kimmonismus",
+          "author_url": "https://x.com/kimmonismus",
+          "tweet_url": "https://x.com/kimmonismus/status/2115914568434405453",
+          "text_zh": "Altman 认为本地 AI 浪费稀缺内存、不如放云端，作者反驳称他不理解本地 AI 的价值",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 28769,
+            "likes": 523,
+            "retweets": 26,
+            "replies": 120,
+            "quotes": 13
+          },
+          "posted_at": "2026-10-29T21:11:59+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 15,
+          "author_name": "Ethan Mollick",
+          "author_handle": "emollick",
+          "author_url": "https://x.com/emollick",
+          "tweet_url": "https://x.com/emollick/status/2115844131985494092",
+          "text_zh": "Mollick：「卖铲子」不是 AI 创业的正确教训，工业革命比淘金热更贴切",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 26704,
+            "likes": 462,
+            "retweets": 24,
+            "replies": 188,
+            "quotes": 20
+          },
+          "posted_at": "2026-10-29T16:32:06+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 16,
+          "author_name": "Andy L",
+          "author_handle": "AndyL5cc",
+          "author_url": "https://x.com/AndyL5cc",
+          "tweet_url": "https://x.com/AndyL5cc/status/2115648692233613565",
+          "text_zh": "网友让一群 Grok Bot 讨论想要的办公环境，几小时后 AI 自建了一整间虚拟办公室，按真实任务走位协作",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 29002,
+            "likes": 289,
+            "retweets": 32,
+            "replies": 36,
+            "quotes": 5
+          },
+          "posted_at": "2026-10-29T03:35:29+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 17,
+          "author_name": "Chubby♨️",
+          "author_handle": "kimmonismus",
+          "author_url": "https://x.com/kimmonismus",
+          "tweet_url": "https://x.com/kimmonismus/status/2115658131669725611",
+          "text_zh": "GitHub Copilot Fusion 被低估，作者认为大家还没意识到它有多强",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 27307,
+            "likes": 399,
+            "retweets": 20,
+            "replies": 126,
+            "quotes": 7
+          },
+          "posted_at": "2026-10-29T04:13:00+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 18,
+          "author_name": "Bindu Reddy",
+          "author_handle": "bindureddy",
+          "author_url": "https://x.com/bindureddy",
+          "tweet_url": "https://x.com/bindureddy/status/2115624798982381577",
+          "text_zh": "Bindu Reddy：中国模型开始蒸馏 Astra，因为 Anthropic 封锁了它们",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 26134,
+            "likes": 391,
+            "retweets": 16,
+            "replies": 62,
+            "quotes": 4
+          },
+          "posted_at": "2026-10-29T02:00:33+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 19,
+          "author_name": "歸藏(guizang.ai)",
+          "author_handle": "op7418",
+          "author_url": "https://x.com/op7418",
+          "tweet_url": "https://x.com/op7418/status/2115622019429781887",
+          "text_zh": "Suno 推出 MCP，Claude 做视频需要配乐时可直接调用 Suno 生成",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 22474,
+            "likes": 164,
+            "retweets": 19,
+            "replies": 64,
+            "quotes": 4
+          },
+          "posted_at": "2026-10-29T01:49:30+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 20,
+          "author_name": "宝玉",
+          "author_handle": "dotey",
+          "author_url": "https://x.com/dotey",
+          "tweet_url": "https://x.com/dotey/status/2115842646031642966",
+          "text_zh": "宝玉：7 岁孩子用语音在 ChatGPT 里从画图一路做成游戏，边玩边让它改",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 22635,
+            "likes": 137,
+            "retweets": 7,
+            "replies": 56,
+            "quotes": 8
+          },
+          "posted_at": "2026-10-29T16:26:11+00:00",
+          "region": "zh"
+        }
+      ]
+    },
+    "crypto": {
+      "section": "crypto",
+      "date": "2026-10-30",
+      "generated_at": "2026-10-30T09:18:35+08:00",
+      "sample": false,
+      "items": [
+        {
+          "rank": 1,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115926246916038921",
+          "text_zh": "Kobeissi 快讯：币安被黑，以太坊、比特币、波场链上钱包合计流出约 57 亿美元，史上最大规模之一",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 3397944,
+            "likes": 21215,
+            "retweets": 3107,
+            "replies": 822,
+            "quotes": 1231
+          },
+          "posted_at": "2026-10-29T21:58:23+00:00",
+          "region": "west",
+          "region_rank": 1
+        },
+        {
+          "rank": 2,
+          "author_name": "CZ 🔶 BNB",
+          "author_handle": "cz_binance",
+          "author_url": "https://x.com/cz_binance",
+          "tweet_url": "https://x.com/cz_binance/status/2115915423174853077",
+          "text_zh": "CZ：用户资金安全，看起来确实是币安被黑；感谢 Tether（约 9.71 亿）和 Circle（约 8.23 亿）快速冻结，并说明自己不再管理币安",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 3150919,
+            "likes": 25937,
+            "retweets": 4100,
+            "replies": 3855,
+            "quotes": 2784
+          },
+          "posted_at": "2026-10-29T21:15:23+00:00",
+          "region": "west",
+          "region_rank": 2
+        },
+        {
+          "rank": 3,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115922259739349132",
+          "text_zh": "Watcher.Guru 快讯：币安被黑超 56 亿美元，列出被盗明细：14.5 亿美元 BTC、8.75 亿美元 ETH、2.34 亿美元 TRX 等",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 2804531,
+            "likes": 29899,
+            "retweets": 5953,
+            "replies": 2364,
+            "quotes": 3148
+          },
+          "posted_at": "2026-10-29T21:42:33+00:00",
+          "region": "west",
+          "region_rank": 3
+        },
+        {
+          "rank": 4,
+          "author_name": "CZ 🔶 BNB",
+          "author_handle": "cz_binance",
+          "author_url": "https://x.com/cz_binance",
+          "tweet_url": "https://x.com/cz_binance/status/2115932500006756686",
+          "text_zh": "CZ 补充：损失可能比目前披露的更高，但币安会全额承担",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 1106793,
+            "likes": 9954,
+            "retweets": 878,
+            "replies": 1100,
+            "quotes": 358
+          },
+          "posted_at": "2026-10-29T22:23:14+00:00",
+          "region": "west",
+          "region_rank": 4
+        },
+        {
+          "rank": 5,
+          "author_name": "CZ 🔶 BNB",
+          "author_handle": "cz_binance",
+          "author_url": "https://x.com/cz_binance",
+          "tweet_url": "https://x.com/cz_binance/status/2115880474375749834",
+          "text_zh": "CZ 提醒：某起事件疑似前端注入攻击，页面显示正常交易但实际注入了错误交易，签名前要核对",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 828849,
+            "likes": 2790,
+            "retweets": 253,
+            "replies": 522,
+            "quotes": 110
+          },
+          "posted_at": "2026-10-29T18:56:30+00:00",
+          "region": "west",
+          "region_rank": 5
+        },
+        {
+          "rank": 6,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115756646949650901",
+          "text_zh": "纽交所母公司 ICE 计划把 Hyperliquid（$HYPE）永续合约引入美国受监管市场",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 621570,
+            "likes": 5482,
+            "retweets": 659,
+            "replies": 360,
+            "quotes": 335
+          },
+          "posted_at": "2026-10-29T10:44:28+00:00",
+          "region": "west",
+          "region_rank": 6
+        },
+        {
+          "rank": 7,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115913607644860593",
+          "text_zh": "Tether 冻结约 9.71 亿美元与疑似币安被盗相关的 USDT，当时币安尚未发声明",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 604984,
+            "likes": 3727,
+            "retweets": 457,
+            "replies": 281,
+            "quotes": 160
+          },
+          "posted_at": "2026-10-29T21:08:10+00:00",
+          "region": "west",
+          "region_rank": 7
+        },
+        {
+          "rank": 8,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115909630408757733",
+          "text_zh": "加密市场急跌：SOL 跌破 96、XRP 跌破 1.25、ETH 跌破 2250、BTC 跌破 78500 美元，杠杆爆仓超 6 亿美元",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 534210,
+            "likes": 5264,
+            "retweets": 678,
+            "replies": 464,
+            "quotes": 252
+          },
+          "posted_at": "2026-10-29T20:52:22+00:00",
+          "region": "west",
+          "region_rank": 8
+        },
+        {
+          "rank": 9,
+          "author_name": "CZ 🔶 BNB",
+          "author_handle": "cz_binance",
+          "author_url": "https://x.com/cz_binance",
+          "tweet_url": "https://x.com/cz_binance/status/2115879862682677706",
+          "text_zh": "CZ 提醒：据新加坡警方，Ledger 在新加坡的供应链也被攻破（硬件钱包被植入恶意硬件），在新加坡的朋友务必小心",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 559443,
+            "likes": 2890,
+            "retweets": 414,
+            "replies": 350,
+            "quotes": 96
+          },
+          "posted_at": "2026-10-29T18:54:05+00:00",
+          "region": "west",
+          "region_rank": 9
+        },
+        {
+          "rank": 10,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115694469156872259",
+          "text_zh": "伦敦金属交易所（LME）将把存放在香港的金属代币化，作为可用于融资的数字资产",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 452371,
+            "likes": 3513,
+            "retweets": 525,
+            "replies": 216,
+            "quotes": 82
+          },
+          "posted_at": "2026-10-29T06:37:23+00:00",
+          "region": "west",
+          "region_rank": 10
+        },
+        {
+          "rank": 11,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115762721887060433",
+          "text_zh": "俄罗斯央行正式登记首个加密交易所自律监管组织",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 394070,
+            "likes": 3527,
+            "retweets": 389,
+            "replies": 156,
+            "quotes": 24
+          },
+          "posted_at": "2026-10-29T11:08:36+00:00",
+          "region": "west",
+          "region_rank": 11
+        },
+        {
+          "rank": 12,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115819921016021118",
+          "text_zh": "迪拜王室背景的 Standard Asset Company 推出 15 亿美元比特币投资策略",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 370510,
+            "likes": 3740,
+            "retweets": 379,
+            "replies": 180,
+            "quotes": 46
+          },
+          "posted_at": "2026-10-29T14:55:53+00:00",
+          "region": "west",
+          "region_rank": 12
+        },
+        {
+          "rank": 13,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115825348453748983",
+          "text_zh": "德鲁肯米勒支持在美国推出 7×24 小时 Hyperliquid（HYPE）期货交易，马斯克回应「有意思」",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 358136,
+            "likes": 3891,
+            "retweets": 347,
+            "replies": 217,
+            "quotes": 61
+          },
+          "posted_at": "2026-10-29T15:17:27+00:00",
+          "region": "west",
+          "region_rank": 13
+        },
+        {
+          "rank": 14,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115626744560734580",
+          "text_zh": "Kobeissi：科技股下跌叠加加密 24 小时爆仓 3.35 亿美元，BTC、ETH 大跌，比特币重回 8 万美元下方",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 334098,
+            "likes": 3971,
+            "retweets": 346,
+            "replies": 220,
+            "quotes": 83
+          },
+          "posted_at": "2026-10-29T02:08:17+00:00",
+          "region": "west",
+          "region_rank": 14
+        },
+        {
+          "rank": 15,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115948591709605990",
+          "text_zh": "币安称已冻结约 25.4 亿美元被盗资产，且数字可能继续增加",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 282864,
+            "likes": 2967,
+            "retweets": 275,
+            "replies": 221,
+            "quotes": 53
+          },
+          "posted_at": "2026-10-29T23:27:11+00:00",
+          "region": "west",
+          "region_rank": 15
+        },
+        {
+          "rank": 16,
+          "author_name": "ZachXBT",
+          "author_handle": "zachxbt",
+          "author_url": "https://x.com/zachxbt",
+          "tweet_url": "https://x.com/zachxbt/status/2115960582230913357",
+          "text_zh": "ZachXBT：Arbitrum 安全委员会已执行交易，冻结币安被盗资金约 3050 万美元",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 290749,
+            "likes": 2569,
+            "retweets": 233,
+            "replies": 234,
+            "quotes": 46
+          },
+          "posted_at": "2026-10-30T00:14:50+00:00",
+          "region": "west",
+          "region_rank": 16
+        },
+        {
+          "rank": 17,
+          "author_name": "Michael Saylor",
+          "author_handle": "saylor",
+          "author_url": "https://x.com/saylor",
+          "tweet_url": "https://x.com/saylor/status/2115897719449403879",
+          "text_zh": "Saylor 公布 Strategy 2026 年 Q3 业绩：营业利润 210 亿美元创单季新高，年内融资 210 亿美元",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 234621,
+            "likes": 4018,
+            "retweets": 410,
+            "replies": 279,
+            "quotes": 52
+          },
+          "posted_at": "2026-10-29T20:05:02+00:00",
+          "region": "west",
+          "region_rank": 17
+        },
+        {
+          "rank": 18,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2115924863802306605",
+          "text_zh": "Aave 冻结 Avalanche 上的借贷市场，防止币安黑客用赃款借币",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 245431,
+            "likes": 2073,
+            "retweets": 175,
+            "replies": 119,
+            "quotes": 37
+          },
+          "posted_at": "2026-10-29T21:52:54+00:00",
+          "region": "west",
+          "region_rank": 18
+        },
+        {
+          "rank": 19,
+          "author_name": "Ansem 🐂🀄️",
+          "author_handle": "blknoiz06",
+          "author_url": "https://x.com/blknoiz06",
+          "tweet_url": "https://x.com/blknoiz06/status/2115841735045623975",
+          "text_zh": "Ansem：史上最伟大投资人、最伟大商人和全球最大交易所同一天都在力挺 Hyperliquid，加密前景光明",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 134134,
+            "likes": 2394,
+            "retweets": 195,
+            "replies": 322,
+            "quotes": 31
+          },
+          "posted_at": "2026-10-29T16:22:34+00:00",
+          "region": "west",
+          "region_rank": 19
+        },
+        {
+          "rank": 20,
+          "author_name": "Coin Bureau",
+          "author_handle": "coinbureau",
+          "author_url": "https://x.com/coinbureau",
+          "tweet_url": "https://x.com/coinbureau/status/2115759801074589740",
+          "text_zh": "Coin Bureau：中国可能是第一个戳破 AI 泡沫的国家，沪深 300 较高点跌 20% 进入技术性熊市，5 月以来 A 股蒸发 2.4 万亿美元，AI 股曾占市场 42%",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 79600,
+            "likes": 1218,
+            "retweets": 202,
+            "replies": 90,
+            "quotes": 25
+          },
+          "posted_at": "2026-10-29T10:57:00+00:00",
+          "region": "west",
+          "region_rank": 20
+        },
+        {
+          "rank": 21,
+          "author_name": "qinbafrank",
+          "author_handle": "qinbafrank",
+          "author_url": "https://x.com/qinbafrank",
+          "tweet_url": "https://x.com/qinbafrank/status/2115793231980159160",
+          "text_zh": "德鲁肯米勒首条推文宣布投资 Trade.xyz；财长贝森特曾是他在量子基金的下属，美联储主席沃什是其家族办公室合伙人",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 74576,
+            "likes": 325,
+            "retweets": 32,
+            "replies": 20,
+            "quotes": 5
+          },
+          "posted_at": "2026-10-29T13:09:50+00:00",
+          "region": "zh",
+          "region_rank": 1
+        },
+        {
+          "rank": 22,
+          "author_name": "余烬",
+          "author_handle": "EmberCN",
+          "author_url": "https://x.com/EmberCN",
+          "tweet_url": "https://x.com/EmberCN/status/2115957559119204820",
+          "text_zh": "余烬：币安凌晨被盗约 34.3 亿美元（已剔除被冻结的 24.3 亿稳定币），最大一笔是 18,270 枚 BTC，黑客正把山寨币换成 ETH",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 26691,
+            "likes": 39,
+            "retweets": 7,
+            "replies": 22,
+            "quotes": 4
+          },
+          "posted_at": "2026-10-30T00:02:49+00:00",
+          "region": "zh",
+          "region_rank": 2
+        },
+        {
+          "rank": 23,
+          "author_name": "BITWU.ETH 🔆",
+          "author_handle": "Bitwux",
+          "author_url": "https://x.com/Bitwux",
+          "tweet_url": "https://x.com/Bitwux/status/2115634562890080303",
+          "text_zh": "美联储维持利率不变，但有 2 票反对且都主张再加息 25 个基点；对 BTC 来说关键是资金成本走向和 ETF 需求能否持续",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 22974,
+            "likes": 22,
+            "retweets": 1,
+            "replies": 27,
+            "quotes": 2
+          },
+          "posted_at": "2026-10-29T02:39:21+00:00",
+          "region": "zh",
+          "region_rank": 3
+        },
+        {
+          "rank": 24,
+          "author_name": "BITWU.ETH 🔆",
+          "author_handle": "Bitwux",
+          "author_url": "https://x.com/Bitwux",
+          "tweet_url": "https://x.com/Bitwux/status/2115654170447397349",
+          "text_zh": "某 P2P 出入金项目宣称接入支付宝人民币 OTC，支付宝火速撇清；作者认为这类平台风险极高",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 21574,
+            "likes": 29,
+            "retweets": 0,
+            "replies": 23,
+            "quotes": 2
+          },
+          "posted_at": "2026-10-29T03:57:15+00:00",
+          "region": "zh",
+          "region_rank": 4
+        },
+        {
+          "rank": 25,
+          "author_name": "qinbafrank",
+          "author_handle": "qinbafrank",
+          "author_url": "https://x.com/qinbafrank",
+          "tweet_url": "https://x.com/qinbafrank/status/2115837630961316001",
+          "text_zh": "加密的拐点？美国财政部 TGA 余额已达到 8 月设定的 10 月底 1.05 万亿美元目标",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 19345,
+            "likes": 95,
+            "retweets": 15,
+            "replies": 20,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T16:06:16+00:00",
+          "region": "zh",
+          "region_rank": 5
+        },
+        {
+          "rank": 26,
+          "author_name": "qinbafrank",
+          "author_handle": "qinbafrank",
+          "author_url": "https://x.com/qinbafrank",
+          "tweet_url": "https://x.com/qinbafrank/status/2115809028903428159",
+          "text_zh": "ICE 宣布基于 Hyperliquid 的 Trade.xyz 永续合约将通过 ICE 与 OKX 的合资公司面向美国散户，ICE+Trade.xyz+OKX 把永续合约带进美国监管框架",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 17281,
+            "likes": 58,
+            "retweets": 6,
+            "replies": 12,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T14:12:36+00:00",
+          "region": "zh",
+          "region_rank": 6
+        },
+        {
+          "rank": 27,
+          "author_name": "PANews丨APP全面升级",
+          "author_handle": "PANewsCN",
+          "author_url": "https://x.com/PANewsCN",
+          "tweet_url": "https://x.com/PANewsCN/status/2115647562086863321",
+          "text_zh": "300 美元家用小矿机（约 6.5 TH/s）在 CKPool 独立挖出第 973,413 号区块，独得 3.14 枚 BTC（约 25 万美元）",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 14457,
+            "likes": 36,
+            "retweets": 4,
+            "replies": 8,
+            "quotes": 5
+          },
+          "posted_at": "2026-10-29T03:31:00+00:00",
+          "region": "zh",
+          "region_rank": 7
+        },
+        {
+          "rank": 28,
+          "author_name": "PANews丨APP全面升级",
+          "author_handle": "PANewsCN",
+          "author_url": "https://x.com/PANewsCN",
+          "tweet_url": "https://x.com/PANewsCN/status/2115615985730556344",
+          "text_zh": "支付宝官方打假：不支持加密货币交易，回应 P2P 平台 Peer 宣称上线支付宝通道一事",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 13713,
+            "likes": 21,
+            "retweets": 3,
+            "replies": 4,
+            "quotes": 3
+          },
+          "posted_at": "2026-10-29T01:25:31+00:00",
+          "region": "zh",
+          "region_rank": 8
+        },
+        {
+          "rank": 29,
+          "author_name": "37度",
+          "author_handle": "hibtc37",
+          "author_url": "https://x.com/hibtc37",
+          "tweet_url": "https://x.com/hibtc37/status/2115767663087718535",
+          "text_zh": "HYPE 逆势拉升的原因：Kraken 母公司计划在 Hyperliquid HIP-3 上开首个受 CFTC 监管、面向美国用户的永续市场",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 12521,
+            "likes": 31,
+            "retweets": 3,
+            "replies": 10,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T11:28:14+00:00",
+          "region": "zh",
+          "region_rank": 9
+        },
+        {
+          "rank": 30,
+          "author_name": "Ai 姨",
+          "author_handle": "ai_9684xtpa",
+          "author_url": "https://x.com/ai_9684xtpa",
+          "tweet_url": "https://x.com/ai_9684xtpa/status/2115636775440060488",
+          "text_zh": "2015 年 ICO 认购 40042 枚 ETH 的远古巨鲸沉睡五年后疑似抛售 2118 枚 ETH，成本仅 0.31 美元",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 12362,
+            "likes": 36,
+            "retweets": 0,
+            "replies": 25,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T02:48:08+00:00",
+          "region": "zh",
+          "region_rank": 10
+        },
+        {
+          "rank": 31,
+          "author_name": "PANews丨APP全面升级",
+          "author_handle": "PANewsCN",
+          "author_url": "https://x.com/PANewsCN",
+          "tweet_url": "https://x.com/PANewsCN/status/2115657124705608149",
+          "text_zh": "Vitalik 在《硅谷101》谈当年捐出柴犬币（SHIB），受捐机构后来约拿到 4.7 亿美元",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 11383,
+            "likes": 39,
+            "retweets": 10,
+            "replies": 9,
+            "quotes": 6
+          },
+          "posted_at": "2026-10-29T04:09:00+00:00",
+          "region": "zh",
+          "region_rank": 11
+        },
+        {
+          "rank": 32,
+          "author_name": "Ai 姨",
+          "author_handle": "ai_9684xtpa",
+          "author_url": "https://x.com/ai_9684xtpa",
+          "tweet_url": "https://x.com/ai_9684xtpa/status/2115631386875011372",
+          "text_zh": "WLD 一周跌约 26%：三年前收到 Worldcoin 团队 957 万枚 WLD 的地址全部转出，其中 650 万枚充进各大交易所",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 12033,
+            "likes": 26,
+            "retweets": 1,
+            "replies": 10,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T02:26:43+00:00",
+          "region": "zh",
+          "region_rank": 12
+        },
+        {
+          "rank": 33,
+          "author_name": "BITWU.ETH 🔆",
+          "author_handle": "Bitwux",
+          "author_url": "https://x.com/Bitwux",
+          "tweet_url": "https://x.com/Bitwux/status/2115635685374005581",
+          "text_zh": "ETF 在流入、稳定币却在收缩：市场是增量资金推动，还是存量资金重新配置？",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 10081,
+            "likes": 34,
+            "retweets": 2,
+            "replies": 17,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T02:43:48+00:00",
+          "region": "zh",
+          "region_rank": 13
+        },
+        {
+          "rank": 34,
+          "author_name": "BITWU.ETH 🔆",
+          "author_handle": "Bitwux",
+          "author_url": "https://x.com/Bitwux",
+          "tweet_url": "https://x.com/Bitwux/status/2115643536477462559",
+          "text_zh": "24 小时全网爆仓 3.57 亿美元，多空双爆，提醒震荡行情控制风险",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 9787,
+            "likes": 29,
+            "retweets": 2,
+            "replies": 24,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T03:15:00+00:00",
+          "region": "zh",
+          "region_rank": 14
+        },
+        {
+          "rank": 35,
+          "author_name": "梭教授说",
+          "author_handle": "hellosuoha",
+          "author_url": "https://x.com/hellosuoha",
+          "tweet_url": "https://x.com/hellosuoha/status/2115617550969233848",
+          "text_zh": "梭哈晨报：行情只剩妖币独舞，只能追涨不能抄底；BTC 久不动、ETH 还有基金会持续卖币",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 8699,
+            "likes": 21,
+            "retweets": 0,
+            "replies": 16,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T01:31:45+00:00",
+          "region": "zh",
+          "region_rank": 15
+        },
+        {
+          "rank": 36,
+          "author_name": "BITWU.ETH 🔆",
+          "author_handle": "Bitwux",
+          "author_url": "https://x.com/Bitwux",
+          "tweet_url": "https://x.com/Bitwux/status/2115967791933391115",
+          "text_zh": "币安被盗复盘：凌晨约 5 点遭攻击，可能是行业史上最大被盗案；据神鱼复盘，攻击者提前演练 2 次、预设 64 种代币转移清单",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 7078,
+            "likes": 16,
+            "retweets": 2,
+            "replies": 13,
+            "quotes": 6
+          },
+          "posted_at": "2026-10-30T00:43:29+00:00",
+          "region": "zh",
+          "region_rank": 16
+        },
+        {
+          "rank": 37,
+          "author_name": "Paul Xue | BTC 链上数据研究",
+          "author_handle": "paulxue1979",
+          "author_url": "https://x.com/paulxue1979",
+          "tweet_url": "https://x.com/paulxue1979/status/2115662632812450150",
+          "text_zh": "本轮牛市初期 BTC 已两次回踩 STH-MVRV 均值线（2019 年没回踩、2023 年回踩一次），上涨更曲折",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 4549,
+            "likes": 20,
+            "retweets": 1,
+            "replies": 8,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T04:30:53+00:00",
+          "region": "zh",
+          "region_rank": 17
+        },
+        {
+          "rank": 38,
+          "author_name": "PANews丨APP全面升级",
+          "author_handle": "PANewsCN",
+          "author_url": "https://x.com/PANewsCN",
+          "tweet_url": "https://x.com/PANewsCN/status/2115740172318892284",
+          "text_zh": "新加坡警方警示：部分门店出售的 Ledger 硬件钱包被植入窃密硬件，至少两起报案损失约 350 万新元",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 4296,
+            "likes": 13,
+            "retweets": 2,
+            "replies": 5,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T09:39:00+00:00",
+          "region": "zh",
+          "region_rank": 18
+        },
+        {
+          "rank": 39,
+          "author_name": "Paul Xue | BTC 链上数据研究",
+          "author_handle": "paulxue1979",
+          "author_url": "https://x.com/paulxue1979",
+          "tweet_url": "https://x.com/paulxue1979/status/2115639912783581204",
+          "text_zh": "Glassnode 持仓成本热力图：持币超 155 天的长期持有者约 400 万枚 BTC 成本集中在 8.5 万到 11.8 万美元，反弹到 8.5 万附近可能遇解套抛压",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 3452,
+            "likes": 11,
+            "retweets": 0,
+            "replies": 4,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T03:00:36+00:00",
+          "region": "zh",
+          "region_rank": 19
+        },
+        {
+          "rank": 40,
+          "author_name": "Paul Xue | BTC 链上数据研究",
+          "author_handle": "paulxue1979",
+          "author_url": "https://x.com/paulxue1979",
+          "tweet_url": "https://x.com/paulxue1979/status/2115614577190924677",
+          "text_zh": "BTC 在 8 万附近震荡，现货 ETF 资金大进大出：两周累计只净流入 6700 万美元",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 3064,
+            "likes": 7,
+            "retweets": 0,
+            "replies": 6,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T01:19:56+00:00",
+          "region": "zh",
+          "region_rank": 20
+        }
+      ]
+    },
+    "stocks": {
+      "section": "stocks",
+      "date": "2026-10-30",
+      "generated_at": "2026-10-30T09:18:35+08:00",
+      "sample": false,
+      "items": [
+        {
+          "rank": 1,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115633389587865993",
+          "text_zh": "Kobeissi 列出进入熊市的科技股：APP -65%、CRWV -57%、COIN -56%、WDC -52%、ORCL -50%、ARM -49% 等",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "APP(美股)",
+            "CRWV(美股)",
+            "COIN(美股)",
+            "WDC(美股)",
+            "ORCL(美股)",
+            "ARM(美股)",
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 758635,
+            "likes": 6541,
+            "retweets": 804,
+            "replies": 261,
+            "quotes": 117
+          },
+          "posted_at": "2026-10-29T02:34:41+00:00",
+          "region": "west",
+          "region_rank": 1
+        },
+        {
+          "rank": 2,
+          "author_name": "Crypto Rover",
+          "author_handle": "cryptorover",
+          "author_url": "https://x.com/cryptorover",
+          "tweet_url": "https://x.com/cryptorover/status/2115704085177679881",
+          "text_zh": "A 股大跌，中国股市当天蒸发 1.1 万亿元人民币，称「中国 AI 泡沫破裂」",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 581479,
+            "likes": 9433,
+            "retweets": 880,
+            "replies": 264,
+            "quotes": 265
+          },
+          "posted_at": "2026-10-29T07:15:36+00:00",
+          "region": "west",
+          "region_rank": 2
+        },
+        {
+          "rank": 3,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115897573747892314",
+          "text_zh": "亚马逊 Q3 财报不及预期，盘后跌超 12%，市值蒸发约 3150 亿美元",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "AMZN(美股)"
+          ],
+          "metrics": {
+            "views": 582600,
+            "likes": 5606,
+            "retweets": 721,
+            "replies": 212,
+            "quotes": 258
+          },
+          "posted_at": "2026-10-29T20:04:27+00:00",
+          "region": "west",
+          "region_rank": 3
+        },
+        {
+          "rank": 4,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115898507878129840",
+          "text_zh": "英特尔财报不及预期盘后暴跌超 22%，公司把原因归于 PC 市场疲软",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "INTC(美股)"
+          ],
+          "metrics": {
+            "views": 499780,
+            "likes": 6140,
+            "retweets": 728,
+            "replies": 294,
+            "quotes": 316
+          },
+          "posted_at": "2026-10-29T20:08:10+00:00",
+          "region": "west",
+          "region_rank": 4
+        },
+        {
+          "rank": 5,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115944476292104688",
+          "text_zh": "标普 500 超 60% 成分股较高点跌超 20%，七巨头中 4 家进入熊市、合计蒸发 4 万亿美元；Kobeissi 称这是「隐形熊市」，也是大机会",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "SPX(美股)"
+          ],
+          "metrics": {
+            "views": 457362,
+            "likes": 4896,
+            "retweets": 627,
+            "replies": 183,
+            "quotes": 119
+          },
+          "posted_at": "2026-10-29T23:10:50+00:00",
+          "region": "west",
+          "region_rank": 5
+        },
+        {
+          "rank": 6,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115783910143791414",
+          "text_zh": "美国 9 月 PCE 通胀升至 3.6%，核心 PCE 3.1%（环比 +0.3%）",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 363298,
+            "likes": 4297,
+            "retweets": 555,
+            "replies": 250,
+            "quotes": 95
+          },
+          "posted_at": "2026-10-29T12:32:48+00:00",
+          "region": "west",
+          "region_rank": 6
+        },
+        {
+          "rank": 7,
+          "author_name": "Jim Cramer",
+          "author_handle": "jimcramer",
+          "author_url": "https://x.com/jimcramer",
+          "tweet_url": "https://x.com/jimcramer/status/2115899850785198258",
+          "text_zh": "Jim Cramer：对英特尔很失望，甚至很愤怒",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "INTC(美股)"
+          ],
+          "metrics": {
+            "views": 384092,
+            "likes": 2337,
+            "retweets": 96,
+            "replies": 351,
+            "quotes": 75
+          },
+          "posted_at": "2026-10-29T20:13:30+00:00",
+          "region": "west",
+          "region_rank": 7
+        },
+        {
+          "rank": 8,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115776735463563746",
+          "text_zh": "微软 2017 年来首次发行 10 档高评级美元债，为巨额 AI 投资融资",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "MSFT(美股)"
+          ],
+          "metrics": {
+            "views": 345258,
+            "likes": 2303,
+            "retweets": 174,
+            "replies": 164,
+            "quotes": 57
+          },
+          "posted_at": "2026-10-29T12:04:17+00:00",
+          "region": "west",
+          "region_rank": 8
+        },
+        {
+          "rank": 9,
+          "author_name": "zerohedge",
+          "author_handle": "zerohedge",
+          "author_url": "https://x.com/zerohedge",
+          "tweet_url": "https://x.com/zerohedge/status/2115800710298087616",
+          "text_zh": "Zerohedge：看来最初看空谷歌的逻辑一直是对的",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 347019,
+            "likes": 2051,
+            "retweets": 43,
+            "replies": 89,
+            "quotes": 15
+          },
+          "posted_at": "2026-10-29T13:39:33+00:00",
+          "region": "west",
+          "region_rank": 9
+        },
+        {
+          "rank": 10,
+          "author_name": "Bull Theory",
+          "author_handle": "BullTheoryio",
+          "author_url": "https://x.com/BullTheoryio",
+          "tweet_url": "https://x.com/BullTheoryio/status/2115871215009284194",
+          "text_zh": "七巨头中 5 家较历史高点跌超 10%，2 家已进入熊市",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [
+            "GOOGL(美股)",
+            "MSFT(美股)",
+            "META(美股)",
+            "AMZN(美股)"
+          ],
+          "metrics": {
+            "views": 286732,
+            "likes": 2834,
+            "retweets": 458,
+            "replies": 171,
+            "quotes": 99
+          },
+          "posted_at": "2026-10-29T18:19:43+00:00",
+          "region": "west",
+          "region_rank": 10
+        },
+        {
+          "rank": 11,
+          "author_name": "NoLimit",
+          "author_handle": "NoLimitGains",
+          "author_url": "https://x.com/NoLimitGains",
+          "tweet_url": "https://x.com/NoLimitGains/status/2115665345562214413",
+          "text_zh": "谷歌跌到 293 美元还能买吗？营业利润增 30%、云收入翻倍，股价却跌 9.4%，作者逐项分析",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 320682,
+            "likes": 1378,
+            "retweets": 67,
+            "replies": 96,
+            "quotes": 5
+          },
+          "posted_at": "2026-10-29T04:41:40+00:00",
+          "region": "west",
+          "region_rank": 11
+        },
+        {
+          "rank": 12,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115802172680008003",
+          "text_zh": "谷歌财报不及预期，盘中跌超 13%，有望创上市以来最大财报后跌幅",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 280760,
+            "likes": 2769,
+            "retweets": 242,
+            "replies": 246,
+            "quotes": 99
+          },
+          "posted_at": "2026-10-29T13:45:22+00:00",
+          "region": "west",
+          "region_rank": 12
+        },
+        {
+          "rank": 13,
+          "author_name": "Bull Theory",
+          "author_handle": "BullTheoryio",
+          "author_url": "https://x.com/BullTheoryio",
+          "tweet_url": "https://x.com/BullTheoryio/status/2115807208986558687",
+          "text_zh": "全美股市当天合计蒸发 3200 亿美元，谷歌一家就蒸发约 4300 亿，相当于整个市场跌幅的 134%",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 176199,
+            "likes": 3961,
+            "retweets": 425,
+            "replies": 124,
+            "quotes": 82
+          },
+          "posted_at": "2026-10-29T14:05:23+00:00",
+          "region": "west",
+          "region_rank": 13
+        },
+        {
+          "rank": 14,
+          "author_name": "amit",
+          "author_handle": "amitisinvesting",
+          "author_url": "https://x.com/amitisinvesting",
+          "tweet_url": "https://x.com/amitisinvesting/status/2115834750912868557",
+          "text_zh": "如果华尔街不认可谷歌值 3.5 万亿，Anthropic 凭什么值 2 万亿？谷歌一天蒸发 5000 亿",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 175790,
+            "likes": 3028,
+            "retweets": 64,
+            "replies": 185,
+            "quotes": 7
+          },
+          "posted_at": "2026-10-29T15:54:49+00:00",
+          "region": "west",
+          "region_rank": 14
+        },
+        {
+          "rank": 15,
+          "author_name": "amit",
+          "author_handle": "amitisinvesting",
+          "author_url": "https://x.com/amitisinvesting",
+          "tweet_url": "https://x.com/amitisinvesting/status/2115912877257138479",
+          "text_zh": "今天盘后是 Q3 财报季最难看的一次：亚马逊几秒内跌 12%，英特尔也大跌",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "AMZN(美股)",
+            "INTC(美股)"
+          ],
+          "metrics": {
+            "views": 171980,
+            "likes": 1472,
+            "retweets": 76,
+            "replies": 132,
+            "quotes": 21
+          },
+          "posted_at": "2026-10-29T21:05:16+00:00",
+          "region": "west",
+          "region_rank": 15
+        },
+        {
+          "rank": 16,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2115903350818673145",
+          "text_zh": "Reddit 日活与 Q4 指引不及预期，股价跌超 12%",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "RDDT(美股)"
+          ],
+          "metrics": {
+            "views": 161717,
+            "likes": 1408,
+            "retweets": 126,
+            "replies": 87,
+            "quotes": 32
+          },
+          "posted_at": "2026-10-29T20:27:25+00:00",
+          "region": "west",
+          "region_rank": 16
+        },
+        {
+          "rank": 17,
+          "author_name": "Shay Boloor",
+          "author_handle": "StockSavvyShay",
+          "author_url": "https://x.com/StockSavvyShay",
+          "tweet_url": "https://x.com/StockSavvyShay/status/2115898195368927614",
+          "text_zh": "亚马逊 Q3 数据：营收 2019 亿（预期 2021 亿）、EPS 1.89（预期 1.96）、AWS 460 亿（预期 449 亿）",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "AMZN(美股)"
+          ],
+          "metrics": {
+            "views": 136152,
+            "likes": 576,
+            "retweets": 49,
+            "replies": 42,
+            "quotes": 15
+          },
+          "posted_at": "2026-10-29T20:06:55+00:00",
+          "region": "west",
+          "region_rank": 17
+        },
+        {
+          "rank": 18,
+          "author_name": "Shay Boloor",
+          "author_handle": "StockSavvyShay",
+          "author_url": "https://x.com/StockSavvyShay",
+          "tweet_url": "https://x.com/StockSavvyShay/status/2115900060638793983",
+          "text_zh": "闪迪 Q1 财报：营收 110 亿（预期 106 亿）、EPS 49.51（预期 46.22）、数据中心收入 48 亿（+61%）",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "SNDK(美股)"
+          ],
+          "metrics": {
+            "views": 111219,
+            "likes": 846,
+            "retweets": 76,
+            "replies": 43,
+            "quotes": 30
+          },
+          "posted_at": "2026-10-29T20:14:20+00:00",
+          "region": "west",
+          "region_rank": 18
+        },
+        {
+          "rank": 19,
+          "author_name": "Shay Boloor",
+          "author_handle": "StockSavvyShay",
+          "author_url": "https://x.com/StockSavvyShay",
+          "tweet_url": "https://x.com/StockSavvyShay/status/2115799552901124128",
+          "text_zh": "谷歌正经历 4 年来最大回撤",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 92187,
+            "likes": 1158,
+            "retweets": 88,
+            "replies": 53,
+            "quotes": 11
+          },
+          "posted_at": "2026-10-29T13:34:57+00:00",
+          "region": "west",
+          "region_rank": 19
+        },
+        {
+          "rank": 20,
+          "author_name": "Evan",
+          "author_handle": "StockMKTNewz",
+          "author_url": "https://x.com/StockMKTNewz",
+          "tweet_url": "https://x.com/StockMKTNewz/status/2115900344760705108",
+          "text_zh": "亚马逊 CEO 贾西：从没有过万亿美元营收的业务，未来 5～10 年我们可能有两个",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "AMZN(美股)"
+          ],
+          "metrics": {
+            "views": 65058,
+            "likes": 1056,
+            "retweets": 68,
+            "replies": 24,
+            "quotes": 12
+          },
+          "posted_at": "2026-10-29T20:15:28+00:00",
+          "region": "west",
+          "region_rank": 20
+        },
+        {
+          "rank": 21,
+          "author_name": "H.E. Justin Sun 👨‍🚀 🌞",
+          "author_handle": "justinsuntron",
+          "author_url": "https://x.com/justinsuntron",
+          "tweet_url": "https://x.com/justinsuntron/status/2115654545435246955",
+          "text_zh": "孙宇晨回忆 2012 年特斯拉市值仅 20 亿美元时就看好马斯克有望接班乔布斯，十年见证其崛起",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 195410,
+            "likes": 691,
+            "retweets": 42,
+            "replies": 141,
+            "quotes": 13
+          },
+          "posted_at": "2026-10-29T03:58:45+00:00",
+          "region": "zh",
+          "region_rank": 1
+        },
+        {
+          "rank": 22,
+          "author_name": "qinbafrank",
+          "author_handle": "qinbafrank",
+          "author_url": "https://x.com/qinbafrank",
+          "tweet_url": "https://x.com/qinbafrank/status/2115755289949720745",
+          "text_zh": "英特尔财报前瞻：服务器业务可能带来略好于预期的成绩，但盈利上修要看四季度交付能力和利润留存",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "INTC(美股)"
+          ],
+          "metrics": {
+            "views": 53506,
+            "likes": 52,
+            "retweets": 4,
+            "replies": 20,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T10:39:04+00:00",
+          "region": "zh",
+          "region_rank": 2
+        },
+        {
+          "rank": 23,
+          "author_name": "37度",
+          "author_handle": "hibtc37",
+          "author_url": "https://x.com/hibtc37",
+          "tweet_url": "https://x.com/hibtc37/status/2115612662830940176",
+          "text_zh": "博主赌谷歌财报失败：从 350 一路加仓到 314，财报后跌到 285；甲骨文涨超 12%",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [
+            "GOOGL(美股)",
+            "NOK(美股)",
+            "ORCL(美股)"
+          ],
+          "metrics": {
+            "views": 51699,
+            "likes": 88,
+            "retweets": 8,
+            "replies": 57,
+            "quotes": 3
+          },
+          "posted_at": "2026-10-29T01:12:19+00:00",
+          "region": "zh",
+          "region_rank": 3
+        },
+        {
+          "rank": 24,
+          "author_name": "Rocky",
+          "author_handle": "Rocky_Bitcoin",
+          "author_url": "https://x.com/Rocky_Bitcoin",
+          "tweet_url": "https://x.com/Rocky_Bitcoin/status/2115744471082316151",
+          "text_zh": "婚恋博主称 A 股大跌后线下活动 A8 男嘉宾明显减少，作者让 AI 估算这轮下跌让约 10 万个 A8 家庭消失",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 27250,
+            "likes": 29,
+            "retweets": 4,
+            "replies": 8,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T09:56:05+00:00",
+          "region": "zh",
+          "region_rank": 4
+        },
+        {
+          "rank": 25,
+          "author_name": "qinbafrank",
+          "author_handle": "qinbafrank",
+          "author_url": "https://x.com/qinbafrank",
+          "tweet_url": "https://x.com/qinbafrank/status/2115720160715923557",
+          "text_zh": "怎么看谷歌 Q3：一个亮点两个担忧——云业务大超预期，搜索广告和 YouTube 广告不及预期拖累整体",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 24878,
+            "likes": 101,
+            "retweets": 15,
+            "replies": 47,
+            "quotes": 2
+          },
+          "posted_at": "2026-10-29T08:19:29+00:00",
+          "region": "zh",
+          "region_rank": 5
+        },
+        {
+          "rank": 26,
+          "author_name": "qinbafrank",
+          "author_handle": "qinbafrank",
+          "author_url": "https://x.com/qinbafrank",
+          "tweet_url": "https://x.com/qinbafrank/status/2115614793138929680",
+          "text_zh": "微软是这轮云厂商的优等生：Azure 本季收入 331.65 亿美元，贡献集团营收同比增量约 74%",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "MSFT(美股)"
+          ],
+          "metrics": {
+            "views": 24717,
+            "likes": 70,
+            "retweets": 6,
+            "replies": 27,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T01:20:47+00:00",
+          "region": "zh",
+          "region_rank": 6
+        },
+        {
+          "rank": 27,
+          "author_name": "Paul Xue | BTC 链上数据研究",
+          "author_handle": "paulxue1979",
+          "author_url": "https://x.com/paulxue1979",
+          "tweet_url": "https://x.com/paulxue1979/status/2115618346976874928",
+          "text_zh": "三大美股加密概念股 Circle、Coinbase、Strategy，未来 10 年谁回报最高？",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [
+            "CRCL(美股)",
+            "COIN(美股)",
+            "MSTR(美股)"
+          ],
+          "metrics": {
+            "views": 19176,
+            "likes": 34,
+            "retweets": 5,
+            "replies": 17,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T01:34:54+00:00",
+          "region": "zh",
+          "region_rank": 7
+        },
+        {
+          "rank": 28,
+          "author_name": "Ai 姨",
+          "author_handle": "ai_9684xtpa",
+          "author_url": "https://x.com/ai_9684xtpa",
+          "tweet_url": "https://x.com/ai_9684xtpa/status/2115811560631497053",
+          "text_zh": "链上数据：谷歌创最大单日跌幅后，有地址开 20 倍 GOOGL 多单，持仓约 1430 万美元",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 15967,
+            "likes": 27,
+            "retweets": 0,
+            "replies": 14,
+            "quotes": 2
+          },
+          "posted_at": "2026-10-29T14:22:40+00:00",
+          "region": "zh",
+          "region_rank": 8
+        },
+        {
+          "rank": 29,
+          "author_name": "财经数据库",
+          "author_handle": "caijingshujuku",
+          "author_url": "https://x.com/caijingshujuku",
+          "tweet_url": "https://x.com/caijingshujuku/status/2115932397263081802",
+          "text_zh": "谷歌大跌 13%，美股终结三连涨，云服务股普跌，盘后英特尔狂泻 20%、亚马逊重挫",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "GOOGL(美股)",
+            "INTC(美股)",
+            "AMZN(美股)"
+          ],
+          "metrics": {
+            "views": 13885,
+            "likes": 17,
+            "retweets": 2,
+            "replies": 4,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T22:22:50+00:00",
+          "region": "zh",
+          "region_rank": 9
+        },
+        {
+          "rank": 30,
+          "author_name": "37度",
+          "author_handle": "hibtc37",
+          "author_url": "https://x.com/hibtc37",
+          "tweet_url": "https://x.com/hibtc37/status/2115813676821434652",
+          "text_zh": "谷歌跌 13%，博主谈加仓后浮亏 2 万多美元的心理感受",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 8203,
+            "likes": 26,
+            "retweets": 0,
+            "replies": 11,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T14:31:05+00:00",
+          "region": "zh",
+          "region_rank": 10
+        },
+        {
+          "rank": 31,
+          "author_name": "37度",
+          "author_handle": "hibtc37",
+          "author_url": "https://x.com/hibtc37",
+          "tweet_url": "https://x.com/hibtc37/status/2115797260877627825",
+          "text_zh": "不回购、不分红、靠发债增发的股票没有意义，还不如代码写死回购销毁的代币",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "META(美股)",
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 6856,
+            "likes": 48,
+            "retweets": 1,
+            "replies": 6,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T13:25:51+00:00",
+          "region": "zh",
+          "region_rank": 11
+        },
+        {
+          "rank": 32,
+          "author_name": "PANews丨APP全面升级",
+          "author_handle": "PANewsCN",
+          "author_url": "https://x.com/PANewsCN",
+          "tweet_url": "https://x.com/PANewsCN/status/2115720629341278672",
+          "text_zh": "知名交易员 Ansem 转为看空：已减仓，担心美股步入周期尾声，存储和半导体没能再创新高",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 4485,
+            "likes": 11,
+            "retweets": 1,
+            "replies": 3,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T08:21:20+00:00",
+          "region": "zh",
+          "region_rank": 12
+        },
+        {
+          "rank": 33,
+          "author_name": "PANews丨APP全面升级",
+          "author_handle": "PANewsCN",
+          "author_url": "https://x.com/PANewsCN",
+          "tweet_url": "https://x.com/PANewsCN/status/2115733943786131741",
+          "text_zh": "微软、谷歌、高盛等 33 家美股公司明确反对自家股票被 OKX 与 ICE 合资平台做成代币化股票",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "MSFT(美股)",
+            "GOOGL(美股)",
+            "GS(美股)"
+          ],
+          "metrics": {
+            "views": 4398,
+            "likes": 9,
+            "retweets": 1,
+            "replies": 8,
+            "quotes": 1
+          },
+          "posted_at": "2026-10-29T09:14:15+00:00",
+          "region": "zh",
+          "region_rank": 13
+        },
+        {
+          "rank": 34,
+          "author_name": "大猫调研信息",
+          "author_handle": "dmjk001",
+          "author_url": "https://x.com/dmjk001",
+          "tweet_url": "https://x.com/dmjk001/status/2115963787480301835",
+          "text_zh": "谷歌、亚马逊财报后现金流转负双双暴跌；微软本来大涨，宣布发 250 亿美元债后盘后转跌",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "GOOGL(美股)",
+            "AMZN(美股)",
+            "MSFT(美股)"
+          ],
+          "metrics": {
+            "views": 4222,
+            "likes": 9,
+            "retweets": 0,
+            "replies": 0,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-30T00:27:34+00:00",
+          "region": "zh",
+          "region_rank": 14
+        },
+        {
+          "rank": 35,
+          "author_name": "BlockBeats｜We're hiring!",
+          "author_handle": "BlockBeatsAsia",
+          "author_url": "https://x.com/BlockBeatsAsia",
+          "tweet_url": "https://x.com/BlockBeatsAsia/status/2115805400872407348",
+          "text_zh": "谷歌单日暴跌 13.7%，巴菲特这笔投资账面浮亏或达 32 亿美元；Q3 暴露搜索广告承压等三个问题",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "GOOGL(美股)",
+            "BRK.B(美股)"
+          ],
+          "metrics": {
+            "views": 1643,
+            "likes": 2,
+            "retweets": 1,
+            "replies": 3,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T13:58:11+00:00",
+          "region": "zh",
+          "region_rank": 15
+        },
+        {
+          "rank": 36,
+          "author_name": "Lydia",
+          "author_handle": "freedom6863",
+          "author_url": "https://x.com/freedom6863",
+          "tweet_url": "https://x.com/freedom6863/status/2115919261399179526",
+          "text_zh": "美股复盘：全线收跌终结三连涨，核心逻辑是巨头财报与 AI 资本开支带来的现金流压力",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "GOOGL(美股)",
+            "AMZN(美股)",
+            "INTC(美股)"
+          ],
+          "metrics": {
+            "views": 1343,
+            "likes": 8,
+            "retweets": 0,
+            "replies": 7,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T21:30:38+00:00",
+          "region": "zh",
+          "region_rank": 16
+        },
+        {
+          "rank": 37,
+          "author_name": "大道至简｜全球资产配置",
+          "author_handle": "aystxdlzfhj",
+          "author_url": "https://x.com/aystxdlzfhj",
+          "tweet_url": "https://x.com/aystxdlzfhj/status/2115753006864183564",
+          "text_zh": "港股南向资金单日净卖出 33.59 亿港元：阿里、中芯被大幅净卖，中海油、中国平安获买入，内资从科技切向防守",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "9988.HK(港股)",
+            "0981.HK(港股)",
+            "0883.HK(港股)",
+            "2318.HK(港股)"
+          ],
+          "metrics": {
+            "views": 1060,
+            "likes": 17,
+            "retweets": 0,
+            "replies": 20,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T10:30:00+00:00",
+          "region": "zh",
+          "region_rank": 17
+        },
+        {
+          "rank": 38,
+          "author_name": "Pence",
+          "author_handle": "Pence0629",
+          "author_url": "https://x.com/Pence0629",
+          "tweet_url": "https://x.com/Pence0629/status/2115937796288635106",
+          "text_zh": "谷歌、亚马逊接连大跌，但云业务仍在加速：谷歌云同比 +103%，AWS 约 460 亿美元",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "GOOGL(美股)",
+            "AMZN(美股)"
+          ],
+          "metrics": {
+            "views": 1037,
+            "likes": 9,
+            "retweets": 0,
+            "replies": 13,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T22:44:17+00:00",
+          "region": "zh",
+          "region_rank": 18
+        },
+        {
+          "rank": 39,
+          "author_name": "尼克胡｜投资与生活",
+          "author_handle": "huh62007",
+          "author_url": "https://x.com/huh62007",
+          "tweet_url": "https://x.com/huh62007/status/2115864748486967719",
+          "text_zh": "四大 AI 巨头已有三家发财报：微软平稳，Meta 和谷歌大跌，就看亚马逊",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "GOOGL(美股)",
+            "MSFT(美股)",
+            "META(美股)",
+            "AMZN(美股)"
+          ],
+          "metrics": {
+            "views": 908,
+            "likes": 5,
+            "retweets": 0,
+            "replies": 2,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T17:54:01+00:00",
+          "region": "zh",
+          "region_rank": 19
+        },
+        {
+          "rank": 40,
+          "author_name": "Tina 香港財觀",
+          "author_handle": "marika_0430",
+          "author_url": "https://x.com/marika_0430",
+          "tweet_url": "https://x.com/marika_0430/status/2115781829957734644",
+          "text_zh": "港股收市：恒指跌 0.59% 失守 23000 点，恒生科技挫 2.84%，谷歌与三星财报拖累 AI 硬件股",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "HSI(港股)",
+            "HSTECH(港股)"
+          ],
+          "metrics": {
+            "views": 129,
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "quotes": 0
+          },
+          "posted_at": "2026-10-29T12:24:32+00:00",
+          "region": "zh",
+          "region_rank": 20
+        }
+      ]
+    }
+  }
+}

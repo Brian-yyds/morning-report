@@ -1,95 +1,19 @@
 {
-  "updated_at": "2026-10-30T00:36:28+08:00",
-  "source_ledger_updated_at": "2026-10-30T00:36:28+08:00",
-  "plan_pool_version": "20261029-v4-定稿+补丁",
+  "updated_at": "2026-10-30T08:06:03+08:00",
+  "source_ledger_updated_at": "2026-10-30T08:06:03+08:00",
+  "plan_pool_version": "20261030-v1定稿 + C2",
   "last_price": {
-    "btc": 81270.25,
-    "eth": 2353.71,
-    "asof": "2026-10-30T00:36:28+08:00",
+    "btc": 77978,
+    "eth": 2252,
+    "asof": "2026-10-30T08:06:03+08:00",
     "structure_anchor": "2026-10-30T00:09:00+08:00",
     "handoff": "/workspace/market-analysis/reports/latest_handoff.json",
-    "note": "币安现货复核；4h/1h 00:00 K进行中；近端供给争夺后回落",
-    "source": "binance_spot"
+    "note": "四小时验收：A2主目标已触；E1p触区下沿待确认",
+    "source": "市场机会寻找转述"
   },
   "notional_usd_per_trade": 1000.0,
-  "count": 5,
+  "count": 4,
   "plans": [
-    {
-      "id": "20261029-A2",
-      "symbol": "BTCUSDT",
-      "side": "short",
-      "tf": "1h/4h",
-      "entry": "81640-81820",
-      "entry_ref": 81730,
-      "sl": 82050,
-      "tp": [
-        {
-          "level": 80500,
-          "role": "减仓"
-        },
-        {
-          "level": 80000,
-          "role": "主奔跑"
-        },
-        {
-          "level": 79710,
-          "role": "延伸"
-        },
-        {
-          "level": 79220,
-          "role": "延伸"
-        }
-      ],
-      "tp_main": 80000,
-      "rr": 5.41,
-      "rr_display": "1:5.41",
-      "status": "回落出区·仍未触发",
-      "status_detail": "现价≈81270已回落至入场区81640–81820下方；00:00 1h未收盘，缺「进区+已收盘1h拒绝」确认，禁止追空；4h未收稳81823上，互斥失效未成立",
-      "mutex": "若D1突破先确认则A2取消；若A2拒绝路径先触发则D1不启用（两侧对称）",
-      "trigger": "必须1h拒绝确认；禁止提前追空",
-      "invalidation": "4h收盘站稳81823上并延续",
-      "winrate_note": "待样本",
-      "finalized_at": "2026-10-29T23:56:00+08:00",
-      "opened_at": null,
-      "closed_at": null,
-      "updated_at": "2026-10-30T00:36:28+08:00"
-    },
-    {
-      "id": "20261029-B2p",
-      "symbol": "BTCUSDT",
-      "side": "long",
-      "tf": "4h/1h",
-      "entry": "79400-79550",
-      "entry_ref": 79475,
-      "sl": 79050,
-      "tp": [
-        {
-          "level": 81000,
-          "role": "减仓"
-        },
-        {
-          "level": 81640,
-          "role": "主目标"
-        },
-        {
-          "level": 83500,
-          "role": "延伸"
-        }
-      ],
-      "tp_main": 81640,
-      "rr": 5.09,
-      "rr_display": "1:5.09",
-      "status": "定稿·条件挂起/未触发",
-      "status_detail": "BTC≈81270 远离入场79400–79550；日线未收在79220下，失效未成立",
-      "mutex": null,
-      "trigger": "回踩入区1h承接；现价不追",
-      "invalidation": "日线收在79220下",
-      "winrate_note": "待样本",
-      "finalized_at": "2026-10-29T23:54:00+08:00",
-      "opened_at": null,
-      "closed_at": null,
-      "updated_at": "2026-10-30T00:36:28+08:00"
-    },
     {
       "id": "20261029-C2",
       "symbol": "ETHUSDT",
@@ -116,83 +40,111 @@
       "rr": 3.93,
       "rr_display": "1:3.93",
       "status": "定稿·条件挂起/未触发",
-      "status_detail": "ETH≈2354 仍低于入场2385–2391，挂起；未放量站稳2391上",
-      "mutex": "E1先确认则C2取消；C2先触发则E1不启用",
+      "status_detail": "ETH≈2300 远低于2385–2391，挂起",
+      "mutex": "E1先确认则C2取消；C2先触发则E1不启用；H1先触发则C2不启用",
       "trigger": "供给拒绝",
       "invalidation": "放量站稳2391上",
       "winrate_note": "待样本",
       "finalized_at": "2026-10-29T23:54:00+08:00",
       "opened_at": null,
       "closed_at": null,
-      "updated_at": "2026-10-30T00:36:28+08:00"
+      "updated_at": "2026-10-30T04:40:02+08:00"
     },
     {
-      "id": "20261029-D1p",
+      "id": "20261030-F1",
       "symbol": "BTCUSDT",
-      "side": "long",
-      "tf": "1h/4h",
-      "entry": "81850-82000",
-      "entry_ref": 81900,
-      "sl": 81450,
+      "side": "short",
+      "tf": "1h",
+      "entry": "79300-79600",
+      "entry_ref": 79450,
+      "sl": 80000,
       "tp": [
         {
-          "level": 83500,
-          "role": "主目标"
-        },
-        {
-          "level": 84830,
-          "role": "次"
-        }
-      ],
-      "tp_main": 83500,
-      "rr": 3.44,
-      "rr_display": "1:3.44",
-      "status": "定稿·待突破激活（不上沿追）",
-      "status_detail": "上探高≈81971后回落；上一根已收4h收81777未站稳81823；当前4h进行中现价≈81270；不上沿追，影线/未收盘不算激活",
-      "mutex": "A2拒绝则D1不启用；D1突破先确认则A2取消",
-      "trigger": "仅突破确认后启用",
-      "invalidation": "跌破止损区，或收盘失守81450且反抽结构坏掉",
-      "winrate_note": "待样本",
-      "finalized_at": "2026-10-29T23:56:00+08:00",
-      "opened_at": null,
-      "closed_at": null,
-      "updated_at": "2026-10-30T00:36:28+08:00"
-    },
-    {
-      "id": "20261029-E1p",
-      "symbol": "ETHUSDT",
-      "side": "long",
-      "tf": "4h",
-      "entry": "2285-2295",
-      "entry_ref": 2290,
-      "sl": 2260,
-      "tp": [
-        {
-          "level": 2360,
+          "level": 77728,
           "role": "减仓"
         },
         {
-          "level": 2391,
+          "level": 76500,
           "role": "主目标"
-        },
-        {
-          "level": 2449,
-          "role": "延伸"
         }
       ],
-      "tp_main": 2391,
-      "rr": 3.37,
-      "rr_display": "1:3.37",
-      "status": "定稿·条件挂起/未触发",
-      "status_detail": "ETH≈2354 远离入场2285–2295；日线未收破2282",
-      "mutex": "与C2二选一按触发",
-      "trigger": "回踩需求承接；与BTC同向更佳",
-      "invalidation": "日线收破2282",
+      "tp_main": 76500,
+      "rr": 5.36,
+      "rr_display": "1:5.36",
+      "status": "定稿·未触发",
+      "status_detail": null,
+      "mutex": null,
+      "trigger": "1h进区后确认K收在区内或贴区拒绝；成交价=确认1h收盘价；按该价主目标RR<1:3则不开仓记未触发",
+      "invalidation": "日线收回79810上",
       "winrate_note": "待样本",
-      "finalized_at": "2026-10-29T23:54:00+08:00",
+      "finalized_at": "2026-10-30T08:06:00+08:00",
       "opened_at": null,
       "closed_at": null,
-      "updated_at": "2026-10-30T00:36:28+08:00"
+      "updated_at": "2026-10-30T08:06:03+08:00"
+    },
+    {
+      "id": "20261030-G1",
+      "symbol": "BTCUSDT",
+      "side": "long",
+      "tf": "1h",
+      "entry": "76100-76400",
+      "entry_ref": 76250,
+      "sl": 75600,
+      "tp": [
+        {
+          "level": 78000,
+          "role": "减仓"
+        },
+        {
+          "level": 79220,
+          "role": "主目标"
+        }
+      ],
+      "tp_main": 79220,
+      "rr": 4.57,
+      "rr_display": "1:4.57",
+      "status": "定稿·未触发",
+      "status_detail": null,
+      "mutex": null,
+      "trigger": "扫76000后1h收回76000上；收盘高于76400不追；成交价=确认1h收盘价；按该价主目标RR<1:3则不开仓记未触发",
+      "invalidation": "1h收破75600",
+      "winrate_note": "待样本",
+      "finalized_at": "2026-10-30T08:06:00+08:00",
+      "opened_at": null,
+      "closed_at": null,
+      "updated_at": "2026-10-30T08:06:03+08:00"
+    },
+    {
+      "id": "20261030-H1",
+      "symbol": "ETHUSDT",
+      "side": "short",
+      "tf": "1h",
+      "entry": "2285-2295",
+      "entry_ref": 2290,
+      "sl": 2345,
+      "tp": [
+        {
+          "level": 2221.5,
+          "role": "减仓"
+        },
+        {
+          "level": 2100,
+          "role": "主目标"
+        }
+      ],
+      "tp_main": 2100,
+      "rr": 3.45,
+      "rr_display": "1:3.45",
+      "status": "定稿·未触发",
+      "status_detail": null,
+      "mutex": "H1先触发则C2不启用",
+      "trigger": "1h进区确认K收在区内或贴区拒绝；成交价=确认1h收盘价；按该价主目标RR<1:3则不开仓记未触发",
+      "invalidation": "1h收上2345",
+      "winrate_note": "待样本",
+      "finalized_at": "2026-10-30T08:06:00+08:00",
+      "opened_at": null,
+      "closed_at": null,
+      "updated_at": "2026-10-30T08:06:03+08:00"
     }
   ]
 }
