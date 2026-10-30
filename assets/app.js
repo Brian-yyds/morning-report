@@ -9,7 +9,7 @@
     {id: 'stocks', title: '股票热点', short: '股票', symbol: '股', description: '美股 · 公司 · 市场观点'}
   ];
   const categories = {'干货': 'practical', '热点事件': 'news', '观点': 'opinion', '话题': 'discussion'};
-  // crypto / stocks 新数据：欧美圈 + 华语圈各 20 条（region: west | zh）。
+  // crypto：欧美圈 40 + 华语圈 30（共 70）；stocks：欧美圈 40 + 华语圈 20（共 60）；ai：合计 30（region: west | zh）。
   const regions = {west: '欧美圈', zh: '华语圈'};
   const sorts = {rank: '排名', views: '浏览', likes: '点赞', engagement: '互动', latest: '最新'};
   const metricNames = [['views', '浏览'], ['likes', '赞'], ['retweets', '转'], ['replies', '评'], ['quotes', '引']];
