@@ -2,7 +2,7 @@
   "schema": "anomaly_trigger.v1",
   "triggered": false,
   "triggered_at": null,
-  "last_checked_at": "2026-10-31 02:00:00 CST",
+  "last_checked_at": "2026-10-31 02:12:47 CST",
   "notify_status": "ok",
   "cooldown_minutes": 30,
   "reasons": [],
