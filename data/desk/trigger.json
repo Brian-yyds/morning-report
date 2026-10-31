@@ -2,8 +2,8 @@
   "schema": "anomaly_trigger.v1",
   "triggered": true,
   "triggered_at": "2026-11-01 00:00:42 CST",
-  "last_checked_at": "2026-11-01 00:01:42 CST",
-  "notify_status": "pending",
+  "last_checked_at": "2026-11-01 00:02:42 CST",
+  "notify_status": "sent",
   "cooldown_minutes": null,
   "reasons": [
     "crypto_top10_1h_amp_gt_10pct"
