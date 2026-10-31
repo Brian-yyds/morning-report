@@ -1,89 +1,41 @@
 {
   "schema": "opportunity.daily.v1",
-  "asof": "2026-10-31 01:32 Asia/Shanghai",
+  "asof": "2026-10-31 09:15 Asia/Shanghai",
   "stance": "plan_only_no_trade",
   "action": "observe_only",
-  "twitter_hot": "已接入，数据截至 2026-10-30（今日档尚未写入）",
+  "twitter_hot": "",
   "market_context": {
-    "bias": "risk_off_tradifi_led",
-    "note": "美股纳指约-3%/费城半导约-8%主导；加密主仓弱跟随约-4%~-7%；港股/A股合约桶已纳入 watchlist（HK AI/科技偏弱，韩股杠杆同步承压）。只规划不下单。",
-    "universe": "watchlist77 = crypto30 + tradifi30 + hk_equity15 + cn_equity2"
+    "bias": "",
+    "note": "",
+    "universe": ""
   },
   "btc": {
     "symbol": "BTCUSDT",
-    "price_ref": 77316.4,
-    "day_range": [
-      76444.0,
-      78776.5
-    ],
-    "chg_24h_pct": -4.779,
-    "structure": {
-      "1d": "扩张震荡(HH+LL)",
-      "4h": "扩张震荡(HH+LL)",
-      "1h": "收缩震荡(LH+HL)"
-    },
-    "rsi": {
-      "1d": 34.2213,
-      "4h": 33.9505,
-      "1h": 37.7869
-    },
-    "bias_daily": "震荡偏空",
-    "view_4h": "日线自 10-29 大阴（81308→77962，约-4.1%）后，10-30 续弱收于 77283（日线 RSI14≈34.2），handoff 标 1d/4h 均为扩张震荡(HH+LL)，近端摆动低/日线低同在 76444、近端摆动高/日线高在 78776.5。4h 现价落在 focus 需求订单块 76444–77535.2 / 76584.2–77342.8 内，上方 4h 供给块 77889.9–78776.5 未回补；RSI4h≈33.95 偏弱、账户多空比约 2.64（多头拥挤）且 taker≈0.91（卖压略占优），OI 近6h 基本走平（约-0.10%）。在 risk_off + 美股半导冲击背景下，4h 观点：优先等回抽供给区再评估空，现价需求区内不做高确信抄底。",
-    "conviction": "low",
+    "price_ref": null,
+    "day_range": null,
+    "chg_24h_pct": null,
+    "structure": {},
+    "rsi": {},
+    "bias_daily": "",
+    "view_4h": "",
+    "conviction": "",
     "entry": {
-      "status": "未达到",
-      "preferred_side": "空（回抽供给）",
-      "levels": [
-        {
-          "side": "short_supply_ob_4h",
-          "role": "首选观察进场区（4h supply order_block）",
-          "level": null,
-          "zone": [
-            77889.9,
-            78776.5
-          ]
-        },
-        {
-          "side": "short_liquidity_high",
-          "role": "1h/日线近端摆动高，回抽目标上沿",
-          "level": 78776.5,
-          "zone": null
-        },
-        {
-          "side": "demand_focus_watch",
-          "role": "现价所在 demand focus；仅作防守/止跌观察，非高确信做多进场",
-          "level": null,
-          "zone": [
-            76444.0,
-            77535.2
-          ]
-        },
-        {
-          "side": "invalidation_low",
-          "role": "4h/日线近端摆动低；失守则空头延续，多头观察失效",
-          "level": 76444.0,
-          "zone": null
-        }
-      ],
-      "basis": "日线定调震荡偏空（连跌+RSI弱势+risk_off）。与偏见一致的合理进场=回抽至 handoff focus/order_blocks 中 4h supply [77889.9, 78776.5] 及流动性高 78776.5 后再评估空；现价≈77316 仍在 demand focus [76444, 77535.2] 内，距供给下沿约 0.7%+，故进场点状态=未达到。禁止在需求区内追空或无确认抄底。"
+      "status": "",
+      "preferred_side": "",
+      "levels": [],
+      "basis": ""
     },
-    "news_tie": "有挂钩：①新闻池：币安约63亿美元被盗/储备与提现进展（Decrypt/CoinDesk/BlockBeats等）、CoinTelegraph 称 BTC 或录得12年最差10月且科技股抛售蔓延；②美联储穆萨莱姆「很快有必要再次加息」（importance=4）压制风险偏好；③美股纳指约-3%/费城半导约-8% → 加密弱跟随（anomaly：BTC约-4.6%）。推特热点(2026-10-30)：Kobeissi/Watcher.Guru/CZ 聚焦币安被黑约56–57亿+用户资金安全声明，情绪风险事件主导。",
-    "risks": [
-      "美股半导/纳指续跌引发 BTC 补跌贴近 TradFi 节奏",
-      "账户多头拥挤（LS≈2.64）若失守 76444 易踩踏加速",
-      "币安被盗后续（提现恢复/储备证明/监管）情绪反复",
-      "需求区内假突破诱多后破位",
-      "穆萨莱姆等偏鹰发言加剧 risk_off"
-    ]
+    "news_tie": "币安被盗后续（填回80%、恢复提现）偏利好情绪修复；联储鹰派+美股科技暴跌偏利空；推特 crypto(10-30) 以黑客事件为主",
+    "risks": []
   },
   "us_equity": {
-    "view": "综合：美股侧为当日冲击主震区。新闻池+异动一致指向纳指约-3%、费城半导约-8%；movers tradifi：SOXL约-27.4%/SOXS约+27.1%镜像、INTC约-29.8%/INTW约-59.8%极端踩踏且 OI 急升、QQQ约-3.4%/TQQQ约-10.5%贴合纳指、AMD约-11.7%、COIN约-13.8%、MSTR约-9.3%、NVDA约-4.6%。推特热点(10-30)：英特尔/亚马逊财报暴雷、七巨头隐形熊市、PCE偏高、科技股进入熊市名单（含 COIN）。结论：方向上偏空已计价大半，现价追空与抄底盈亏比均差 → 综合观望；仅跟踪止跌/二次破位，不喊单。"
+    "view": "风险偏好恶化，半导体领跌；位移已大（RSI4h：INTC 16、NVDA 25、QQQ 27、SOXL 32），周末不追空、不抄底"
   },
   "a_share": {
-    "view": "A股/中资相关：已有 Binance CN_EQUITY 永续 2 只（UNITREE、CXMT），可挂点位；传统上证/创业板/科创板指数行情库仍无，指数层面继续只用新闻池+推特定性。推特热点(2026-10-30)：称 A 股大跌、当天蒸发约 1.1 万亿元，「中国 AI 泡沫破裂」。合约侧：UNITREEUSDT 现价≈97.26（24h约-1.6%），CXMTUSDT≈6.08（24h约-4.6%），均弱于中性、未到≥10%单列门槛；在美股半导/AI risk_off 外溢下偏防守观望，不追空不抄底。"
+    "view": ""
   },
   "hk_equity": {
-    "view": "港股合约桶 15 只整体偏弱：AI/科技相关 ZHIPU约-9.7%、ZHONGJIU约-8.7%、MINIMAX约-6.5%、GIGADEV约-10.4%；韩股杠杆镜像 CSOPSKHYNIX2L约-18.8%、CSOPSAMSUNG2L约-11.3%（与美股半导冲击共振）；腾讯系 HK0700/TENCENT 近乎走平（约+0.1%~+0.3%），POPMART约+4.5%、MEITUAN约+2.9%相对抗跌。综合：港股 AI 链跟随外盘风险偏好回落，半导杠杆已大跌不追；蓝筹观望。"
+    "view": ""
   },
-  "summary_for_desk": "【试跑·每日机会骨架 2026-10-31】stance=只规划不下单；主名单=watchlist77（含港股/A股桶）。BTC：日线震荡偏空（10-29 大阴后续弱，RSI1d≈34，结构扩张震荡）；4h 现价≈77316 位于 demand focus 76444–77535，上方供给 77890–78777 未回补；进场点（偏空回抽供给）=未达到；失守 76444 则空头延续观察。资讯：币安被黑+纳指/半导冲击+穆萨莱姆偏鹰，有挂钩；推特热点已接入但截至 10-30。美股：半导/INTC/QQQ 主震，≥10% 只观察不追。A股：CN_EQUITY 有点位——UNITREE≈97.3（-1.6%）demand 96.2–97.8、CXMT≈6.08（-4.6%）盯日低 6.068；指数仍无库仅推特定性观望。港股：AI链 ZHIPU/GIGADEV 等约-7%~-10% 逼近日低，韩股杠杆 CSOPSKHYNIX2L约-19% 不追。选做：SOL 价跌OI升、IDOL 过热——均观望。"
+  "summary_for_desk": ""
 }

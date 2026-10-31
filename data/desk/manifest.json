@@ -1,7 +1,7 @@
 {
-  "built_at": "2026-10-31T02:14:14+08:00",
-  "asof": "2026-10-31 01:32 Asia/Shanghai",
-  "bias": "risk_off_tradifi_led",
+  "built_at": "2026-10-31T09:33:19+08:00",
+  "asof": "2026-10-31 09:15 Asia/Shanghai",
+  "bias": "idiosyncratic_alt_volatility",
   "watchlist_counts": {
     "crypto": 30,
     "tradifi": 30,
@@ -10,8 +10,8 @@
     "top60": 60,
     "watchlist": 77
   },
-  "trigger_pending": false,
-  "trigger_notify_status": "ok",
+  "trigger_pending": true,
+  "trigger_notify_status": "pending",
   "available": {
     "watchlist": true,
     "movers": true,
