@@ -1,11 +1,21 @@
 {
   "schema": "anomaly_trigger.v1",
-  "triggered": false,
-  "triggered_at": null,
-  "last_checked_at": "2026-10-31 23:54:42 CST",
-  "notify_status": "ok",
+  "triggered": true,
+  "triggered_at": "2026-11-01 00:00:42 CST",
+  "last_checked_at": "2026-11-01 00:01:42 CST",
+  "notify_status": "pending",
   "cooldown_minutes": null,
-  "reasons": [],
-  "symbols": [],
-  "events": []
+  "reasons": [
+    "crypto_top10_1h_amp_gt_10pct"
+  ],
+  "symbols": [
+    "IDOLUSDT"
+  ],
+  "events": [
+    {
+      "kind": "",
+      "symbol": "IDOLUSDT",
+      "detail": ""
+    }
+  ]
 }
