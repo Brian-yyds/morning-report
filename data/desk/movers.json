@@ -1,220 +1,220 @@
 {
-  "updated_at_shanghai": "2026-10-31 23:29:17 CST",
+  "updated_at_shanghai": "2026-10-31 23:30:17 CST",
   "universe": "USDT-M crypto30 + tradifi30 + all HK_EQUITY + all CN_EQUITY",
   "by_bucket": {
     "crypto": {
       "gainers_4h": [
         {
-          "symbol": "LSKUSDT",
-          "bucket": "crypto",
-          "change_4h": 6.858696,
-          "priceChangePercent": 6.858696,
-          "roi_15m": -2.11156,
-          "last": 0.30272,
-          "quoteVolume24h": 295176403.12676
-        },
-        {
           "symbol": "NEARUSDT",
           "bucket": "crypto",
-          "change_4h": 2.918018,
-          "priceChangePercent": 2.918018,
-          "roi_15m": 0.225581,
-          "last": 4.444,
-          "quoteVolume24h": 327601566.016
+          "change_4h": 3.035921,
+          "priceChangePercent": 3.035921,
+          "roi_15m": 0.022497,
+          "last": 4.446,
+          "quoteVolume24h": 326905847.291
+        },
+        {
+          "symbol": "LSKUSDT",
+          "bucket": "crypto",
+          "change_4h": 2.751326,
+          "priceChangePercent": 2.751326,
+          "roi_15m": 0.062939,
+          "last": 0.30213,
+          "quoteVolume24h": 295387064.07091
         },
         {
           "symbol": "WLDUSDT",
           "bucket": "crypto",
-          "change_4h": 2.276176,
-          "priceChangePercent": 2.276176,
-          "roi_15m": 0.898428,
-          "last": 0.4044,
-          "quoteVolume24h": 129261194.6284
+          "change_4h": 2.303214,
+          "priceChangePercent": 2.303214,
+          "roi_15m": -0.024734,
+          "last": 0.4042,
+          "quoteVolume24h": 129378321.5955
         },
         {
           "symbol": "AAVEUSDT",
           "bucket": "crypto",
-          "change_4h": 1.6281,
-          "priceChangePercent": 1.6281,
-          "roi_15m": -0.21464,
-          "last": 134.83,
-          "quoteVolume24h": 100595019.459
-        },
-        {
-          "symbol": "PUMPUSDT",
-          "bucket": "crypto",
-          "change_4h": 1.387537,
-          "priceChangePercent": 1.387537,
-          "roi_15m": 0.288948,
-          "last": 0.004165,
-          "quoteVolume24h": 82174649.565415
+          "change_4h": 1.628468,
+          "priceChangePercent": 1.628468,
+          "roi_15m": 0.022247,
+          "last": 134.8,
+          "quoteVolume24h": 100474842.631
         },
         {
           "symbol": "QUSDT",
           "bucket": "crypto",
-          "change_4h": 1.384954,
-          "priceChangePercent": 1.384954,
-          "roi_15m": -0.70922,
-          "last": 0.03221,
-          "quoteVolume24h": 167279781.61198
+          "change_4h": 1.512287,
+          "priceChangePercent": 1.512287,
+          "roi_15m": 0.031027,
+          "last": 0.03222,
+          "quoteVolume24h": 167175700.876442
+        },
+        {
+          "symbol": "PUMPUSDT",
+          "bucket": "crypto",
+          "change_4h": 1.437622,
+          "priceChangePercent": 1.437622,
+          "roi_15m": 0.024033,
+          "last": 0.004163,
+          "quoteVolume24h": 82001615.322997
         },
         {
           "symbol": "ONDOUSDT",
           "bucket": "crypto",
-          "change_4h": 1.251227,
-          "priceChangePercent": 1.251227,
-          "roi_15m": 0.707662,
-          "last": 0.4127,
-          "quoteVolume24h": 69981537.07104
+          "change_4h": 1.301572,
+          "priceChangePercent": 1.301572,
+          "roi_15m": 0.0,
+          "last": 0.4125,
+          "quoteVolume24h": 69926062.82145
         },
         {
           "symbol": "ENAUSDT",
           "bucket": "crypto",
-          "change_4h": 1.111228,
-          "priceChangePercent": 1.111228,
-          "roi_15m": 0.343321,
-          "last": 0.1929,
-          "quoteVolume24h": 215656417.0603
+          "change_4h": 1.196536,
+          "priceChangePercent": 1.196536,
+          "roi_15m": 0.01556,
+          "last": 0.19283,
+          "quoteVolume24h": 215208606.93932
         }
       ],
       "losers_4h": [
         {
           "symbol": "SOPHUSDT",
           "bucket": "crypto",
-          "change_4h": -6.044285,
-          "priceChangePercent": -6.044285,
-          "roi_15m": -0.946372,
-          "last": 0.00157,
-          "quoteVolume24h": 128218789.559604
+          "change_4h": -6.115108,
+          "priceChangePercent": -6.115108,
+          "roi_15m": -0.191205,
+          "last": 0.001566,
+          "quoteVolume24h": 128201870.244265
+        },
+        {
+          "symbol": "AINUSDT",
+          "bucket": "crypto",
+          "change_4h": -3.829963,
+          "priceChangePercent": -3.829963,
+          "roi_15m": -0.282438,
+          "last": 0.23302,
+          "quoteVolume24h": 587448110.09309
+        },
+        {
+          "symbol": "BIRBUSDT",
+          "bucket": "crypto",
+          "change_4h": -3.525566,
+          "priceChangePercent": -3.525566,
+          "roi_15m": 0.07271,
+          "last": 0.08264,
+          "quoteVolume24h": 156059871.99265
         },
         {
           "symbol": "BEAMXUSDT",
           "bucket": "crypto",
-          "change_4h": -5.411171,
-          "priceChangePercent": -5.411171,
-          "roi_15m": -1.434054,
-          "last": 0.004877,
-          "quoteVolume24h": 207072462.266058
-        },
-        {
-          "symbol": "BIRBUSDT",
-          "bucket": "crypto",
-          "change_4h": -4.089694,
-          "priceChangePercent": -4.089694,
-          "roi_15m": 0.291404,
-          "last": 0.08255,
-          "quoteVolume24h": 156768299.18912
-        },
-        {
-          "symbol": "AKEUSDT",
-          "bucket": "crypto",
-          "change_4h": -3.457839,
-          "priceChangePercent": -3.457839,
-          "roi_15m": -0.51795,
-          "last": 0.01114,
-          "quoteVolume24h": 155353301.242966
-        },
-        {
-          "symbol": "AINUSDT",
-          "bucket": "crypto",
-          "change_4h": -2.828702,
-          "priceChangePercent": -2.828702,
-          "roi_15m": 2.205529,
-          "last": 0.23428,
-          "quoteVolume24h": 587286784.93358
+          "change_4h": -2.217782,
+          "priceChangePercent": -2.217782,
+          "roi_15m": -0.28519,
+          "last": 0.004894,
+          "quoteVolume24h": 207022108.222334
         },
         {
           "symbol": "TRXUSDT",
           "bucket": "crypto",
-          "change_4h": -2.108189,
-          "priceChangePercent": -2.108189,
-          "roi_15m": -0.333885,
-          "last": 0.31343,
-          "quoteVolume24h": 124946617.41626
+          "change_4h": -2.083789,
+          "priceChangePercent": -2.083789,
+          "roi_15m": -0.012761,
+          "last": 0.31342,
+          "quoteVolume24h": 125181368.51051
+        },
+        {
+          "symbol": "AKEUSDT",
+          "bucket": "crypto",
+          "change_4h": -1.940469,
+          "priceChangePercent": -1.940469,
+          "roi_15m": 0.413595,
+          "last": 0.011168,
+          "quoteVolume24h": 155369343.494739
         },
         {
           "symbol": "BTWUSDT",
           "bucket": "crypto",
-          "change_4h": -1.423581,
-          "priceChangePercent": -1.423581,
-          "roi_15m": -1.17338,
-          "last": 1.1287,
-          "quoteVolume24h": 78853352.16
+          "change_4h": -1.261167,
+          "priceChangePercent": -1.261167,
+          "roi_15m": 0.035508,
+          "last": 1.1274,
+          "quoteVolume24h": 78794075.94798
         },
         {
-          "symbol": "IDOLUSDT",
+          "symbol": "HYPEUSDT",
           "bucket": "crypto",
-          "change_4h": -1.160128,
-          "priceChangePercent": -1.160128,
-          "roi_15m": -1.642336,
-          "last": 0.019425,
-          "quoteVolume24h": 553640876.084686
+          "change_4h": -0.336508,
+          "priceChangePercent": -0.336508,
+          "roi_15m": 0.04924,
+          "last": 87.37,
+          "quoteVolume24h": 916381770.01166
         }
       ],
       "surge_15m": [
         {
-          "symbol": "AINUSDT",
+          "symbol": "AKEUSDT",
           "bucket": "crypto",
-          "roi_15m": 2.205529,
-          "roi_1m": 0.068341,
-          "last": 0.23428,
-          "quoteVolume24h": 587286784.93358
+          "roi_15m": 0.413595,
+          "roi_1m": 0.413595,
+          "last": 0.011168,
+          "quoteVolume24h": 155369343.494739
         },
         {
-          "symbol": "WLDUSDT",
+          "symbol": "IDOLUSDT",
           "bucket": "crypto",
-          "roi_15m": 0.898428,
-          "roi_1m": -0.024722,
-          "last": 0.4044,
-          "quoteVolume24h": 129261194.6284
-        },
-        {
-          "symbol": "ONDOUSDT",
-          "bucket": "crypto",
-          "roi_15m": 0.707662,
-          "roi_1m": 0.024237,
-          "last": 0.4127,
-          "quoteVolume24h": 69981537.07104
-        },
-        {
-          "symbol": "SUIUSDT",
-          "bucket": "crypto",
-          "roi_15m": 0.477672,
-          "roi_1m": 0.0,
-          "last": 0.9045,
-          "quoteVolume24h": 106578997.69326
-        },
-        {
-          "symbol": "ZECUSDT",
-          "bucket": "crypto",
-          "roi_15m": 0.411681,
-          "roi_1m": 0.012496,
-          "last": 1280.55,
-          "quoteVolume24h": 1103984866.76
-        },
-        {
-          "symbol": "ENAUSDT",
-          "bucket": "crypto",
-          "roi_15m": 0.343321,
-          "roi_1m": -0.010367,
-          "last": 0.1929,
-          "quoteVolume24h": 215656417.0603
+          "roi_15m": 0.237065,
+          "roi_1m": 0.237065,
+          "last": 0.01945,
+          "quoteVolume24h": 553590625.24145
         },
         {
           "symbol": "BIRBUSDT",
           "bucket": "crypto",
-          "roi_15m": 0.291404,
-          "roi_1m": -0.084725,
-          "last": 0.08255,
-          "quoteVolume24h": 156768299.18912
+          "roi_15m": 0.07271,
+          "roi_1m": 0.145419,
+          "last": 0.08264,
+          "quoteVolume24h": 156059871.99265
         },
         {
-          "symbol": "PUMPUSDT",
+          "symbol": "LSKUSDT",
           "bucket": "crypto",
-          "roi_15m": 0.288948,
-          "roi_1m": 0.0,
-          "last": 0.004165,
-          "quoteVolume24h": 82174649.565415
+          "roi_15m": 0.062939,
+          "roi_1m": 0.082814,
+          "last": 0.30213,
+          "quoteVolume24h": 295387064.07091
+        },
+        {
+          "symbol": "HYPEUSDT",
+          "bucket": "crypto",
+          "roi_15m": 0.04924,
+          "roi_1m": 0.04924,
+          "last": 87.37,
+          "quoteVolume24h": 916381770.01166
+        },
+        {
+          "symbol": "BTWUSDT",
+          "bucket": "crypto",
+          "roi_15m": 0.035508,
+          "roi_1m": 0.079893,
+          "last": 1.1274,
+          "quoteVolume24h": 78794075.94798
+        },
+        {
+          "symbol": "OPUSDT",
+          "bucket": "crypto",
+          "roi_15m": 0.035286,
+          "roi_1m": 0.06175,
+          "last": 0.11343,
+          "quoteVolume24h": 85282980.038826
+        },
+        {
+          "symbol": "ZECUSDT",
+          "bucket": "crypto",
+          "roi_15m": 0.031978,
+          "roi_1m": 0.028858,
+          "last": 1282.5,
+          "quoteVolume24h": 1104198126.25
         }
       ]
     },
@@ -223,214 +223,214 @@
         {
           "symbol": "INTWUSDT",
           "bucket": "tradifi",
-          "change_4h": 1.515152,
-          "priceChangePercent": 1.515152,
-          "roi_15m": 0.13587,
-          "last": 7.37,
-          "quoteVolume24h": 126010763.9201
+          "change_4h": 1.517241,
+          "priceChangePercent": 1.517241,
+          "roi_15m": -0.135685,
+          "last": 7.36,
+          "quoteVolume24h": 125801610.7233
         },
         {
           "symbol": "INTCUSDT",
           "bucket": "tradifi",
-          "change_4h": 0.819039,
-          "priceChangePercent": 0.819039,
-          "roi_15m": 0.06135,
-          "last": 65.24,
-          "quoteVolume24h": 270809259.4198
+          "change_4h": 0.83475,
+          "priceChangePercent": 0.83475,
+          "roi_15m": -0.045977,
+          "last": 65.23,
+          "quoteVolume24h": 269348747.3689
         },
         {
           "symbol": "MUUUSDT",
           "bucket": "tradifi",
           "change_4h": 0.487013,
           "priceChangePercent": 0.487013,
-          "roi_15m": 0.12131,
+          "roi_15m": 0.0,
           "last": 24.76,
-          "quoteVolume24h": 43195393.1238
+          "quoteVolume24h": 43196595.4618
         },
         {
           "symbol": "MUUSDT",
           "bucket": "tradifi",
-          "change_4h": 0.287844,
-          "priceChangePercent": 0.287844,
-          "roi_15m": 0.015577,
-          "last": 898.9,
-          "quoteVolume24h": 210286852.4556
-        },
-        {
-          "symbol": "SOXLUSDT",
-          "bucket": "tradifi",
-          "change_4h": 0.155139,
-          "priceChangePercent": 0.155139,
-          "roi_15m": 0.064583,
-          "last": 77.47,
-          "quoteVolume24h": 1472992072.6996
+          "change_4h": 0.278934,
+          "priceChangePercent": 0.278934,
+          "roi_15m": -0.001113,
+          "last": 898.77,
+          "quoteVolume24h": 210135783.8607
         },
         {
           "symbol": "SKHYUSDT",
           "bucket": "tradifi",
-          "change_4h": 0.140149,
-          "priceChangePercent": 0.140149,
-          "roi_15m": 0.046673,
+          "change_4h": 0.153518,
+          "priceChangePercent": 0.153518,
+          "roi_15m": 0.0,
           "last": 150.05,
-          "quoteVolume24h": 159408665.1857
+          "quoteVolume24h": 159408938.2777
+        },
+        {
+          "symbol": "SOXLUSDT",
+          "bucket": "tradifi",
+          "change_4h": 0.142229,
+          "priceChangePercent": 0.142229,
+          "roi_15m": -0.01291,
+          "last": 77.45,
+          "quoteVolume24h": 1471847361.918
         },
         {
           "symbol": "DRAMUSDT",
           "bucket": "tradifi",
           "change_4h": 0.124069,
           "priceChangePercent": 0.124069,
-          "roi_15m": 0.041322,
+          "roi_15m": 0.0,
           "last": 48.42,
-          "quoteVolume24h": 39159834.5246
+          "quoteVolume24h": 39116837.6094
         },
         {
-          "symbol": "NVDAUSDT",
+          "symbol": "XAGUSDT",
           "bucket": "tradifi",
-          "change_4h": 0.073667,
-          "priceChangePercent": 0.073667,
-          "roi_15m": -0.01472,
-          "last": 203.77,
-          "quoteVolume24h": 91232106.3086
+          "change_4h": 0.101194,
+          "priceChangePercent": 0.101194,
+          "roi_15m": 0.0,
+          "last": 49.46,
+          "quoteVolume24h": 286984316.2873
         }
       ],
       "losers_4h": [
         {
           "symbol": "SNXXUSDT",
           "bucket": "tradifi",
-          "change_4h": -0.585652,
-          "priceChangePercent": -0.585652,
-          "roi_15m": 0.443787,
-          "last": 6.79,
-          "quoteVolume24h": 300543561.3085
-        },
-        {
-          "symbol": "CRCLUSDT",
-          "bucket": "tradifi",
-          "change_4h": -0.314594,
-          "priceChangePercent": -0.314594,
-          "roi_15m": 0.02745,
-          "last": 72.88,
-          "quoteVolume24h": 84219383.9623
-        },
-        {
-          "symbol": "COINUSDT",
-          "bucket": "tradifi",
-          "change_4h": -0.301267,
-          "priceChangePercent": -0.301267,
-          "roi_15m": -0.041189,
-          "last": 145.61,
-          "quoteVolume24h": 31242051.3466
+          "change_4h": -0.732064,
+          "priceChangePercent": -0.732064,
+          "roi_15m": 0.0,
+          "last": 6.78,
+          "quoteVolume24h": 300278202.5509
         },
         {
           "symbol": "TQQQUSDT",
           "bucket": "tradifi",
-          "change_4h": -0.300728,
-          "priceChangePercent": -0.300728,
+          "change_4h": -0.316556,
+          "priceChangePercent": -0.316556,
           "roi_15m": 0.0,
-          "last": 62.99,
-          "quoteVolume24h": 56928127.5855
+          "last": 62.98,
+          "quoteVolume24h": 56884100.8344
+        },
+        {
+          "symbol": "COINUSDT",
+          "bucket": "tradifi",
+          "change_4h": -0.287573,
+          "priceChangePercent": -0.287573,
+          "roi_15m": 0.0,
+          "last": 145.63,
+          "quoteVolume24h": 31242399.3662
         },
         {
           "symbol": "SNDKUSDT",
           "bucket": "tradifi",
-          "change_4h": -0.277835,
-          "priceChangePercent": -0.277835,
-          "roi_15m": 0.126001,
-          "last": 1152.15,
-          "quoteVolume24h": 1166782623.153
+          "change_4h": -0.287379,
+          "priceChangePercent": -0.287379,
+          "roi_15m": 0.002604,
+          "last": 1151.95,
+          "quoteVolume24h": 1164055458.5761
+        },
+        {
+          "symbol": "CRCLUSDT",
+          "bucket": "tradifi",
+          "change_4h": -0.287278,
+          "priceChangePercent": -0.287278,
+          "roi_15m": 0.0,
+          "last": 72.89,
+          "quoteVolume24h": 83696946.1918
         },
         {
           "symbol": "SAMSUNGUSDT",
           "bucket": "tradifi",
-          "change_4h": -0.222579,
-          "priceChangePercent": -0.222579,
-          "roi_15m": -0.02478,
-          "last": 161.38,
-          "quoteVolume24h": 37902625.8477
+          "change_4h": -0.228776,
+          "priceChangePercent": -0.228776,
+          "roi_15m": 0.0,
+          "last": 161.36,
+          "quoteVolume24h": 37903618.2734
         },
         {
           "symbol": "SPCXUSDT",
           "bucket": "tradifi",
-          "change_4h": -0.196321,
-          "priceChangePercent": -0.196321,
-          "roi_15m": 0.087502,
-          "last": 137.26,
-          "quoteVolume24h": 191357153.2896
+          "change_4h": -0.152727,
+          "priceChangePercent": -0.152727,
+          "roi_15m": -0.007284,
+          "last": 137.29,
+          "quoteVolume24h": 190111340.1612
         },
         {
-          "symbol": "AAPLUSDT",
+          "symbol": "QQQUSDT",
           "bucket": "tradifi",
-          "change_4h": -0.144542,
-          "priceChangePercent": -0.144542,
-          "roi_15m": 0.046342,
-          "last": 345.42,
-          "quoteVolume24h": 51770641.5519
+          "change_4h": -0.142354,
+          "priceChangePercent": -0.142354,
+          "roi_15m": 0.0,
+          "last": 694.46,
+          "quoteVolume24h": 157405399.9949
         }
       ],
       "surge_15m": [
         {
-          "symbol": "SNXXUSDT",
+          "symbol": "MSTRUSDT",
           "bucket": "tradifi",
-          "roi_15m": 0.443787,
-          "roi_1m": 0.0,
-          "last": 6.79,
-          "quoteVolume24h": 300543561.3085
-        },
-        {
-          "symbol": "INTWUSDT",
-          "bucket": "tradifi",
-          "roi_15m": 0.13587,
-          "roi_1m": -0.135501,
-          "last": 7.37,
-          "quoteVolume24h": 126010763.9201
+          "roi_15m": 0.007477,
+          "roi_1m": 0.007477,
+          "last": 133.75,
+          "quoteVolume24h": 147108037.7337
         },
         {
           "symbol": "SNDKUSDT",
           "bucket": "tradifi",
-          "roi_15m": 0.126001,
-          "roi_1m": 0.020835,
-          "last": 1152.15,
-          "quoteVolume24h": 1166782623.153
+          "roi_15m": 0.002604,
+          "roi_1m": 0.002604,
+          "last": 1151.95,
+          "quoteVolume24h": 1164055458.5761
         },
         {
-          "symbol": "MUUUSDT",
+          "symbol": "XAUUSDT",
           "bucket": "tradifi",
-          "roi_15m": 0.12131,
-          "roi_1m": 0.080841,
-          "last": 24.76,
-          "quoteVolume24h": 43195393.1238
+          "roi_15m": 0.0,
+          "roi_1m": -0.000257,
+          "last": 3890.93,
+          "quoteVolume24h": 1075145259.61
         },
         {
-          "symbol": "SPCXUSDT",
+          "symbol": "CLUSDT",
           "bucket": "tradifi",
-          "roi_15m": 0.087502,
+          "roi_15m": 0.0,
           "roi_1m": 0.0,
-          "last": 137.26,
-          "quoteVolume24h": 191357153.2896
+          "last": 102.84,
+          "quoteVolume24h": 400530819.2285
         },
         {
-          "symbol": "GOOGLUSDT",
+          "symbol": "SNXXUSDT",
           "bucket": "tradifi",
-          "roi_15m": 0.070937,
+          "roi_15m": 0.0,
           "roi_1m": 0.0,
-          "last": 282.14,
-          "quoteVolume24h": 148710713.6713
+          "last": 6.78,
+          "quoteVolume24h": 300278202.5509
+        },
+        {
+          "symbol": "XAGUSDT",
+          "bucket": "tradifi",
+          "roi_15m": 0.0,
+          "roi_1m": 0.0,
+          "last": 49.46,
+          "quoteVolume24h": 286984316.2873
+        },
+        {
+          "symbol": "KORUUSDT",
+          "bucket": "tradifi",
+          "roi_15m": 0.0,
+          "roi_1m": 0.0,
+          "last": 10.6,
+          "quoteVolume24h": 227237499.705
         },
         {
           "symbol": "SKHYNIXUSDT",
           "bucket": "tradifi",
-          "roi_15m": 0.07005,
-          "roi_1m": 0.019182,
-          "last": 1042.85,
-          "quoteVolume24h": 208694474.9823
-        },
-        {
-          "symbol": "SOXLUSDT",
-          "bucket": "tradifi",
-          "roi_15m": 0.064583,
-          "roi_1m": 0.01291,
-          "last": 77.47,
-          "quoteVolume24h": 1472992072.6996
+          "roi_15m": 0.0,
+          "roi_1m": 0.0,
+          "last": 1042.64,
+          "quoteVolume24h": 208701357.4938
         }
       ]
     },
@@ -439,36 +439,36 @@
         {
           "symbol": "ZHONGJIUSDT",
           "bucket": "hk_equity",
-          "change_4h": 1.174599,
-          "priceChangePercent": 1.174599,
-          "roi_15m": 0.364122,
-          "last": 82.69,
-          "quoteVolume24h": 3540617.7664
+          "change_4h": 1.125382,
+          "priceChangePercent": 1.125382,
+          "roi_15m": 0.0,
+          "last": 82.67,
+          "quoteVolume24h": 3540648.3543
         },
         {
           "symbol": "GIGADEVUSDT",
           "bucket": "hk_equity",
-          "change_4h": 0.655738,
-          "priceChangePercent": 0.655738,
-          "roi_15m": -0.175088,
-          "last": 39.91,
-          "quoteVolume24h": 1082314.8093
+          "change_4h": 0.681302,
+          "priceChangePercent": 0.681302,
+          "roi_15m": -0.025056,
+          "last": 39.9,
+          "quoteVolume24h": 1082298.5109
         },
         {
-          "symbol": "HK0992USDT",
+          "symbol": "TENCENTUSDT",
           "bucket": "hk_equity",
-          "change_4h": 0.351406,
-          "priceChangePercent": 0.351406,
-          "roi_15m": -0.10005,
-          "last": 19.99,
-          "quoteVolume24h": 229736.0234
+          "change_4h": 0.287592,
+          "priceChangePercent": 0.287592,
+          "roi_15m": 0.0,
+          "last": 48.82,
+          "quoteVolume24h": 197446.8358
         },
         {
           "symbol": "HK0625USDT",
           "bucket": "hk_equity",
           "change_4h": 0.279955,
           "priceChangePercent": 0.279955,
-          "roi_15m": 0.055866,
+          "roi_15m": 0.0,
           "last": 35.82,
           "quoteVolume24h": 29552.9022
         },
@@ -477,54 +477,54 @@
           "bucket": "hk_equity",
           "change_4h": 0.266059,
           "priceChangePercent": 0.266059,
-          "roi_15m": 0.037922,
+          "roi_15m": 0.0,
           "last": 26.38,
-          "quoteVolume24h": 685960.7565
+          "quoteVolume24h": 685951.0271
         },
         {
-          "symbol": "TENCENTUSDT",
+          "symbol": "HK0992USDT",
           "bucket": "hk_equity",
-          "change_4h": 0.205255,
-          "priceChangePercent": 0.205255,
-          "roi_15m": 0.020488,
-          "last": 48.82,
-          "quoteVolume24h": 197446.8358
+          "change_4h": 0.251004,
+          "priceChangePercent": 0.251004,
+          "roi_15m": 0.0,
+          "last": 19.97,
+          "quoteVolume24h": 226016.0597
         },
         {
           "symbol": "HK0700USDT",
           "bucket": "hk_equity",
-          "change_4h": 0.133669,
-          "priceChangePercent": 0.133669,
-          "roi_15m": 0.010471,
-          "last": 382.05,
-          "quoteVolume24h": 195560.2748
+          "change_4h": 0.13629,
+          "priceChangePercent": 0.13629,
+          "roi_15m": 0.0,
+          "last": 382.06,
+          "quoteVolume24h": 195292.8723
         },
         {
           "symbol": "CSOPSKHYNIX2LUSDT",
           "bucket": "hk_equity",
           "change_4h": 0.108774,
           "priceChangePercent": 0.108774,
-          "roi_15m": 0.181422,
+          "roi_15m": 0.0,
           "last": 2.761,
-          "quoteVolume24h": 4797331.88825
+          "quoteVolume24h": 4797364.30239
         }
       ],
       "losers_4h": [
         {
           "symbol": "CSOPSAMSUNG2LUSDT",
           "bucket": "hk_equity",
-          "change_4h": -0.540267,
-          "priceChangePercent": -0.540267,
+          "change_4h": -0.489865,
+          "priceChangePercent": -0.489865,
           "roi_15m": 0.0,
           "last": 5.891,
-          "quoteVolume24h": 712601.40497
+          "quoteVolume24h": 712648.1206
         },
         {
           "symbol": "BYDUSDT",
           "bucket": "hk_equity",
           "change_4h": -0.230947,
           "priceChangePercent": -0.230947,
-          "roi_15m": -0.115607,
+          "roi_15m": 0.0,
           "last": 8.64,
           "quoteVolume24h": 48579.6461
         },
@@ -549,9 +549,9 @@
         {
           "symbol": "ZHIPUUSDT",
           "bucket": "hk_equity",
-          "change_4h": 0.0,
-          "priceChangePercent": 0.0,
-          "roi_15m": 0.049092,
+          "change_4h": -0.016353,
+          "priceChangePercent": -0.016353,
+          "roi_15m": 0.0,
           "last": 61.14,
           "quoteVolume24h": 1822565.0299
         },
@@ -562,7 +562,7 @@
           "priceChangePercent": 0.0,
           "roi_15m": 0.0,
           "last": 20.17,
-          "quoteVolume24h": 1248160.7826
+          "quoteVolume24h": 1231884.5594
         },
         {
           "symbol": "POPMARTUSDT",
@@ -578,67 +578,35 @@
           "bucket": "hk_equity",
           "change_4h": 0.108774,
           "priceChangePercent": 0.108774,
-          "roi_15m": 0.181422,
+          "roi_15m": 0.0,
           "last": 2.761,
-          "quoteVolume24h": 4797331.88825
+          "quoteVolume24h": 4797364.30239
         }
       ],
       "surge_15m": [
         {
-          "symbol": "ZHONGJIUSDT",
-          "bucket": "hk_equity",
-          "roi_15m": 0.364122,
-          "roi_1m": 0.0,
-          "last": 82.69,
-          "quoteVolume24h": 3540617.7664
-        },
-        {
           "symbol": "CSOPSKHYNIX2LUSDT",
           "bucket": "hk_equity",
-          "roi_15m": 0.181422,
-          "roi_1m": 0.07249,
+          "roi_15m": 0.0,
+          "roi_1m": 0.0,
           "last": 2.761,
-          "quoteVolume24h": 4797331.88825
+          "quoteVolume24h": 4797364.30239
         },
         {
-          "symbol": "HK0625USDT",
+          "symbol": "ZHONGJIUSDT",
           "bucket": "hk_equity",
-          "roi_15m": 0.055866,
+          "roi_15m": 0.0,
           "roi_1m": 0.0,
-          "last": 35.82,
-          "quoteVolume24h": 29552.9022
+          "last": 82.67,
+          "quoteVolume24h": 3540648.3543
         },
         {
           "symbol": "ZHIPUUSDT",
           "bucket": "hk_equity",
-          "roi_15m": 0.049092,
+          "roi_15m": 0.0,
           "roi_1m": 0.0,
           "last": 61.14,
           "quoteVolume24h": 1822565.0299
-        },
-        {
-          "symbol": "HK1810USDT",
-          "bucket": "hk_equity",
-          "roi_15m": 0.037922,
-          "roi_1m": 0.0,
-          "last": 26.38,
-          "quoteVolume24h": 685960.7565
-        },
-        {
-          "symbol": "TENCENTUSDT",
-          "bucket": "hk_equity",
-          "roi_15m": 0.020488,
-          "roi_1m": 0.0,
-          "last": 48.82,
-          "quoteVolume24h": 197446.8358
-        },
-        {
-          "symbol": "HK0700USDT",
-          "bucket": "hk_equity",
-          "roi_15m": 0.010471,
-          "roi_1m": 0.0,
-          "last": 382.05,
-          "quoteVolume24h": 195560.2748
         },
         {
           "symbol": "MINIMAXUSDT",
@@ -646,7 +614,39 @@
           "roi_15m": 0.0,
           "roi_1m": 0.0,
           "last": 20.17,
-          "quoteVolume24h": 1248160.7826
+          "quoteVolume24h": 1231884.5594
+        },
+        {
+          "symbol": "CSOPSAMSUNG2LUSDT",
+          "bucket": "hk_equity",
+          "roi_15m": 0.0,
+          "roi_1m": 0.0,
+          "last": 5.891,
+          "quoteVolume24h": 712648.1206
+        },
+        {
+          "symbol": "HK1810USDT",
+          "bucket": "hk_equity",
+          "roi_15m": 0.0,
+          "roi_1m": 0.0,
+          "last": 26.38,
+          "quoteVolume24h": 685951.0271
+        },
+        {
+          "symbol": "POPMARTUSDT",
+          "bucket": "hk_equity",
+          "roi_15m": 0.0,
+          "roi_1m": 0.0,
+          "last": 17.11,
+          "quoteVolume24h": 369046.5372
+        },
+        {
+          "symbol": "HK0992USDT",
+          "bucket": "hk_equity",
+          "roi_15m": 0.0,
+          "roi_1m": 0.0,
+          "last": 19.97,
+          "quoteVolume24h": 226016.0597
         }
       ]
     },
@@ -657,56 +657,56 @@
           "bucket": "cn_equity",
           "change_4h": 0.520918,
           "priceChangePercent": 0.520918,
-          "roi_15m": 0.048607,
+          "roi_15m": 0.0,
           "last": 6.175,
-          "quoteVolume24h": 2315623.48966
+          "quoteVolume24h": 2315653.49692
         },
         {
           "symbol": "UNITREEUSDT",
           "bucket": "cn_equity",
-          "change_4h": 0.216116,
-          "priceChangePercent": 0.216116,
-          "roi_15m": 0.041093,
-          "last": 97.38,
-          "quoteVolume24h": 5019212.9517
+          "change_4h": 0.185261,
+          "priceChangePercent": 0.185261,
+          "roi_15m": -0.020542,
+          "last": 97.34,
+          "quoteVolume24h": 5020293.89
         }
       ],
       "losers_4h": [
         {
           "symbol": "UNITREEUSDT",
           "bucket": "cn_equity",
-          "change_4h": 0.216116,
-          "priceChangePercent": 0.216116,
-          "roi_15m": 0.041093,
-          "last": 97.38,
-          "quoteVolume24h": 5019212.9517
+          "change_4h": 0.185261,
+          "priceChangePercent": 0.185261,
+          "roi_15m": -0.020542,
+          "last": 97.34,
+          "quoteVolume24h": 5020293.89
         },
         {
           "symbol": "CXMTUSDT",
           "bucket": "cn_equity",
           "change_4h": 0.520918,
           "priceChangePercent": 0.520918,
-          "roi_15m": 0.048607,
+          "roi_15m": 0.0,
           "last": 6.175,
-          "quoteVolume24h": 2315623.48966
+          "quoteVolume24h": 2315653.49692
         }
       ],
       "surge_15m": [
         {
           "symbol": "CXMTUSDT",
           "bucket": "cn_equity",
-          "roi_15m": 0.048607,
+          "roi_15m": 0.0,
           "roi_1m": 0.0,
           "last": 6.175,
-          "quoteVolume24h": 2315623.48966
+          "quoteVolume24h": 2315653.49692
         },
         {
           "symbol": "UNITREEUSDT",
           "bucket": "cn_equity",
-          "roi_15m": 0.041093,
-          "roi_1m": 0.0,
-          "last": 97.38,
-          "quoteVolume24h": 5019212.9517
+          "roi_15m": -0.020542,
+          "roi_1m": -0.020542,
+          "last": 97.34,
+          "quoteVolume24h": 5020293.89
         }
       ]
     }
