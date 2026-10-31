@@ -1,6 +1,6 @@
 {
-  "built_at": "2026-10-31T09:33:19+08:00",
-  "asof": "2026-10-31 09:15 Asia/Shanghai",
+  "built_at": "2026-10-31T22:40:36+08:00",
+  "asof": "2026-10-31 20:10 Asia/Shanghai",
   "bias": "idiosyncratic_alt_volatility",
   "watchlist_counts": {
     "crypto": 30,
@@ -10,8 +10,8 @@
     "top60": 60,
     "watchlist": 77
   },
-  "trigger_pending": true,
-  "trigger_notify_status": "pending",
+  "trigger_pending": false,
+  "trigger_notify_status": "ok",
   "available": {
     "watchlist": true,
     "movers": true,

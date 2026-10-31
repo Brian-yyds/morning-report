@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-10-31T14:40:25.498Z",
+  "mode": "real",
+  "sources": [
+    {
+      "label": "机会报告",
+      "path": "/reports/opportunities/opp_refined.json",
+      "ok": true,
+      "modified": "2026-10-31T12:41:49.056Z"
+    },
+    {
+      "label": "异常监控",
+      "path": "/reports/anomaly_latest.json",
+      "ok": true,
+      "modified": "2026-10-31T09:38:09.160Z"
+    },
+    {
+      "label": "Runner 日志",
+      "path": "/codex_runners/logs/*.log",
+      "ok": true
+    }
+  ],
+  "opportunity": "schema: opportunity.refined.v1 · source: Codex opp_latest.json/.md（asof 20:10，opportunity.daily.v2）+ 第二棒核对 · session: pm · asof: 2026-10-31 20:42 Asia/Shanghai · based_on: 2 条 · headline: 全名单77已扫、0 ready：仅8项wait_trigger；BTC≈77427偏空，现价无合格单，主等80800–81100反弹失败空 · checks: 已载入",
+  "anomaly": "schema: anomaly.v1 · asof: 2026-10-31 11:37 Asia/Shanghai · trigger: crypto_top10_1h_amp_gt_10pct @ 2026-10-31 11:33:21 CST；1h振幅12.65%，高0.02586/低0.022821/开0.02403 · news: 0 条 · news_status: 新闻池 dataset.json 'IDOL' 匹配0条（11:37读取） · market_bias: idiosyncratic_alt_volatility · data_asof: 已载入",
+  "logs": [
+    {
+      "name": "opportunity_pm_20261031_200521.log",
+      "modified": "2026-10-31T12:10:11.833Z",
+      "lines": [
+        "INTCUSDT [8.0565, 10.53] [3.7268, 4.9001]",
+        "SNDKUSDT [5.1328, 9.5247] [3.9379, 7.4441]",
+        "NVDAUSDT [5.7143, 7.6581] [3.765, 5.0921]",
+        "MINIMAXUSDT [5.8989, 6.698] [3.8181, 4.3535]",
+        "UNITREEUSDT [6.7579, 8.8] [4.8295, 6.3333]",
+        "VALIDATED: schema, 77 distinct symbols, 68 full verifications, 8 RR calculations, 4 matching files",
+        "codex",
+        "OPP_OK pm /workspace/market-analysis/reports/opportunities/opp_latest.json /workspace/market-analysis/reports/opportunities/opp_latest.md",
+        "tokens used",
+        "79,194",
+        "OPP_OK pm /workspace/market-analysis/reports/opportunities/opp_latest.json /workspace/market-analysis/reports/opportunities/opp_latest.md",
+        "[opp-codex] done ok"
+      ]
+    },
+    {
+      "name": "opportunity_pm_20261031_200528.log",
+      "modified": "2026-10-31T12:05:29.078Z",
+      "lines": [
+        "[opp-codex] building universe snapshot...",
+        "{\"ok\": true, \"path\": \"/workspace/market-analysis/reports/opportunities/opp_universe_snapshot.json\", \"symbols\": 77, \"bytes\": 1676946, \"missing_klines\": 9}",
+        "[opp-codex] start session=pm day=2026-10-31 timeout=1500s snapshot=1676946b",
+        "[opp-codex] cmd: /home/box/.local/bin/codex exec --skip-git-repo-check -C /workspace/market-analysis --add-dir /cursor/stores/store-cc9b8b81-2640-48ef-88b0-99697c192091/news-pool --add-dir /workspace/onchain-monitor --ad"
+      ]
+    },
+    {
+      "name": "opportunity_pm_20261031_200440.log",
+      "modified": "2026-10-31T12:04:40.482Z",
+      "lines": [
+        "[opp-codex] building universe snapshot...",
+        "{\"ok\": true, \"path\": \"/workspace/market-analysis/reports/opportunities/opp_universe_snapshot.json\", \"symbols\": 77, \"bytes\": 1676946, \"missing_klines\": 9}",
+        "[opp-codex] start session=pm day=2026-10-31 timeout=1500s snapshot=1676946b",
+        "[opp-codex] cmd: /home/box/.local/bin/codex exec --skip-git-repo-check -C /workspace/market-analysis --add-dir /cursor/stores/store-cc9b8b81-2640-48ef-88b0-99697c192091/news-pool --add-dir /workspace/onchain-monitor --ad",
+        "[opp-codex] dry-run: snapshot ok; not invoking codex"
+      ]
+    },
+    {
+      "name": "opportunity_pm_20261031_194955.log",
+      "modified": "2026-10-31T11:51:43.564Z",
+      "lines": [
+        "assert [p['id'] for p in a['btc']['plans']]==['S1','S2','L1','L2']",
+        "print('VALIDATED identical JSONs',a['asof'],'BTC',price)",
+        "PY",
+        "python3 /tmp/write_opp_pm.py\" in /workspace/market-analysis",
+        " succeeded in 262ms:",
+        "VALIDATED identical JSONs 2026-10-31 19:51 Asia/Shanghai BTC 77406.7",
+        "codex",
+        "OPP_OK pm /workspace/market-analysis/reports/opportunities/opp_latest.json",
+        "tokens used",
+        "65,204",
+        "OPP_OK pm /workspace/market-analysis/reports/opportunities/opp_latest.json",
+        "[opp-codex] done ok"
+      ]
+    }
+  ]
+}

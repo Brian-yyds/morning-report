@@ -1,8 +1,8 @@
 {
-  "schema": "opportunity.daily.v1",
-  "asof": "2026-10-31 09:15 Asia/Shanghai",
+  "schema": "opportunity.daily.v2",
+  "asof": "2026-10-31 20:10 Asia/Shanghai",
   "stance": "plan_only_no_trade",
-  "action": "observe_only",
+  "action": "wait_for_entry",
   "twitter_hot": "",
   "market_context": {
     "bias": "",
@@ -25,11 +25,11 @@
       "levels": [],
       "basis": ""
     },
-    "news_tie": "币安被盗后续（填回80%、恢复提现）偏利好情绪修复；联储鹰派+美股科技暴跌偏利空；推特 crypto(10-30) 以黑客事件为主",
+    "news_tie": "",
     "risks": []
   },
   "us_equity": {
-    "view": "风险偏好恶化，半导体领跌；位移已大（RSI4h：INTC 16、NVDA 25、QQQ 27、SOXL 32），周末不追空、不抄底"
+    "view": ""
   },
   "a_share": {
     "view": ""
