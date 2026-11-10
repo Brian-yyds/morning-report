@@ -12,7 +12,7 @@
   // crypto：欧美圈 40 + 华语圈 30（共 70）；stocks：欧美圈 40 + 华语圈 20（共 60）；ai：合计 30（region: west | zh）。
   const regions = {west: '欧美圈', zh: '华语圈'};
   const sorts = {rank: '排名', views: '浏览', likes: '点赞', engagement: '互动', latest: '最新'};
-  const metricNames = [['views', '浏览'], ['likes', '赞'], ['retweets', '转'], ['replies', '评'], ['quotes', '引']];
+  const metricNames = [['views', '浏览'], ['likes', '点赞'], ['retweets', '转发'], ['replies', '评论'], ['quotes', '引用']];
   const storageKey = 'morning-report:dashboard:v1';
   const state = readPreferences();
   const columnNodes = {};
