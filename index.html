@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="个人信息监测工作台：快速扫描 AI、加密与美股热点，追踪热门标的与高互动内容。">
+  <meta name="description" content="个人信息监测工作台：快速扫描 AI、加密与美股热点。">
   <title>每日早报 · 信息监测台</title>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/app.js" defer></script>
@@ -14,7 +14,7 @@
   <header class="topbar" id="topbar">
     <div class="topbar-heading">
       <div class="brand"><span class="brand-mark" aria-hidden="true">早</span><div><h1>每日早报 <span>· 信息监测台</span></h1><p>AI 动态 / 加密市场 / 美股观察</p></div></div>
-      <nav class="page-nav" aria-label="站点导航"><a href="index.html" class="page-nav-link is-active" aria-current="page">信息监测台</a><a href="trade.html" class="page-nav-link">交易组</a><a href="bot-office/" class="page-nav-link">小办公室</a><a href="bot-auto-panel/" class="page-nav-link">自动化面板</a><a href="bot-auto-panel/#/hud" class="page-nav-link">量化主界面</a></nav>
+      <nav class="page-nav" aria-label="站点导航"><a href="index.html" class="page-nav-link is-active" aria-current="page">信息监测台</a><a href="bot-auto-panel/" class="page-nav-link">自动化面板</a><a href="bot-auto-panel/#/hud" class="page-nav-link">量化主界面</a></nav>
       <div class="appearance-controls">
         <div class="segmented density-control" role="group" aria-label="内容密度">
           <button type="button" data-density="compact" aria-pressed="true">紧凑</button>
@@ -34,18 +34,8 @@
     </div>
   </header>
   <main class="dashboard" id="reports" tabindex="-1">
-    <div id="overview-area">
-      <div class="overview-heading"><div><span class="live-dot" aria-hidden="true"></span><h2>今日概览</h2><span id="day-summary" class="muted">等待数据</span></div><button id="overview-toggle" class="text-button" type="button" aria-expanded="true" aria-controls="overview-content">收起总览 ↑</button></div>
-      <p id="date-notice" class="notice" role="status" hidden></p>
-      <div id="sample-note" class="sample-notice" hidden><span class="sample-badge">样例预览</span><span id="sample-note-text"></span></div>
-      <div id="overview-content">
-        <div id="kpi-cards" class="kpi-grid" aria-label="当日数据统计"></div>
-        <div class="overview-details">
-          <section class="overview-panel tickers-panel" aria-labelledby="ticker-heading"><div class="panel-heading"><h3 id="ticker-heading">热门标的</h3><span>按提及次数 · 点击追踪</span></div><div id="popular-tickers" class="popular-tickers"></div></section>
-          <section class="overview-panel distribution-panel" aria-labelledby="distribution-heading"><div class="panel-heading"><h3 id="distribution-heading">内容分布</h3><span>点击筛选</span></div><div id="category-distribution" class="distribution"></div></section>
-        </div>
-      </div>
-    </div>
+    <p id="date-notice" class="notice" role="status" hidden></p>
+    <div id="sample-note" class="sample-notice" hidden><span class="sample-badge">样例预览</span><span id="sample-note-text"></span></div>
     <nav id="section-tabs" class="section-tabs" aria-label="切换监测栏目"></nav>
     <section class="filter-bar" id="filter-bar" aria-label="内容筛选">
       <label class="search-field mobile-search"><span class="search-icon" aria-hidden="true"></span><input id="mobile-search" type="search" placeholder="搜索热点、作者、标的…" aria-label="搜索所有栏目" autocomplete="off" spellcheck="false"></label>

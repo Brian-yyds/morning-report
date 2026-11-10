@@ -18,12 +18,10 @@
   const columnNodes = {};
   const tabNodes = {};
   const categoryNodes = {};
-  const distributionNodes = {};
   const expanded = new Set();
   let currentDate;
   let dayItems = {};
   let allItems = [];
-  let overviewOpen = !window.matchMedia('(max-width: 767px)').matches;
   let searchTimer;
 
   function element(tag, className, text) {
@@ -116,11 +114,6 @@
     sections.forEach(section => pressed(tabNodes[section.id], section.id === id));
     if (save) persist();
   }
-  function setOverview() {
-    $('overview-content').hidden = !overviewOpen;
-    $('overview-toggle').textContent = overviewOpen ? '收起总览 ↑' : '展开总览 ↓';
-    $('overview-toggle').setAttribute('aria-expanded', String(overviewOpen));
-  }
   function setCategoryMenu(open) {
     $('category-filter').dataset.open = String(open);
     $('category-menu-toggle').setAttribute('aria-expanded', String(open));
@@ -153,19 +146,6 @@
       node.addEventListener('click', () => toggleCategory(category));
       $('category-choices').append(node);
       categoryNodes[category] = node;
-      const distribution = button('distribution-button');
-      distribution.setAttribute('aria-label', `筛选${category}`);
-      distribution.addEventListener('click', () => toggleCategory(category));
-      const labels = element('span');
-      const count = element('strong', '', '0');
-      labels.append(element('span', '', category), count);
-      const track = element('span', 'distribution-track');
-      const fill = element('span', 'distribution-fill');
-      track.append(fill);
-      const share = element('span', 'distribution-share', '0%');
-      distribution.append(labels, track, share);
-      $('category-distribution').append(distribution);
-      distributionNodes[category] = {node: distribution, count, fill, share};
     });
     sections.forEach(info => {
       const tab = button('section-tab');
@@ -235,40 +215,6 @@
       dayItems[id] = items;
     });
     allItems = sections.flatMap(({id}) => dayItems[id]);
-  }
-  function renderOverview(report) {
-    const cards = $('kpi-cards'); cards.replaceChildren();
-    const values = sections.map(({id, title}) => ({label: title, value: dayItems[id].length, unit: '条', source: report?.sources[id]}));
-    values.push({label: '累计浏览', value: allItems.reduce((sum, item) => sum + number(item.metrics?.views), 0), total: true});
-    values.push({label: '累计互动', value: allItems.reduce((sum, item) => sum + item.engagement, 0), total: true});
-    values.forEach(({label, value, unit, source, total}) => {
-      const card = element('div', `kpi${total ? ' total' : ''}`);
-      card.append(element('div', 'kpi-label', label));
-      const main = element('div', 'kpi-value', total ? formatNumber(value) : String(value));
-      main.title = `${label} ${value.toLocaleString('zh-CN')}${unit || ''}`;
-      if (unit) main.append(element('span', 'kpi-unit', unit));
-      card.append(main);
-      if (source === 'sample') card.append(element('span', 'sample-badge kpi-source', '样例数据'));
-      cards.append(card);
-    });
-    const tickers = new Map();
-    allItems.forEach(item => item.tickerKeys.forEach(ticker => {
-      const value = tickers.get(ticker) || {count: 0, engagement: 0};
-      value.count++; value.engagement += item.engagement; tickers.set(ticker, value);
-    }));
-    const topTickers = [...tickers].sort((a, b) => b[1].count - a[1].count || b[1].engagement - a[1].engagement || a[0].localeCompare(b[0])).slice(0, 12);
-    $('popular-tickers').replaceChildren(...topTickers.map(([ticker, value]) => tickerButton(ticker, value.count)));
-    if (!topTickers.length) $('popular-tickers').append(element('span', 'muted', '暂无标的数据'));
-    Object.keys(categories).forEach(category => {
-      const count = allItems.filter(item => categoryOf(item) === category).length;
-      const percent = allItems.length ? count / allItems.length * 100 : 0;
-      const node = distributionNodes[category];
-      node.count.textContent = count;
-      node.share.textContent = `${Math.round(percent)}%`;
-      node.fill.style.width = `${percent}%`;
-      node.node.title = `${category} ${count} 条，占 ${Math.round(percent)}%；点击筛选（可多选）`;
-    });
-    $('day-summary').textContent = `${currentDate || '暂无日期'} · ${allItems.length} 条信息`;
   }
   function post(item) {
     const article = element('article', 'post');
@@ -377,7 +323,6 @@
     $('global-sort').value = state.sort;
     Object.keys(categories).forEach(category => {
       pressed(categoryNodes[category], state.categories.includes(category));
-      pressed(distributionNodes[category].node, state.categories.includes(category));
     });
     $('category-menu-toggle').textContent = state.categories.length ? `分类 · ${state.categories.length} ▾` : '全部分类 ▾';
     pressed($('hot-only'), state.hot);
@@ -423,7 +368,7 @@
       nodes.count.textContent = String(dayItems[id].length);
       nodes.sample.hidden = nodes.tabSample.hidden = report?.sources[id] !== 'sample';
     });
-    renderOverview(report); syncFilterControls(); renderLists();
+    syncFilterControls(); renderLists();
   }
   function selectDay(day) {
     if (!dates.includes(day)) return;
@@ -442,7 +387,7 @@
     if (sections.some(s => s.id === section)) setTab(section);
   }
 
-  applyAppearance(); buildShell(); setTab(state.tab, false); setOverview();
+  applyAppearance(); buildShell(); setTab(state.tab, false);
   $('date-select').addEventListener('change', event => selectDay(event.target.value));
   $('previous-day').addEventListener('click', () => selectDay(dates[dates.indexOf(currentDate) + 1]));
   $('next-day').addEventListener('click', () => selectDay(dates[dates.indexOf(currentDate) - 1]));
@@ -450,7 +395,6 @@
   document.querySelectorAll('button[data-density]').forEach(node => node.addEventListener('click', () => {
     state.density = node.dataset.density; applyAppearance(); persist();
   }));
-  $('overview-toggle').addEventListener('click', () => { overviewOpen = !overviewOpen; setOverview(); });
   $('global-sort').addEventListener('change', event => { state.sort = event.target.value; filtersChanged(); });
   $('hot-only').addEventListener('click', () => { state.hot = !state.hot; filtersChanged(); });
   $('active-ticker').addEventListener('click', () => { state.ticker = ''; filtersChanged(); });
@@ -488,9 +432,10 @@
   if (sections.some(s => s.id === anchor)) setTab(anchor);
   if ('ResizeObserver' in window) {
     const sizes = new ResizeObserver(entries => entries.forEach(entry => {
-      const name = {'topbar': '--topbar-height', 'overview-area': '--overview-height', 'section-tabs': '--tabs-height'}[entry.target.id];
+      const name = {'topbar': '--topbar-height', 'section-tabs': '--tabs-height'}[entry.target.id];
+      if (!name) return;
       document.documentElement.style.setProperty(name, `${entry.target.getBoundingClientRect().height}px`);
     }));
-    ['topbar', 'overview-area', 'section-tabs'].forEach(id => sizes.observe($(id)));
+    ['topbar', 'section-tabs'].forEach(id => sizes.observe($(id)));
   }
 })();
