@@ -1,0 +1,90 @@
+{
+  "schema": "market-watch/v1",
+  "updated_at": "2026-11-10T16:40:00+08:00",
+  "sample": true,
+  "items": [
+    {
+      "id": "mw-20261110-nvda",
+      "created_at": "2026-11-10T16:20:00+08:00",
+      "updated_at": "2026-11-10T16:40:00+08:00",
+      "asset": "NVDA",
+      "asset_name": "英伟达",
+      "market": "stock",
+      "currency": "USD",
+      "user_view": {
+        "author": "用户",
+        "stated_at": "2026-11-10T16:20:00+08:00",
+        "spot": 167,
+        "target": 150,
+        "direction": "down",
+        "thesis": "看到英伟达跌到 167，认为还会继续跌到 150。这是一条示例观点，用来演示「记录观点 → 再分析 → 预定核实日 → 对照走势」的流程。"
+      },
+      "bot_review": {
+        "author": "市场观察",
+        "reviewed_at": "2026-11-10T16:40:00+08:00",
+        "summary": "结合当时新闻与推特情绪，短期确有调整压力，但 150 是更积极的看空目标，需观察能否放量跌破近期支撑。示例复盘：部分同意用户方向，但对目标位保留余地。",
+        "stance": "partial",
+        "sources": [
+          {
+            "type": "news",
+            "title": "示例：芯片板块跟随大盘回撤的新闻摘要",
+            "url": "",
+            "note": "市场观察 bot 接入后，在此写入真实新闻来源。"
+          },
+          {
+            "type": "twitter",
+            "title": "示例：推特上对 NVDA 回调的讨论",
+            "url": "",
+            "note": "接入后写入原帖链接。"
+          },
+          {
+            "type": "analysis",
+            "title": "自身理解",
+            "url": "",
+            "note": "方向偏空，目标 150 需要时间和催化剂，先标记为部分同意。"
+          }
+        ]
+      },
+      "verify_on": "2026-11-20",
+      "outcome": null
+    },
+    {
+      "id": "mw-20261028-btc",
+      "created_at": "2026-10-28T09:30:00+08:00",
+      "updated_at": "2026-11-04T20:10:00+08:00",
+      "asset": "BTC",
+      "asset_name": "比特币",
+      "market": "crypto",
+      "currency": "USD",
+      "user_view": {
+        "author": "用户",
+        "stated_at": "2026-10-28T09:30:00+08:00",
+        "spot": 114000,
+        "target": 108000,
+        "direction": "down",
+        "thesis": "示例：认为一周转弱，先看 108000。"
+      },
+      "bot_review": {
+        "author": "市场观察",
+        "reviewed_at": "2026-10-28T10:00:00+08:00",
+        "summary": "示例复盘：当时同意回调方向，但认为 108000 可能略远，更可能在 110000 附近获得支撑。",
+        "stance": "partial",
+        "sources": [
+          {
+            "type": "analysis",
+            "title": "自身理解",
+            "url": "",
+            "note": "示例数据，仅演示已核实状态。"
+          }
+        ]
+      },
+      "verify_on": "2026-11-04",
+      "outcome": {
+        "verified_at": "2026-11-04T20:10:00+08:00",
+        "price": 110200,
+        "result": "partial",
+        "note": "核实日价格约 110200，方向对了，但未到用户目标 108000；介于两边判断之间，记为部分成立。此条为示例。"
+      }
+    }
+  ]
+}

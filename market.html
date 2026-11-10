@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="记录市场观点，复盘并在预定日期对照实际走势。">
+  <title>市场观察 · 每日早报</title>
+  <link rel="stylesheet" href="assets/style.css?v=6778d6f8e0">
+  <script src="assets/workbench.js?v=bfa8b07804" defer></script>
+</head>
+<body class="workbench" data-page="market" id="top">
+  <a class="skip-link" href="#main">跳至内容</a>
+  <header class="topbar workbench-topbar" id="topbar">
+    <div class="topbar-heading">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">早</span><div><h1>每日早报 <span>· 工作台</span></h1><p>个人日常面板</p></div></div>
+      <nav class="page-nav" aria-label="站点导航"><a href="index.html" class="page-nav-link">工作台</a><a href="hotspots.html" class="page-nav-link">信息监测</a><a href="market.html" class="page-nav-link is-active" aria-current="page">市场观察</a><a href="todos.html" class="page-nav-link">待办</a></nav>
+      <div class="appearance-controls">
+        <label class="theme-control"><span class="sr-only">页面主题</span><select id="theme-select" aria-label="页面主题"><option value="system">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option></select></label>
+      </div>
+    </div>
+  </header>
+  <main class="dashboard workbench-main" id="main" tabindex="-1">
+    <section class="wb-hero">
+      <p class="wb-kicker">市场观察</p>
+      <h2>把观点记下，到点对照走势</h2>
+      <p class="wb-lead">用户提出看法后，市场观察 bot 会再分析、预定核实日，并在到期后记录实际走势和谁对谁错。下面是示例数据，正式 bot 接入后即可替换。</p>
+      <p class="sample-notice" id="market-sample" hidden><span class="sample-badge">示例数据</span><span>当前为演示流程，接入市场观察 bot 后将改为真实观点。</span></p>
+    </section>
+    <div class="wb-toolbar" role="tablist" aria-label="筛选观点">
+      <button type="button" class="wb-filter is-active" data-filter="pending" aria-pressed="true">待核实</button>
+      <button type="button" class="wb-filter" data-filter="verified" aria-pressed="false">已核实</button>
+      <button type="button" class="wb-filter" data-filter="all" aria-pressed="false">全部</button>
+    </div>
+    <p class="wb-meta" id="market-updated"></p>
+    <div id="market-list" class="wb-stack"></div>
+  </main>
+  <footer class="footer"><p>个人工作台。市场观察与待办由对应 bot 写入仓库 JSON 后发布。示例数据会标注。</p><a href="#top">回到顶部 ↑</a></footer>
+  <script type="application/json" id="workbench-data">{"market": {"schema": "market-watch/v1", "updated_at": "2026-11-10T16:40:00+08:00", "sample": true, "items": [{"id": "mw-20261110-nvda", "created_at": "2026-11-10T16:20:00+08:00", "updated_at": "2026-11-10T16:40:00+08:00", "asset": "NVDA", "asset_name": "英伟达", "market": "stock", "currency": "USD", "user_view": {"author": "用户", "stated_at": "2026-11-10T16:20:00+08:00", "spot": 167, "target": 150, "direction": "down", "thesis": "看到英伟达跌到 167，认为还会继续跌到 150。这是一条示例观点，用来演示「记录观点 → 再分析 → 预定核实日 → 对照走势」的流程。"}, "bot_review": {"author": "市场观察", "reviewed_at": "2026-11-10T16:40:00+08:00", "summary": "结合当时新闻与推特情绪，短期确有调整压力，但 150 是更积极的看空目标，需观察能否放量跌破近期支撑。示例复盘：部分同意用户方向，但对目标位保留余地。", "stance": "partial", "sources": [{"type": "news", "title": "示例：芯片板块跟随大盘回撤的新闻摘要", "url": "", "note": "市场观察 bot 接入后，在此写入真实新闻来源。"}, {"type": "twitter", "title": "示例：推特上对 NVDA 回调的讨论", "url": "", "note": "接入后写入原帖链接。"}, {"type": "analysis", "title": "自身理解", "url": "", "note": "方向偏空，目标 150 需要时间和催化剂，先标记为部分同意。"}]}, "verify_on": "2026-11-20", "outcome": null}, {"id": "mw-20261028-btc", "created_at": "2026-10-28T09:30:00+08:00", "updated_at": "2026-11-04T20:10:00+08:00", "asset": "BTC", "asset_name": "比特币", "market": "crypto", "currency": "USD", "user_view": {"author": "用户", "stated_at": "2026-10-28T09:30:00+08:00", "spot": 114000, "target": 108000, "direction": "down", "thesis": "示例：认为一周转弱，先看 108000。"}, "bot_review": {"author": "市场观察", "reviewed_at": "2026-10-28T10:00:00+08:00", "summary": "示例复盘：当时同意回调方向，但认为 108000 可能略远，更可能在 110000 附近获得支撑。", "stance": "partial", "sources": [{"type": "analysis", "title": "自身理解", "url": "", "note": "示例数据，仅演示已核实状态。"}]}, "verify_on": "2026-11-04", "outcome": {"verified_at": "2026-11-04T20:10:00+08:00", "price": 110200, "result": "partial", "note": "核实日价格约 110200，方向对了，但未到用户目标 108000；介于两边判断之间，记为部分成立。此条为示例。"}}]}, "todos": {"schema": "todos/v1", "updated_at": "2026-11-11T00:30:00+08:00", "sample": true, "items": [{"id": "todo-20261111-domain", "title": "域名解析并挂上早报站", "status": "waiting", "created_at": "2026-11-10T23:40:00+08:00", "updated_at": "2026-11-11T00:30:00+08:00", "due_on": "2026-11-12", "check_on": "2026-11-11", "plan": "用户先在腾讯云完成域名购买和实名；登录解析台后，由代码助手添加解析记录，并把现有早报站部署到该域名。", "progress": "已确认意向域名为 yzyzyz.xyz，当时还在购物车，等待购买完成。", "updates": [{"at": "2026-11-10T23:40:00+08:00", "text": "用户发来腾讯云域名选购页，意向为 yzyzyz.xyz。"}, {"at": "2026-11-11T00:30:00+08:00", "text": "已说明：购买和实名需用户本人完成，之后解析和部署可由代码助手继续。"}]}, {"id": "todo-20261111-workbench", "title": "把早报站改成个人工作台，并加上市场观察与待办", "status": "in_progress", "created_at": "2026-11-11T02:01:00+08:00", "updated_at": "2026-11-11T02:01:00+08:00", "due_on": "2026-11-11", "check_on": "2026-11-11", "plan": "在现有清新日常面板上扩展，不新增深色 HUD；先落地板块、数据结构和写入约定，用示例数据演示流程，再部署到同一站点。", "progress": "正在建设工作台、市场观察和待办页面。", "updates": [{"at": "2026-11-11T02:01:00+08:00", "text": "智哥转交任务，开始改站。"}]}, {"id": "todo-20261108-panel-restore", "title": "自动化面板与量化页恢复为改版前样式", "status": "done", "created_at": "2026-11-10T22:00:00+08:00", "updated_at": "2026-11-10T22:24:00+08:00", "due_on": "2026-11-10", "check_on": "2026-11-10", "plan": "从已发布版本取回改版前的面板产物并重新发布，首页监测台改动保留。", "progress": "已于 11 月 10 日发布恢复。此次工作台改版不再把深色面板作为主界面。", "updates": [{"at": "2026-11-10T22:24:00+08:00", "text": "已恢复并发布，页面缓存随后更新。"}]}]}, "hotspots": {"latest_date": "2026-11-10", "counts": {"ai": 30, "crypto": 65, "stocks": 58}}}</script>
+</body>
+</html>
