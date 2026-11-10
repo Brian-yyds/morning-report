@@ -9,7 +9,7 @@
   --news-bg: #fdf0e7; --news-text: #995323;
   --opinion-bg: #eeedf9; --opinion-text: #64529b;
   --discussion-bg: #eaf1f8; --discussion-text: #416c91;
-  --topbar-height: 120px; --tabs-height: 52px;
+  --topbar-height: 120px; --tabs-height: 68px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   font-synthesis: none; font-variant-numeric: tabular-nums;
 }
@@ -98,7 +98,7 @@ kbd { position: absolute; right: 12px; border: 1px solid var(--line); border-rad
 .notice, .sample-notice { display: flex; align-items: center; gap: 9px; padding: 8px 12px; margin: 0 0 12px; border: 1px solid var(--warning-line); border-radius: 6px; background: var(--warning-bg); color: var(--warning-text); font-size: 11px; }
 .sample-badge { display: inline-block; padding: 1px 5px; border: 1px solid var(--warning-line); color: var(--warning-text); background: var(--warning-bg); border-radius: 4px; font-size: 9px; line-height: 1.7; white-space: nowrap; font-weight: 500; }
 .sample-notice .sample-badge { font-weight: 700; border: 0; padding: 0; }
-.filter-bar { background: var(--surface); padding: 12px 16px 10px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 16px; }
+.filter-bar { background: var(--surface); padding: 12px 16px 10px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 16px; position: sticky; top: calc(var(--topbar-height) + var(--tabs-height)); z-index: 19; }
 .filter-main, .filter-options, .category-filter, .category-choices, .sort-control { display: flex; align-items: center; gap: 8px; }
 .filter-main { justify-content: space-between; gap: 15px; }
 .filter-label { font-size: 11px; margin-right: 3px; }
@@ -111,9 +111,17 @@ kbd { position: absolute; right: 12px; border: 1px solid var(--line); border-rad
 .filter-status-left { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; min-width: 0; }
 #results-count { color: var(--muted); font-size: 11px; }
 .active-ticker { max-width: 100%; color: var(--accent); background: var(--accent-soft); padding: 2px 7px; font-size: 11px; overflow-wrap: anywhere; }
-.mobile-search, .category-menu-toggle, .section-tabs { display: none; }
-.report-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
-.report-section { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; min-width: 0; overflow: hidden; scroll-margin-top: calc(var(--topbar-height) + 12px); }
+.mobile-search, .category-menu-toggle { display: none; }
+.section-tabs { display: flex; gap: 10px; padding: 4px 0 16px; position: sticky; top: var(--topbar-height); z-index: 20; background: var(--bg); }
+.section-tab { flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 8px 16px; font-size: 15px; font-weight: 650; color: var(--muted); border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.section-tab:hover { color: var(--accent); border-color: var(--accent); }
+.section-tab[aria-pressed="true"] { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); }
+.tab-label { font-size: 15px; }
+.tab-count { color: var(--muted); font-size: 12px; font-weight: 500; background: var(--bg); padding: 1px 7px; border-radius: 999px; }
+.section-tab[aria-pressed="true"] .tab-count { color: var(--accent); background: var(--surface); }
+.report-grid { display: block; }
+.report-section { display: none; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; min-width: 0; overflow: hidden; scroll-margin-top: calc(var(--topbar-height) + var(--tabs-height) + 12px); }
+body[data-tab="ai"] .section-ai, body[data-tab="crypto"] .section-crypto, body[data-tab="stocks"] .section-stocks { display: block; }
 .section-header { padding: 14px 16px 12px; border-bottom: 1px solid var(--line); background: var(--surface); }
 .section-title-row, .section-title, .section-subtitle { display: flex; align-items: center; }
 .section-title-row { justify-content: space-between; gap: 7px; }
@@ -123,16 +131,16 @@ kbd { position: absolute; right: 12px; border: 1px solid var(--line); border-rad
 .section-count { color: var(--muted); background: var(--bg); font-size: 10px; padding: 0 5px; border-radius: 4px; }
 .column-sort { font-size: 10px; min-height: 28px; padding-left: 7px; max-width: 100px; background: var(--surface-alt); }
 .section-subtitle { justify-content: space-between; gap: 8px; color: var(--muted); font-size: 10px; margin-top: 8px; }
-.post-list { height: clamp(360px, calc(100dvh - var(--topbar-height) - 160px), 1200px); overflow-y: auto; overscroll-behavior-y: contain; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; scrollbar-gutter: stable; }
+.post-list { height: clamp(420px, calc(100dvh - var(--topbar-height) - var(--tabs-height) - 190px), 1400px); overflow-y: auto; overscroll-behavior-y: contain; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; scrollbar-gutter: stable; }
 .post-list:focus-visible { outline-offset: -3px; }
-.post { position: relative; padding: 15px 16px 14px 44px; border-bottom: 1px solid var(--line); transition: background .12s ease; }
+.post { position: relative; padding: 18px 22px 16px 52px; border-bottom: 1px solid var(--line); transition: background .12s ease; }
 .post:last-child { border-bottom: 0; }
 .post:hover { background: var(--hover); }
-.rank { position: absolute; left: 11px; top: 13px; width: 22px; height: 22px; display: grid; place-items: center; color: var(--muted); font-size: 11px; font-weight: 600; }
+.rank { position: absolute; left: 16px; top: 18px; width: 22px; height: 22px; display: grid; place-items: center; color: var(--muted); font-size: 11px; font-weight: 600; }
 .rank.leading { background: var(--accent-soft); color: var(--accent); border-radius: 5px; }
 .post-header { display: flex; align-items: start; justify-content: space-between; gap: 6px; min-width: 0; }
 .author { display: flex; gap: 5px; align-items: baseline; min-width: 0; flex-wrap: wrap; }
-.author-name { max-width: 100%; font-size: 12px; font-weight: 650; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.author-name { max-width: 100%; font-size: 13px; font-weight: 650; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .handle { color: var(--muted); font-size: 10px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .category { flex-shrink: 0; padding: 1px 5px; font-size: 9px; border-radius: 3px; white-space: nowrap; line-height: 1.8; }
 .practical { color: var(--practical-text); background: var(--practical-bg); }
@@ -143,7 +151,7 @@ kbd { position: absolute; right: 12px; border: 1px solid var(--line); border-rad
 .row-tags .ticker-chip { font-size: 10px; min-height: 20px; padding: 0 5px; background: var(--surface-alt); color: var(--accent); border-color: var(--line); }
 .row-tags .ticker-chip[aria-pressed="true"], .row-tags .ticker-chip:hover { background: var(--accent-soft); border-color: var(--accent); }
 .heat-badge { color: var(--hot-text); background: var(--hot-bg); padding: 1px 5px; border-radius: 3px; font-size: 9px; line-height: 1.8; white-space: nowrap; }
-.post-text { display: block; width: 100%; text-align: left; padding: 0; margin-top: 8px; font-size: 13px; line-height: 1.75; border-radius: 2px; }
+.post-text { display: block; width: 100%; text-align: left; padding: 0; margin-top: 8px; font-size: 14px; line-height: 1.75; border-radius: 2px; }
 .post-text-content { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; white-space: pre-wrap; overflow-wrap: anywhere; }
 .post-text:hover { color: var(--accent-hover); }
 .post-text[aria-expanded="true"] .post-text-content { display: block; overflow: visible; }
@@ -164,7 +172,7 @@ body[data-density="comfortable"] .post-text-content { -webkit-line-clamp: 3; lin
 body[data-density="comfortable"] .post-bottom { margin-top: 10px; }
 @media (min-width: 1700px) {
   .topbar { padding-left: 32px; padding-right: 32px; }
-  .dashboard { padding: 0 32px; }
+  .dashboard { padding: 16px 32px 0; }
   .post { padding-right: 16px; padding-left: 46px; }
   .post-text { font-size: 13px; }
   .metric { font-size: 11px; }
@@ -175,15 +183,12 @@ body[data-density="comfortable"] .post-bottom { margin-top: 10px; }
   .topbar-tools { gap: 12px; }
   .timezone { display: none; }
   .desktop-search { width: auto; flex: 1; max-width: 340px; }
-  .dashboard { padding: 0 20px; }
-  .section-tabs { display: flex; position: sticky; top: var(--topbar-height); z-index: 20; background: var(--bg); gap: 6px; padding: 8px 0; }
-  .section-tab { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 38px; flex: 1; padding: 5px 10px; font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
-  .section-tab[aria-pressed="true"] { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); font-weight: 650; }
+  .dashboard { padding: 14px 20px 0; }
+  .section-tabs { gap: 8px; padding: 4px 0 12px; }
+  .section-tab { min-height: 42px; font-size: 13px; }
+  .tab-label { font-size: 13px; }
   .tab-count { font-size: 11px; }
   .filter-bar { position: sticky; top: calc(var(--topbar-height) + var(--tabs-height)); z-index: 19; }
-  .report-grid { display: block; }
-  .report-section { display: none; }
-  body[data-tab="ai"] .section-ai, body[data-tab="crypto"] .section-crypto, body[data-tab="stocks"] .section-stocks { display: block; }
   .post-list { height: auto; min-height: 260px; overflow: visible; scrollbar-gutter: auto; }
   .post { padding: 14px 18px 13px 48px; }
   .rank { left: 13px; top: 15px; }
@@ -216,7 +221,7 @@ body[data-density="comfortable"] .post-bottom { margin-top: 10px; }
   .updated { gap: 4px; font-size: 10px; }
   .updated .status-dot { width: 5px; height: 5px; }
   .desktop-search { display: none; }
-  .dashboard { padding: 0 10px; }
+  .dashboard { padding: 8px 10px 0; }
   .sample-notice, .notice { font-size: 10px; padding: 7px 9px; gap: 6px; align-items: start; }
   .section-tabs { padding: 7px 0; gap: 5px; }
   .section-tab { gap: 5px; min-height: 38px; padding: 5px 4px; font-size: 12px; flex-wrap: wrap; }

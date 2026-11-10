@@ -152,7 +152,7 @@
       const tabCount = element('span', 'tab-count', '0');
       const tabSample = element('span', 'sample-badge', '样例数据');
       tabSample.hidden = true;
-      tab.append(element('span', '', info.short), tabCount, tabSample);
+      tab.append(element('span', 'tab-label', info.title), tabCount, tabSample);
       tab.setAttribute('aria-controls', info.id);
       tab.addEventListener('click', () => setTab(info.id));
       $('section-tabs').append(tab);
