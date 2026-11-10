@@ -7,6 +7,20 @@
   },
   "dates": [
     {
+      "date": "2026-11-10",
+      "sections": [
+        "ai",
+        "crypto",
+        "stocks"
+      ],
+      "sources": {
+        "ai": "real",
+        "crypto": "real",
+        "stocks": "real"
+      },
+      "sample": false
+    },
+    {
       "date": "2026-11-01",
       "sections": [
         "ai",

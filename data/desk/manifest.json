@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-01T09:27:11+08:00",
+  "built_at": "2026-11-10T12:57:33+08:00",
   "asof": "2026-10-31 20:10 Asia/Shanghai",
   "bias": "idiosyncratic_alt_volatility",
   "watchlist_counts": {
@@ -10,8 +10,8 @@
     "top60": 60,
     "watchlist": 77
   },
-  "trigger_pending": false,
-  "trigger_notify_status": "ok",
+  "trigger_pending": true,
+  "trigger_notify_status": "pending",
   "available": {
     "watchlist": true,
     "movers": true,
