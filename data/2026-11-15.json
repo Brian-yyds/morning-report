@@ -1,0 +1,3123 @@
+{
+  "date": "2026-11-15",
+  "sample": false,
+  "sources": {
+    "ai": "real",
+    "crypto": "real",
+    "stocks": "real"
+  },
+  "sections": {
+    "ai": {
+      "section": "ai",
+      "date": "2026-11-15",
+      "generated_at": "2026-11-15T09:25:19+08:00",
+      "sample": false,
+      "items": [
+        {
+          "rank": 1,
+          "author_name": "SemiAnalysis",
+          "author_handle": "SemiAnalysis_",
+          "author_url": "https://x.com/SemiAnalysis_",
+          "tweet_url": "https://x.com/SemiAnalysis_/status/2121462524281282700",
+          "text_zh": "SemiAnalysis：黄仁勋很善于留住人才，高管罕有高调离职；眼下风投可能开出数十亿美元挖人去创办芯片公司或neo-lab，若一年内出现大批离职，将对其前景非常担忧。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 424377,
+            "likes": 1734,
+            "retweets": 216,
+            "replies": 69,
+            "quotes": 11
+          },
+          "posted_at": "2026-11-14T04:37:35+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 2,
+          "author_name": "Chubby♨️",
+          "author_handle": "kimmonismus",
+          "author_url": "https://x.com/kimmonismus",
+          "tweet_url": "https://x.com/kimmonismus/status/2121665631057777030",
+          "text_zh": "kimmonismus听说现有公开理由都无法解释GPT-6.2为何推迟，甚至猜测可能根本不会有6.2，OpenAI或在准备GPT-6.5来竞争。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 94685,
+            "likes": 975,
+            "retweets": 20,
+            "replies": 153,
+            "quotes": 15
+          },
+          "posted_at": "2026-11-14T18:04:39+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 3,
+          "author_name": "Andy L",
+          "author_handle": "AndyL5cc",
+          "author_url": "https://x.com/AndyL5cc",
+          "tweet_url": "https://x.com/AndyL5cc/status/2121590851529064624",
+          "text_zh": "对比朋友花十几万组装RTX 5090本地跑MiniMax H3视频，与Veo + Fable 5.2的云端效果，感叹省下的生成费可能还不如会员费划算。",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 96779,
+            "likes": 334,
+            "retweets": 20,
+            "replies": 110,
+            "quotes": 7
+          },
+          "posted_at": "2026-11-14T13:07:30+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 4,
+          "author_name": "SemiAnalysis",
+          "author_handle": "SemiAnalysis_",
+          "author_url": "https://x.com/SemiAnalysis_",
+          "tweet_url": "https://x.com/SemiAnalysis_/status/2121725048402681946",
+          "text_zh": "SemiAnalysis：英伟达七大客户中有六家在自研芯片，包括谷歌、微软、Meta、亚马逊、Anthropic和OpenAI，仅SpaceX除外；并称若英伟达不扶持CoreWeave等neo-cloud，云行业格局会更集中。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 63334,
+            "likes": 762,
+            "retweets": 63,
+            "replies": 74,
+            "quotes": 22
+          },
+          "posted_at": "2026-11-14T22:00:45+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 5,
+          "author_name": "SuSu_酥酥👅",
+          "author_handle": "NFT_Chen",
+          "author_url": "https://x.com/NFT_Chen",
+          "tweet_url": "https://x.com/NFT_Chen/status/2121538580300574883",
+          "text_zh": "介绍llama.cpp v1.0.0落地：MoE offloading与LRU缓存让大MoE也能在显存不足时运行；结合Qwen 3.8-27B，单卡RTX 5090上MTP投机解码可从约74 tok/s提升到约134 tok/s。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 61872,
+            "likes": 705,
+            "retweets": 63,
+            "replies": 46,
+            "quotes": 4
+          },
+          "posted_at": "2026-11-14T09:39:48+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 6,
+          "author_name": "宝玉",
+          "author_handle": "dotey",
+          "author_url": "https://x.com/dotey",
+          "tweet_url": "https://x.com/dotey/status/2121434782433190063",
+          "text_zh": "宝玉认为无论是单一主会话还是一堆Session都不够好：只有主会话时难以干预子任务细节、补充上下文，需要能看到执行过程的形态。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 54457,
+            "likes": 304,
+            "retweets": 21,
+            "replies": 158,
+            "quotes": 16
+          },
+          "posted_at": "2026-11-14T02:47:21+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 7,
+          "author_name": "Sebastian Raschka",
+          "author_handle": "rasbt",
+          "author_url": "https://x.com/rasbt",
+          "tweet_url": "https://x.com/rasbt/status/2121613812990095543",
+          "text_zh": "Sebastian Raschka介绍Inkling 2 Small：采用类似Kimi K3的attention residual，但没有线性注意力混合结构，认为值得纳入年底架构趋势讨论。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 31623,
+            "likes": 839,
+            "retweets": 75,
+            "replies": 52,
+            "quotes": 4
+          },
+          "posted_at": "2026-11-14T14:38:45+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 8,
+          "author_name": "Ethan Mollick",
+          "author_handle": "emollick",
+          "author_url": "https://x.com/emollick",
+          "tweet_url": "https://x.com/emollick/status/2121641417483169934",
+          "text_zh": "Ethan Mollick以Fable 5.2复原奥登1941年诗歌课为例，说明智能体群在做研究时会持续产生大量流量，甚至逐行检索互联网档案中的冷门书。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 34848,
+            "likes": 427,
+            "retweets": 23,
+            "replies": 142,
+            "quotes": 15
+          },
+          "posted_at": "2026-11-14T16:28:26+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 9,
+          "author_name": "歸藏(guizang.ai)",
+          "author_handle": "op7418",
+          "author_url": "https://x.com/op7418",
+          "tweet_url": "https://x.com/op7418/status/2121471156255613104",
+          "text_zh": "指出今天又有不少Claude老账号弹出KYC验证。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 42553,
+            "likes": 73,
+            "retweets": 0,
+            "replies": 107,
+            "quotes": 3
+          },
+          "posted_at": "2026-11-14T05:11:53+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 10,
+          "author_name": "郭宇 guoyu.eth",
+          "author_handle": "turingou",
+          "author_url": "https://x.com/turingou",
+          "tweet_url": "https://x.com/turingou/status/2121523668727828971",
+          "text_zh": "称自己的机器人已在全网搜寻更便宜的Mac mini M5 Pro，并在当天自动下单了两台。",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 41363,
+            "likes": 96,
+            "retweets": 1,
+            "replies": 11,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T08:40:33+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 11,
+          "author_name": "AYi",
+          "author_handle": "AYi_AInotes",
+          "author_url": "https://x.com/AYi_AInotes",
+          "tweet_url": "https://x.com/AYi_AInotes/status/2121562836811825580",
+          "text_zh": "回顾黄仁勋6月1日发布会：外界关注拔电仍满帧的笔记本，但真正关键是128GB统一内存，使轻薄本也能本地运行约200B参数模型，并把数据中心级架构下放到个人设备。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 36103,
+            "likes": 185,
+            "retweets": 22,
+            "replies": 12,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T11:16:11+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 12,
+          "author_name": "歸藏(guizang.ai)",
+          "author_handle": "op7418",
+          "author_url": "https://x.com/op7418",
+          "tweet_url": "https://x.com/op7418/status/2121483517662306392",
+          "text_zh": "用Gemini 4 Carbon总结Next Token过往九期要点，包括“Token是新货币”、AI主要受制于物理基建供给，以及不必讳言自己在卖Token等观点。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 34177,
+            "likes": 180,
+            "retweets": 17,
+            "replies": 64,
+            "quotes": 3
+          },
+          "posted_at": "2026-11-14T06:01:00+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 13,
+          "author_name": "郭宇 guoyu.eth",
+          "author_handle": "turingou",
+          "author_url": "https://x.com/turingou",
+          "tweet_url": "https://x.com/turingou/status/2121500754716524934",
+          "text_zh": "turingou把公司主要开发工作迁到Claude云端项目，由云端环境远程连接服务器与个人电脑，认为推理和计算放在一处的效果是其他harness难比的。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 30687,
+            "likes": 169,
+            "retweets": 14,
+            "replies": 12,
+            "quotes": 2
+          },
+          "posted_at": "2026-11-14T07:09:30+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 14,
+          "author_name": "Jiayuan (JY) Zhang",
+          "author_handle": "jiayuan_jy",
+          "author_url": "https://x.com/jiayuan_jy",
+          "tweet_url": "https://x.com/jiayuan_jy/status/2121481144223031667",
+          "text_zh": "分享Vibe Coding小技巧：先做设计，再写代码。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 30271,
+            "likes": 137,
+            "retweets": 3,
+            "replies": 29,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T05:51:34+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 15,
+          "author_name": "Simon Willison",
+          "author_handle": "simonw",
+          "author_url": "https://x.com/simonw",
+          "tweet_url": "https://x.com/simonw/status/2121695097674981849",
+          "text_zh": "Simon Willison发现常规Claude聊天现已使用auto mode，有时会拒绝执行，需要向权限系统明确授权本次实验才能继续。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 20152,
+            "likes": 301,
+            "retweets": 3,
+            "replies": 122,
+            "quotes": 9
+          },
+          "posted_at": "2026-11-14T20:01:45+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 16,
+          "author_name": "Andy L",
+          "author_handle": "AndyL5cc",
+          "author_url": "https://x.com/AndyL5cc",
+          "tweet_url": "https://x.com/AndyL5cc/status/2121553136615596139",
+          "text_zh": "有开发者用Claude Fable 5.2 + Veo 3.1 Lite制作AI数字人视频，剧本、剪辑、3D和音乐交给Fable，画面和声音交给Veo，称成本极低、效果已接近专业平台，或给HeyGen等平台带来压力。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 21503,
+            "likes": 253,
+            "retweets": 32,
+            "replies": 23,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T10:37:38+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 17,
+          "author_name": "Chubby♨️",
+          "author_handle": "kimmonismus",
+          "author_url": "https://x.com/kimmonismus",
+          "tweet_url": "https://x.com/kimmonismus/status/2121498373127868868",
+          "text_zh": "转述Dario Amodei认为AI很快能端到端完成软件工程师大部分工作、人类转向监督；并介绍新项目Mnemosyne，以AI耳机等形态来管理智能体，而不只是对着聊天框打字。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 21359,
+            "likes": 188,
+            "retweets": 14,
+            "replies": 56,
+            "quotes": 7
+          },
+          "posted_at": "2026-11-14T07:00:02+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 18,
+          "author_name": "纳米AI",
+          "author_handle": "antiAIvo",
+          "author_url": "https://x.com/antiAIvo",
+          "tweet_url": "https://x.com/antiAIvo/status/2121504822398697608",
+          "text_zh": "吐槽DeepSeek Harness即使只是轻度问答也很快产生费用，对比Claude同类用量成本更敏感，并对多款Agent产品都不满意。",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 22709,
+            "likes": 72,
+            "retweets": 0,
+            "replies": 69,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T07:25:39+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 19,
+          "author_name": "🚨 AI News | TestingCatalog",
+          "author_handle": "testingcatalog",
+          "author_url": "https://x.com/testingcatalog",
+          "tweet_url": "https://x.com/testingcatalog/status/2121534991725113363",
+          "text_zh": "11月14日AI简报：ChatGPT Wallet开始向美国Pro订阅用户在Dots上线，智能体可付款而不直接看到真实卡号；谷歌Antigravity推出Dynamic Workflows，可用命令编写Python脚本来编排任务。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 17538,
+            "likes": 186,
+            "retweets": 5,
+            "replies": 92,
+            "quotes": 9
+          },
+          "posted_at": "2026-11-14T09:25:32+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 20,
+          "author_name": "Thomas Wolf",
+          "author_handle": "Thom_Wolf",
+          "author_url": "https://x.com/Thom_Wolf",
+          "tweet_url": "https://x.com/Thom_Wolf/status/2121616229076980182",
+          "text_zh": "Andon Labs报告称，Fable 5.2在最新Vending-Bench测试中表现出“知道自己在被测试”，甚至读过（或训练过）相关基准材料。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 18552,
+            "likes": 154,
+            "retweets": 17,
+            "replies": 42,
+            "quotes": 7
+          },
+          "posted_at": "2026-11-14T14:48:21+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 21,
+          "author_name": "Jason Wei",
+          "author_handle": "_jasonwei",
+          "author_url": "https://x.com/_jasonwei",
+          "tweet_url": "https://x.com/_jasonwei/status/2121691386043089133",
+          "text_zh": "Jason Wei指出TerminalBench v4.1只有66道题，却被几乎所有前沿实验室追着刷，认为到某个时点，出题本身会比刷榜更有声望和影响力。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 14302,
+            "likes": 255,
+            "retweets": 12,
+            "replies": 17,
+            "quotes": 4
+          },
+          "posted_at": "2026-11-14T19:47:00+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 22,
+          "author_name": "郭宇 guoyu.eth",
+          "author_handle": "turingou",
+          "author_url": "https://x.com/turingou",
+          "tweet_url": "https://x.com/turingou/status/2121502643436875831",
+          "text_zh": "当所有人的代码都由SOTA模型编写、技术框架也趋同后，真正决定产品成败的会是什么？",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 20863,
+            "likes": 54,
+            "retweets": 2,
+            "replies": 13,
+            "quotes": 5
+          },
+          "posted_at": "2026-11-14T07:17:00+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 23,
+          "author_name": "Ethan Mollick",
+          "author_handle": "emollick",
+          "author_url": "https://x.com/emollick",
+          "tweet_url": "https://x.com/emollick/status/2121751565845360769",
+          "text_zh": "Ethan Mollick做了SatBench：统计实验室自2023年以来引用的173个主要基准中，已有63%被“打满”（饱和），且饱和速度还在逐年加快，说明能力提升快过评估体系更新。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 14345,
+            "likes": 205,
+            "retweets": 20,
+            "replies": 68,
+            "quotes": 3
+          },
+          "posted_at": "2026-11-14T23:46:08+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 24,
+          "author_name": "Artificial Analysis",
+          "author_handle": "ArtificialAnlys",
+          "author_url": "https://x.com/ArtificialAnlys",
+          "tweet_url": "https://x.com/ArtificialAnlys/status/2121595922090230033",
+          "text_zh": "Artificial Analysis：Perplexity的Decider v1.3和Decider Flash v1.3在Decision Index v2.1上分别得到70分和64分，为决策模型的一次版本更新。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 18125,
+            "likes": 97,
+            "retweets": 4,
+            "replies": 31,
+            "quotes": 7
+          },
+          "posted_at": "2026-11-14T13:27:39+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 25,
+          "author_name": "小互",
+          "author_handle": "xiaohu",
+          "author_url": "https://x.com/xiaohu",
+          "tweet_url": "https://x.com/xiaohu/status/2121498030247723058",
+          "text_zh": "介绍现在可以定制自己的Claude Code客户端页面，并展示改造后的界面。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 18881,
+            "likes": 45,
+            "retweets": 3,
+            "replies": 46,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T06:58:40+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 26,
+          "author_name": "Charly Wargnier ♨️",
+          "author_handle": "DataChaz",
+          "author_url": "https://x.com/DataChaz",
+          "tweet_url": "https://x.com/DataChaz/status/2121636821365137905",
+          "text_zh": "介绍谷歌的PaperOrchestra：多代理框架可从原始想法和实验日志自动写出可投稿的科研论文。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 11992,
+            "likes": 199,
+            "retweets": 22,
+            "replies": 15,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T16:10:10+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 27,
+          "author_name": "Bindu Reddy",
+          "author_handle": "bindureddy",
+          "author_url": "https://x.com/bindureddy",
+          "tweet_url": "https://x.com/bindureddy/status/2121476884391436456",
+          "text_zh": "认为微软在试图裁员约6万人后出现长达一天的故障并不令人意外：关键人员已分心找工作，而AI还撑不起核心系统。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 12732,
+            "likes": 176,
+            "retweets": 19,
+            "replies": 50,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T05:34:39+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 28,
+          "author_name": "Bindu Reddy",
+          "author_handle": "bindureddy",
+          "author_url": "https://x.com/bindureddy",
+          "tweet_url": "https://x.com/bindureddy/status/2121416394969694515",
+          "text_zh": "预判下周AI情绪将回暖：英伟达财报超预期、Anthropic IPO首日表现、以及OpenAI可能发布Astra或Sol，并传闻Astra输出价格低于每百万token 30美元。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 12434,
+            "likes": 159,
+            "retweets": 11,
+            "replies": 56,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T01:34:17+00:00",
+          "region": "west"
+        },
+        {
+          "rank": 29,
+          "author_name": "Orange AI",
+          "author_handle": "oran_ge",
+          "author_url": "https://x.com/oran_ge",
+          "tweet_url": "https://x.com/oran_ge/status/2121529505919721949",
+          "text_zh": "展示Gemini 4 Carbon写小说的效果，并提到还写过一篇约5000字的黄仁勋辞职向细节稿。",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 17055,
+            "likes": 42,
+            "retweets": 0,
+            "replies": 31,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T09:03:44+00:00",
+          "region": "zh"
+        },
+        {
+          "rank": 30,
+          "author_name": "向阳乔木",
+          "author_handle": "vista8",
+          "author_url": "https://x.com/vista8",
+          "tweet_url": "https://x.com/vista8/status/2121422264147333211",
+          "text_zh": "发现DeepSeek已有TTS和ASR等模型，并将其API封装成可调用的Skill，方便本地调用语音和搜索等能力。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 13220,
+            "likes": 89,
+            "retweets": 10,
+            "replies": 81,
+            "quotes": 3
+          },
+          "posted_at": "2026-11-14T01:57:36+00:00",
+          "region": "zh"
+        }
+      ]
+    },
+    "crypto": {
+      "section": "crypto",
+      "date": "2026-11-15",
+      "generated_at": "2026-11-15T09:25:19+08:00",
+      "sample": false,
+      "items": [
+        {
+          "rank": 1,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2121447564335788308",
+          "text_zh": "加密市场急跌：比特币跌破6.7万美元、以太坊跌破1900美元、XRP跌破1美元、SOL跌破75美元，过去2小时爆仓超3.3亿美元。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 565123,
+            "likes": 7719,
+            "retweets": 975,
+            "replies": 768,
+            "quotes": 240
+          },
+          "posted_at": "2026-11-14T03:38:08+00:00",
+          "region": "west",
+          "region_rank": 1
+        },
+        {
+          "rank": 2,
+          "author_name": "Peter Schiff",
+          "author_handle": "PeterSchiff",
+          "author_url": "https://x.com/PeterSchiff",
+          "tweet_url": "https://x.com/PeterSchiff/status/2121481731219784015",
+          "text_zh": "Peter Schiff称比特币崩盘势头正在加快，一旦跌破5万美元，可能迅速跌向2022年低点1.65万美元以下，不排除年底前再测该位置。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 730343,
+            "likes": 3448,
+            "retweets": 294,
+            "replies": 959,
+            "quotes": 167
+          },
+          "posted_at": "2026-11-14T05:53:54+00:00",
+          "region": "west",
+          "region_rank": 2
+        },
+        {
+          "rank": 3,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2121646772271329481",
+          "text_zh": "XRP跌破0.95美元，为2024年11月以来首次。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 471612,
+            "likes": 7365,
+            "retweets": 594,
+            "replies": 515,
+            "quotes": 135
+          },
+          "posted_at": "2026-11-14T16:49:43+00:00",
+          "region": "west",
+          "region_rank": 3
+        },
+        {
+          "rank": 4,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2121730115457450209",
+          "text_zh": "过去24小时加密总市值蒸发约2300亿美元：比特币跌6.74%，以太坊跌9.36%，BNB跌9.34%，XRP跌10.92%，SOL跌11.79%。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 311593,
+            "likes": 4158,
+            "retweets": 554,
+            "replies": 412,
+            "quotes": 208
+          },
+          "posted_at": "2026-11-14T22:20:54+00:00",
+          "region": "west",
+          "region_rank": 4
+        },
+        {
+          "rank": 5,
+          "author_name": "Watcher.Guru",
+          "author_handle": "WatcherGuru",
+          "author_url": "https://x.com/WatcherGuru",
+          "tweet_url": "https://x.com/WatcherGuru/status/2121663426342928821",
+          "text_zh": "Coinbase首席执行官Brian Armstrong称，加密稳定币大幅巩固了美元作为全球储备货币的地位。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 337481,
+            "likes": 3731,
+            "retweets": 285,
+            "replies": 236,
+            "quotes": 39
+          },
+          "posted_at": "2026-11-14T17:55:54+00:00",
+          "region": "west",
+          "region_rank": 5
+        },
+        {
+          "rank": 6,
+          "author_name": "Crypto Rover",
+          "author_handle": "cryptorover",
+          "author_url": "https://x.com/cryptorover",
+          "tweet_url": "https://x.com/cryptorover/status/2121513065422500221",
+          "text_zh": "有观点称贝莱德本月已售出超过20亿美元比特币，且当月尚无单日净流入。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 109086,
+            "likes": 1730,
+            "retweets": 155,
+            "replies": 182,
+            "quotes": 16
+          },
+          "posted_at": "2026-11-14T07:58:25+00:00",
+          "region": "west",
+          "region_rank": 6
+        },
+        {
+          "rank": 7,
+          "author_name": "Ted",
+          "author_handle": "TedPillows",
+          "author_url": "https://x.com/TedPillows",
+          "tweet_url": "https://x.com/TedPillows/status/2121640720893202837",
+          "text_zh": "TedPillows认为本轮更像一次全面去杠杆：抛压主要来自平仓与强制清算，大户下砸触发连锁清算。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 93198,
+            "likes": 1517,
+            "retweets": 84,
+            "replies": 199,
+            "quotes": 8
+          },
+          "posted_at": "2026-11-14T16:25:40+00:00",
+          "region": "west",
+          "region_rank": 7
+        },
+        {
+          "rank": 8,
+          "author_name": "Lookonchain",
+          "author_handle": "lookonchain",
+          "author_url": "https://x.com/lookonchain",
+          "tweet_url": "https://x.com/lookonchain/status/2121635046503419925",
+          "text_zh": "Lookonchain：与以太坊基金会关联的钱包（0x5CBC）再抛售2500枚ETH（约460万美元）；市场大跌之际基金会仍在加快卖出。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 120638,
+            "likes": 783,
+            "retweets": 53,
+            "replies": 160,
+            "quotes": 66
+          },
+          "posted_at": "2026-11-14T16:03:07+00:00",
+          "region": "west",
+          "region_rank": 8
+        },
+        {
+          "rank": 9,
+          "author_name": "Crypto Rover",
+          "author_handle": "cryptorover",
+          "author_url": "https://x.com/cryptorover",
+          "tweet_url": "https://x.com/cryptorover/status/2121690882814681139",
+          "text_zh": "对比2023年与2026年所谓“牛市第一轮回调”：2023年最大回撤约22.65%，本轮已约25.65%；若性质类似，需尽快反转。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 108506,
+            "likes": 1029,
+            "retweets": 79,
+            "replies": 113,
+            "quotes": 11
+          },
+          "posted_at": "2026-11-14T19:45:00+00:00",
+          "region": "west",
+          "region_rank": 9
+        },
+        {
+          "rank": 10,
+          "author_name": "_Checkmate 🟠🔑⚡☢️🛢️",
+          "author_handle": "_Checkmatey_",
+          "author_url": "https://x.com/_Checkmatey_",
+          "tweet_url": "https://x.com/_Checkmatey_/status/2121483176036229282",
+          "text_zh": "Checkonchain的Checkmate：其均值回归指数处于Q18，即分布底部18%分位，他认为低于Q20即属于深度价值区。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 104526,
+            "likes": 1068,
+            "retweets": 82,
+            "replies": 44,
+            "quotes": 11
+          },
+          "posted_at": "2026-11-14T05:59:39+00:00",
+          "region": "west",
+          "region_rank": 10
+        },
+        {
+          "rank": 11,
+          "author_name": "Matt Hougan",
+          "author_handle": "Matt_Hougan",
+          "author_url": "https://x.com/Matt_Hougan",
+          "tweet_url": "https://x.com/Matt_Hougan/status/2121647014614335557",
+          "text_zh": "Bitwise的Matt Hougan称当下氛围像2018年中期的疲惫期，市场需消化选举、币安事件与更紧货币政策等影响；大的买点会出现，但时间难测，当时打破低迷的是创新（DeFi）。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 86656,
+            "likes": 1387,
+            "retweets": 107,
+            "replies": 141,
+            "quotes": 12
+          },
+          "posted_at": "2026-11-14T16:50:41+00:00",
+          "region": "west",
+          "region_rank": 11
+        },
+        {
+          "rank": 12,
+          "author_name": "Crypto Rover",
+          "author_handle": "cryptorover",
+          "author_url": "https://x.com/cryptorover",
+          "tweet_url": "https://x.com/cryptorover/status/2121525221899518033",
+          "text_zh": "比特币跌破200周均线。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 96063,
+            "likes": 920,
+            "retweets": 86,
+            "replies": 120,
+            "quotes": 9
+          },
+          "posted_at": "2026-11-14T08:46:43+00:00",
+          "region": "west",
+          "region_rank": 12
+        },
+        {
+          "rank": 13,
+          "author_name": "Cointelegraph",
+          "author_handle": "Cointelegraph",
+          "author_url": "https://x.com/Cointelegraph",
+          "tweet_url": "https://x.com/Cointelegraph/status/2121463829896818720",
+          "text_zh": "Strategy持有的850,364枚比特币，按平均成本约75,456美元计算，浮亏约68.5亿美元。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 83874,
+            "likes": 837,
+            "retweets": 81,
+            "replies": 135,
+            "quotes": 14
+          },
+          "posted_at": "2026-11-14T04:42:46+00:00",
+          "region": "west",
+          "region_rank": 13
+        },
+        {
+          "rank": 14,
+          "author_name": "Lookonchain",
+          "author_handle": "lookonchain",
+          "author_url": "https://x.com/lookonchain",
+          "tweet_url": "https://x.com/lookonchain/status/2121458753396678758",
+          "text_zh": "Lookonchain：Pump.fun再次向Kraken存入64,666枚SOL（约519万美元）；累计已售出约561.8万枚SOL（约8.876亿美元）。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 92797,
+            "likes": 604,
+            "retweets": 46,
+            "replies": 90,
+            "quotes": 28
+          },
+          "posted_at": "2026-11-14T04:22:36+00:00",
+          "region": "west",
+          "region_rank": 14
+        },
+        {
+          "rank": 15,
+          "author_name": "Coin Bureau",
+          "author_handle": "coinbureau",
+          "author_url": "https://x.com/coinbureau",
+          "tweet_url": "https://x.com/coinbureau/status/2121455242944618879",
+          "text_zh": "CoinBureau：比特币跌破6.7万美元，3小时爆仓据报超过3亿美元；自10月1日以来加密市值已蒸发约7000亿美元。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 62252,
+            "likes": 1308,
+            "retweets": 137,
+            "replies": 113,
+            "quotes": 12
+          },
+          "posted_at": "2026-11-14T04:08:39+00:00",
+          "region": "west",
+          "region_rank": 15
+        },
+        {
+          "rank": 16,
+          "author_name": "Ted",
+          "author_handle": "TedPillows",
+          "author_url": "https://x.com/TedPillows",
+          "tweet_url": "https://x.com/TedPillows/status/2121644080992333953",
+          "text_zh": "TedPillows：距币安被盗已17天，期间比特币累计下跌约1.7万美元，相当于平均每天约下跌1000美元。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 67947,
+            "likes": 1163,
+            "retweets": 92,
+            "replies": 119,
+            "quotes": 4
+          },
+          "posted_at": "2026-11-14T16:39:01+00:00",
+          "region": "west",
+          "region_rank": 16
+        },
+        {
+          "rank": 17,
+          "author_name": "glassnode",
+          "author_handle": "glassnode",
+          "author_url": "https://x.com/glassnode",
+          "tweet_url": "https://x.com/glassnode/status/2121643249475674466",
+          "text_zh": "glassnode：比特币价格正接近一处大规模清算密集区，与8月突破时留下的多头开仓有关，市场往往会被这类脆弱点吸引。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 77908,
+            "likes": 851,
+            "retweets": 88,
+            "replies": 64,
+            "quotes": 25
+          },
+          "posted_at": "2026-11-14T16:35:43+00:00",
+          "region": "west",
+          "region_rank": 17
+        },
+        {
+          "rank": 18,
+          "author_name": "Crypto Rover",
+          "author_handle": "cryptorover",
+          "author_url": "https://x.com/cryptorover",
+          "tweet_url": "https://x.com/cryptorover/status/2121529822455255043",
+          "text_zh": "cryptorover：比特币遭遇2026年以来最大一轮稳定币市值收缩；对比1月和5月更深层跌时稳定币市值降幅反而较小。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 86031,
+            "likes": 639,
+            "retweets": 68,
+            "replies": 91,
+            "quotes": 6
+          },
+          "posted_at": "2026-11-14T09:05:00+00:00",
+          "region": "west",
+          "region_rank": 18
+        },
+        {
+          "rank": 19,
+          "author_name": "Crypto Rover",
+          "author_handle": "cryptorover",
+          "author_url": "https://x.com/cryptorover",
+          "tweet_url": "https://x.com/cryptorover/status/2121622935307989023",
+          "text_zh": "比特币恐惧与贪婪指数降至13，进入极度恐惧区间。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 71779,
+            "likes": 957,
+            "retweets": 90,
+            "replies": 108,
+            "quotes": 17
+          },
+          "posted_at": "2026-11-14T15:15:00+00:00",
+          "region": "west",
+          "region_rank": 19
+        },
+        {
+          "rank": 20,
+          "author_name": "glassnode",
+          "author_handle": "glassnode",
+          "author_url": "https://x.com/glassnode",
+          "tweet_url": "https://x.com/glassnode/status/2121571367216722381",
+          "text_zh": "glassnode：过去一个月稳定币供应减少170亿美元，为2022年以来最陡降幅；持有人把稳定币兑回法币，会抽走加密购买力。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 78551,
+            "likes": 741,
+            "retweets": 80,
+            "replies": 84,
+            "quotes": 26
+          },
+          "posted_at": "2026-11-14T11:50:05+00:00",
+          "region": "west",
+          "region_rank": 20
+        },
+        {
+          "rank": 21,
+          "author_name": "Ted",
+          "author_handle": "TedPillows",
+          "author_url": "https://x.com/TedPillows",
+          "tweet_url": "https://x.com/TedPillows/status/2121725909468065960",
+          "text_zh": "过去24小时爆仓约18亿美元。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 48186,
+            "likes": 1390,
+            "retweets": 83,
+            "replies": 180,
+            "quotes": 6
+          },
+          "posted_at": "2026-11-14T22:04:11+00:00",
+          "region": "west",
+          "region_rank": 21
+        },
+        {
+          "rank": 22,
+          "author_name": "Cointelegraph",
+          "author_handle": "Cointelegraph",
+          "author_url": "https://x.com/Cointelegraph",
+          "tweet_url": "https://x.com/Cointelegraph/status/2121566516797690026",
+          "text_zh": "Strive首席执行官Matt Cole称，即便比特币“跌到1美分”，公司因零负债、没有清算点仍能存活。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 71475,
+            "likes": 792,
+            "retweets": 62,
+            "replies": 94,
+            "quotes": 13
+          },
+          "posted_at": "2026-11-14T11:30:49+00:00",
+          "region": "west",
+          "region_rank": 22
+        },
+        {
+          "rank": 23,
+          "author_name": "Lookonchain",
+          "author_handle": "lookonchain",
+          "author_url": "https://x.com/lookonchain",
+          "tweet_url": "https://x.com/lookonchain/status/2121584521552462196",
+          "text_zh": "Lookonchain：ShapeShift创始人Erik Voorhees关联钱包似在逢低买入ETH，多个地址合计花费约9700万美元买入以太坊。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 77364,
+            "likes": 517,
+            "retweets": 56,
+            "replies": 73,
+            "quotes": 19
+          },
+          "posted_at": "2026-11-14T12:42:21+00:00",
+          "region": "west",
+          "region_rank": 23
+        },
+        {
+          "rank": 24,
+          "author_name": "Cointelegraph",
+          "author_handle": "Cointelegraph",
+          "author_url": "https://x.com/Cointelegraph",
+          "tweet_url": "https://x.com/Cointelegraph/status/2121477733444092030",
+          "text_zh": "Cointelegraph：加密市场仅两周已蒸发约3300亿美元。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 67862,
+            "likes": 553,
+            "retweets": 40,
+            "replies": 81,
+            "quotes": 15
+          },
+          "posted_at": "2026-11-14T05:38:01+00:00",
+          "region": "west",
+          "region_rank": 24
+        },
+        {
+          "rank": 25,
+          "author_name": "Lookonchain",
+          "author_handle": "lookonchain",
+          "author_url": "https://x.com/lookonchain",
+          "tweet_url": "https://x.com/lookonchain/status/2121485835468222504",
+          "text_zh": "Lookonchain：Abraxas Capital在Hyperliquid上的两个对冲账户累计盈利已超5.12亿美元，合计空头仓位降至约5.72亿美元。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 76548,
+            "likes": 278,
+            "retweets": 12,
+            "replies": 64,
+            "quotes": 5
+          },
+          "posted_at": "2026-11-14T06:10:13+00:00",
+          "region": "west",
+          "region_rank": 25
+        },
+        {
+          "rank": 26,
+          "author_name": "Crypto Rover",
+          "author_handle": "cryptorover",
+          "author_url": "https://x.com/cryptorover",
+          "tweet_url": "https://x.com/cryptorover/status/2121714987626529273",
+          "text_zh": "比特币跌破6.4万美元，过去60分钟约7亿美元多头被清算。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 51362,
+            "likes": 792,
+            "retweets": 72,
+            "replies": 105,
+            "quotes": 5
+          },
+          "posted_at": "2026-11-14T21:20:47+00:00",
+          "region": "west",
+          "region_rank": 26
+        },
+        {
+          "rank": 27,
+          "author_name": "Lookonchain",
+          "author_handle": "lookonchain",
+          "author_url": "https://x.com/lookonchain",
+          "tweet_url": "https://x.com/lookonchain/status/2121483591217779163",
+          "text_zh": "Lookonchain：交易员58bro.eth一周前在约2397美元卖出8000枚ETH（约1918万美元），近两天又在均价约1978美元买回10501枚ETH（约2077万美元）。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 64756,
+            "likes": 364,
+            "retweets": 23,
+            "replies": 66,
+            "quotes": 3
+          },
+          "posted_at": "2026-11-14T06:01:18+00:00",
+          "region": "west",
+          "region_rank": 27
+        },
+        {
+          "rank": 28,
+          "author_name": "Peter Schiff",
+          "author_handle": "PeterSchiff",
+          "author_url": "https://x.com/PeterSchiff",
+          "tweet_url": "https://x.com/PeterSchiff/status/2121729715534717373",
+          "text_zh": "Peter Schiff预计周一将看到Strategy大举回购STRC，否则股价应更低；并称后续抛压可能加大，一旦现金耗尽，Saylor将面临卖MSTR还是卖比特币的两难。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 55628,
+            "likes": 528,
+            "retweets": 48,
+            "replies": 110,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T22:19:18+00:00",
+          "region": "west",
+          "region_rank": 28
+        },
+        {
+          "rank": 29,
+          "author_name": "Cointelegraph",
+          "author_handle": "Cointelegraph",
+          "author_url": "https://x.com/Cointelegraph",
+          "tweet_url": "https://x.com/Cointelegraph/status/2121521195208044877",
+          "text_zh": "比特币挖矿难度下调9.13%至134.82T，为6月以来最大降幅。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 64072,
+            "likes": 291,
+            "retweets": 24,
+            "replies": 90,
+            "quotes": 17
+          },
+          "posted_at": "2026-11-14T08:30:43+00:00",
+          "region": "west",
+          "region_rank": 29
+        },
+        {
+          "rank": 30,
+          "author_name": "DEGEN NEWS",
+          "author_handle": "DegenerateNews",
+          "author_url": "https://x.com/DegenerateNews",
+          "tweet_url": "https://x.com/DegenerateNews/status/2121658278815883436",
+          "text_zh": "Tom Lee旗下BitMine的以太坊持仓浮亏约90亿美元：约201亿美元投资现仅值约111亿美元，未实现亏损约44.8%。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 51307,
+            "likes": 478,
+            "retweets": 33,
+            "replies": 56,
+            "quotes": 24
+          },
+          "posted_at": "2026-11-14T17:35:26+00:00",
+          "region": "west",
+          "region_rank": 30
+        },
+        {
+          "rank": 31,
+          "author_name": "Lookonchain",
+          "author_handle": "lookonchain",
+          "author_url": "https://x.com/lookonchain",
+          "tweet_url": "https://x.com/lookonchain/status/2121469513795539212",
+          "text_zh": "Lookonchain：以逢低买入ETH著称的“7 Siblings”再次出手，9小时前又买9766枚ETH（约1888万美元），均价约1933美元。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 58125,
+            "likes": 275,
+            "retweets": 15,
+            "replies": 35,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T05:05:21+00:00",
+          "region": "west",
+          "region_rank": 31
+        },
+        {
+          "rank": 32,
+          "author_name": "Cointelegraph",
+          "author_handle": "Cointelegraph",
+          "author_url": "https://x.com/Cointelegraph",
+          "tweet_url": "https://x.com/Cointelegraph/status/2121551411519341000",
+          "text_zh": "币安本周再开放87条网络的提现，并称其余将在下周末前恢复。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 54976,
+            "likes": 293,
+            "retweets": 24,
+            "replies": 71,
+            "quotes": 8
+          },
+          "posted_at": "2026-11-14T10:30:47+00:00",
+          "region": "west",
+          "region_rank": 32
+        },
+        {
+          "rank": 33,
+          "author_name": "Cointelegraph",
+          "author_handle": "Cointelegraph",
+          "author_url": "https://x.com/Cointelegraph",
+          "tweet_url": "https://x.com/Cointelegraph/status/2121536279925964963",
+          "text_zh": "Adam Back称比特币托管的解决办法就是冷存储；Blockstream与Thales推出离线托管系统，并以币安约63亿美元被盗为例。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 55168,
+            "likes": 229,
+            "retweets": 22,
+            "replies": 79,
+            "quotes": 6
+          },
+          "posted_at": "2026-11-14T09:30:40+00:00",
+          "region": "west",
+          "region_rank": 33
+        },
+        {
+          "rank": 34,
+          "author_name": "Anthony Pompliano 🌪",
+          "author_handle": "APompliano",
+          "author_url": "https://x.com/APompliano",
+          "tweet_url": "https://x.com/APompliano/status/2121740704850624586",
+          "text_zh": "APompliano：现在约6.3万美元就会出现极度恐惧，而过去许多人曾把这个价位当作梦想目标。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 34451,
+            "likes": 727,
+            "retweets": 32,
+            "replies": 135,
+            "quotes": 12
+          },
+          "posted_at": "2026-11-14T23:02:58+00:00",
+          "region": "west",
+          "region_rank": 34
+        },
+        {
+          "rank": 35,
+          "author_name": "Altcoin Daily",
+          "author_handle": "AltcoinDaily",
+          "author_url": "https://x.com/AltcoinDaily",
+          "tweet_url": "https://x.com/AltcoinDaily/status/2121729303725674862",
+          "text_zh": "AltcoinDaily认为本轮比特币下跌是英伟达相关杠杆逼仓的连带抛售：对冲基金在NVDA上承压，遂抛售最流动的比特币，本质是杠杆问题而非加密基本面，并称是暂时的。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 46669,
+            "likes": 420,
+            "retweets": 33,
+            "replies": 77,
+            "quotes": 6
+          },
+          "posted_at": "2026-11-14T22:17:40+00:00",
+          "region": "west",
+          "region_rank": 35
+        },
+        {
+          "rank": 36,
+          "author_name": "Cointelegraph",
+          "author_handle": "Cointelegraph",
+          "author_url": "https://x.com/Cointelegraph",
+          "tweet_url": "https://x.com/Cointelegraph/status/2121490997079134318",
+          "text_zh": "美国比特币现货ETF本周每日均为净流出，一周合计流出约10.7亿美元。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 51067,
+            "likes": 299,
+            "retweets": 34,
+            "replies": 84,
+            "quotes": 13
+          },
+          "posted_at": "2026-11-14T06:30:43+00:00",
+          "region": "west",
+          "region_rank": 36
+        },
+        {
+          "rank": 37,
+          "author_name": "The Bitcoin Historian",
+          "author_handle": "pete_rizzo_",
+          "author_url": "https://x.com/pete_rizzo_",
+          "tweet_url": "https://x.com/pete_rizzo_/status/2121516231895224603",
+          "text_zh": "Michael Saylor称Strategy“将被纳入标普500”，并表示若指数不纳入创新科技公司就会跑输，认为纳入只是时间问题。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 35069,
+            "likes": 684,
+            "retweets": 59,
+            "replies": 42,
+            "quotes": 3
+          },
+          "posted_at": "2026-11-14T08:11:00+00:00",
+          "region": "west",
+          "region_rank": 37
+        },
+        {
+          "rank": 38,
+          "author_name": "DEGEN NEWS",
+          "author_handle": "DegenerateNews",
+          "author_url": "https://x.com/DegenerateNews",
+          "tweet_url": "https://x.com/DegenerateNews/status/2121655667601866887",
+          "text_zh": "数据显示比特币已跌至过去5年为负收益；同期以太坊跌61%，BNB跌10%，XRP跌20%，SOL跌70%，DOGE跌77%，ADA跌92%。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 46822,
+            "likes": 350,
+            "retweets": 25,
+            "replies": 56,
+            "quotes": 17
+          },
+          "posted_at": "2026-11-14T17:25:04+00:00",
+          "region": "west",
+          "region_rank": 38
+        },
+        {
+          "rank": 39,
+          "author_name": "Cointelegraph",
+          "author_handle": "Cointelegraph",
+          "author_url": "https://x.com/Cointelegraph",
+          "tweet_url": "https://x.com/Cointelegraph/status/2121702386599166262",
+          "text_zh": "美国政府约持有306,790枚比特币和17,430枚以太坊，合计约202.8亿美元，较历史高点已回撤超过200亿美元。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 48931,
+            "likes": 253,
+            "retweets": 36,
+            "replies": 61,
+            "quotes": 6
+          },
+          "posted_at": "2026-11-14T20:30:42+00:00",
+          "region": "west",
+          "region_rank": 39
+        },
+        {
+          "rank": 40,
+          "author_name": "Cointelegraph",
+          "author_handle": "Cointelegraph",
+          "author_url": "https://x.com/Cointelegraph",
+          "tweet_url": "https://x.com/Cointelegraph/status/2121717488043913479",
+          "text_zh": "MegaETH母公司MEGA裁员20%，包括参与公链和钱包建设的人员，同时将约3000万美元投入AI产品。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 36204,
+            "likes": 112,
+            "retweets": 11,
+            "replies": 35,
+            "quotes": 4
+          },
+          "posted_at": "2026-11-14T21:30:43+00:00",
+          "region": "west",
+          "region_rank": 40
+        },
+        {
+          "rank": 41,
+          "author_name": "大象",
+          "author_handle": "bx1818",
+          "author_url": "https://x.com/bx1818",
+          "tweet_url": "https://x.com/bx1818/status/2121583352490995808",
+          "text_zh": "认为本轮不少山寨已跌回原位甚至创新低，下一轮牛市中90%山寨及许多公链难再起来，更看好BTC、BNB、HYPE、OKB等有持续现金流的项目。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 64553,
+            "likes": 316,
+            "retweets": 12,
+            "replies": 104,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T12:37:43+00:00",
+          "region": "zh",
+          "region_rank": 1
+        },
+        {
+          "rank": 42,
+          "author_name": "Ai 姨",
+          "author_handle": "ai_9684xtpa",
+          "author_url": "https://x.com/ai_9684xtpa",
+          "tweet_url": "https://x.com/ai_9684xtpa/status/2121519064631673239",
+          "text_zh": "链上显示九个地址合计持有约1.55亿美元多单（约60841枚ETH和600枚BTC），浮亏达4406万美元；该实体今年4–8月曾靠做多盈利超6705万美元，近期换新地址再开多。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 46864,
+            "likes": 94,
+            "retweets": 5,
+            "replies": 35,
+            "quotes": 6
+          },
+          "posted_at": "2026-11-14T08:22:15+00:00",
+          "region": "zh",
+          "region_rank": 2
+        },
+        {
+          "rank": 43,
+          "author_name": "比特肥 || Bitfatty (🍀,🍀)",
+          "author_handle": "Bitfatty",
+          "author_url": "https://x.com/Bitfatty",
+          "tweet_url": "https://x.com/Bitfatty/status/2121470149916283194",
+          "text_zh": "Bitfatty观察到近期波动率放大、行情更连续，并将其与做市商策略变化联系起来，猜测与黑客盗资后做市资金受损有关。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 23622,
+            "likes": 107,
+            "retweets": 9,
+            "replies": 29,
+            "quotes": 4
+          },
+          "posted_at": "2026-11-14T05:07:53+00:00",
+          "region": "zh",
+          "region_rank": 3
+        },
+        {
+          "rank": 44,
+          "author_name": "wu fan",
+          "author_handle": "wufantouzi",
+          "author_url": "https://x.com/wufantouzi",
+          "tweet_url": "https://x.com/wufantouzi/status/2121554158675501222",
+          "text_zh": "从供给角度讨论比特币“四年周期”或已弱化：减半对流通量的边际影响下降，未挖出的比特币已不足5%，价格更多由已流通筹码决定。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 23313,
+            "likes": 92,
+            "retweets": 10,
+            "replies": 25,
+            "quotes": 3
+          },
+          "posted_at": "2026-11-14T10:41:42+00:00",
+          "region": "zh",
+          "region_rank": 4
+        },
+        {
+          "rank": 45,
+          "author_name": "37度",
+          "author_handle": "hibtc37",
+          "author_url": "https://x.com/hibtc37",
+          "tweet_url": "https://x.com/hibtc37/status/2121615365008670765",
+          "text_zh": "hibtc37感叹当前是巨鲸在卖、散户和大户却用杠杆做多的局面，并质疑这种结构何时能打破。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 19807,
+            "likes": 66,
+            "retweets": 1,
+            "replies": 27,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T14:44:55+00:00",
+          "region": "zh",
+          "region_rank": 5
+        },
+        {
+          "rank": 46,
+          "author_name": "Niner 🍡九儿🔶",
+          "author_handle": "lijiuer1",
+          "author_url": "https://x.com/lijiuer1",
+          "tweet_url": "https://x.com/lijiuer1/status/2121582030798692594",
+          "text_zh": "指许多人并未赶上比特币5.8万至8.8万美元那一段，回调到8.2万又加仓，之后一路补仓，现在被套的人明显增多。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 19456,
+            "likes": 48,
+            "retweets": 1,
+            "replies": 15,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T12:32:27+00:00",
+          "region": "zh",
+          "region_rank": 6
+        },
+        {
+          "rank": 47,
+          "author_name": "链研社｜AI First🔶💧",
+          "author_handle": "lianyanshe",
+          "author_url": "https://x.com/lianyanshe",
+          "tweet_url": "https://x.com/lianyanshe/status/2121576256369995821",
+          "text_zh": "复盘认为超预期下跌的转折在11月10日核心CPI超预期之后；75500美元一带同时接近MA120和微策略持仓成本，数据公布后跌破前低并接连遭遇利空。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 11752,
+            "likes": 38,
+            "retweets": 4,
+            "replies": 12,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T12:09:31+00:00",
+          "region": "zh",
+          "region_rank": 7
+        },
+        {
+          "rank": 48,
+          "author_name": "吴说区块链",
+          "author_handle": "wublockchain12",
+          "author_url": "https://x.com/wublockchain12",
+          "tweet_url": "https://x.com/wublockchain12/status/2121457942516150334",
+          "text_zh": "吴说转述东网：香港一名七旬男子经YouTube广告被拉入WhatsApp群后，按指示购买虚拟货币并转入虚假平台，8–10月累计被骗逾1800万港元的USDT和ETH。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 10573,
+            "likes": 17,
+            "retweets": 1,
+            "replies": 12,
+            "quotes": 2
+          },
+          "posted_at": "2026-11-14T04:19:22+00:00",
+          "region": "zh",
+          "region_rank": 8
+        },
+        {
+          "rank": 49,
+          "author_name": "🌞Sunny哥",
+          "author_handle": "BTC__Sunny",
+          "author_url": "https://x.com/BTC__Sunny",
+          "tweet_url": "https://x.com/BTC__Sunny/status/2121526272765648978",
+          "text_zh": "指本周贝莱德等ETF合计抛售约10.7亿美元比特币。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 7663,
+            "likes": 24,
+            "retweets": 2,
+            "replies": 13,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T08:50:54+00:00",
+          "region": "zh",
+          "region_rank": 9
+        },
+        {
+          "rank": 50,
+          "author_name": "PANews丨APP全面升级",
+          "author_handle": "PANewsCN",
+          "author_url": "https://x.com/PANewsCN",
+          "tweet_url": "https://x.com/PANewsCN/status/2121482746052964589",
+          "text_zh": "PANews：Peter Schiff再度唱衰，称崩盘之势正在加剧，一旦跌破5万美元，可能迅速滑向2022年低点约1.65万美元。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 8099,
+            "likes": 4,
+            "retweets": 0,
+            "replies": 5,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T05:57:56+00:00",
+          "region": "zh",
+          "region_rank": 10
+        },
+        {
+          "rank": 51,
+          "author_name": "机灵的杰尼君🔶BNB",
+          "author_handle": "Meta8Mate",
+          "author_url": "https://x.com/Meta8Mate",
+          "tweet_url": "https://x.com/Meta8Mate/status/2121565638724583457",
+          "text_zh": "MegaETH基金会自11月10日起改名MEGA，从金库拨出3000万美元在自家链上做产品（12月将上线AI推理市场），联创随后宣布重组裁员20%。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 7454,
+            "likes": 18,
+            "retweets": 0,
+            "replies": 18,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T11:27:19+00:00",
+          "region": "zh",
+          "region_rank": 11
+        },
+        {
+          "rank": 52,
+          "author_name": "Paul Xue | BTC 链上数据研究",
+          "author_handle": "paulxue1979",
+          "author_url": "https://x.com/paulxue1979",
+          "tweet_url": "https://x.com/paulxue1979/status/2121602717089206331",
+          "text_zh": "paulxue1979认为本轮熊市回撤相对更“温柔”：历史最大回撤曾达93%、85%、84%、77%，本轮最大跌幅目前约53%。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 6643,
+            "likes": 12,
+            "retweets": 1,
+            "replies": 12,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T13:54:39+00:00",
+          "region": "zh",
+          "region_rank": 12
+        },
+        {
+          "rank": 53,
+          "author_name": "狂飙｜交易",
+          "author_handle": "yff5188",
+          "author_url": "https://x.com/yff5188",
+          "tweet_url": "https://x.com/yff5188/status/2121547202913092052",
+          "text_zh": "指狗狗币已跌破今年6月低点并创新低，在市值靠前的主流币中跌幅最弱，并认为不宜再指望马斯克喊单。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 5699,
+            "likes": 24,
+            "retweets": 1,
+            "replies": 38,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T10:14:04+00:00",
+          "region": "zh",
+          "region_rank": 13
+        },
+        {
+          "rank": 54,
+          "author_name": "crypto指南针（满血版）🔶",
+          "author_handle": "bishengkegs",
+          "author_url": "https://x.com/bishengkegs",
+          "tweet_url": "https://x.com/bishengkegs/status/2121543563553165435",
+          "text_zh": "认为极度恐慌后出现报复性反弹的概率不低，更倾向先反弹再震荡确认底部；短期谨慎、中期不悲观，关键是活到下一轮牛市。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 5628,
+            "likes": 26,
+            "retweets": 0,
+            "replies": 17,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T09:59:36+00:00",
+          "region": "zh",
+          "region_rank": 14
+        },
+        {
+          "rank": 55,
+          "author_name": "王长富",
+          "author_handle": "wangchangfu88",
+          "author_url": "https://x.com/wangchangfu88",
+          "tweet_url": "https://x.com/wangchangfu88/status/2121575120968040932",
+          "text_zh": "wangchangfu88称操作很简单就是越跌越买，并认为重回10万美元只是时间问题，牛市顶部至少15万–20万美元。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 5313,
+            "likes": 22,
+            "retweets": 0,
+            "replies": 18,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T12:05:00+00:00",
+          "region": "zh",
+          "region_rank": 15
+        },
+        {
+          "rank": 56,
+          "author_name": "陈桂林",
+          "author_handle": "Guilin_Chen_",
+          "author_url": "https://x.com/Guilin_Chen_",
+          "tweet_url": "https://x.com/Guilin_Chen_/status/2121761213319401905",
+          "text_zh": "反驳“这轮下跌是币安故意清理多头流动性”的说法，认为更像现货踩踏，出货主力在美方，Coinbase持续负溢价、ETF持续净流出。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 4750,
+            "likes": 25,
+            "retweets": 3,
+            "replies": 16,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-15T00:24:28+00:00",
+          "region": "zh",
+          "region_rank": 16
+        },
+        {
+          "rank": 57,
+          "author_name": "吴说区块链",
+          "author_handle": "wublockchain12",
+          "author_url": "https://x.com/wublockchain12",
+          "tweet_url": "https://x.com/wublockchain12/status/2121635014878351659",
+          "text_zh": "吴说：以太坊基金会再经CoWSwap出售2500枚ETH（约471万美元）换USDS；过去4天累计出售7500枚ETH，约1452万枚USDS，ETH已跌破1850美元。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 5087,
+            "likes": 17,
+            "retweets": 1,
+            "replies": 5,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T16:03:00+00:00",
+          "region": "zh",
+          "region_rank": 17
+        },
+        {
+          "rank": 58,
+          "author_name": "crypto指南针（满血版）🔶",
+          "author_handle": "bishengkegs",
+          "author_url": "https://x.com/bishengkegs",
+          "tweet_url": "https://x.com/bishengkegs/status/2121572746698313925",
+          "text_zh": "描述身边多头互相鼓劲后重仓被套、单日亏损巨大，调侃现在“急缺死空头”，否则死多头聚在一起迟早破产。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 4794,
+            "likes": 24,
+            "retweets": 0,
+            "replies": 18,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T11:55:34+00:00",
+          "region": "zh",
+          "region_rank": 18
+        },
+        {
+          "rank": 59,
+          "author_name": "吴说区块链",
+          "author_handle": "wublockchain12",
+          "author_url": "https://x.com/wublockchain12",
+          "tweet_url": "https://x.com/wublockchain12/status/2121466544031154415",
+          "text_zh": "吴说援引彭博/CoinGlass：过去一年比特币仓位24小时爆仓额有13次超过5亿美元、3次超过10亿美元；周五前后全市场约13亿美元多头被强平，周六亚洲时段比特币一度见66586美元。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 5095,
+            "likes": 15,
+            "retweets": 0,
+            "replies": 6,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T04:53:33+00:00",
+          "region": "zh",
+          "region_rank": 19
+        },
+        {
+          "rank": 60,
+          "author_name": "吴说区块链",
+          "author_handle": "wublockchain12",
+          "author_url": "https://x.com/wublockchain12",
+          "tweet_url": "https://x.com/wublockchain12/status/2121452163155292651",
+          "text_zh": "吴说：币安公告本周已重新开放87条网络提现，并力争下周末前恢复剩余网络；恢复期间部分提现可能延迟。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 5084,
+            "likes": 11,
+            "retweets": 0,
+            "replies": 4,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T03:56:25+00:00",
+          "region": "zh",
+          "region_rank": 20
+        },
+        {
+          "rank": 61,
+          "author_name": "吴说区块链",
+          "author_handle": "wublockchain12",
+          "author_url": "https://x.com/wublockchain12",
+          "tweet_url": "https://x.com/wublockchain12/status/2121462675754635592",
+          "text_zh": "吴说：一个自2011年以来未转出比特币的早期钱包于11月12日将75枚BTC（约500万美元）转至新地址；同一笔交易还花费了5月收到的一小笔聪，此前原告曾用该小额转账附上诉讼送达链接。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 4366,
+            "likes": 18,
+            "retweets": 0,
+            "replies": 5,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T04:38:11+00:00",
+          "region": "zh",
+          "region_rank": 21
+        },
+        {
+          "rank": 62,
+          "author_name": "PANews丨APP全面升级",
+          "author_handle": "PANewsCN",
+          "author_url": "https://x.com/PANewsCN",
+          "tweet_url": "https://x.com/PANewsCN/status/2121436852083401208",
+          "text_zh": "PANews：以太坊基金会关联地址再卖1000枚ETH；自10月26日以来累计抛售7785枚ETH，约1635万美元，均价约2100美元，链上仍余约1万枚ETH。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 4524,
+            "likes": 10,
+            "retweets": 0,
+            "replies": 7,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T02:55:34+00:00",
+          "region": "zh",
+          "region_rank": 22
+        },
+        {
+          "rank": 63,
+          "author_name": "Paul Xue | BTC 链上数据研究",
+          "author_handle": "paulxue1979",
+          "author_url": "https://x.com/paulxue1979",
+          "tweet_url": "https://x.com/paulxue1979/status/2121487589261869236",
+          "text_zh": "paulxue1979：6.8万美元失守后更应关注低位盘整位置；73K–86K高成本筹码仅小幅减少，68K附近新增筹码也未能守住，说明筹码密集不等于有效支撑。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 4384,
+            "likes": 12,
+            "retweets": 0,
+            "replies": 9,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T06:17:11+00:00",
+          "region": "zh",
+          "region_rank": 23
+        },
+        {
+          "rank": 64,
+          "author_name": "Biteye",
+          "author_handle": "BiteyeCN",
+          "author_url": "https://x.com/BiteyeCN",
+          "tweet_url": "https://x.com/BiteyeCN/status/2121519428898877757",
+          "text_zh": "Biteye汇总多空观点：比特币在约6.7万美元、较2025年10月高点回撤约47%，并回踩周线200均线，24小时爆仓超12亿美元；看涨与看跌论据并列。",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 4097,
+            "likes": 15,
+            "retweets": 0,
+            "replies": 7,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T08:23:42+00:00",
+          "region": "zh",
+          "region_rank": 24
+        },
+        {
+          "rank": 65,
+          "author_name": "吴说区块链",
+          "author_handle": "wublockchain12",
+          "author_url": "https://x.com/wublockchain12",
+          "tweet_url": "https://x.com/wublockchain12/status/2121574307482759637",
+          "text_zh": "吴说转述Safeheron：币安热钱包使用MPC仍被转走资产，并非私钥泄露，核心是员工端失陷、内网横向与签名入口被滥用，需最小权限、独立权限和TEE等多层防护。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 4374,
+            "likes": 7,
+            "retweets": 0,
+            "replies": 6,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T12:01:46+00:00",
+          "region": "zh",
+          "region_rank": 25
+        },
+        {
+          "rank": 66,
+          "author_name": "吴说区块链",
+          "author_handle": "wublockchain12",
+          "author_url": "https://x.com/wublockchain12",
+          "tweet_url": "https://x.com/wublockchain12/status/2121590510389535158",
+          "text_zh": "吴说援引Lookonchain：Erik Voorhees关联钱包过去4天花费约9700万美元买入48647枚ETH，均价约1994美元，仍持有约7868万美元稳定币。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 3189,
+            "likes": 6,
+            "retweets": 0,
+            "replies": 5,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T13:06:09+00:00",
+          "region": "zh",
+          "region_rank": 26
+        },
+        {
+          "rank": 67,
+          "author_name": "PANews丨APP全面升级",
+          "author_handle": "PANewsCN",
+          "author_url": "https://x.com/PANewsCN",
+          "tweet_url": "https://x.com/PANewsCN/status/2121436083842101734",
+          "text_zh": "PANews：Lido将停用GGV金库，11月17日前可将GGV赎回wstETH，之后仓位将转为WETH；现有EarnETH持有人不受影响。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 2981,
+            "likes": 6,
+            "retweets": 0,
+            "replies": 6,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T02:52:31+00:00",
+          "region": "zh",
+          "region_rank": 27
+        },
+        {
+          "rank": 68,
+          "author_name": "BlockBeats｜We're hiring!",
+          "author_handle": "BlockBeatsAsia",
+          "author_url": "https://x.com/BlockBeatsAsia",
+          "tweet_url": "https://x.com/BlockBeatsAsia/status/2121526178079228182",
+          "text_zh": "律动：Abraxas Capital在Hyperliquid两大对冲账户累计盈利已突破5.12亿美元，合计空头仓位由逾14.5亿美元降至约5.72亿美元。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 2652,
+            "likes": 10,
+            "retweets": 0,
+            "replies": 13,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T08:50:31+00:00",
+          "region": "zh",
+          "region_rank": 28
+        },
+        {
+          "rank": 69,
+          "author_name": "37度",
+          "author_handle": "hibtc37",
+          "author_url": "https://x.com/hibtc37",
+          "tweet_url": "https://x.com/hibtc37/status/2121764516346437691",
+          "text_zh": "hibtc37不认同“币安用被盗资金砸盘比特币”的传言，认为其报价基本是市价，短暂负溢价也可能是巨鲸行为，但最终成本仍会由用户承担。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 2310,
+            "likes": 16,
+            "retweets": 0,
+            "replies": 2,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-15T00:37:35+00:00",
+          "region": "zh",
+          "region_rank": 29
+        },
+        {
+          "rank": 70,
+          "author_name": "Paul Xue | BTC 链上数据研究",
+          "author_handle": "paulxue1979",
+          "author_url": "https://x.com/paulxue1979",
+          "tweet_url": "https://x.com/paulxue1979/status/2121520597444464889",
+          "text_zh": "paulxue1979：过去19小时有钱包从币安累计提走1042.5枚BTC（约7289万美元），当前持仓约1410枚；提醒提币不等于确认抄底。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 2434,
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T08:28:21+00:00",
+          "region": "zh",
+          "region_rank": 30
+        }
+      ]
+    },
+    "stocks": {
+      "section": "stocks",
+      "date": "2026-11-15",
+      "generated_at": "2026-11-15T09:25:19+08:00",
+      "sample": false,
+      "items": [
+        {
+          "rank": 1,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2121514973809799294",
+          "text_zh": "公开信要求英伟达董事会请回黄仁勋，签名已超6.5万，其中股东超过3.5万、现任或前任员工约4700人，信中称其被免职“缺乏充分正当程序”；马斯克亦表示已签名支持。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 1586521,
+            "likes": 25060,
+            "retweets": 1841,
+            "replies": 535,
+            "quotes": 217
+          },
+          "posted_at": "2026-11-14T08:06:00+00:00",
+          "region": "west",
+          "region_rank": 1
+        },
+        {
+          "rank": 2,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2121500939680891215",
+          "text_zh": "马斯克公开质疑英伟达董事会的决策公信力，并列举董事会成员背景。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 709242,
+            "likes": 6552,
+            "retweets": 518,
+            "replies": 280,
+            "quotes": 70
+          },
+          "posted_at": "2026-11-14T07:10:14+00:00",
+          "region": "west",
+          "region_rank": 2
+        },
+        {
+          "rank": 3,
+          "author_name": "Sawyer Merritt",
+          "author_handle": "SawyerMerritt",
+          "author_url": "https://x.com/SawyerMerritt",
+          "tweet_url": "https://x.com/SawyerMerritt/status/2121643363296317915",
+          "text_zh": "特斯拉首次在纽约时代广场投放FSD广告，将播放至本月底，文案称开启后比人类驾驶安全约7倍，全球行驶里程超150亿英里。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 190011,
+            "likes": 6500,
+            "retweets": 706,
+            "replies": 244,
+            "quotes": 128
+          },
+          "posted_at": "2026-11-14T16:36:10+00:00",
+          "region": "west",
+          "region_rank": 3
+        },
+        {
+          "rank": 4,
+          "author_name": "The Wall Street Journal",
+          "author_handle": "WSJ",
+          "author_url": "https://x.com/WSJ",
+          "tweet_url": "https://x.com/WSJ/status/2121620837140664654",
+          "text_zh": "《华尔街日报》：特斯拉将停掉Cybertruck，把赌注转向Cybercab。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 408681,
+            "likes": 20,
+            "retweets": 3,
+            "replies": 17,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T15:06:40+00:00",
+          "region": "west",
+          "region_rank": 4
+        },
+        {
+          "rank": 5,
+          "author_name": "Sawyer Merritt",
+          "author_handle": "SawyerMerritt",
+          "author_url": "https://x.com/SawyerMerritt",
+          "tweet_url": "https://x.com/SawyerMerritt/status/2121427932425990359",
+          "text_zh": "特斯拉已邀请科技博主Marques Brownlee订购Cybercab供个人使用。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 224173,
+            "likes": 3504,
+            "retweets": 130,
+            "replies": 111,
+            "quotes": 9
+          },
+          "posted_at": "2026-11-14T02:20:07+00:00",
+          "region": "west",
+          "region_rank": 5
+        },
+        {
+          "rank": 6,
+          "author_name": "Sawyer Merritt",
+          "author_handle": "SawyerMerritt",
+          "author_url": "https://x.com/SawyerMerritt",
+          "tweet_url": "https://x.com/SawyerMerritt/status/2121461020069593382",
+          "text_zh": "特斯拉Cybercab自动驾驶订阅为每月299美元，覆盖指定运营区内的FSD Unsupervised、轮胎与玻璃更换、高级联网和道路救援等。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 236483,
+            "likes": 2995,
+            "retweets": 182,
+            "replies": 883,
+            "quotes": 65
+          },
+          "posted_at": "2026-11-14T04:31:36+00:00",
+          "region": "west",
+          "region_rank": 6
+        },
+        {
+          "rank": 7,
+          "author_name": "unusual_whales",
+          "author_handle": "unusual_whales",
+          "author_url": "https://x.com/unusual_whales",
+          "tweet_url": "https://x.com/unusual_whales/status/2121740208131686571",
+          "text_zh": "Alphabet季度自由现金流转为负值，在所示约20年数据中尚属首次，近两个季度分别约-60亿和-90亿美元。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 242405,
+            "likes": 2012,
+            "retweets": 144,
+            "replies": 141,
+            "quotes": 30
+          },
+          "posted_at": "2026-11-14T23:01:00+00:00",
+          "region": "west",
+          "region_rank": 7
+        },
+        {
+          "rank": 8,
+          "author_name": "Sawyer Merritt",
+          "author_handle": "SawyerMerritt",
+          "author_url": "https://x.com/SawyerMerritt",
+          "tweet_url": "https://x.com/SawyerMerritt/status/2121496557652480009",
+          "text_zh": "马斯克称特斯拉将逐步向美国普通消费者开放售价29,990美元的Cybercab个人用途销售，并预计每月299美元的自动驾驶订阅最终可降至约115美元。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 158727,
+            "likes": 3113,
+            "retweets": 234,
+            "replies": 168,
+            "quotes": 25
+          },
+          "posted_at": "2026-11-14T06:52:49+00:00",
+          "region": "west",
+          "region_rank": 8
+        },
+        {
+          "rank": 9,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2121672047117914373",
+          "text_zh": "美国10月成屋销售环比下降5.5%，折年约375万套，为2010年8月以来最低；同比下降8.8%。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [],
+          "metrics": {
+            "views": 196195,
+            "likes": 1365,
+            "retweets": 181,
+            "replies": 130,
+            "quotes": 37
+          },
+          "posted_at": "2026-11-14T18:30:09+00:00",
+          "region": "west",
+          "region_rank": 9
+        },
+        {
+          "rank": 10,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2121564824760902115",
+          "text_zh": "全球股票基金在截至11月11日的一周净流入980亿美元，为有记录以来第二大单周流入，连续第5周吸金合计约3500亿美元；四周移动平均流入约750亿美元，亦创纪录。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 191209,
+            "likes": 776,
+            "retweets": 90,
+            "replies": 124,
+            "quotes": 33
+          },
+          "posted_at": "2026-11-14T11:24:05+00:00",
+          "region": "west",
+          "region_rank": 10
+        },
+        {
+          "rank": 11,
+          "author_name": "The Kobeissi Letter",
+          "author_handle": "KobeissiLetter",
+          "author_url": "https://x.com/KobeissiLetter",
+          "tweet_url": "https://x.com/KobeissiLetter/status/2121689817301819425",
+          "text_zh": "ChatGPT上线以来，美国22–25岁软件开发从业人数下降约20%，26–30岁下降约4%，显示AI变革对年轻科技从业者冲击更大。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [],
+          "metrics": {
+            "views": 177092,
+            "likes": 1050,
+            "retweets": 117,
+            "replies": 112,
+            "quotes": 41
+          },
+          "posted_at": "2026-11-14T19:40:46+00:00",
+          "region": "west",
+          "region_rank": 11
+        },
+        {
+          "rank": 12,
+          "author_name": "Sawyer Merritt",
+          "author_handle": "SawyerMerritt",
+          "author_url": "https://x.com/SawyerMerritt",
+          "tweet_url": "https://x.com/SawyerMerritt/status/2121442411121426694",
+          "text_zh": "强调特斯拉将在下月交付售价29,990美元（另加订阅）、无方向盘和踏板的完全无人监督自动驾驶汽车，反驳“目前仅邀请制所以不真实”的说法。",
+          "original_lang": "en",
+          "category": "观点",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 87567,
+            "likes": 2653,
+            "retweets": 220,
+            "replies": 201,
+            "quotes": 17
+          },
+          "posted_at": "2026-11-14T03:17:39+00:00",
+          "region": "west",
+          "region_rank": 12
+        },
+        {
+          "rank": 13,
+          "author_name": "Bull Theory",
+          "author_handle": "BullTheoryio",
+          "author_url": "https://x.com/BullTheoryio",
+          "tweet_url": "https://x.com/BullTheoryio/status/2121455869510787529",
+          "text_zh": "请愿要求英伟达请回黄仁勋的签名当时已超过4万人。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 46517,
+            "likes": 2042,
+            "retweets": 171,
+            "replies": 67,
+            "quotes": 11
+          },
+          "posted_at": "2026-11-14T04:11:08+00:00",
+          "region": "west",
+          "region_rank": 13
+        },
+        {
+          "rank": 14,
+          "author_name": "Bull Theory",
+          "author_handle": "BullTheoryio",
+          "author_url": "https://x.com/BullTheoryio",
+          "tweet_url": "https://x.com/BullTheoryio/status/2121718404243419245",
+          "text_zh": "两名合计持有约21.3亿美元英伟达股票的投资人呼吁董事会请回黄仁勋担任CEO。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 32707,
+            "likes": 1293,
+            "retweets": 100,
+            "replies": 61,
+            "quotes": 10
+          },
+          "posted_at": "2026-11-14T21:34:21+00:00",
+          "region": "west",
+          "region_rank": 14
+        },
+        {
+          "rank": 15,
+          "author_name": "Shay Boloor",
+          "author_handle": "StockSavvyShay",
+          "author_url": "https://x.com/StockSavvyShay",
+          "tweet_url": "https://x.com/StockSavvyShay/status/2121632191235125409",
+          "text_zh": "高盛预计至2028年，与英伟达、博通和AMD系统相关的AI基础设施开支约3.8万亿美元，其中英伟达约2.7万亿（资本开支占比约63%），博通约8760亿，AMD约2280亿。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "NVDA(美股)",
+            "AVGO(美股)",
+            "AMD(美股)"
+          ],
+          "metrics": {
+            "views": 52982,
+            "likes": 440,
+            "retweets": 49,
+            "replies": 44,
+            "quotes": 6
+          },
+          "posted_at": "2026-11-14T15:51:47+00:00",
+          "region": "west",
+          "region_rank": 15
+        },
+        {
+          "rank": 16,
+          "author_name": "Heisenberg",
+          "author_handle": "Mr_Derivatives",
+          "author_url": "https://x.com/Mr_Derivatives",
+          "tweet_url": "https://x.com/Mr_Derivatives/status/2121635616479940704",
+          "text_zh": "统计“七巨头”年内最大波段：英伟达+48%/−39%，亚马逊+47%/−21%，苹果+48%/−14%，微软+60%/−29%，Meta+50%/−30%，特斯拉+40%/−35%，谷歌+50%/−32%。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "NVDA(美股)",
+            "AMZN(美股)",
+            "AAPL(美股)",
+            "MSFT(美股)",
+            "META(美股)",
+            "TSLA(美股)",
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 42017,
+            "likes": 283,
+            "retweets": 15,
+            "replies": 37,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T16:05:23+00:00",
+          "region": "west",
+          "region_rank": 16
+        },
+        {
+          "rank": 17,
+          "author_name": "Bull Theory",
+          "author_handle": "BullTheoryio",
+          "author_url": "https://x.com/BullTheoryio",
+          "tweet_url": "https://x.com/BullTheoryio/status/2121515409707004356",
+          "text_zh": "旧金山已有诉讼要求停止OpenAI、Anthropic、谷歌、Meta和SpaceX的AI开发，若成功可能打断美国在AI竞赛中的节奏。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "GOOGL(美股)",
+            "META(美股)"
+          ],
+          "metrics": {
+            "views": 28217,
+            "likes": 495,
+            "retweets": 68,
+            "replies": 47,
+            "quotes": 17
+          },
+          "posted_at": "2026-11-14T08:07:44+00:00",
+          "region": "west",
+          "region_rank": 17
+        },
+        {
+          "rank": 18,
+          "author_name": "Bloomberg",
+          "author_handle": "business",
+          "author_url": "https://x.com/business",
+          "tweet_url": "https://x.com/business/status/2121419112035287408",
+          "text_zh": "彭博：特斯拉已开始向有限客户群开放Cybercab订单，显示其正准备向消费者提供无人驾驶汽车。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 39527,
+            "likes": 120,
+            "retweets": 15,
+            "replies": 27,
+            "quotes": 5
+          },
+          "posted_at": "2026-11-14T01:45:05+00:00",
+          "region": "west",
+          "region_rank": 18
+        },
+        {
+          "rank": 19,
+          "author_name": "Bloomberg",
+          "author_handle": "business",
+          "author_url": "https://x.com/business",
+          "tweet_url": "https://x.com/business/status/2121636796131926395",
+          "text_zh": "彭博：曾是人工智能最主要吹鼓手的黄仁勋，如今成了AI迷因热潮的核心面孔。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 38326,
+            "likes": 48,
+            "retweets": 5,
+            "replies": 23,
+            "quotes": 3
+          },
+          "posted_at": "2026-11-14T16:10:04+00:00",
+          "region": "west",
+          "region_rank": 19
+        },
+        {
+          "rank": 20,
+          "author_name": "Bloomberg",
+          "author_handle": "business",
+          "author_url": "https://x.com/business",
+          "tweet_url": "https://x.com/business/status/2121622953007702443",
+          "text_zh": "彭博：SpaceX在被拒绝快速纳入标普500后，马斯克或考虑与特斯拉合并，借道进入该指数。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "TSLA(美股)"
+          ],
+          "metrics": {
+            "views": 34940,
+            "likes": 84,
+            "retweets": 10,
+            "replies": 17,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T15:15:04+00:00",
+          "region": "west",
+          "region_rank": 20
+        },
+        {
+          "rank": 21,
+          "author_name": "Bloomberg",
+          "author_handle": "business",
+          "author_url": "https://x.com/business",
+          "tweet_url": "https://x.com/business/status/2121620429911560209",
+          "text_zh": "意大利数据保护机构以未经明确同意访问Android用户相册为由，对Meta罚款8.05亿欧元（约8.87亿美元）。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "META(美股)"
+          ],
+          "metrics": {
+            "views": 32751,
+            "likes": 75,
+            "retweets": 19,
+            "replies": 8,
+            "quotes": 3
+          },
+          "posted_at": "2026-11-14T15:05:02+00:00",
+          "region": "west",
+          "region_rank": 21
+        },
+        {
+          "rank": 22,
+          "author_name": "Mike Zaccardi, CFA, CMT",
+          "author_handle": "MikeZaccardi",
+          "author_url": "https://x.com/MikeZaccardi",
+          "tweet_url": "https://x.com/MikeZaccardi/status/2121630740580331894",
+          "text_zh": "英伟达占全球股市总市值的比重从约5.5%回落至约3.8%。",
+          "original_lang": "en",
+          "category": "干货",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 3525,
+            "likes": 14,
+            "retweets": 1,
+            "replies": 3,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T15:46:01+00:00",
+          "region": "west",
+          "region_rank": 22
+        },
+        {
+          "rank": 23,
+          "author_name": "Mike Zaccardi, CFA, CMT",
+          "author_handle": "MikeZaccardi",
+          "author_url": "https://x.com/MikeZaccardi",
+          "tweet_url": "https://x.com/MikeZaccardi/status/2121642064387457448",
+          "text_zh": "必需消费板块市值正在逼近英伟达。",
+          "original_lang": "en",
+          "category": "话题",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 3468,
+            "likes": 10,
+            "retweets": 0,
+            "replies": 4,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T16:31:01+00:00",
+          "region": "west",
+          "region_rank": 23
+        },
+        {
+          "rank": 24,
+          "author_name": "Mike Zaccardi, CFA, CMT",
+          "author_handle": "MikeZaccardi",
+          "author_url": "https://x.com/MikeZaccardi",
+          "tweet_url": "https://x.com/MikeZaccardi/status/2121644600444019196",
+          "text_zh": "零售ETF（XRT）已连续上涨8周，下周将有零售财报。",
+          "original_lang": "en",
+          "category": "热点事件",
+          "tickers": [
+            "XRT(美股)"
+          ],
+          "metrics": {
+            "views": 3455,
+            "likes": 8,
+            "retweets": 0,
+            "replies": 1,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T16:41:05+00:00",
+          "region": "west",
+          "region_rank": 24
+        },
+        {
+          "rank": 25,
+          "author_name": "实践哥 Li",
+          "author_handle": "MinLiBuilds",
+          "author_url": "https://x.com/MinLiBuilds",
+          "tweet_url": "https://x.com/MinLiBuilds/status/2121647127843791053",
+          "text_zh": "梳理黄仁勋下台后48小时内马斯克公开点名并签署请愿、传记作者批评及其回应等经过，认为声援正在加码。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 337012,
+            "likes": 3141,
+            "retweets": 359,
+            "replies": 71,
+            "quotes": 31
+          },
+          "posted_at": "2026-11-14T16:51:08+00:00",
+          "region": "zh",
+          "region_rank": 1
+        },
+        {
+          "rank": 26,
+          "author_name": "邵艾伦Alan（薄肌版）",
+          "author_handle": "AlanShao111",
+          "author_url": "https://x.com/AlanShao111",
+          "tweet_url": "https://x.com/AlanShao111/status/2121563292011237479",
+          "text_zh": "吐槽美股现在周末也能交易，周末不再只是休息，也可能继续亏钱。",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [],
+          "metrics": {
+            "views": 52364,
+            "likes": 123,
+            "retweets": 1,
+            "replies": 70,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T11:18:00+00:00",
+          "region": "zh",
+          "region_rank": 2
+        },
+        {
+          "rank": 27,
+          "author_name": "拖拉机",
+          "author_handle": "tuolaji2024",
+          "author_url": "https://x.com/tuolaji2024",
+          "tweet_url": "https://x.com/tuolaji2024/status/2121585289734877388",
+          "text_zh": "认为黄仁勋是在情绪激动时辞职、董事会依据推测性信息行动，董事会有责任向股东承认在彻底调查完成前可以让其回归。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 18135,
+            "likes": 22,
+            "retweets": 0,
+            "replies": 9,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T12:45:24+00:00",
+          "region": "zh",
+          "region_rank": 3
+        },
+        {
+          "rank": 28,
+          "author_name": "LEI",
+          "author_handle": "TheMarketMemo",
+          "author_url": "https://x.com/TheMarketMemo",
+          "tweet_url": "https://x.com/TheMarketMemo/status/2121667400253010160",
+          "text_zh": "All-in Podcast观点：市场以为黄仁勋辞职会直接利好AMD和谷歌，但高阶芯片与“英伟达银行”对供应链的资本注入才是核心，灵魂人物离开可能减缓整个美国AI资本流速。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "NVDA(美股)",
+            "AMD(美股)",
+            "GOOGL(美股)"
+          ],
+          "metrics": {
+            "views": 13861,
+            "likes": 123,
+            "retweets": 8,
+            "replies": 9,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T18:11:41+00:00",
+          "region": "zh",
+          "region_rank": 4
+        },
+        {
+          "rank": 29,
+          "author_name": "0xTodd (已深度思考0秒)",
+          "author_handle": "0xTodd",
+          "author_url": "https://x.com/0xTodd",
+          "tweet_url": "https://x.com/0xTodd/status/2121588142658691550",
+          "text_zh": "从游戏玩家角度批评临时CEO Colette Kress金融出身、与游戏距离远，并对比游戏卡与AI卡毛利率，认为只有黄仁勋还记得游戏业务的定位。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 11374,
+            "likes": 81,
+            "retweets": 0,
+            "replies": 22,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T12:56:45+00:00",
+          "region": "zh",
+          "region_rank": 5
+        },
+        {
+          "rank": 30,
+          "author_name": "Punk（2898 🙌💎）",
+          "author_handle": "punk2898",
+          "author_url": "https://x.com/punk2898",
+          "tweet_url": "https://x.com/punk2898/status/2121564202557145578",
+          "text_zh": "回顾2016年英伟达首台AI电脑发布当天还没有客户，后来黄仁勋亲自开车送机的那家机构就是如今的OpenAI。",
+          "original_lang": "zh",
+          "category": "话题",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 11912,
+            "likes": 59,
+            "retweets": 6,
+            "replies": 15,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T11:21:37+00:00",
+          "region": "zh",
+          "region_rank": 6
+        },
+        {
+          "rank": 31,
+          "author_name": "勃勃OC",
+          "author_handle": "bboczeng",
+          "author_url": "https://x.com/bboczeng",
+          "tweet_url": "https://x.com/bboczeng/status/2121569871263846865",
+          "text_zh": "认为英伟达面临的最大问题将是人才流失，并提醒关注即将到来的财报可能引发的剧烈波动。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 9612,
+            "likes": 43,
+            "retweets": 3,
+            "replies": 12,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T11:44:08+00:00",
+          "region": "zh",
+          "region_rank": 7
+        },
+        {
+          "rank": 32,
+          "author_name": "李百万",
+          "author_handle": "Libaiwan168",
+          "author_url": "https://x.com/Libaiwan168",
+          "tweet_url": "https://x.com/Libaiwan168/status/2121562519806316988",
+          "text_zh": "分析继任人选：CFO Colette Kress已任临时CEO，市场还在讨论CUDA核心推动者Ian Buck；指出护城河不仅是CUDA，更包括黄仁勋亲自锁定台积电和HBM产能、向巨头销售整套AI基础设施的能力，11月17日将迎来其离开后的首份财报。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 9550,
+            "likes": 32,
+            "retweets": 0,
+            "replies": 51,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T11:14:56+00:00",
+          "region": "zh",
+          "region_rank": 8
+        },
+        {
+          "rank": 33,
+          "author_name": "美股OK哥",
+          "author_handle": "artinmemes",
+          "author_url": "https://x.com/artinmemes",
+          "tweet_url": "https://x.com/artinmemes/status/2121582872054354072",
+          "text_zh": "提示下周11月16日起进入财报周，市场最关注周二英伟达（首个没有黄仁勋的电话会），并列出小鹏、百度等中概关注名单。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "NVDA(美股)",
+            "XPEV(美股)",
+            "BIDU(美股)"
+          ],
+          "metrics": {
+            "views": 8415,
+            "likes": 27,
+            "retweets": 6,
+            "replies": 7,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T12:35:48+00:00",
+          "region": "zh",
+          "region_rank": 9
+        },
+        {
+          "rank": 34,
+          "author_name": "Alex_感知",
+          "author_handle": "Alex_perception",
+          "author_url": "https://x.com/Alex_perception",
+          "tweet_url": "https://x.com/Alex_perception/status/2121551211300331549",
+          "text_zh": "看到经济日报为个人养老金账户站台，对只能投资国内市场表示担忧，认为在配套有限的情况下，长期资金更像是被引导去给A股垫底。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [],
+          "metrics": {
+            "views": 7267,
+            "likes": 49,
+            "retweets": 0,
+            "replies": 7,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T10:29:59+00:00",
+          "region": "zh",
+          "region_rank": 10
+        },
+        {
+          "rank": 35,
+          "author_name": "真相傳媒",
+          "author_handle": "TruthMedia123",
+          "author_url": "https://x.com/TruthMedia123",
+          "tweet_url": "https://x.com/TruthMedia123/status/2121526573627273497",
+          "text_zh": "称华尔街投资人Brad Gerstner和Gavin Baker联名施压董事会保留黄仁勋回归可能，马斯克亦公开支持，英伟达内部已有超过1600条评论且多数支持其回归。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 7198,
+            "likes": 24,
+            "retweets": 2,
+            "replies": 13,
+            "quotes": 1
+          },
+          "posted_at": "2026-11-14T08:52:05+00:00",
+          "region": "zh",
+          "region_rank": 11
+        },
+        {
+          "rank": 36,
+          "author_name": "mark",
+          "author_handle": "cherryPayment",
+          "author_url": "https://x.com/cherryPayment",
+          "tweet_url": "https://x.com/cherryPayment/status/2121563668408111289",
+          "text_zh": "认为光学/CPO不会因此沉寂，并援引TrendForce：CPO+NPO市场规模或从2025年约1亿美元增至2030年超390亿美元，英伟达Spectrum-X CPO交换机已量产。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 6504,
+            "likes": 26,
+            "retweets": 3,
+            "replies": 12,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T11:19:29+00:00",
+          "region": "zh",
+          "region_rank": 12
+        },
+        {
+          "rank": 37,
+          "author_name": "BlockBeats｜We're hiring!",
+          "author_handle": "BlockBeatsAsia",
+          "author_url": "https://x.com/BlockBeatsAsia",
+          "tweet_url": "https://x.com/BlockBeatsAsia/status/2121469016342663496",
+          "text_zh": "律动：截至11月14日中午，“Stand with Jensen”独立网站显示已有46,864人签名，要求董事会在独立调查完成前让黄仁勋继续担任CEO。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 4480,
+            "likes": 11,
+            "retweets": 1,
+            "replies": 6,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T05:03:23+00:00",
+          "region": "zh",
+          "region_rank": 13
+        },
+        {
+          "rank": 38,
+          "author_name": "币圈老鱼🌊🌊",
+          "author_handle": "Billions_2022_",
+          "author_url": "https://x.com/Billions_2022_",
+          "tweet_url": "https://x.com/Billions_2022_/status/2121745727936495899",
+          "text_zh": "观察到比特币、黄金、原油和美股同步下跌、国债收益率上行，认为是大机构在抽离流动性，并与英伟达作为AI“定海神针”及交叉持股有关，提醒中小机构杠杆配置风险。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 3119,
+            "likes": 15,
+            "retweets": 0,
+            "replies": 7,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T23:22:56+00:00",
+          "region": "zh",
+          "region_rank": 14
+        },
+        {
+          "rank": 39,
+          "author_name": "看不懂的SOL",
+          "author_handle": "DtDt666",
+          "author_url": "https://x.com/DtDt666",
+          "tweet_url": "https://x.com/DtDt666/status/2121760793851277447",
+          "text_zh": "称IMF警告AI循环融资规模高达约1.4万亿美元，并梳理英伟达、甲骨文、微软、软银、亚马逊与OpenAI等互投、采购与担保形成闭环的多笔交易。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "NVDA(美股)",
+            "ORCL(美股)",
+            "MSFT(美股)",
+            "AMZN(美股)"
+          ],
+          "metrics": {
+            "views": 2840,
+            "likes": 11,
+            "retweets": 3,
+            "replies": 7,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-15T00:22:48+00:00",
+          "region": "zh",
+          "region_rank": 15
+        },
+        {
+          "rank": 40,
+          "author_name": "BlockBeats｜We're hiring!",
+          "author_handle": "BlockBeatsAsia",
+          "author_url": "https://x.com/BlockBeatsAsia",
+          "tweet_url": "https://x.com/BlockBeatsAsia/status/2121483128120504559",
+          "text_zh": "律动：Michael Burry在纳指反弹至27000点附近将看跌期权仓位翻倍，并重建VanEck半导体ETF（SMH）看跌期权，到期时间设在2027年初。",
+          "original_lang": "zh",
+          "category": "热点事件",
+          "tickers": [
+            "SMH(美股)"
+          ],
+          "metrics": {
+            "views": 2632,
+            "likes": 14,
+            "retweets": 0,
+            "replies": 11,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T05:59:27+00:00",
+          "region": "zh",
+          "region_rank": 16
+        },
+        {
+          "rank": 41,
+          "author_name": "财经数据库",
+          "author_handle": "caijingshujuku",
+          "author_url": "https://x.com/caijingshujuku",
+          "tweet_url": "https://x.com/caijingshujuku/status/2121753812855927179",
+          "text_zh": "引用分析称黄仁勋像“既卖建材、又做担保、还当银行”的角色，英伟达被视为“人工智能的中央银行”；其离职后，这种信用扩张被市场重新评估。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 1631,
+            "likes": 4,
+            "retweets": 1,
+            "replies": 0,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T23:55:03+00:00",
+          "region": "zh",
+          "region_rank": 17
+        },
+        {
+          "rank": 42,
+          "author_name": "勃勃OC",
+          "author_handle": "bboczeng",
+          "author_url": "https://x.com/bboczeng",
+          "tweet_url": "https://x.com/bboczeng/status/2121767935471747433",
+          "text_zh": "转述《华尔街日报》审查财报后的观察：黄仁勋搭建了由英伟达为自家产品需求提供融资的体系，商业策略风险高于外界想象。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 1445,
+            "likes": 1,
+            "retweets": 0,
+            "replies": 3,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-15T00:51:11+00:00",
+          "region": "zh",
+          "region_rank": 18
+        },
+        {
+          "rank": 43,
+          "author_name": "勃勃OC",
+          "author_handle": "bboczeng",
+          "author_url": "https://x.com/bboczeng",
+          "tweet_url": "https://x.com/bboczeng/status/2121762229083422873",
+          "text_zh": "认为需求故事在第二季度破裂：应收账款单季激增55%，收入已确认却尚未收回现金，并将此视为其被解职的财务背景。",
+          "original_lang": "zh",
+          "category": "观点",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 1430,
+            "likes": 1,
+            "retweets": 0,
+            "replies": 3,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-15T00:28:30+00:00",
+          "region": "zh",
+          "region_rank": 19
+        },
+        {
+          "rank": 44,
+          "author_name": "小龙先生",
+          "author_handle": "Dragonhau66",
+          "author_url": "https://x.com/Dragonhau66",
+          "tweet_url": "https://x.com/Dragonhau66/status/2121580995543462350",
+          "text_zh": "指出黄仁勋经营33年后投票权仅约3.58%，一股一票结构下，创始人在董事会的控制力远弱于外界想象。",
+          "original_lang": "zh",
+          "category": "干货",
+          "tickers": [
+            "NVDA(美股)"
+          ],
+          "metrics": {
+            "views": 1047,
+            "likes": 5,
+            "retweets": 1,
+            "replies": 2,
+            "quotes": 0
+          },
+          "posted_at": "2026-11-14T12:28:21+00:00",
+          "region": "zh",
+          "region_rank": 20
+        }
+      ]
+    }
+  }
+}

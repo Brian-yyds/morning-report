@@ -7,6 +7,76 @@
   },
   "dates": [
     {
+      "date": "2026-11-16",
+      "sections": [
+        "ai",
+        "crypto",
+        "stocks"
+      ],
+      "sources": {
+        "ai": "real",
+        "crypto": "real",
+        "stocks": "real"
+      },
+      "sample": false
+    },
+    {
+      "date": "2026-11-15",
+      "sections": [
+        "ai",
+        "crypto",
+        "stocks"
+      ],
+      "sources": {
+        "ai": "real",
+        "crypto": "real",
+        "stocks": "real"
+      },
+      "sample": false
+    },
+    {
+      "date": "2026-11-14",
+      "sections": [
+        "ai",
+        "crypto",
+        "stocks"
+      ],
+      "sources": {
+        "ai": "real",
+        "crypto": "real",
+        "stocks": "real"
+      },
+      "sample": false
+    },
+    {
+      "date": "2026-11-13",
+      "sections": [
+        "ai",
+        "crypto",
+        "stocks"
+      ],
+      "sources": {
+        "ai": "real",
+        "crypto": "real",
+        "stocks": "real"
+      },
+      "sample": false
+    },
+    {
+      "date": "2026-11-12",
+      "sections": [
+        "ai",
+        "crypto",
+        "stocks"
+      ],
+      "sources": {
+        "ai": "real",
+        "crypto": "real",
+        "stocks": "real"
+      },
+      "sample": false
+    },
+    {
       "date": "2026-11-11",
       "sections": [
         "ai",
