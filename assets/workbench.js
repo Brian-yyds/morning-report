@@ -190,23 +190,15 @@
     if (heading) heading.textContent = now;
 
     const tItems = todos.items || [];
-    const mItems = market.items || [];
     const active = activeTodos(tItems);
     const dueCheck = checkTodos(tItems);
-    const pending = pendingMarket(mItems);
 
     const gTodos = $('glance-todos');
     if (gTodos) gTodos.textContent = `${active.length} 件未完成`;
     const gTodosNote = $('glance-todos-note');
     if (gTodosNote) gTodosNote.textContent = dueCheck.length ? `${dueCheck.length} 件待核对` : '暂无今天要核对的事项';
 
-    const gMarket = $('glance-market');
-    if (gMarket) gMarket.textContent = `${pending.length} 条待核实`;
-    const gMarketNote = $('glance-market-note');
-    if (gMarketNote) {
-      const next = pending.slice().sort((a, b) => String(a.verify_on).localeCompare(String(b.verify_on)))[0];
-      gMarketNote.textContent = next ? `最近核实日 ${formatDate(next.verify_on)}` : '暂无待核实观点';
-    }
+    renderHomeJournal();
 
     const counts = hotspots.counts || {};
     const total = ['ai', 'crypto', 'stocks'].reduce((sum, key) => sum + (Number(counts[key]) || 0), 0);
@@ -250,12 +242,57 @@
       if (!show.length) todoBox.append(empty('还没有待办。日常管家写入后会出现在这里。'));
       else show.forEach(item => todoBox.append(todoCard(item, true)));
     }
+  }
+
+  function journalDayCard(item) {
+    const card = element('article', 'wb-item');
+    const head = element('div', 'wb-item-head');
+    head.append(element('h3', 'wb-item-title', formatDate(item.date)));
+    if (Number(item.pending_review) > 0) head.append(element('span', 'wb-badge pending', `${item.pending_review} 条待核对`));
+    card.append(head);
+    const meta = element('p', 'wb-prices');
+    meta.append(element('span', '', `${item.entry_count || 0} 张K线`));
+    card.append(meta);
+    return card;
+  }
+
+  async function renderHomeJournal() {
+    const gMarket = $('glance-market');
+    const gMarketNote = $('glance-market-note');
     const marketBox = $('home-market');
-    if (marketBox) {
-      marketBox.replaceChildren();
-      const show = pending.slice().sort((a, b) => String(a.verify_on).localeCompare(String(b.verify_on))).slice(0, 5);
-      if (!show.length) marketBox.append(empty('还没有待核实的观点。'));
-      else show.forEach(item => marketBox.append(marketCard(item, true)));
+    const fallback = () => {
+      if (gMarket) gMarket.textContent = '尚未记录';
+      if (gMarketNote) gMarketNote.textContent = '打开页面写下分析并保存';
+      if (marketBox) {
+        marketBox.replaceChildren();
+        marketBox.append(empty('还没有交割单分析。打开页面贴上K线并写下分析。'));
+      }
+    };
+    try {
+      const response = await fetch(`data/trade-journal/index.json?t=${Date.now()}`, {cache: 'no-store'});
+      if (!response.ok) {
+        fallback();
+        return;
+      }
+      const index = await response.json();
+      const days = Array.isArray(index.days) ? index.days.slice() : [];
+      days.sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+      const total = days.reduce((sum, item) => sum + (Number(item.entry_count) || 0), 0);
+      const pending = days.reduce((sum, item) => sum + (Number(item.pending_review) || 0), 0);
+      if (gMarket) gMarket.textContent = total ? `${total} 张K线` : '尚未记录';
+      if (gMarketNote) {
+        gMarketNote.textContent = total
+          ? (pending ? `${days.length} 天记录 · ${pending} 条待核对` : `${days.length} 天记录`)
+          : '打开页面写下分析并保存';
+      }
+      if (marketBox) {
+        marketBox.replaceChildren();
+        const show = days.slice(0, 5);
+        if (!show.length) marketBox.append(empty('还没有交割单分析。打开页面贴上K线并写下分析。'));
+        else show.forEach(item => marketBox.append(journalDayCard(item)));
+      }
+    } catch {
+      fallback();
     }
   }
 
@@ -312,10 +349,6 @@
   applyTheme();
   bindTheme();
   if (page === 'home') renderHome();
-  if (page === 'market') {
-    renderMarket('pending');
-    bindFilters('.wb-toolbar', renderMarket);
-  }
   function formatBeijingDateTime(value) {
     if (!value) return '';
     try {
