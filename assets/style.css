@@ -305,7 +305,7 @@ body.workbench .topbar-heading { margin-bottom: 0; }
 .wb-kicker { color: var(--sun); font-size: 12px; font-weight: 700; letter-spacing: .08em; }
 .wb-hero h2 { margin-top: 6px; font-size: 28px; font-weight: 750; letter-spacing: -.5px; line-height: 1.25; }
 .wb-lead { margin-top: 10px; color: var(--muted); font-size: 15px; line-height: 1.7; max-width: 40em; }
-.wb-glance { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 22px; }
+.wb-glance { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 22px; }
 .wb-card { display: block; padding: 18px 18px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 8px 24px #8a734014; }
 .wb-card-link:hover { border-color: var(--accent); color: inherit; transform: translateY(-1px); }
 .wb-card-label { color: var(--muted); font-size: 12px; font-weight: 650; }
@@ -348,8 +348,49 @@ body.workbench .topbar-heading { margin-bottom: 0; }
 .wb-timeline time { color: var(--muted); font-size: 12px; }
 .wb-foot { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; color: var(--muted); font-size: 12px; }
 .wb-empty { padding: 28px 16px; text-align: center; color: var(--muted); font-size: 14px; }
+@media (max-width: 1100px) {
+  .wb-glance { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 800px) {
   .wb-hero h2 { font-size: 24px; }
   .wb-glance, .wb-columns { grid-template-columns: 1fr; }
   .wb-timeline li { grid-template-columns: 1fr; gap: 2px; }
+}
+
+/* 熬鹰资本开平清单：长表格与筛选 */
+body[data-page="aoying"] .workbench-main,
+body[data-page="aoying"] .footer { max-width: 1320px; }
+body[data-page="aoying"] .wb-lead { max-width: 52em; }
+.aoying-disclaimer { margin: 14px 0 0; padding: 10px 14px; border: 1px solid var(--warning-line); border-radius: 12px; background: var(--warning-bg); color: var(--warning-text); font-size: 13px; font-weight: 650; max-width: 52em; }
+.aoying-coverage { margin-bottom: 16px; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 6px 18px #8a734010; }
+.aoying-coverage h3 { font-size: 15px; font-weight: 700; }
+.aoying-leader { margin-top: 8px; font-size: 13px; line-height: 1.7; color: var(--text); }
+.aoying-leader a { color: var(--accent); font-weight: 650; }
+.aoying-coverage ul { margin: 10px 0 0; padding-left: 1.2em; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.aoying-coverage li + li { margin-top: 4px; }
+.aoying-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
+.aoying-stats .wb-card { padding: 14px 16px; box-shadow: 0 4px 14px #8a73400e; }
+.aoying-stats .wb-card-value { font-size: 18px; }
+.aoying-toolbar { align-items: end; gap: 12px 16px; }
+.aoying-field { display: flex; flex-direction: column; gap: 4px; color: var(--muted); font-size: 12px; font-weight: 650; }
+.aoying-field select { min-width: 140px; min-height: 36px; }
+.aoying-table-wrap { overflow: auto; max-height: calc(100vh - 160px); margin-bottom: 32px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 6px 18px #8a734010; }
+.aoying-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.aoying-table th, .aoying-table td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; white-space: nowrap; }
+.aoying-table th { position: sticky; top: 0; z-index: 1; background: var(--surface-alt); font-weight: 700; color: var(--muted); }
+.aoying-table th.num, .aoying-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.aoying-table tbody tr:hover { background: var(--hover); }
+.aoying-table tr.is-open { background: var(--sky-soft); }
+.aoying-table tr.is-open:hover { background: color-mix(in srgb, var(--sky-soft) 80%, var(--hover)); }
+.aoying-table td.pnl-up { color: var(--up); font-weight: 700; }
+.aoying-table td.pnl-down { color: var(--down); font-weight: 700; }
+.aoying-table .aoying-symbol { font-weight: 700; }
+.aoying-table .aoying-open-close { color: var(--sky); font-weight: 650; }
+.aoying-snapshot { display: inline-block; margin-top: 4px; color: var(--muted); font-size: 11px; font-weight: 600; white-space: normal; max-width: 16em; }
+.aoying-table td.num .wb-badge { white-space: nowrap; }
+@media (max-width: 1100px) {
+  .aoying-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 800px) {
+  .aoying-stats { grid-template-columns: 1fr; }
 }

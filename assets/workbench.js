@@ -7,6 +7,7 @@
   const market = payload.market || {items: []};
   const todos = payload.todos || {items: []};
   const hotspots = payload.hotspots || {};
+  const aoying = payload.aoying || {items: []};
 
   const dirLabel = {up: '看多', down: '看空', range: '区间', watch: '观察'};
   const stanceLabel = {agree: '同意', partial: '部分同意', disagree: '不同意', watch: '继续观察'};
@@ -211,6 +212,19 @@
     const gHotNote = $('glance-hotspots-note');
     if (gHotNote && hotspots.latest_date) gHotNote.textContent = `${hotspots.latest_date} · AI ${counts.ai || 0} / 加密 ${counts.crypto || 0} / 股票 ${counts.stocks || 0}`;
 
+    const aStats = aoying.stats || {};
+    const closedCount = Number(aStats.closed_count);
+    const openCount = Number(aStats.open_count);
+    const aItems = aoying.items || [];
+    const gAoying = $('glance-aoying');
+    if (gAoying) {
+      const closed = Number.isFinite(closedCount) ? closedCount : aItems.filter(item => item.status === '已平仓').length;
+      const opened = Number.isFinite(openCount) ? openCount : aItems.filter(item => item.status === '持仓中').length;
+      gAoying.textContent = `${closed} 笔已平仓 / ${opened} 笔持仓中`;
+    }
+    const gAoyingNote = $('glance-aoying-note');
+    if (gAoyingNote) gAoyingNote.textContent = aoying.sample ? '当前为示例数据' : '公开数据整理，不是下单建议';
+
     const todoBox = $('home-todos');
     if (todoBox) {
       todoBox.replaceChildren();
@@ -284,8 +298,230 @@
     renderMarket('pending');
     bindFilters('.wb-toolbar', renderMarket);
   }
+  function formatBeijingDateTime(value) {
+    if (!value) return '';
+    try {
+      const d = new Date(value);
+      if (Number.isNaN(d.getTime())) return String(value);
+      const parts = new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'Asia/Shanghai',
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit',
+        hour12: false,
+      }).formatToParts(d);
+      const get = type => (parts.find(part => part.type === type) || {}).value || '';
+      return `${get('year')}-${get('month')}-${get('day')} ${get('hour')}:${get('minute')}:${get('second')}`;
+    } catch {
+      return String(value);
+    }
+  }
+
+  function formatPlainNumber(value) {
+    if (value === null || value === undefined || value === '') return '—';
+    const raw = String(value);
+    const match = raw.match(/^(-)?(\d+)(\.\d+)?$/);
+    if (!match) return raw;
+    return `${match[1] || ''}${match[2].replace(/\B(?=(\d{3})+(?!\d))/g, ',')}${match[3] || ''}`;
+  }
+
+  function formatSignedNumber(value) {
+    if (value === null || value === undefined || value === '') return '—';
+    const raw = String(value);
+    const n = Number(raw);
+    const formatted = formatPlainNumber(raw);
+    if (!Number.isFinite(n) || n <= 0 || formatted.startsWith('+')) return formatted;
+    return `+${formatted}`;
+  }
+
+  function pnlClass(value) {
+    const n = Number(value);
+    if (!Number.isFinite(n) || n === 0) return '';
+    return n > 0 ? 'pnl-up' : 'pnl-down';
+  }
+
+  function pnlValue(item) {
+    if (item.status === '持仓中') return item.unrealized_pnl_usdt;
+    return item.realized_pnl_usdt;
+  }
+
+  function renderAoying() {
+    const leaderBox = $('aoying-leader');
+    const notesBox = $('aoying-notes');
+    const statsBox = $('aoying-stats');
+    const body = $('aoying-body');
+    if (!body) return;
+
+    const leader = aoying.leader || {};
+    const stats = aoying.stats || {};
+    const coverage = aoying.coverage || {};
+    const items = aoying.items || [];
+
+    if (leaderBox) {
+      leaderBox.replaceChildren();
+      const name = element('strong', '', leader.name || '熬鹰资本');
+      leaderBox.append(name);
+      if (leader.square_username) leaderBox.append(document.createTextNode(` · 广场用户名 ${leader.square_username}`));
+      if (leader.portfolio_id) leaderBox.append(document.createTextNode(` · portfolioId ${leader.portfolio_id}`));
+      if (leader.current_project_started_at) {
+        leaderBox.append(document.createTextNode(` · 当前项目开始 ${formatBeijingDateTime(leader.current_project_started_at)}（北京时间）`));
+      }
+      if (leader.closed_project_count != null) {
+        leaderBox.append(document.createTextNode(` · 此前已关闭项目 ${leader.closed_project_count} 个`));
+      }
+      if (leader.official_url) {
+        leaderBox.append(document.createTextNode(' · '));
+        const link = element('a', '', '官方跟单详情');
+        link.href = leader.official_url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        leaderBox.append(link);
+      }
+    }
+
+    if (notesBox) {
+      notesBox.replaceChildren();
+      (coverage.notes || []).forEach(note => notesBox.append(element('li', '', note)));
+    }
+
+    if (statsBox) {
+      statsBox.replaceChildren();
+      const cards = [
+        ['已平仓', `${stats.closed_count ?? '—'} 笔`],
+        ['持仓中', `${stats.open_count ?? '—'} 笔`],
+        ['已平仓盈亏字段合计', `${formatSignedNumber(stats.official_closing_pnl_sum_usdt)} USDT`],
+        ['盈利 / 亏损', `${stats.win_count ?? '—'} / ${stats.loss_count ?? '—'} 笔`],
+      ];
+      cards.forEach(([label, value]) => {
+        const card = element('div', 'wb-card');
+        card.append(element('p', 'wb-card-label', label));
+        card.append(element('p', 'wb-card-value', value));
+        statsBox.append(card);
+      });
+    }
+
+    const meta = $('aoying-updated');
+    if (meta) meta.textContent = aoying.updated_at ? `数据更新于 ${formatBeijingDateTime(aoying.updated_at)} 北京时间` : '';
+
+    const symbolSelect = $('aoying-symbol');
+    if (symbolSelect && symbolSelect.options.length <= 1) {
+      const symbols = [...new Set(items.map(item => item.symbol).filter(Boolean))].sort();
+      symbols.forEach(symbol => {
+        const option = document.createElement('option');
+        option.value = symbol;
+        option.textContent = symbol;
+        symbolSelect.append(option);
+      });
+    }
+
+    const symbol = (symbolSelect && symbolSelect.value) || '';
+    const side = (($('aoying-side') || {}).value) || '';
+    const status = (($('aoying-status') || {}).value) || '';
+    const sort = (($('aoying-sort') || {}).value) || 'opened_desc';
+
+    let list = items.filter(item => {
+      if (symbol && item.symbol !== symbol) return false;
+      if (side && item.side !== side) return false;
+      if (status && item.status !== status) return false;
+      return true;
+    });
+
+    const openedCmp = (a, b) => String(a.opened_at || '').localeCompare(String(b.opened_at || ''));
+    const pnlCmp = (a, b) => {
+      const av = Number(pnlValue(a));
+      const bv = Number(pnlValue(b));
+      const aOk = Number.isFinite(av);
+      const bOk = Number.isFinite(bv);
+      if (!aOk && !bOk) return 0;
+      if (!aOk) return 1;
+      if (!bOk) return -1;
+      return av - bv;
+    };
+    list = list.slice().sort((a, b) => {
+      if (sort === 'opened_asc') return openedCmp(a, b);
+      if (sort === 'pnl_desc') return pnlCmp(b, a);
+      if (sort === 'pnl_asc') return pnlCmp(a, b);
+      return openedCmp(b, a);
+    });
+
+    const count = $('aoying-count');
+    if (count) count.textContent = `当前显示 ${list.length} / ${items.length} 笔。时间均为北京时间。`;
+
+    body.replaceChildren();
+    if (!list.length) {
+      const row = document.createElement('tr');
+      const cell = document.createElement('td');
+      cell.colSpan = 11;
+      cell.className = 'wb-empty';
+      cell.textContent = '没有符合筛选条件的记录。';
+      row.append(cell);
+      body.append(row);
+      return;
+    }
+
+    list.forEach(item => {
+      const row = document.createElement('tr');
+      const isOpen = item.status === '持仓中';
+      if (isOpen) row.classList.add('is-open');
+
+      const timeOpen = element('td', '', formatBeijingDateTime(item.opened_at) || '—');
+      const timeClose = element('td', isOpen ? 'aoying-open-close' : '', isOpen ? '未平仓' : (formatBeijingDateTime(item.closed_at) || '—'));
+      const symbolCell = element('td', 'aoying-symbol', item.symbol || '—');
+      const sideCell = element('td', '', '');
+      const sideBadge = element('span', `wb-badge ${item.side === '多' ? 'dir-up' : item.side === '空' ? 'dir-down' : ''}`, item.side || '—');
+      sideCell.append(sideBadge);
+      const statusCell = element('td', '', '');
+      statusCell.append(element('span', `wb-badge ${isOpen ? 'status-in_progress' : 'status-done'}`, item.status || '—'));
+
+      const openPx = element('td', 'num', formatPlainNumber(item.avg_open_price));
+      const closePx = element('td', 'num', isOpen ? '—' : formatPlainNumber(item.avg_close_price));
+
+      const size = element('td', 'num', '');
+      if (item.max_qty_ne_close_qty) {
+        size.append(document.createTextNode(`最大 ${formatPlainNumber(item.max_position_qty)} / 平仓 ${formatPlainNumber(item.close_qty)}`));
+        size.append(document.createElement('br'));
+        size.append(element('span', 'wb-badge quiet', '数量不一致，照录'));
+      } else {
+        size.textContent = formatPlainNumber(item.max_position_qty);
+      }
+
+      const notional = element('td', 'num', formatPlainNumber(item.notional_open_usdt));
+
+      const pnlCell = element('td', `num ${pnlClass(pnlValue(item))}`, '');
+      if (isOpen) {
+        pnlCell.append(document.createTextNode(formatSignedNumber(item.unrealized_pnl_usdt)));
+        pnlCell.append(document.createElement('br'));
+        const snap = element('span', 'aoying-snapshot', item.unrealized_pnl_snapshot_at
+          ? `未实现（快照 ${formatBeijingDateTime(item.unrealized_pnl_snapshot_at)} 北京时间，会变）`
+          : '未实现（快照，会变）');
+        pnlCell.append(snap);
+      } else {
+        pnlCell.textContent = formatSignedNumber(item.realized_pnl_usdt);
+      }
+
+      const roi = element('td', `num ${isOpen ? '' : pnlClass(item.official_roi_pct)}`, isOpen ? '—' : (item.official_roi_pct ? `${formatSignedNumber(item.official_roi_pct)}%` : '—'));
+
+      if (item.note) {
+        row.title = item.note;
+      }
+
+      row.append(timeOpen, timeClose, symbolCell, sideCell, statusCell, openPx, closePx, size, notional, pnlCell, roi);
+      body.append(row);
+    });
+  }
+
+  function bindAoyingControls() {
+    ['aoying-symbol', 'aoying-side', 'aoying-status', 'aoying-sort'].forEach(id => {
+      const node = $(id);
+      if (node) node.addEventListener('change', renderAoying);
+    });
+  }
+
   if (page === 'todos') {
     renderTodos('active');
     bindFilters('.wb-toolbar', renderTodos);
+  }
+  if (page === 'aoying') {
+    renderAoying();
+    bindAoyingControls();
   }
 })();
