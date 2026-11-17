@@ -1,0 +1,59 @@
+{
+  "schema": "liangxi/v1",
+  "updated_at": "2026-11-17T15:12:26+08:00",
+  "sample": false,
+  "source_generated_at": "2026-11-17T15:12:26+08:00",
+  "leader": {
+    "name": "凉兮",
+    "aliases": [
+      "凉兮大元帅",
+      "凉兮嘤嘤嘤",
+      "耿至宇"
+    ],
+    "platform": "公开报道提到 OKX、币安、Bitget、Bybit、WEEX 及币coin 实盘；目前没有已核实、仍可拉单的官方带单主页",
+    "official_url": "https://www.odaily.news/zh-CN/post/5202930",
+    "official_url_label": "Odaily 人物报道（身份背景，不是交易清单）",
+    "sources": [
+      {
+        "title": "非小号百科（身份年表）",
+        "url": "https://zh.feixiaohao.wiki/凉兮"
+      },
+      {
+        "title": "Bitget 昵称完全匹配的账户（身份异常或已撤销，历史为空）",
+        "url": "https://www.bitget.com/copy-trading/futures-trader-v1/bcbc47738ab23050a195"
+      }
+    ],
+    "portfolio_id": null,
+    "bitget_trader_uid_exact_nickname": "bcbc47738ab23050a195",
+    "bitget_portfolio_id_exact_nickname": "1484072641301606400",
+    "bitget_status": "官方详情接口提示交易专家身份异常或已被撤销；公开历史列表为空。不能确定这就是 2024–2025 年那次带单项目，也没有逐笔可录。"
+  },
+  "stats": {
+    "item_count": 0,
+    "closed_count": 0,
+    "open_count": 0,
+    "unmatched_count": 0,
+    "win_count": 0,
+    "loss_count": 0,
+    "flat_count": 0,
+    "official_closing_pnl_sum_usdt": null,
+    "official_closing_pnl_sum_note": "没有可相加的逐笔盈亏字段",
+    "closed_opened_from": null,
+    "closed_opened_to": null,
+    "closed_closed_from": null,
+    "closed_closed_to": null
+  },
+  "coverage": {
+    "disclaimer": "公开数据整理，不是下单建议。",
+    "notes": [
+      "身份：中文圈常说的凉兮，公开报道写本名耿至宇，也称作凉兮大元帅、凉兮嘤嘤嘤。报道提到他在 OKX、币安、Bitget、Bybit、WEEX 做过单，并曾在币coin 公开实盘；2024 年 5 月和 2025 年 3 月有入驻 Bitget 带单的转述。",
+      "本次没有找到可核对的成套开平逐笔，所以表是空的，没有用新闻数字或同名账户编造记录。",
+      "币安公开跟单搜索「凉兮」「凉兮大元帅」「凉兮嘤嘤嘤」都是 0 条。OKX 官方带单榜 186 个上榜昵称里也没有他，也没有找到 uniqueCode。",
+      "Bitget 公开搜索到 7 个名字带「凉兮」的账户，数据全是 0。昵称完全等于「凉兮」的账户 traderUid=bcbc47738ab23050a195，官方详情提示「交易专家身份异常或已被撤销」，公开历史列表为空。其余多为「孤独的凉兮」等同名号，未采用。",
+      "币coin 目前只有 App 下载入口，原实盘网页不可见。2022coin、qwer22、用户服务器 copy_feed 里都没有他的缓存。",
+      "ProvePnL 上有一个 Gate 账号「斗神凉兮」，只看到近 30 天摘要，且不能证明就是本人，没有拆成逐笔。Bybit、Gate 部分页面在本环境被拒绝访问。新闻里的单日盈亏截图也没有写成清单。",
+      "公开数据整理，不是下单建议。找到仍有效且能证明是本人的官方带单页之前，这里不会填假单。"
+    ]
+  },
+  "items": []
+}

@@ -8,6 +8,9 @@
   const todos = payload.todos || {items: []};
   const hotspots = payload.hotspots || {};
   const aoying = payload.aoying || {items: []};
+  const langlang = payload.langlang || {items: []};
+  const liangxi = payload.liangxi || {items: []};
+  const leaderBoards = {aoying, langlang, liangxi};
 
   const dirLabel = {up: '看多', down: '看空', range: '区间', watch: '观察'};
   const stanceLabel = {agree: '同意', partial: '部分同意', disagree: '不同意', watch: '继续观察'};
@@ -212,18 +215,33 @@
     const gHotNote = $('glance-hotspots-note');
     if (gHotNote && hotspots.latest_date) gHotNote.textContent = `${hotspots.latest_date} · AI ${counts.ai || 0} / 加密 ${counts.crypto || 0} / 股票 ${counts.stocks || 0}`;
 
-    const aStats = aoying.stats || {};
-    const closedCount = Number(aStats.closed_count);
-    const openCount = Number(aStats.open_count);
-    const aItems = aoying.items || [];
-    const gAoying = $('glance-aoying');
-    if (gAoying) {
-      const closed = Number.isFinite(closedCount) ? closedCount : aItems.filter(item => item.status === '已平仓').length;
-      const opened = Number.isFinite(openCount) ? openCount : aItems.filter(item => item.status === '持仓中').length;
-      gAoying.textContent = `${closed} 笔已平仓 / ${opened} 笔持仓中`;
+    function fillLeaderGlance(key, board) {
+      const stats = (board && board.stats) || {};
+      const items = (board && board.items) || [];
+      const valueNode = $(`glance-${key}`);
+      const noteNode = $(`glance-${key}-note`);
+      const closedCount = Number(stats.closed_count);
+      const openCount = Number(stats.open_count);
+      const unmatchedCount = Number(stats.unmatched_count);
+      const itemCount = Number(stats.item_count);
+      const closed = Number.isFinite(closedCount) ? closedCount : items.filter(item => item.status === '已平仓').length;
+      const opened = Number.isFinite(openCount) ? openCount : items.filter(item => item.status === '持仓中').length;
+      const unmatched = Number.isFinite(unmatchedCount) ? unmatchedCount : items.filter(item => item.status === '未配对').length;
+      const total = Number.isFinite(itemCount) ? itemCount : items.length;
+      if (valueNode) {
+        if (total === 0 && closed === 0 && opened === 0 && unmatched === 0) {
+          valueNode.textContent = '未找到成套开平记录';
+        } else {
+          valueNode.textContent = unmatched
+            ? `${closed} 笔已平仓 / ${opened} 笔持仓中 / ${unmatched} 笔未配对`
+            : `${closed} 笔已平仓 / ${opened} 笔持仓中`;
+        }
+      }
+      if (noteNode) noteNode.textContent = board && board.sample ? '当前为示例数据' : '公开数据整理，不是下单建议';
     }
-    const gAoyingNote = $('glance-aoying-note');
-    if (gAoyingNote) gAoyingNote.textContent = aoying.sample ? '当前为示例数据' : '公开数据整理，不是下单建议';
+    fillLeaderGlance('aoying', aoying);
+    fillLeaderGlance('langlang', langlang);
+    fillLeaderGlance('liangxi', liangxi);
 
     const todoBox = $('home-todos');
     if (todoBox) {
@@ -344,6 +362,20 @@
     return item.realized_pnl_usdt;
   }
 
+  function currentLeaderBoard() {
+    return leaderBoards[page] || aoying;
+  }
+
+  function appendLeaderLink(container, href, label, first) {
+    if (!href) return;
+    if (!first) container.append(document.createTextNode(' · '));
+    const link = element('a', '', label || href);
+    link.href = href;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    container.append(link);
+  }
+
   function renderAoying() {
     const leaderBox = $('aoying-leader');
     const notesBox = $('aoying-notes');
@@ -351,15 +383,23 @@
     const body = $('aoying-body');
     if (!body) return;
 
-    const leader = aoying.leader || {};
-    const stats = aoying.stats || {};
-    const coverage = aoying.coverage || {};
-    const items = aoying.items || [];
+    const board = currentLeaderBoard();
+    const leader = board.leader || {};
+    const stats = board.stats || {};
+    const coverage = board.coverage || {};
+    const items = board.items || [];
+    const table = $('aoying-table');
+    const showLeverage = table && table.dataset.showLeverage === '1';
+    const colSpan = showLeverage ? 12 : 11;
 
     if (leaderBox) {
       leaderBox.replaceChildren();
-      const name = element('strong', '', leader.name || '熬鹰资本');
+      const name = element('strong', '', leader.name || '');
       leaderBox.append(name);
+      if (leader.aliases && leader.aliases.length) {
+        leaderBox.append(document.createTextNode(` · 又称 ${leader.aliases.join('、')}`));
+      }
+      if (leader.platform) leaderBox.append(document.createTextNode(` · ${leader.platform}`));
       if (leader.square_username) leaderBox.append(document.createTextNode(` · 广场用户名 ${leader.square_username}`));
       if (leader.portfolio_id) leaderBox.append(document.createTextNode(` · portfolioId ${leader.portfolio_id}`));
       if (leader.current_project_started_at) {
@@ -369,13 +409,11 @@
         leaderBox.append(document.createTextNode(` · 此前已关闭项目 ${leader.closed_project_count} 个`));
       }
       if (leader.official_url) {
-        leaderBox.append(document.createTextNode(' · '));
-        const link = element('a', '', '官方跟单详情');
-        link.href = leader.official_url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        leaderBox.append(link);
+        appendLeaderLink(leaderBox, leader.official_url, leader.official_url_label || '来源主页');
       }
+      (leader.sources || []).forEach(src => {
+        if (src && src.url) appendLeaderLink(leaderBox, src.url, src.title || src.url);
+      });
     }
 
     if (notesBox) {
@@ -388,7 +426,10 @@
       const cards = [
         ['已平仓', `${stats.closed_count ?? '—'} 笔`],
         ['持仓中', `${stats.open_count ?? '—'} 笔`],
-        ['已平仓盈亏字段合计', `${formatSignedNumber(stats.official_closing_pnl_sum_usdt)} USDT`],
+        ['未配对', `${stats.unmatched_count ?? 0} 笔`],
+        ['已平仓盈亏字段合计', stats.official_closing_pnl_sum_usdt == null || stats.official_closing_pnl_sum_usdt === ''
+          ? '暂无逐笔可合计'
+          : `${formatSignedNumber(stats.official_closing_pnl_sum_usdt)} USDT`],
         ['盈利 / 亏损', `${stats.win_count ?? '—'} / ${stats.loss_count ?? '—'} 笔`],
       ];
       cards.forEach(([label, value]) => {
@@ -400,7 +441,7 @@
     }
 
     const meta = $('aoying-updated');
-    if (meta) meta.textContent = aoying.updated_at ? `数据更新于 ${formatBeijingDateTime(aoying.updated_at)} 北京时间` : '';
+    if (meta) meta.textContent = board.updated_at ? `数据更新于 ${formatBeijingDateTime(board.updated_at)} 北京时间` : '';
 
     const symbolSelect = $('aoying-symbol');
     if (symbolSelect && symbolSelect.options.length <= 1) {
@@ -450,9 +491,9 @@
     if (!list.length) {
       const row = document.createElement('tr');
       const cell = document.createElement('td');
-      cell.colSpan = 11;
+      cell.colSpan = colSpan;
       cell.className = 'wb-empty';
-      cell.textContent = '没有符合筛选条件的记录。';
+      cell.textContent = items.length ? '没有符合筛选条件的记录。' : '没有找到可核对的成套开平记录。已查过来源和缺口见上方说明，未编造交易。';
       row.append(cell);
       body.append(row);
       return;
@@ -460,11 +501,11 @@
 
     list.forEach(item => {
       const row = document.createElement('tr');
-      const isOpen = item.status === '持仓中';
+      const isOpen = item.status === '持仓中' || item.status === '未配对';
       if (isOpen) row.classList.add('is-open');
 
       const timeOpen = element('td', '', formatBeijingDateTime(item.opened_at) || '—');
-      const timeClose = element('td', isOpen ? 'aoying-open-close' : '', isOpen ? '未平仓' : (formatBeijingDateTime(item.closed_at) || '—'));
+      const timeClose = element('td', isOpen ? 'aoying-open-close' : '', item.status === '未配对' ? '未配对' : (isOpen ? '未平仓' : (formatBeijingDateTime(item.closed_at) || '—')));
       const symbolCell = element('td', 'aoying-symbol', item.symbol || '—');
       const sideCell = element('td', '', '');
       const sideBadge = element('span', `wb-badge ${item.side === '多' ? 'dir-up' : item.side === '空' ? 'dir-down' : ''}`, item.side || '—');
@@ -481,9 +522,14 @@
         size.append(document.createElement('br'));
         size.append(element('span', 'wb-badge quiet', '数量不一致，照录'));
       } else {
-        size.textContent = formatPlainNumber(item.max_position_qty);
+        size.append(document.createTextNode(formatPlainNumber(item.max_position_qty)));
+      }
+      if (item.qty_is_estimated) {
+        size.append(document.createElement('br'));
+        size.append(element('span', 'wb-badge quiet', '由保证金×杠杆推算'));
       }
 
+      const leverageCell = element('td', 'num', formatPlainNumber(item.leverage));
       const notional = element('td', 'num', formatPlainNumber(item.notional_open_usdt));
 
       const pnlCell = element('td', `num ${pnlClass(pnlValue(item))}`, '');
@@ -504,7 +550,11 @@
         row.title = item.note;
       }
 
-      row.append(timeOpen, timeClose, symbolCell, sideCell, statusCell, openPx, closePx, size, notional, pnlCell, roi);
+      if (showLeverage) {
+        row.append(timeOpen, timeClose, symbolCell, sideCell, statusCell, openPx, closePx, size, leverageCell, notional, pnlCell, roi);
+      } else {
+        row.append(timeOpen, timeClose, symbolCell, sideCell, statusCell, openPx, closePx, size, notional, pnlCell, roi);
+      }
       body.append(row);
     });
   }
@@ -520,7 +570,7 @@
     renderTodos('active');
     bindFilters('.wb-toolbar', renderTodos);
   }
-  if (page === 'aoying') {
+  if (page === 'aoying' || page === 'langlang' || page === 'liangxi') {
     renderAoying();
     bindAoyingControls();
   }
