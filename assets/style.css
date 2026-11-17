@@ -450,3 +450,47 @@ body[data-page="journal"] .footer { max-width: 1100px; }
   .journal-meta, .journal-fields { grid-template-columns: 1fr; }
   .journal-drop { min-height: 180px; }
 }
+
+/* 重点分析：自选标的与四块汇总 */
+body[data-page="focus"] .workbench-main,
+body[data-page="focus"] .footer { max-width: 1100px; }
+.page-nav { flex-wrap: wrap; }
+.focus-date-field { display: flex; flex-direction: column; gap: 4px; color: var(--muted); font-size: 12px; font-weight: 650; }
+.focus-date-field input { min-height: 36px; padding: 4px 10px; }
+.focus-watch { margin: 0 0 22px; padding: 16px 18px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 6px 18px #8a734010; }
+.focus-watch .wb-panel-head { padding: 0 0 12px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+.focus-add { display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: end; margin-bottom: 14px; }
+.focus-add-field { display: flex; flex-direction: column; gap: 4px; color: var(--muted); font-size: 12px; font-weight: 650; }
+.focus-add-field input, .focus-add-field select { min-height: 36px; min-width: 9em; padding: 4px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface-alt); color: var(--text); font: inherit; }
+.focus-add-aliases { flex: 1 1 16em; }
+.focus-add-aliases input { width: 100%; }
+.focus-pills { display: flex; flex-direction: column; gap: 12px; }
+.focus-pill-label { margin: 0; color: var(--muted); font-size: 12px; font-weight: 700; }
+.focus-pill-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.focus-pill { display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 4px 8px 4px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface-alt); color: var(--text); font-size: 13px; font-weight: 650; }
+.focus-pill:hover { border-color: var(--accent); color: var(--accent); }
+.focus-pill.is-active, .focus-pill[aria-selected="true"] { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); }
+.focus-pill-name { color: var(--muted); font-size: 12px; font-weight: 600; }
+.focus-pill.is-active .focus-pill-name { color: var(--accent); }
+.focus-pill-remove { min-width: 22px; min-height: 22px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--muted); font-size: 16px; line-height: 1; }
+.focus-pill-remove:hover { color: var(--down); background: var(--down-soft); }
+.focus-root { display: flex; flex-direction: column; gap: 14px; padding-bottom: 32px; }
+.focus-selected { padding: 0 2px; }
+.focus-source-note { margin: 0 2px 4px; color: var(--warning-text); font-size: 13px; }
+.focus-section .wb-empty { margin: 0; }
+.focus-feed { list-style: none; margin: 0; padding: 0; }
+.focus-item { padding: 16px 18px; border-bottom: 1px solid var(--line); }
+.focus-item:last-child { border-bottom: 0; }
+.focus-item-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+.focus-item-title { margin: 0; margin-right: auto; font-size: 15px; font-weight: 700; }
+.focus-item-title a { color: inherit; }
+.focus-item-title a:hover { color: var(--accent); }
+.focus-handle { color: var(--muted); font-weight: 600; }
+.focus-item-body { margin: 8px 0 0; font-size: 14px; line-height: 1.7; white-space: pre-wrap; }
+.focus-item-meta { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.focus-item-meta a { color: var(--accent); font-weight: 650; }
+.focus-hot { color: var(--sun); background: var(--sun-soft); }
+@media (max-width: 800px) {
+  .focus-add { flex-direction: column; align-items: stretch; }
+  .focus-add-field input, .focus-add-field select { min-width: 0; width: 100%; }
+}

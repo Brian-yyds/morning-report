@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="个人日常工作台：待办、交割单分析与信息监测。">
+  <meta name="description" content="个人日常工作台：待办、交割单分析、重点分析与信息监测。">
   <title>每日早报 · 工作台</title>
-  <link rel="stylesheet" href="assets/style.css?v=50b34cef02">
+  <link rel="stylesheet" href="assets/style.css?v=ae3ec1edbc">
   <script src="assets/workbench.js?v=67a2a30baa" defer></script>
 </head>
 <body class="workbench" data-page="home" id="top">
@@ -14,7 +14,7 @@
   <header class="topbar workbench-topbar" id="topbar">
     <div class="topbar-heading">
       <div class="brand"><span class="brand-mark" aria-hidden="true">早</span><div><h1>每日早报 <span>· 工作台</span></h1><p>个人日常面板</p></div></div>
-      <nav class="page-nav" aria-label="站点导航"><a href="index.html" class="page-nav-link is-active" aria-current="page">工作台</a><a href="hotspots.html" class="page-nav-link">信息监测</a><a href="market.html" class="page-nav-link">交割单分析</a><a href="todos.html" class="page-nav-link">待办</a><a href="aoying.html" class="page-nav-link">熬鹰资本</a><a href="langlang.html" class="page-nav-link">BTC浪浪</a><a href="liangxi.html" class="page-nav-link">凉兮</a></nav>
+      <nav class="page-nav" aria-label="站点导航"><a href="index.html" class="page-nav-link is-active" aria-current="page">工作台</a><a href="hotspots.html" class="page-nav-link">信息监测</a><a href="market.html" class="page-nav-link">交割单分析</a><a href="focus.html" class="page-nav-link">重点分析</a><a href="todos.html" class="page-nav-link">待办</a><a href="aoying.html" class="page-nav-link">熬鹰资本</a><a href="langlang.html" class="page-nav-link">BTC浪浪</a><a href="liangxi.html" class="page-nav-link">凉兮</a></nav>
       <div class="appearance-controls">
         <label class="theme-control"><span class="sr-only">页面主题</span><select id="theme-select" aria-label="页面主题"><option value="system">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option></select></label>
       </div>
@@ -24,7 +24,7 @@
     <section class="wb-hero">
       <p class="wb-kicker">今天</p>
       <h2 id="wb-today">工作台</h2>
-      <p class="wb-lead">待办、交割单分析、熬鹰资本 / BTC浪浪 / 凉兮开平清单和信息监测都在这里。今天要核对的事项和最近的分析记录列在下面。</p>
+      <p class="wb-lead">待办、交割单分析、重点分析、熬鹰资本 / BTC浪浪 / 凉兮开平清单和信息监测都在这里。今天要核对的事项和最近的分析记录列在下面。</p>
     </section>
     <section class="wb-glance" aria-label="今日概览">
       <a class="wb-card wb-card-link" href="todos.html">
@@ -36,6 +36,11 @@
         <p class="wb-card-label">交割单分析</p>
         <p class="wb-card-value" id="glance-market">—</p>
         <p class="wb-card-note" id="glance-market-note">贴上K线，写下分析并保存</p>
+      </a>
+      <a class="wb-card wb-card-link" href="focus.html">
+        <p class="wb-card-label">重点分析</p>
+        <p class="wb-card-value" id="glance-focus">自选</p>
+        <p class="wb-card-note" id="glance-focus-note">推特观点、新闻、公告和链上动静</p>
       </a>
       <a class="wb-card wb-card-link" href="aoying.html">
         <p class="wb-card-label">熬鹰资本</p>
